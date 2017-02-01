@@ -11,6 +11,7 @@
   <body>
     <%#= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+    <%= link_to "Retour à la page d'accueil", root_path %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>

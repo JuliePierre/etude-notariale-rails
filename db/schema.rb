@@ -10,15 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170131180607) do
+ActiveRecord::Schema.define(version: 20170201101414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "annonces", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.string   "photo"
+    t.string   "transaction"
+    t.string   "genre"
+    t.string   "reference"
+    t.float    "prix_total"
+    t.float    "prix_vente"
+    t.string   "ville"
+    t.string   "code_postal"
+    t.string   "description"
+    t.float    "surface_habitable"
+    t.float    "surface_terrain"
+    t.float    "surface_sejour"
+    t.integer  "nb_pieces"
+    t.integer  "nb_chambres"
+    t.integer  "nb_niveaux"
+    t.boolean  "stationnement"
+    t.integer  "nb_places_stationnement"
+    t.boolean  "terrasse"
+    t.boolean  "cave"
+    t.boolean  "piscine"
+    t.string   "dpe"
+    t.string   "ges"
+    t.string   "amenagements"
   end
 
   create_table "users", force: :cascade do |t|
