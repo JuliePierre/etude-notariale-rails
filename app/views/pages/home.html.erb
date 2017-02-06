@@ -1,5 +1,5 @@
 <div class="container">
-  <h1>Home Page</h1>
+  <h1 class="test">Home Page</h1>
   <p>En construction</p>
   <ul>
     <li><%= link_to "l'office", office_path %></li>
@@ -12,5 +12,20 @@
     <li><%= link_to "droit commercial", commercial_path %></li>
     <li><%= link_to "gestion patrimoniale", patrimoine_path %></li>
     <li><%= link_to "actualités", actualites_path %></li>
+    <li><%= link_to "contact", contact_path %></li>
   </ul>
+  <ul>
+    <li><%= link_to "toutes les annonces immobilieres", annonces_path %></li>
+    <li><%= link_to "admin annonces immobilières", annonces_immobilieres_admin_path %></li>
+  </ul>
+  <h2>Test search form</h2>
+  <%= form_tag("/", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+  <h2>Test avec Searchkick</h2>
+  <% @results.each do |result| %>
+    <%= result.nom %>
+  <% end %>
 </div>

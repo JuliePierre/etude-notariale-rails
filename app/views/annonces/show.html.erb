@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Page d'une annonce</h1>
+  <ul>
+    <li><%= @annonce.genre_transaction %></li>
+    <li><%= @annonce.genre %></li>
+    <li><%= @annonce.reference %></li>
+  </ul>
+  <%= cl_image_tag @annonce.photo, height: 300, width: 400, crop: :fill %>
+  <!-- Si on veut utiliser la photo en background -->
+</div>

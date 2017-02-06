@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :office, :expertises, :droit_famille, :mariage, :pacs, :donation, :testament, :droit_immobilier, :droit_commercial, :gestion_patrimoniale, :actualites ]
 
   def home
+    @results = Expertise.search "test"
   end
 
   def office
@@ -46,5 +47,10 @@ class PagesController < ApplicationController
     open(url) do |rss|
       @feed_lettre_des_notaires = RSS::Parser.parse(rss)
     end
+  end
+
+  def contact
+    @contact = Contact.new
+    @contact_types = Contact::CONTACTTYPES
   end
 end

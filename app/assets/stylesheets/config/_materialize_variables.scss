@@ -2,3 +2,26 @@
  * Materialize sass variable
  * (see https://github.com/mkhairi/materialize-sass/blob/master/app/assets/stylesheets/materialize/components/_variables.scss)
  * ------------------------------------- */
+
+
+/* COLORS */
+
+// Orange
+$primary-color: #F0AE2C !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+// Rouge
+$secondary-color: #F92727 !default;
+
+// Success & erros
+$success-color: #2AAF74 !default;
+$error-color: #F92727 !default;
+
+// Liens : couleur de base
+$link-color: initial !default;
+
+// Autres couleurs
+$brand-yellow: #F9D00F;
+$brand-grey: #FBF7F7;
+

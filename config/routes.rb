@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   get 'expertises/droit-commercial', to: 'pages#droit_commercial', as: 'commercial'
   get 'expertises/gestion_patrimoniale', to: 'pages#gestion_patrimoniale', as: 'patrimoine'
   get 'actualités', to: 'pages#actualites', as: 'actualites'
+  get 'contact', to: 'pages#contact', as: 'contact'
+
+  resources :annonces, only: [:index, :show, :create, :update, :destroy]
+  get 'annonces-immobilieres/admin', to: 'annonces#admin'
+
+  resources :contacts, only: [:new, :create]
 end

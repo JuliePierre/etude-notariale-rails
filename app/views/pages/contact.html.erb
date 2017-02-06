@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Page contact</h1>
+
+  <!-- The map will be drawn in this div -->
+  <div id="map"></div>
+  <div class="personnalized-contact-form">
+    <%= render 'shared/contact-form', contact: @contact %>
+  </div>
+</div>
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      console.log('toto');
+      var handler = Gmaps.build('Google');
+      handler.buildMap({ internal: { id: 'map' } }, function(){
+         markers = handler.addMarkers([
+            {
+              "lat": 48.114403,
+              "lng": -1.678775,
+              "infowindow": "<h1>Office Perraut - Pirioux - Meve</h1>"
+            }
+          ]);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(14);
+      });
+    });
+  </script>
+<% end %>

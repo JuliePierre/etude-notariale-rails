@@ -1,12 +1,12 @@
 // Graphical variables
-@import "config/variables";
-@import "config/materialize_variables";
+@import "config/materialize_variables"; // pour définir les variables de base pour materialize, par exemple $primary-color
+@import "config/variables"; // pour définir mes propres variables
 
 // External libraries
-@import "materialize/components/color";
-@import 'materialize';
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "materialize/components/color";
+@import 'materialize';
 
 // Your CSS
 @import "layout/index";

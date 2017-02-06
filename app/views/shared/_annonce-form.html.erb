@@ -1,0 +1,26 @@
+<%= simple_form_for [annonce] do |f| %>
+  <%= f.input :genre_transaction %>
+  <%= f.input :genre %>
+  <%= f.input :reference %>
+  <%= f.input :prix_total %>
+  <%= f.input :prix_vente %>
+  <%= f.input :ville %>
+  <%= f.input :code_postal %>
+  <%= f.input :description %>
+  <%= f.input :surface_habitable %>
+  <%= f.input :surface_terrain %>
+  <%= f.input :surface_sejour %>
+  <%= f.input :nb_pieces %>
+  <%= f.input :nb_niveaux %>
+  <%= f.input :nb_chambres %>
+  <%= f.input :stationnement %>
+  <%= f.input :nb_places_stationnement %>
+  <%= f.input :terrasse %>
+  <%= f.input :cave %>
+  <%= f.input :piscine %>
+  <%= f.input :dpe %>
+  <%= f.input :ges %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit "Valider l'annonce", class: "btn btn-primary" %>
+<% end %>
