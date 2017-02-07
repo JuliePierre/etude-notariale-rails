@@ -19,13 +19,25 @@
     <li><%= link_to "admin annonces immobilières", annonces_immobilieres_admin_path %></li>
   </ul>
   <h2>Test search form</h2>
-  <%= form_tag("/", method: "get") do %>
-    <%= label_tag(:q, "Search for:") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search") %>
-  <% end %>
-  <h2>Test avec Searchkick</h2>
-  <% @results.each do |result| %>
-    <%= result.nom %>
+    <form action="get">
+      <input type="text">
+    </form>
+  <h2>Test statique avec Searchkick</h2>
+  <ul>
+    <% @results.each do |result| %>
+      <li>
+        <%= result.nom %>
+        <%= result.id %>
+        <%= result.description %>
+      </li>
+    <% end %>
+  </ul>
+  <h2>Test dynamique avec Searchkick</h2>
+  <%= form_tag(search_path, :method => "get", id: "search-form") do %>
+    <input type="text" name="search" id="search-input" class="form-control" placeholder="Recherche">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>  SEARCH</button>
   <% end %>
 </div>
+<br>
+<br>
+<br>

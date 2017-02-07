@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get 'annonces-immobilieres/admin', to: 'annonces#admin'
 
   resources :contacts, only: [:new, :create]
+
+  get 'expertisees/search', to: 'expertises#search', as: 'search'
 end

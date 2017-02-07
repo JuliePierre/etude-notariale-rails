@@ -5,4 +5,3 @@
 //= require_tree .
 //= require underscore
 //= require gmaps/google
-//= require algolia/v3/algoliasearch.min
