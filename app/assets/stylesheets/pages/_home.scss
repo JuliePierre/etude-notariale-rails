@@ -11,7 +11,7 @@
 // Banner
 .homepage-header {
   position: relative;
-  height: calc(100vh - 75px); // 65px c'est 50px de navbar + 25px de marge, comme les marges sur le coté
+  height: calc(100vh - 25px); // 25px c'est la hauteur de la navbar
 }
 
 .homepage-header-background {
@@ -29,4 +29,20 @@
   transform: translateY(-50%);
   text-align: center;
   z-index: 10;
+}
+
+// Sections sur fond blanc, avec marges
+
+.homepage-section {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+// Sections sur fond colorés, full width
+
+.homepage-steps {
+  background-color: $brand-grey;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }

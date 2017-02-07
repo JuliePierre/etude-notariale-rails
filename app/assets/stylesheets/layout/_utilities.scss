@@ -4,15 +4,23 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 
+// Common utilities
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 // Containers
 .container {
   @media (min-width: 768px) {
-    margin: 0 25px;
+    margin: 50px 25px 0px 25px;
   }
   margin: 0 auto;
   max-width: 1500px;
   width: auto;
 }
+
+// Sections
+// il existe une classe .section créée par materialize dont les caractéristiques sont : padding-bottom & padding-top : 1rem
 
 // Paddings
 .padded {
