@@ -1,0 +1,7 @@
+<div class="search-page-wrapper">
+  <%= form_tag(search_path, :method => "get", id: "search-form", class: "search-page-item hidden") do %>
+    <input type="text" name="search" id="search-input" class="form-control">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i>  CHERCHER</button>
+  <% end %>
+  <%= image_tag 'close-window-icon.png', class: "search-page-item hidden", id: "search-page-close-link" %>
+</div>

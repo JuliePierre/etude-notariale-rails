@@ -1,0 +1,9 @@
+;$('#navbar-search-icon').click(function(){
+  $('.search-page-wrapper').addClass('active');
+  $('.search-page-item').removeClass('hidden');
+  $('#search-input').trigger('focus');
+});
+$('#search-page-close-link').click(function(){
+  $('.search-page-wrapper').removeClass('active');
+  $('.search-page-item').addClass('hidden');
+});

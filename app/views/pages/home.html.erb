@@ -1,27 +1,17 @@
 <div class="container">
-  <h1 class="test">Home Page</h1>
-  <p>En construction</p>
+  <h1>Site en construction</h1>
   <ul>
-    <li><%= link_to "l'office", office_path %></li>
-    <li><%= link_to "expertises", expertises_path %></li>
-    <li><%= link_to "droit de la famille", famille_path %></li>
     <li><%= link_to "mariage", mariage_path %></li>
     <li><%= link_to "pacs", pacs_path %></li>
     <li><%= link_to "donation", donation_path %></li>
     <li><%= link_to "droit immobilier", immobilier_path %></li>
     <li><%= link_to "droit commercial", commercial_path %></li>
     <li><%= link_to "gestion patrimoniale", patrimoine_path %></li>
-    <li><%= link_to "actualités", actualites_path %></li>
-    <li><%= link_to "contact", contact_path %></li>
   </ul>
   <ul>
-    <li><%= link_to "toutes les annonces immobilieres", annonces_path %></li>
     <li><%= link_to "admin annonces immobilières", annonces_immobilieres_admin_path %></li>
   </ul>
-  <h2>Test search form</h2>
-    <form action="get">
-      <input type="text">
-    </form>
+
   <h2>Test statique avec Searchkick</h2>
   <ul>
     <% @results.each do |result| %>

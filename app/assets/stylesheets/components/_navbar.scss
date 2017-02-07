@@ -9,7 +9,7 @@
   float: left;
 }
 
-//right side
+// right side
 .navbar-menu {
   background-color: white;
   float: right;
@@ -17,4 +17,9 @@
 
 .navbar-menu-item {
   display: inline;
+}
+
+// search item
+#navbar-search-icon {
+  cursor: pointer;
 }
