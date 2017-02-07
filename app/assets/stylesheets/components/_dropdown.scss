@@ -1,0 +1,27 @@
+// Contenant pour la dropdown
+.dropdown {
+  position: relative;
+}
+
+// Element sur lequel on clique pour faire appraître la dropdown
+.dropdown-link {
+  cursor: pointer;
+}
+
+// Contenu de la dropdown --> Attention, il existe un dropdown-content dans materialize, ne pas le réutiliser
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  list-style: none;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box; // Aucun arrière-plan n'est dessiné dans la boîte de bordure. L'arrière-plan s'étend jusqu'à la limite de la boîte de remplissage (padding).
+}

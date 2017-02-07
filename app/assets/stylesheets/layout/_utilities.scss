@@ -9,6 +9,17 @@
   padding-top: 5em;
   padding-bottom: 5em;
 }
+.unpadded {
+  padding: 0px;
+}
+
+// Margins
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+.unmargined {
+  margin: 0px;
+}
 
 // Backgrounds
 .bg-black {
@@ -22,4 +33,9 @@
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+
+// Others
+.hidden {
+  display: none;
 }

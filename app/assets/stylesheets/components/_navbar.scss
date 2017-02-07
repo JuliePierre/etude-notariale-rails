@@ -1,0 +1,20 @@
+.navbar {
+  padding: 1em 5em;
+  background-color: red;
+}
+
+// left side
+.navbar-brand {
+  background-color: white;
+  float: left;
+}
+
+//right side
+.navbar-menu {
+  background-color: white;
+  float: right;
+}
+
+.navbar-menu-item {
+  display: inline;
+}
