@@ -7,16 +7,24 @@
 // Common utilities
 body {
   font-family: 'Roboto', sans-serif;
+  color: $brand-dark-grey;
+  a {
+    color: $brand-dark-grey;
+  }
 }
 
 // Containers
 .container {
   @media (min-width: 768px) {
-    margin: 50px 25px 0px 25px;
+    margin: 50px 1em 0px 1em;
   }
   margin: 0 auto;
   max-width: 1500px;
   width: auto;
+  .row {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 // Sections
@@ -56,4 +64,9 @@ body {
 // Others
 .hidden {
   display: none;
+}
+
+.underlined {
+  border-bottom: solid 3px $primary-color;
+  display: inline-block;
 }

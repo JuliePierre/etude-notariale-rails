@@ -1,8 +1,25 @@
 <div class="container">
-  <h1>Page contact</h1>
+  <h1>Nous contacter</h1>
 
+  <div class="row contact-content">
+    <div class="contact-left-side">
+      <div id="map"></div>
+    </div>
+    <div class="contact-right-side">
+      <p class="underlined">Office notarial</p>
+      <p>Loïc PERRAUT, Jean-Charles PIRIOUX et Céline MÉVEL</p>
+      <p>
+        7 rue de la Visitation
+        CS 60808
+        35108 RENNES CEDEX 3
+      </p>
+      <p>Tél : 02 99 67 39 39</p>
+      <p>Fax : 02 99 67 34 54</p>
+      <p>perraut-pirioux-mevel@notaires.fr</p>
+    </div>
+  </div>
   <!-- The map will be drawn in this div -->
-  <div id="map"></div>
+
   <div class="personnalized-contact-form">
     <%= render 'shared/contact-form', contact: @contact %>
   </div>
