@@ -1,23 +1,33 @@
 .navbar {
   padding: 1em 5em;
-  background-color: red;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 20;
 }
 
 // left side
 .navbar-brand {
-  background-color: white;
   float: left;
 }
 
 // right side
 .navbar-menu {
-  background-color: white;
   float: right;
 }
-
-.navbar-menu-item {
+.navbar-menu-item, {
+  display: inline;
+  padding: 0 0.8em;
+}
+.navbar-menu-sub-item{
   display: inline;
 }
+
+// dropdown
+// #dropdown-navbar a {
+//   color: initial;
+// }
 
 // search item
 #navbar-search-icon {

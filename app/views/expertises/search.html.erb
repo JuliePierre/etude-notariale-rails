@@ -1,10 +1,13 @@
 <h1>Resultats de recherche</h1>
+<h2>Nombre de résultats : <%= @results.length %></h2>
 <ul>
   <% @results.each do |result| %>
     <li>
       <%= result.nom %>
       <%= result.id %>
       <%= result.description %>
+      <% lien = result.motcle %>
+      <%= link_to result.motcle, send("#{lien}_path") %>
     </li>
   <% end %>
 </ul>

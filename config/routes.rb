@@ -20,5 +20,5 @@ Rails.application.routes.draw do
 
   resources :contacts, only: [:new, :create]
 
-  get 'expertisees/search', to: 'expertises#search', as: 'search'
+  get 'expertises/search', to: 'expertises#search', as: 'search'
 end

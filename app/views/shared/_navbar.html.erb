@@ -1,15 +1,13 @@
 <div class="navbar">
   <div class="row no-bottom-margin">
     <div class="navbar-brand unmargined">
-      <%= link_to "accueil", root_path %>
+      <%= link_to "Accueil", root_path %>
     </div>
     <ul class="navbar-menu unmargined">
       <li class="navbar-menu-item"><%= link_to "L' office", office_path %></li>
-      <i class="fa fa-circle" aria-hidden="true"></i>
-
       <!-- lien vers dropdown - EXPERTISES -->
       <li class="navbar-menu-item dropdown">
-        <p class="navbar-menu-item dropdown-link" data-target="dropdown-navbar"><i class="fa fa-sort-desc" aria-hidden="true"></i>Expertises</p>
+        <p class="navbar-menu-sub-item dropdown-link" data-target="dropdown-navbar"><i class="fa fa-sort-desc" aria-hidden="true"></i>Expertises</p>
         <!-- dropdown - EXPERTISES -->
         <ul class="dropdown-menu hidden" id="dropdown-navbar">
           <li><%= link_to "droit de la famille", famille_path %></li>
@@ -18,15 +16,9 @@
           <li><%= link_to "gestion patrimoniale", patrimoine_path %></li>
         </ul>
       </li>
-
-
-      <i class="fa fa-circle" aria-hidden="true"></i>
       <li class="navbar-menu-item"><%= link_to "Actualités", actualites_path %></li>
-      <i class="fa fa-circle" aria-hidden="true"></i>
       <li class="navbar-menu-item"><%= link_to "Contact", contact_path %></li>
-      <i class="fa fa-circle" aria-hidden="true"></i>
       <li class="navbar-menu-item"><%= link_to "Biens à vendre", annonces_path %></li>
-      <i class="fa fa-circle" aria-hidden="true"></i>
       <li class="navbar-menu-item">
         <p class="navbar-menu-item", id="navbar-search-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
       </li>

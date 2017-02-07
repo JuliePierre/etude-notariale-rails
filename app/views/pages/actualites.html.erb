@@ -1,21 +1,23 @@
-<h1>Actualités</h1>
+<div class="container">
+  <h1>Actualités</h1>
 
-<h2>Actualités des notaires en France</h2>
-<ul>
-  <% @feed_actualites.items.each do |item| %>
-  <li>
-    <%= item.title %>
-    <a href="<%= item.link %>" target="_blank">En savoir plus</a>
-  </li>
-  <% end %>
-</ul>
+  <h2>Actualités des notaires en France</h2>
+  <ul>
+    <% @feed_actualites.items.each do |item| %>
+    <li>
+      <%= item.title %>
+      <a href="<%= item.link %>" target="_blank">En savoir plus</a>
+    </li>
+    <% end %>
+  </ul>
 
-<h2>La lettre de mon notaire</h2>
-<ul>
-  <% @feed_lettre_des_notaires.items.each do |item| %>
-  <li>
-    <%= item.title %>
-    <a href="<%= item.link %>" target="_blank">En savoir plus</a>
-  </li>
-  <% end %>
-</ul>
+  <h2>La lettre de mon notaire</h2>
+  <ul>
+    <% @feed_lettre_des_notaires.items.each do |item| %>
+    <li>
+      <%= item.title %>
+      <a href="<%= item.link %>" target="_blank">En savoir plus</a>
+    </li>
+    <% end %>
+  </ul>
+</div>

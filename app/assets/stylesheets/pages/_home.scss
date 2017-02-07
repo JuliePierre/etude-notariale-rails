@@ -3,7 +3,30 @@
  * (margin/padding adjustments)
  * ------------------------------------- */
 
-.test {
-  color: $primary-color;
-  background-color: $secondary-color;
+// .test {
+//   color: $primary-color;
+//   background-color: $secondary-color;
+// }
+
+// Banner
+.homepage-header {
+  position: relative;
+  height: calc(100vh - 75px); // 65px c'est 50px de navbar + 25px de marge, comme les marges sur le coté
+}
+
+.homepage-header-background {
+  background: url('../assets/image-test1.jpg') no-repeat fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.homepage-header-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
 }

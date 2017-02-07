@@ -1,27 +1,13 @@
 <div class="container">
-  <h1>Site en construction</h1>
-  <ul>
-    <li><%= link_to "mariage", mariage_path %></li>
-    <li><%= link_to "pacs", pacs_path %></li>
-    <li><%= link_to "donation", donation_path %></li>
-    <li><%= link_to "droit immobilier", immobilier_path %></li>
-    <li><%= link_to "droit commercial", commercial_path %></li>
-    <li><%= link_to "gestion patrimoniale", patrimoine_path %></li>
-  </ul>
-  <ul>
-    <li><%= link_to "admin annonces immobilières", annonces_immobilieres_admin_path %></li>
-  </ul>
+  <div class="homepage-header">
+    <div class="homepage-header-background"></div>
+    <div class="homepage-header-content">
+    Site en construction
+    </div>
+  </div>
 
-  <h2>Test statique avec Searchkick</h2>
-  <ul>
-    <% @results.each do |result| %>
-      <li>
-        <%= result.nom %>
-        <%= result.id %>
-        <%= result.description %>
-      </li>
-    <% end %>
-  </ul>
+
+  <h2><%= link_to "Admin annonces immobilières", annonces_immobilieres_admin_path %></h2>
   <h2>Test dynamique avec Searchkick</h2>
   <%= form_tag(search_path, :method => "get", id: "search-form") do %>
     <input type="text" name="search" id="search-input" class="form-control" placeholder="Recherche">
