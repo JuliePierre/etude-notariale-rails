@@ -97,3 +97,59 @@
   </div>
 </div>
 
+<!-- SECTION ACTUS -->
+<div class="homepage-section homepage-steps-orange-bg">
+  <h2>Actualités</h2>
+  <div class="carte-actus">
+    <%= image_tag 'image-test1.jpg', class: "carte-actus-photo" %>
+    <div class="carte-actus-infos">
+      <h3 class="carte-actus-titre">Lettre n° 132 - Décembre 2016</h3>
+      <h5 class="carte-actus-titre">Le notaire, acteur du divorce</h5>
+      <p>Depuis le 1er janvier 2017, le divorce par consentement mutuel se fera, sauf exception, sans passage devant le juge mais en déposant la convention précisant l'accord des époux chez un notaire...</p>
+      <a href="https://www.notaires.fr/fr/relation-presse-notaires/r%C3%A9forme-du-divorce-par-consentement-mutuel-au-1er-janvier", target="_blank", class="btn btn-primary">Consulter la lettre</a>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION CONTACT -->
+<div class="homepage-section homepage-steps-grey-bg">
+  <div class="carte-contact">
+    <div id="map-homepage"></div>
+    <div class="carte-contact-infos">
+      <h3>Office notarial PERRAUT - PIRIOUX - MEVEL</h3>
+      <p>Addresse principale</p>
+      <p>7 rue de la visitation</p>
+      <p>35 108 RENNES CEDEX 3</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> 02 99 67  39 39</p>
+      <p><i class="fa fa-fax" aria-hidden="true"></i> 02 99 67 34 54</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> perraut-pirioux-mevel@notaires.fr</p>
+      <p>Standard de 9h à 12h et de 14h à 18h (17h le vendredi</p>
+      <p>Etude fermée le samedi (sauf sur rendez-vous)</p>
+      <p>Accès</p>
+        <p><i class="fa fa-subway" aria-hidden="true"></i> Station Sainte Anne</p>
+        <p><i class="fa fa-car" aria-hidden="true"></i> Parking Hoche</p>
+    </div>
+  </div>
+</div>
+
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      console.log('toto');
+      var handler = Gmaps.build('Google');
+      handler.buildMap({ internal: { id: 'map-homepage' } }, function(){
+         markers = handler.addMarkers([
+            {
+              "lat": 48.114403,
+              "lng": -1.678775,
+              "infowindow": "<h1>Office Perraut - Pirioux - Meve</h1>"
+            }
+          ]);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(14);
+      });
+    });
+  </script>
+<% end %>

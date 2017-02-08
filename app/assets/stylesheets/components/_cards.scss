@@ -1,3 +1,4 @@
+// CARTES SPECIALES POUR LES ANNONCES IMMOBILIERES
 .carte-annonce {
   background-color: white;
   width: 300px;
@@ -39,4 +40,28 @@
 // annonces après les 3 actives
 .carte-annonce.active +.carte-annonce.not-active {
   left: 78%;
+}
+
+// CARTES SPECIALES POUR LES ACTUALITES
+.carte-actus {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.carte-actus-photo {
+  height: auto;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+.carte-actus-infos {
+  flex: 0 0 60%;
+  > h3 {
+    margin-top: 0px;
+  }
 }
