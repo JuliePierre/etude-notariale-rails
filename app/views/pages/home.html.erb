@@ -14,6 +14,8 @@
 <div class="homepage-section homepage-steps-grey-bg">
   <h2><%= link_to "Admin annonces immobilières", annonces_immobilieres_admin_path %></h2>
 </div>
+
+<!-- SECTION EXPERTISES -->
 <div class="homepage-section homepage-steps-orange-bg">
   <h2>Domaines d'expertise</h2>
   <h3>Droit de la famille</h3>
@@ -29,3 +31,69 @@
   <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
   <%= link_to 'En savoir plus', patrimoine_path, class: "btn btn-primary" %>
 </div>
+
+<!-- SECTION BIENS A VENDRE -->
+<div class="homepage-section homepage-steps-grey-bg">
+  <h2>Biens à vendre</h2>
+  <h2>
+    <span class="annonce-fleche" id="annonce-precedente"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+    <span class="annonce-fleche" id="annonce-suivante"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+  </h2>
+  <div class="homepage-box-annonces">
+    <div class="carte-annonce active first-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test2.jpg');">
+        <p class="carte-annonce-prix">170 000€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Maison</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+    <div class="carte-annonce active second-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test3.jpg');">
+        <p class="carte-annonce-prix">170 000€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Maison</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+    <div class="carte-annonce active third-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test1.jpg');">
+        <p class="carte-annonce-prix">65 400€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Appartement</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+    <div class="carte-annonce not-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test2.jpg');">
+        <p class="carte-annonce-prix">4 000€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Parking</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+    <div class="carte-annonce not-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test1.jpg');">
+        <p class="carte-annonce-prix">150 000€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Maison</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+    <div class="carte-annonce not-active">
+      <div class="carte-annonce-photo" style="background-image: url('assets/image-test3.jpg');">
+        <p class="carte-annonce-prix">89 000€</p>
+      </div>
+      <div class="carte-annonce-infos">
+        <h5>Maison</h5>
+        <p>7 pièces</p>
+      </div>
+    </div>
+  </div>
+</div>
+

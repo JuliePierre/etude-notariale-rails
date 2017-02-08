@@ -32,7 +32,6 @@
 }
 
 // Sections sur fond blanc, avec marges
-
 .homepage-section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -41,11 +40,27 @@
 }
 
 // Sections sur fond colorés, full width
-
 .homepage-steps-grey-bg {
   background-color: $brand-grey;
 }
 
 .homepage-steps-orange-bg {
-  background-color: $primary-color-light;
+  background-color: $primary-color;
+  color: white;
+}
+
+// Section annonces
+.homepage-box-annonces {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.annonce-fleche {
+  cursor: pointer;
+}
+
+.annonce-fleche.disabled {
+  cursor: initial;
 }

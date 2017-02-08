@@ -1,0 +1,38 @@
+.carte-annonce {
+  background-color: white;
+  width: 300px;
+  height: auto;
+  transition: all 0.5s ease;
+  .carte-annonce-photo {
+    height: 200px;
+    position: relative;
+  }
+  .carte-annonce-prix {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    margin: 0px;
+    background-color: $primary-color-light;
+    padding: 0.2em 0.8em;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .carte-annonce-infos {
+    padding: 0 1em 1em 1em;
+  }
+}
+
+// carte non-actives
+.carte-annonce.not-active {
+  position: absolute;
+  left: 5%; // seul paramètre à changer pour les cartes non actives qui sont après les cartes actives
+  opacity: 0;
+  z-index: 0;
+}
+
+// annonces après les 3 actives
+.carte-annonce.active +.carte-annonce.not-active {
+  left: 78%;
+}
