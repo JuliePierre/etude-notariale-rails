@@ -1,3 +1,10 @@
 <div class="container">
   <h1>Mariage</h1>
+  <%= @introduction %>
+  <%= @description %>
+  <% @questions.each do |question| %>
+    <h3><%= question.description %></h3>
+    <p><%= question.reponse %></p>
+  <% end %>
+  <h2></h2>
 </div>

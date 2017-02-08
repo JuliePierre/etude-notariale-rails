@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   end
 
   def mariage
+    @expertise = Expertise.find_by(nom: 'Mariage')
+    @introduction = @expertise.introduction
+    @description = @expertise.description
+    @questions = @expertise.questions
   end
 
   def pacs

@@ -3,13 +3,11 @@
   <h2>Nombre de résultats : <%= @results.length %></h2>
   <ul>
     <% @results.each do |result| %>
-      <li>
-        <%= result.nom %>
-        <%= result.id %>
-        <%= result.description %>
-        <% lien = result.motcle %>
-        <%= link_to result.motcle, send("#{lien}_path") %>
-      </li>
+      <li><%= result.nom %></li>
+      <li><%= result.id %></li>
+      <li><%= result.description %></li>
+      <li><%= lien = result.motcle %></li>
+      <li><%= link_to result.motcle, send("#{lien}_path") %></li>
     <% end %>
   </ul>
 </div>
