@@ -1,0 +1,14 @@
+.modal-content, .modal-footer {
+  background-color: $primary-color !important;
+  color: white;
+}
+
+
+#close-window-modal {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  cursor: pointer;
+}

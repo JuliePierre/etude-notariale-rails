@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact', as: 'contact'
 
   resources :annonces, only: [:index, :show, :create, :update, :destroy]
-  get 'annonces-immobilieres/admin', to: 'annonces#admin'
+  get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'
+  get 'annonces-immobilieres/admin/:id', to: 'annonces#admin_show', as: 'test'
 
   resources :contacts, only: [:new, :create]
 

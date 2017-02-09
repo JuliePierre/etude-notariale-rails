@@ -1,8 +1,9 @@
 class AnnoncesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_annonce, only: [:show, :update, :destroy]
+  before_action :set_annonce, only: [:show, :admin_show, :update, :destroy]
   before_action :annonce_params, only: [:create, :update]
 
+  # pour partie visible
   def index
     @annonces = Annonce.all
   end
@@ -11,21 +12,20 @@ class AnnoncesController < ApplicationController
 
   end
 
-  def admin
+  # pour partie admin
+  def admin_index
     # set_annonce before action ok
     # autres variables
     @annonces = Annonce.all
-
-    # new --> formulaire pour création d'une nouvelle annonce
-    # create
     @annonce = Annonce.new
 
-    # edit --> formulaire pour modifier une annonce
-    # update
 
-    # index --> afficher toutes les annonces côté admin avec boutons vers edit & destroy
+  end
 
-    # destroy --> supprimer une annonce
+  # pas de methode new car le formulaire est dans une modal
+
+  def admin_show
+    # set_annonce before action ok
   end
 
   def create
@@ -37,6 +37,8 @@ class AnnoncesController < ApplicationController
     end
   end
 
+  # pas de methode edit car le formulaire est dans une modal
+
   def update
     if @annonce.update(annonce_params)
       redirect_to annonce_path(@annonce)
@@ -47,7 +49,7 @@ class AnnoncesController < ApplicationController
 
   def destroy
     @annonce.destroy
-    redirect_to annonces_immobilieres_admin_path
+    redirect_to tests_path
   end
 
   private

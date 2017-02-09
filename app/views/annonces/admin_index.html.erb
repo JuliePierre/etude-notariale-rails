@@ -1,0 +1,57 @@
+<div id="admin-wrapper">
+  <div class="container">
+    <h1>Annonces immobilières</h1>
+      <div class="admin-header center-align">
+        <h2 class="center-align"><i class="fa fa-home" aria-hidden="true"></i><%= pluralize @annonces.length, 'annonce' %></h2>
+        <!-- NOUVELLE ANNONCE -->
+        <!-- Modal Trigger - Creation d'une nouvelle annonce -->
+        <a class="modal-trigger waves-effect waves-light btn btn-primary" href="#modal-nouvelle-annonce">Créer nouvelle annonce</a>
+        <!-- Modal Nouvelle annonce -->
+        <div id="modal-nouvelle-annonce" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h2>Nouvelle annonce</h2>
+            <%= render 'shared/annonce-form', annonce: @annonce %>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="modal-action modal-close waves-effect waves-green btn">Fermer</a>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- LISTING DES ANNONCES -->
+    <div class="admin-listing-annonces">
+      <% @annonces.each do |annonce| %>
+        <div class="annonce-contenant">
+          <div class="carte-annonce carte-annonce-admin">
+            <div class="carte-annonce-photo" style="background-image: url('<%= cl_image_path annonce.photo, crop: :fill %>');">
+              <p class="carte-annonce-prix"><%= annonce.prix_total.to_i %>€</p>
+            </div>
+            <div class="carte-annonce-infos">
+              <h5><%= annonce.genre %></h5>
+              <p><%= pluralize annonce.nb_pieces, 'pièce' %></p>
+            </div>
+            <%= link_to "Voir plus", test_path(annonce), class: "carte-annonce-link" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+       <% @annonces.each do |annonce| %>
+          <a class="modal-trigger waves-effect waves-light btn btn-primary" href="#modal-modification-annonce">Modifier</a>
+          <%= link_to 'Supprimer', annonce_path(annonce), method: :delete, class: "btn btn-primary" %>
+        </li>
+        <!-- Modal Modification d'une annonce -->
+        <div id="modal-modification-annonce" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <%= image_tag 'close-window-icon-white.png', class: 'modal-action modal-close', id: 'close-window-modal' %>
+            <h2>Modification annonce</h2>
+            <%= render 'shared/annonce-form', annonce: annonce %>
+          </div>
+          <div class="modal-footer">
+            <p class="center-align">Plus</p>
+          </div>
+        </div>
+      <% end %>

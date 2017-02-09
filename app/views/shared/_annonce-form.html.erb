@@ -20,7 +20,7 @@
   <%= f.input :piscine %>
   <%= f.input :dpe %>
   <%= f.input :ges %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.file_field :photo %>
+  <%= f.hidden_field :photo_cache %>
   <%= f.submit "Valider l'annonce", class: "btn btn-primary" %>
 <% end %>

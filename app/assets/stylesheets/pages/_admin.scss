@@ -1,0 +1,20 @@
+#admin-wrapper {
+  background-color: $brand-grey;
+  height: 100vh;
+}
+
+.admin-header {
+  h2 {
+    display: inline-block;
+  }
+  a {
+    float: right;
+  }
+}
+
+.admin-listing-annonces {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
