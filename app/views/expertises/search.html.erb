@@ -1,13 +1,23 @@
 <div class="container">
   <h1>Resultats de recherche</h1>
-  <h2>Nombre de résultats : <%= @results.length %></h2>
+  <h2>Expertises liées : <%= @expertises.length %></h2>
   <ul>
-    <% @results.each do |result| %>
-      <li><%= result.nom %></li>
-      <li><%= result.id %></li>
-      <li><%= result.description %></li>
-      <li><%= lien = result.motcle %></li>
-      <li><%= link_to result.motcle, send("#{lien}_path") %></li>
+    <% @expertises.each do |expertise| %>
+      <li><%= expertise.nom %></li>
+      <li><%= expertise.description %></li>
+      <li><%= expertise.introduction %></li>
+      <li><% lien = expertise.motcle %></li>
+      <li><%= link_to 'Lire', send("#{lien}_path") %></li>
+    <% end %>
+  </ul>
+  <h2>Questions liées : <%= @questions.length %></h2>
+  <ul>
+    <% @questions.each do |question| %>
+      <li><%= question.expertise.nom %></li>
+      <li><%= question.description %></li>
+      <li><%= question.reponse %></li>
+      <li><% lien = question.expertise.motcle %></li>
+      <li><%= link_to 'Lire', send("#{lien}_path") %></li>
     <% end %>
   </ul>
 </div>
