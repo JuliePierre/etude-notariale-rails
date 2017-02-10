@@ -1,6 +1,5 @@
-#admin-wrapper {
+.admin-wrapper {
   background-color: $brand-grey;
-  height: 100vh;
 }
 
 .admin-header {
@@ -21,4 +20,47 @@
 
 .annonce-contenant {
   margin-right: 35px;
+}
+
+// Pages show des annonces immobilières côté admin
+
+.admin-page-container {
+margin-top: 0;
+padding-top: 3em;
+}
+.admin-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+}
+.admin-page-contenu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.annonce-tableau {
+  flex: 0 0 50%;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  tr {
+    border-bottom: 1px solid $primary-color-light;
+    td:first-child {
+      font-weight: 400;
+    }
+  }
+  th, td {
+    padding: 15px 15px;
+  }
+}
+.annonce-tableau-header {
+  background-color: $primary-color;
+  color: white;
+}
+
+.edit-cell {
+  background-color: $primary-color-light;
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  color: white;
 }

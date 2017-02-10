@@ -3,6 +3,8 @@ class AnnoncesController < ApplicationController
   before_action :set_annonce, only: [:show, :admin_show, :update, :destroy]
   before_action :annonce_params, only: [:create, :update]
 
+  DONNEES = { "id" => "Identifiant", "photo" => "Photo", "genre_transaction" => "Genre de transation", "genre" => "Type d'habitation", "reference" => "Référence", "prix_total" => "Prix total", "prix_vente" => "Prix de vente", "ville" => "Ville", "code_postal" => "Code postal", "description" => "Description", "surface_habitable" => "Surface habitable", "surface_terrain" => "Surface du terrain", "surface_sejour" => "Surface du séjour", "nb_pieces" => "Nombre de pièces", "nb_chambres" => "Nombre de chambres", "nb_niveaux" => "Nombre de niveaux", "stationnement" => "Stationnement", "nb_places_stationnement" => "Nombre de places", "terrasse" => "Terrasse", "cave" => "Cave", "piscine" => "Piscine", "dpe" => "Diagnostic DPE", "ges" => "Diagnostic GES", "amenagements" => "Les aménagements" }
+
   # pour partie visible
   def index
     @annonces = Annonce.all
@@ -26,6 +28,8 @@ class AnnoncesController < ApplicationController
 
   def admin_show
     # set_annonce before action ok
+    @colonnes_annonce = Annonce.column_names.reject {|column| (column == "created_at" || column == "updated_at") || column == "photo" }
+    @donnees = DONNEES
   end
 
   def create
