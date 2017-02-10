@@ -1,0 +1,43 @@
+.annonces-container {
+  margin: 0 12rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.annonces-show-container {
+  margin: 0 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.annonces-show-photo {
+  flex: 0 0 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.annonces-show-infos {
+  flex: 0 0 45%;
+  background-color: white;
+  padding: 0rem 2rem;
+}
+
+.annonces-show-tableau {
+  td {
+    vertical-align: top;
+    p {
+      margin: 0;
+    }
+  }
+  tr {
+    border-top: 1px solid $primary-color-light;
+  }
+  i {
+    color: $primary-color;
+  }
+}

@@ -1,6 +1,26 @@
-<div class="container">
-  <h1>Liste des annonces immobilières</h1>
-  <% @annonces.each do |annonce| %>
-    <%= annonce.description %>
-  <% end %>
+<div class="admin-section orange-bg">
+  <div class="container center-align">
+    <h1>Annonces immobilières ( <%= @annonces.length %> )</h1>
+  </div>
+</div>
+<div class="page-wrapper">
+  <div class="annonces-container">
+    <div class="admin-listing-annonces">
+      <% @annonces.each do |annonce| %>
+        <div class="annonce-contenant">
+          <div class="carte-annonce carte-annonce-admin">
+            <div class="carte-annonce-photo" style="background-image: url('<%= cl_image_path annonce.photo, crop: :fill %>');">
+            </div>
+            <div class="carte-annonce-infos-index">
+              <h6><%= annonce.genre %></h6>
+              <p class="carte-annonce-sous-titre"><%= pluralize annonce.nb_pieces, 'pièce' %></p>
+              <p class="carte-annonce-label">Prix de vente</p>
+              <h5 class="carte-annonce-prix-index"><%= annonce.prix_total.to_i %>€</h5>
+            </div>
+            <%= link_to "", annonce_path(annonce), class: "carte-annonce-link" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>

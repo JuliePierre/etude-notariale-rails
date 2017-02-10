@@ -42,12 +42,33 @@
   left: 78%;
 }
 
+// CARTES ANNONES IMMOBILIERES DES PAGES SHOW ET INDEX
+.carte-annonce-infos-index {
+  padding: 1.5em 2em;
+  h6 {
+    font-weight: 500;
+  }
+  p, h5 {
+    margin: 0px;
+  }
+}
 
+.carte-annonce-sous-titre {
+  margin-bottom: 0.5rem !important;
+}
+
+.carte-annonce-label {
+  font-size: 1rem;
+  color: $primary-color;
+  font-weight: 200;
+}
 
 // CARTES ANNONCES IMMOBILIERES DE LA PAGE ADMIN
-
 .carte-annonce-admin {
   position: relative;
+  &:hover {
+    box-shadow: 2px 2px 8px 4px rgba(240, 174, 44, 0.6);
+  }
 }
 
 .carte-annonce-link {

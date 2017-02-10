@@ -14,7 +14,7 @@ body {
   }
 }
 
-// Containers
+// Containers & Wrappers
 .container {
   @media (min-width: 768px) {
     margin: 50px 1em 0px 1em;
@@ -26,6 +26,10 @@ body {
     margin-left: initial;
     margin-right: initial;
   }
+}
+
+.page-wrapper {
+  background-color: $brand-grey;
 }
 
 // Sections

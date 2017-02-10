@@ -1,10 +1,62 @@
-<div class="container">
-  <h1>Page d'une annonce</h1>
-  <ul>
-    <li><%= @annonce.genre_transaction %></li>
-    <li><%= @annonce.genre %></li>
-    <li><%= @annonce.reference %></li>
-  </ul>
-  <%= cl_image_tag @annonce.photo, height: 300, width: 400, crop: :fill %>
-  <!-- Si on veut utiliser la photo en background -->
+<div class="admin-section orange-bg">
+  <div class="container center-align">
+    <h1>Annonce immobilière - Vente</h1>
+  </div>
+</div>
+<div class="page-wrapper">
+  <div class="annonces-show-container">
+    <div class="annonces-show-photo">
+      <%= cl_image_tag @annonce.photo, crop: :fill %>
+    </div>
+    <div class="annonces-show-infos">
+      <h2><%= @annonce.genre %></h2>
+      <h4><%= @annonce.ville %> <%= @annonce.code_postal %> </h4>
+      <p>Ref. <%= @annonce.reference %></p>
+      <h5><%= @annonce.prix_total.to_i %> €</h5>
+        <div class="annonces-show-descriptif">
+          <table class="annonces-show-tableau">
+            <tr>
+              <td>
+                <p>Description</p>
+                <p style="font-size: 4rem;"><i class="fa fa-home" aria-hidden="true"></i></p>
+              </td>
+              <td>
+                <p>Surface habitable : <%= @annonce.surface_habitable %></p>
+                <p>Surface terrain : <%= @annonce.surface_terrain %></p>
+              </td>
+              <td>
+                <p>Pièces : <%= @annonce.nb_pieces %></p>
+                <p>Chambres : <%= @annonce.nb_chambres %></p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>Prix</p></td>
+              <td>
+                <p><%= @annonce.prix_total.to_i %>€</p>
+                <p><%= @annonce.prix_vente.to_i %>€</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Equipements</p>
+                <p style="font-size: 4rem;"><i class="fa fa-users" aria-hidden="true"></i></p>
+              </td>
+              <td>
+                <% t = @annonce.terrasse ? "Oui" : "Non" %>
+                <p>Terrasse : <%= t %></p>
+                <% t = @annonce.piscine ? "Oui" : "Non" %>
+                <p>Piscine : <%= t %></p>
+              </td>
+              <td>
+                <% t = @annonce.cave ? "Oui" : "Non" %>
+                <p>Cave : <%= t %></p>
+                <% t = @annonce.stationnement ? "Oui" : "Non" %>
+                <p>Parking : <%= t %></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
 </div>

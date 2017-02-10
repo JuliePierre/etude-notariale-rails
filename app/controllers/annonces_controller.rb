@@ -35,7 +35,7 @@ class AnnoncesController < ApplicationController
   def create
     @annonce = Annonce.new(annonce_params)
     if @annonce.save
-      redirect_to annonce_path(@annonce)
+      redirect_to test_path(@annonce)
     else
       render :admin
     end
@@ -45,7 +45,7 @@ class AnnoncesController < ApplicationController
 
   def update
     if @annonce.update(annonce_params)
-      redirect_to annonce_path(@annonce)
+      redirect_to test_path(@annonce)
     else
       render :admin
     end
