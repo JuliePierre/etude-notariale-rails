@@ -26,6 +26,8 @@ gem "gmaps4rails"
 
 gem 'searchkick'
 
+gem 'social-share-button'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'

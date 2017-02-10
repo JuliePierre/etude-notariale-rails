@@ -59,4 +59,18 @@
         </div>
     </div>
   </div>
+  <div class="reseaux-sociaux">
+    <h2>test</h2>
+    <div id="shareBtn" class="btn btn-success clearfix">Share</div>
+  </div>
 </div>
+
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'https://developers.facebook.com/docs/',
+  }, function(response){});
+}
+</script>
