@@ -10,11 +10,12 @@ Rails.application.routes.draw do
   get 'expertises/droit-de-la-famille/donation', to: 'pages#donation', as: 'donation'
   get 'expertises/droit-de-la-famille/testament', to: 'pages#testament', as: 'testament'
   get 'expertises/droit-immobilier', to: 'pages#droit_immobilier', as: 'immobilier'
-  get 'expertises/droit-commercial', to: 'pages#droit_commercial', as: 'commercial'
-  get 'expertises/gestion_patrimoniale', to: 'pages#gestion_patrimoniale', as: 'patrimoine'
-  get 'vos-questions', to: 'pages#questions', as: 'questions'
+  get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
+  get 'expertises/promotion_immobiliere', to: 'pages#promotion', as: 'promotion'
+  get 'guides-pratiques', to: 'pages#guides', as: 'guides'
   get 'contact', to: 'pages#contact', as: 'contact'
   get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
+  get 'vente-immobilier', to: 'pages#vente', as: 'vente'
 
   resources :annonces, only: [:index, :show, :create, :update, :destroy]
   get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'

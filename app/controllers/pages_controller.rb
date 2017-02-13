@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   require 'rss'
   require 'open-uri'
 
-  skip_before_action :authenticate_user!, only: [ :home, :office, :expertises, :droit_famille, :mariage, :pacs, :donation, :testament, :droit_immobilier, :droit_commercial, :gestion_patrimoniale, :actualites, :contact ]
+  skip_before_action :authenticate_user!, only: [ :home, :office, :expertises, :droit_famille, :mariage, :pacs, :donation, :testament, :droit_immobilier, :affaires, :promotion, :guides, :contact ]
 
   def home
     @results = Expertise.search('test')
@@ -36,13 +36,13 @@ class PagesController < ApplicationController
   def droit_immobilier
   end
 
-  def droit_commercial
+  def affaires
   end
 
-  def gestion_patrimoniale
+  def promotion
   end
 
-  def questions
+  def guides
     url = 'https://www.notaires.fr/fr/actualites-rss'
     open(url) do |rss|
       @feed_actualites = RSS::Parser.parse(rss)
@@ -56,5 +56,11 @@ class PagesController < ApplicationController
   def contact
     @contact = Contact.new
     @contact_types = Contact::CONTACTTYPES
+  end
+
+  def negociation
+  end
+
+  def vente
   end
 end

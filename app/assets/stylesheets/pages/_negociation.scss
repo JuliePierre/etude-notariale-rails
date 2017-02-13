@@ -1,0 +1,50 @@
+.negociation-choice {
+  display: flex;
+  justify-content: space-around;
+  height: 75vh;
+  color: white;
+  p {
+    text-decoration: underline;
+  }
+  a {
+    color: white;
+  }
+}
+
+.negociation-achat-banner, .negociation-vente-banner {
+  flex: 0 0 50%;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.negociation-achat-banner-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+  &:hover {
+    background: rgba(249, 39, 39, 0.2);
+  }
+}
+
+.negociation-vente-banner-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+  &:hover {
+    background: rgba(249, 208, 15, 0.5);
+  }
+}
+
+.banner-contenu {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
