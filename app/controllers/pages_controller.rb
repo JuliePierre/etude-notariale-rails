@@ -42,7 +42,7 @@ class PagesController < ApplicationController
   def gestion_patrimoniale
   end
 
-  def actualites
+  def questions
     url = 'https://www.notaires.fr/fr/actualites-rss'
     open(url) do |rss|
       @feed_actualites = RSS::Parser.parse(rss)

@@ -12,8 +12,9 @@ Rails.application.routes.draw do
   get 'expertises/droit-immobilier', to: 'pages#droit_immobilier', as: 'immobilier'
   get 'expertises/droit-commercial', to: 'pages#droit_commercial', as: 'commercial'
   get 'expertises/gestion_patrimoniale', to: 'pages#gestion_patrimoniale', as: 'patrimoine'
-  get 'actualités', to: 'pages#actualites', as: 'actualites'
+  get 'vos-questions', to: 'pages#questions', as: 'questions'
   get 'contact', to: 'pages#contact', as: 'contact'
+  get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
 
   resources :annonces, only: [:index, :show, :create, :update, :destroy]
   get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'

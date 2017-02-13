@@ -2,6 +2,7 @@
   var id = $(this).data('target');
   $('#' + id).removeClass('hidden');
 });
-$('#dropdown-navbar').mouseleave(function(){
-  $(this).addClass('hidden');
+
+$('#dropdown-full').mouseleave(function() {
+  $('#dropdown-navbar').addClass('hidden');
 });

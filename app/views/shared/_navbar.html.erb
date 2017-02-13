@@ -6,18 +6,20 @@
     <ul class="navbar-menu unmargined">
       <li class="navbar-menu-item"><%= link_to "L' office", office_path %></li>
       <!-- lien vers dropdown - EXPERTISES -->
-      <li class="navbar-menu-item dropdown">
-        <a href ="/expertises" class="navbar-menu-sub-item dropdown-link" data-target="dropdown-navbar">Expertises <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
-
+      <div id="dropdown-full">
+        <li class="navbar-menu-item dropdown">
+          <a href ="/expertises" class="navbar-menu-sub-item dropdown-link" data-target="dropdown-navbar" data-active="false">Expertises <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+        </li>
         <!-- dropdown - EXPERTISES -->
-        <ul class="dropdown-menu hidden" id="dropdown-navbar">
+        <ul class="dropdown-menu hidden" id="dropdown-navbar" data-active="false">
           <li><%= link_to "droit de la famille", famille_path %></li>
           <li><%= link_to "droit immobilier", immobilier_path %></li>
           <li><%= link_to "droit commercial", commercial_path %></li>
           <li><%= link_to "gestion patrimoniale", patrimoine_path %></li>
         </ul>
-      </li>
-      <li class="navbar-menu-item"><%= link_to "Actualités", actualites_path %></li>
+
+      </div>
+      <li class="navbar-menu-item"><%= link_to "Vos questions", questions_path %></li>
       <li class="navbar-menu-item"><%= link_to "Contact", contact_path %></li>
       <li class="navbar-menu-item"><%= link_to "Biens à vendre", annonces_path %></li>
       <li class="navbar-menu-item"><%= link_to "Admin annonces immobilières", tests_path %></li>
