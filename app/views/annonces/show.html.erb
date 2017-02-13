@@ -7,6 +7,13 @@
   <div class="annonces-show-container">
     <div class="annonces-show-photo">
       <%= cl_image_tag @annonce.photo, crop: :fill %>
+      <div class="reseaux-sociaux">
+        <div id="shareBtn" class="btn btn-success clearfix">Partager sur Facebook</div>
+        <a class="twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=Hello%20world%20http://localhost:3000/annonces<%= @annonce.id %>">
+        Partager sur Twitter</a>
+        <a href="https://www.facebook.com/dialog/share?app_id=373241089705048&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">Partager l'url</a>
+      </div>
     </div>
     <div class="annonces-show-infos">
       <h2><%= @annonce.genre %></h2>
@@ -59,18 +66,21 @@
         </div>
     </div>
   </div>
-  <div class="reseaux-sociaux">
-    <h2>test</h2>
-    <div id="shareBtn" class="btn btn-success clearfix">Share</div>
-  </div>
 </div>
 
 <script>
 document.getElementById('shareBtn').onclick = function() {
+  var pictureUrl = '<%= @annonce.photo %>';
+  console.log(pictureUrl);
   FB.ui({
     method: 'share',
     display: 'popup',
-    href: 'https://developers.facebook.com/docs/',
+    // href: 'https://developers.facebook.com/docs/',
+    // href: 'http://localhost:3000/annonces/<%= @annonce.id %>',
+    // href: 'http://localhost:3000/annonces/6',
+    title: 'Testing',  // The same than name in feed method
+    picture: pictureUrl,
+    description: 'Test description',
   }, function(response){});
 }
 </script>
