@@ -71,6 +71,10 @@ body {
   display: none;
 }
 
+.not-visible {
+  visibility: hidden;
+}
+
 .underlined {
   border-bottom: solid 3px $primary-color;
   display: inline-block;

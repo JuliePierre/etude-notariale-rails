@@ -5,11 +5,23 @@
   background: #fff;
   width: 100%;
   z-index: 20;
-  color: $brand-dark-grey;
   a {
     color: $brand-dark-grey;
+    letter-spacing: .1em;
   }
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-link:hover {
+  font-weight: 700;
+  letter-spacing: .2em;
+  transition: all 350ms ease-in-out;
+}
+
+.navbar-link.active {
+  font-weight: 700;
+  letter-spacing: .2em;
+  transition: all 350ms ease-in-out;
 }
 
 // left side
@@ -42,4 +54,8 @@
 // search item
 #navbar-search-icon {
   cursor: pointer;
+  &:hover {
+    color: black;
+    opacity: 0.2;
+  }
 }

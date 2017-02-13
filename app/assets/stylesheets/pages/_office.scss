@@ -1,9 +1,64 @@
 #telecharger-plaquette {
   position: fixed;
-  top: 8em;
+  top: 600px;
   right: 0px;
+  z-index: 2000;
   &:hover::after {
-    content: "Télécharger la plaquette";
+    content: "  Télécharger la plaquette";
     transition: all 0.5s ease;
   }
+  i {
+    font-size: 1.5em;
+  }
+}
+
+
+#office-banner {
+  height: 75vh;
+  width: auto;
+  background: url(photo-test3.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.office-container-header {
+  position: absolute;
+  bottom: 2rem;
+  left: 12rem;
+  h2 {
+    line-height: 1em;
+    margin: 0px;
+    color: white;
+  };
+   h4 {
+    line-height: 1em;
+    margin: 0px 0px 0.6em 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+
+.office-content {
+  margin: 0 12rem;
+}
+
+.team-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.team-content {
+  padding-top: 2em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 12rem;
+}
+
+.section-grey-header {
+  font-weight: 200;
+  margin: 0px;
 }

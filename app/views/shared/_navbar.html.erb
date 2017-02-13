@@ -1,17 +1,17 @@
 <div class="navbar">
   <div class="row no-bottom-margin">
     <div class="navbar-brand unmargined">
-      <%= link_to "Accueil", root_path %>
+      <%= link_to "ACCUEIL", root_path %>
     </div>
     <ul class="navbar-menu unmargined">
-      <li class="navbar-menu-item"><%= link_to "L' office", office_path %></li>
+      <li class="navbar-menu-item"><%= link_to "L'OFFICE", office_path, class: 'navbar-link' %></li>
       <!-- lien vers dropdown - EXPERTISES -->
       <div id="dropdown-full">
         <li class="navbar-menu-item dropdown">
-          <a href ="/expertises" class="navbar-menu-sub-item dropdown-link" data-target="dropdown-navbar" data-active="false">Expertises <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+          <a href ="/expertises" class="navbar-menu-sub-item dropdown-link navbar-link" data-target="dropdown-navbar" data-active="false">EXPERTISES</a>
         </li>
         <!-- dropdown - EXPERTISES -->
-        <ul class="dropdown-menu hidden" id="dropdown-navbar" data-active="false">
+        <ul class="dropdown-menu not-visible" id="dropdown-navbar" data-active="false">
           <li><%= link_to "Droit de la famille", famille_path %></li>
           <li><%= link_to "Immobilier", immobilier_path %></li>
           <li><%= link_to "Droit des affaires", affaires_path %></li>
@@ -19,9 +19,9 @@
         </ul>
 
       </div>
-      <li class="navbar-menu-item"><%= link_to "Immobilier", negociation_path %></li>
-      <li class="navbar-menu-item"><%= link_to "Guides pratiques", guides_path %></li>
-      <li class="navbar-menu-item"><%= link_to "Contact", contact_path %></li>
+      <li class="navbar-menu-item"><%= link_to "IMMOBILIER", negociation_path, class: 'navbar-link' %></li>
+      <li class="navbar-menu-item"><%= link_to "GUIDES PRATIQUES", guides_path, class: 'navbar-link' %></li>
+      <li class="navbar-menu-item"><%= link_to "CONTACT", contact_path, class: 'navbar-link' %></li>
       <li class="navbar-menu-item">
         <p class="navbar-menu-item", id="navbar-search-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
       </li>
