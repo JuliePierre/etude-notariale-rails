@@ -1,4 +1,7 @@
-;$('.dropdown-link').click(function(){
+;$('.dropdown-link').mouseover(function(){
   var id = $(this).data('target');
-  $('#' + id).toggleClass('hidden');
+  $('#' + id).removeClass('hidden');
+});
+$('#dropdown-navbar').mouseleave(function(){
+  $(this).addClass('hidden');
 });

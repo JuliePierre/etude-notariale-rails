@@ -1,0 +1,9 @@
+#telecharger-plaquette {
+  position: fixed;
+  top: 8em;
+  right: 0px;
+  transition: all 0.5s ease;
+  &:hover::before {
+    content: "Télécharger la plaquette";
+  }
+}
