@@ -1,18 +1,4 @@
-#telecharger-plaquette {
-  position: fixed;
-  top: 600px;
-  right: 0px;
-  z-index: 2000;
-  &:hover::after {
-    content: "  Télécharger la plaquette";
-    transition: all 0.5s ease;
-  }
-  i {
-    font-size: 1.5em;
-  }
-}
-
-
+// Bannière de présentation : photo + titre de page
 #office-banner {
   height: 75vh;
   width: auto;
@@ -22,7 +8,7 @@
   position: relative;
 }
 
-.office-container-header {
+.office-banner-header {
   position: absolute;
   bottom: 2rem;
   left: 12rem;
@@ -40,6 +26,22 @@
   }
 }
 
+// Bouton télécharger la plaquette, figé sur le côté de la page
+#telecharger-plaquette {
+  position: fixed;
+  top: 600px;
+  right: 0px;
+  z-index: 2000;
+  &:hover::after {
+    content: "  Télécharger la plaquette";
+    transition: all 0.5s ease;
+  }
+  i {
+    font-size: 1.5em;
+  }
+}
+
+// Reste de la page
 .office-content {
   margin: 0 12rem;
 }
