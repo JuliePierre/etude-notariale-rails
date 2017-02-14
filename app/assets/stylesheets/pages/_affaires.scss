@@ -1,26 +1,26 @@
 // Bannière de présentation : photo + titre de page
-#immobilier-banner {
+#affaires-banner {
   height: 75vh;
   width: auto;
-  background: url(immobilier.jpg);
+  background: url(affaires.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.immobilier-banner-header {
+.affaires-banner-header {
   position: absolute;
   bottom: 8rem;
-  right: 10rem;
+  left: 12rem;
   h2 {
     line-height: 1em;
     margin: 0px;
-    color: $secondary-color;
+    color: $primary-color;
   };
    h4 {
     line-height: 1em;
     margin: 0px 0px 0.6em 0px;
-    color: $secondary-color;
+    color: $primary-color;
     text-transform: uppercase;
     font-weight: 200;
   }

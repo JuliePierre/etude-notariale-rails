@@ -33,7 +33,7 @@ class PagesController < ApplicationController
   def testament
   end
 
-  def droit_immobilier
+  def immobilier
   end
 
   def affaires

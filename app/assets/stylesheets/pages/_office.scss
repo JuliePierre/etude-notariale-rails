@@ -26,6 +26,16 @@
   }
 }
 
+// Containers --> Même containers (padding et marge) que les pages expertises. Pour cohérence, si l'un change, modifier l'autre
+.office-content {
+  margin: 0 12rem;
+}
+
+.office-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 // Bouton télécharger la plaquette, figé sur le côté de la page
 #telecharger-plaquette {
   position: fixed;
@@ -58,9 +68,4 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 12rem;
-}
-
-.section-grey-header {
-  font-weight: 200;
-  margin: 0px;
 }

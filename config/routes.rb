@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'expertises/droit-de-la-famille/pacs', to: 'pages#pacs', as: 'pacs'
   get 'expertises/droit-de-la-famille/donation', to: 'pages#donation', as: 'donation'
   get 'expertises/droit-de-la-famille/testament', to: 'pages#testament', as: 'testament'
-  get 'expertises/droit-immobilier', to: 'pages#droit_immobilier', as: 'immobilier'
+  get 'expertises/droit-immobilier', to: 'pages#immobilier', as: 'immobilier'
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
   get 'expertises/promotion_immobiliere', to: 'pages#promotion', as: 'promotion'
   get 'guides-pratiques', to: 'pages#guides', as: 'guides'
