@@ -8,10 +8,10 @@
       <!-- lien vers dropdown - EXPERTISES -->
       <div id="dropdown-full">
         <li class="navbar-menu-item dropdown">
-          <a href ="/expertises" class="navbar-menu-sub-item dropdown-link navbar-link" data-target="dropdown-navbar" data-active="false">EXPERTISES</a>
+          <a href ="/expertises" class="navbar-menu-sub-item dropdown-link navbar-dropdown-link" data-target="dropdown-navbar">EXPERTISES</a>
         </li>
         <!-- dropdown - EXPERTISES -->
-        <ul class="dropdown-menu not-visible" id="dropdown-navbar" data-active="false">
+        <ul class="dropdown-menu not-visible" id="dropdown-navbar">
           <li><%= link_to "Droit de la famille", famille_path %></li>
           <li><%= link_to "Immobilier", immobilier_path %></li>
           <li><%= link_to "Droit des affaires", affaires_path %></li>
@@ -25,7 +25,7 @@
       <li class="navbar-menu-item">
         <p class="navbar-menu-item", id="navbar-search-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
       </li>
-    </ul>
+    </div>
   </div>
 </div>
 

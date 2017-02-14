@@ -1,6 +1,4 @@
 // Contenant pour la dropdown
-.dropdown {
-}
 
 // Element sur lequel on clique pour faire appraître la dropdown
 .dropdown-link {
@@ -10,7 +8,7 @@
 // Contenu de la dropdown --> Attention, il existe un dropdown-content dans materialize, ne pas le réutiliser
 .dropdown-menu {
   position: absolute;
-  top: 18px;
+  top: 20px;
   left: -18px;
   z-index: 1000;
   float: left;
