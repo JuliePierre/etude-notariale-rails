@@ -1,3 +1,16 @@
-.page-immobilier-container {
-  margin: 0 12em;
+#vente-banner {
+  padding: 3rem 5rem 3rem 5rem;
+  text-align: center;
+}
+
+.page-immobilier-section {
+  margin: 0 15rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+// formulaire de contact
+.vente-contact-form {
+  display: flex;
+  justify-content: space-around;
 }

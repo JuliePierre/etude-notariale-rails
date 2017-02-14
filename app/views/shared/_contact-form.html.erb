@@ -1,19 +1,15 @@
-<div class="container">
-  <div align="center">
-    <h3>Contactez-nous</h3>
-
-    <%= simple_form_for contact, :html => {:class => 'form-horizontal' } do |f| %>
-      <%= f.input :test, collection: Contact::CONTACTTYPES %>
-      <%= f.input :name, :required => true %>
-      <%= f.input :email, :required => true %>
-      <%= f.input :message, :as => :text, :required => true %>
-      <div class= "hidden">
-        <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
-      </div>
-      <div>
-        </br>
-        <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-      </div>
-    <% end %>
-  </div>
+<div class="container contact-form">
+  <%= simple_form_for contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :motif, collection: Contact::CONTACTTYPES %>
+    <%= f.input :nom, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Envoyer', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
 </div>

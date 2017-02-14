@@ -1,9 +1,21 @@
 <div class="orange-bg">
-<br>
-  <h1 class="center-align">Vente immobilière</h1>
-  <h2>Vous vendez <span class="rotate">une maison, un appartement, un chateau, un parking</span> ?</h2>
+  <div id="vente-banner">
+    <h1>Vente immobilière</h1>
+    <h5>Vous vendez <span class="rotate">une maison, un appartement, un chateau, un parking</span> ?</h5>
+  </div>
 </div>
-<div class="page-immobilier-container">
-  <h2>Notre expertise</h2>
-  <p>Notre office vous accompagne dans la recherche d'acquéreurs grâce à un négociateur, etc etc.</p>
+<div class="grey-bg">
+  <div class="page-immobilier-section">
+    <h2>Notre expertise</h2>
+    <p>Notre office vous accompagne dans la recherche d'acquéreurs grâce à un négociateur, etc etc.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia pariatur sint, ex deserunt reprehenderit repellendus illum doloremque tenetur, omnis tempora nam nobis. Quos beatae repellendus earum est dignissimos ipsum?</p>
+  </div>
+</div>
+<div>
+  <div class="vente-contact-form">
+    <div style="width: 55%;">
+      <h2>Contactez-nous</h2>
+      <%= render 'shared/contact-form', contact: @contact %>
+    </div>
+  </div>
 </div>

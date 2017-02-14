@@ -62,5 +62,6 @@ class PagesController < ApplicationController
   end
 
   def vente
+    @contact = Contact.new
   end
 end
