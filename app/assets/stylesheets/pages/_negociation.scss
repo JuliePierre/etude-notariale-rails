@@ -1,8 +1,9 @@
 .negociation-choice {
   display: flex;
   justify-content: space-around;
-  height: 75vh;
+  height: calc(100vh - 90px);
   color: white;
+  margin-top: 5em;
   p {
     text-decoration: underline;
   }

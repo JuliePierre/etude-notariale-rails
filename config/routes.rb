@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'expertises/droit-de-la-famille/testament', to: 'pages#testament', as: 'testament'
   get 'expertises/droit-immobilier', to: 'pages#immobilier', as: 'immobilier'
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
-  get 'expertises/promotion_immobiliere', to: 'pages#promotion', as: 'promotion'
+  get 'expertises/promotion-immobiliere', to: 'pages#promotion', as: 'promotion'
   get 'guides-pratiques', to: 'pages#guides', as: 'guides'
   get 'contact', to: 'pages#contact', as: 'contact'
   get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
