@@ -42,9 +42,12 @@
   top: 600px;
   right: 0px;
   z-index: 2000;
+  &::after {
+    transition: all 0.5s ease;
+  }
   &:hover::after {
     content: "  Télécharger la plaquette";
-    transition: all 0.5s ease;
+
   }
   i {
     font-size: 1.5em;

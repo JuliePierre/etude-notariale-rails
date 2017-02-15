@@ -33,10 +33,18 @@
 
 // Sections sur fond blanc, avec marges
 .homepage-section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-right: 15rem;
   padding-left: 15rem;
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
 
 // Sections sur fond colorés, full width
@@ -66,6 +74,23 @@
 }
 
 // Section Contact
+.homepage-section-contact {
+  position: relative;
+}
 #map-homepage {
-  height: 300px;
+  height: 550px;
+  width: 100%;
+}
+.section-contact-infos {
+  background-color: white;
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  padding: 2rem 4rem;
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    margin: 0;
+  }
 }

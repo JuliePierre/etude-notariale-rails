@@ -30,7 +30,7 @@
     $(document).on('ready', function() {
       console.log('toto');
       var handler = Gmaps.build('Google');
-      handler.buildMap({ internal: { id: 'map' } }, function(){
+      handler.buildMap({ provider: { scrollwheel: false }, internal: { id: 'map' } }, function(){
          markers = handler.addMarkers([
             {
               "lat": 48.114403,

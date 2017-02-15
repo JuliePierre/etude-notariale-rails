@@ -7,3 +7,16 @@
     background-color: $primary-color;
   }
 }
+
+.btn-light {
+  color: $primary-color;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: white;
+  text-align: center;
+  letter-spacing: .5px;
+  cursor: pointer;
+  &:hover {
+    color: $primary-color-light;
+  }
+}
