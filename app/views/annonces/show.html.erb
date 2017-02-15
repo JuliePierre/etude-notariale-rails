@@ -8,11 +8,12 @@
     <div class="annonces-show-photo">
       <%= cl_image_tag @annonce.photo, crop: :fill %>
       <div class="reseaux-sociaux">
-        <div id="shareBtn" class="btn btn-success clearfix">Partager sur Facebook</div>
-        <a class="twitter-share-button"
-          href="https://twitter.com/intent/tweet?text=Hello%20world%20http://localhost:3000/annonces<%= @annonce.id %>">
+        <div id="shareBtn" class="btn btn-primary">Partager sur Facebook</div>
+        <a class="twitter-share-button btn btn-primary"
+          href="<%= @twitter_text %>" target="_blank">
         Partager sur Twitter</a>
-        <a href="https://www.facebook.com/dialog/share?app_id=373241089705048&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer">Partager l'url</a>
+        <input id="post-shortlink" value="<%= @url %>">
+        <button class="btn btn-primary" id="copy-button" data-clipboard-target="#post-shortlink" onclick="Materialize.toast('URL copiée', 2000)">Copier l'url</button>
       </div>
     </div>
     <div class="annonces-show-infos">

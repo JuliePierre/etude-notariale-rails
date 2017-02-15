@@ -11,7 +11,8 @@ class AnnoncesController < ApplicationController
   end
 
   def show
-
+    @url = request.original_url
+    @twitter_text = "https://twitter.com/intent/tweet?text=Je%20partage%20une%20annonce%20world%20#{@url}"
   end
 
   # pour partie admin

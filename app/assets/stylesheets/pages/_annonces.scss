@@ -41,3 +41,13 @@
     color: $primary-color;
   }
 }
+
+// Boutons partage réseaux sociaux
+#toast-container {
+  right: auto !important;
+  left: 11% !important;
+  top: 25% !important;
+  .toast {
+    background-color: $secondary-color;
+  }
+}
