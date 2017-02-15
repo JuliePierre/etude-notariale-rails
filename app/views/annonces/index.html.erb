@@ -9,6 +9,9 @@
       <% @annonces.each do |annonce| %>
         <div class="annonce-contenant">
           <div class="carte-annonce carte-annonce-admin">
+            <div class="carte-annonce-hover">
+              <%= link_to "Afficher", annonce_path(annonce), class: "carte-annonce-bouton" %>
+            </div>
             <div class="carte-annonce-photo" style="background-image: url('<%= cl_image_path annonce.photo, crop: :fill %>');">
             </div>
             <div class="carte-annonce-infos-index">
@@ -17,7 +20,6 @@
               <p class="carte-annonce-label">Prix de vente</p>
               <h5 class="carte-annonce-prix-index"><%= annonce.prix_total.to_i %>€</h5>
             </div>
-            <%= link_to "", annonce_path(annonce), class: "carte-annonce-link" %>
           </div>
         </div>
       <% end %>

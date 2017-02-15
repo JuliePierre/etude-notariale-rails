@@ -66,26 +66,42 @@
 // CARTES ANNONCES IMMOBILIERES DE LA PAGE ADMIN
 .carte-annonce-admin {
   position: relative;
-  &:hover {
-    box-shadow: 2px 2px 8px 4px rgba(240, 174, 44, 0.6);
-  }
 }
 
-.carte-annonce-link {
+.carte-annonce-hover {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  z-index:2;
-  background: black;
+  z-index: 2;
+  background: rgba(255,255,255,0.5);
   opacity: 0;
-}
-.card-annonce-link:hover{
-  opacity: 0.1;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+  }
 }
 
+.carte-annonce-bouton {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 300;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  position: relative;
+  top: 45%;
+  background: $primary-color;
+  color: white;
+  transition: 0.5s ease;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.carte-annonce-hover .carte-annonce-bouton:hover {
+  background-color: $primary-color-light;
+}
 
 // CARTES SPECIALES POUR LES ACTUALITES
 .carte-actus {

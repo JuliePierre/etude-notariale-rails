@@ -29,6 +29,17 @@
 // Containers --> Même containers (padding et marge) que les pages expertises. Pour cohérence, si l'un change, modifier l'autre
 .office-content {
   margin: 0 12rem;
+  padding: 4rem 0rem;
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 
 .office-container {
@@ -55,9 +66,6 @@
 }
 
 // Reste de la page
-.office-content {
-  margin: 0 12rem;
-}
 
 .team-container {
   padding-top: 2em;
