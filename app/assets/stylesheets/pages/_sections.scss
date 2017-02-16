@@ -1,0 +1,32 @@
+.section-heading-content {
+  padding-left: 100px;
+  position: relative;
+  h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}
+
+.section-line-title {
+  left: 0;
+  position: absolute;
+  top: 31px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  line-height: normal;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.section-description {
+  text-align: justify;
+  p {
+    font-size: 0.9rem;
+    color: $brand-grey-text;
+  }
+}

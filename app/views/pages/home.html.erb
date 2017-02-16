@@ -2,118 +2,169 @@
 <% content_for :meta_description, "Office Notarial Perraut - Pirioux - Mevel" %>
 <% content_for :meta_image, "https://unsplash.com/?photo=P3pI6xzovu0" %>
 
-<div class="container">
-  <div class="homepage-header">
-    <div class="homepage-header-background"></div>
-    <div class="homepage-header-content">
-    Site en construction
-    <h1>Notaires à Rennes</h1>
+<div class="homepage-header">
+  <div class="homepage-header-background"></div>
+  <div class="homepage-header-content">
+  Site en construction
+  <h1>Notaires à Rennes</h1>
+  </div>
+</div>
+<div class="homepage-section">
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Présentation</span>
+        <h2>Office Notarial Perraut - Pirioux - Mevel</h2>
+        <div class="section-description">
+          <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        </div>
+        <%= link_to(office_path) do %>
+          <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+        <% end %>
+      </div>
     </div>
   </div>
+</div>
+<div class="homepage-section">
+  <div class="homepage-values-container">
+    <div class="value-card">
+      <div class="value-title">
+        <span class="value-first-title">Notre<br>histoire</span>
+        <span class="value-number">01.</span>
+      </div>
+      <div class="value-description">
+        <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+    </div>
+    <div class="value-card">
+      <div class="value-title">
+        <span class="value-first-title">Nos<br>valeurs</span>
+        <span class="value-number">02.</span>
+      </div>
+      <div class="value-description">
+        <p>Mettre en avant le sérieux, la confiance, etc</p>
+      </div>
+    </div>
+    <div class="value-card">
+      <div class="value-title">
+        <span class="value-first-title">Notre<br>mission</span>
+        <span class="value-number">03.</span>
+      </div>
+      <div class="value-description">
+        <p>Notre mission est de vous conseiller et vous accompagner dans etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam dolores tempora debitis magni vel officia quasi unde excepturi voluptatum consequuntur, quis, hic illo ea, minus voluptas dolore at corrupti.</p>
+      </div>
+    </div>
+  </div>
+  <div class="value-button">
+    <%= link_to "Découvrir l'office", office_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+<div class="grey-bg">
   <div class="homepage-section">
-    <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est  animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
-    <%= link_to(office_path) do %>
-      <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-    <% end %>
-
-  </div>
-</div>
-
-<!-- SECTION EXPERTISES -->
-<div class="homepage-section orange-bg">
-  <h2>Domaines d'expertise</h2>
-  <h3>Droit de la famille</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <%= link_to 'En savoir plus', famille_path, class: "btn btn-primary" %>
-  <h3>Droit immobilier</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <%= link_to 'En savoir plus', immobilier_path, class: "btn btn-primary" %>
-  <h3>Droit commercial</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <%= link_to 'En savoir plus', affaires_path, class: "btn btn-primary" %>
-  <h3>Gestion patrimoniale</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <%= link_to 'En savoir plus', promotion_path, class: "btn btn-primary" %>
-</div>
-
-<!-- SECTION BIENS A VENDRE -->
-<div class="homepage-section grey-bg">
-  <h2>Biens à vendre</h2>
-  <h2>
-    <span class="annonce-fleche" id="annonce-precedente"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-    <span class="annonce-fleche" id="annonce-suivante"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-  </h2>
-  <div class="homepage-box-annonces">
-    <div class="carte-annonce active first-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">170 000€</p>
+    <div class="expertise-heading">
+      <div class="section-heading-content expertise-section-heading">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Nous sommes là pour vous</span>
+        <h2>Nos domaines d'expertise</h2>
+        <div class="section-description">
+          <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        </div>
       </div>
-      <div class="carte-annonce-infos">
-        <h5>Maison</h5>
-        <p>7 pièces</p>
+      <div class="section-heading-button expertise-section-button">
+        <%= link_to "Toutes nos expertises", office_path, class: 'btn btn-primary' %>
       </div>
     </div>
-    <div class="carte-annonce active second-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">18 320€</p>
+    <div class="homepage-expertises-box">
+      <div class="homepage-expertise">
+        <img src="assets/expertise1.jpg" alt="expertise-droit-de-la-famille">
+        <h3>Droit de la famille</h3>
+        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+        <div class="expertise-link">
+          <%= link_to(famille_path) do %>
+            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+          <% end %>
+        </div>
       </div>
-      <div class="carte-annonce-infos">
-        <h5>Parking</h5>
-        <p>1 pièce</p>
+      <div class="homepage-expertise">
+        <img src="assets/expertise2.jpg" alt="expertise-droit-des-affaires">
+        <h3>Droit des affaires</h3>
+        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+        <div class="expertise-link">
+          <%= link_to(affaires_path) do %>
+            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+          <% end %>
+        </div>
       </div>
-    </div>
-    <div class="carte-annonce active third-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">65 400€</p>
+      <div class="homepage-expertise">
+        <img src="assets/expertise3.jpg" alt="expertise-droit-immobilier">
+        <h3>Droit immobilier</h3>
+        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+        <div class="expertise-link">
+          <%= link_to(immobilier_path) do %>
+            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+          <% end %>
+        </div>
       </div>
-      <div class="carte-annonce-infos">
-        <h5>Appartement</h5>
-        <p>7 pièces</p>
-      </div>
-    </div>
-    <div class="carte-annonce not-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">4 000€</p>
-      </div>
-      <div class="carte-annonce-infos">
-        <h5>Parking</h5>
-        <p>7 pièces</p>
-      </div>
-    </div>
-    <div class="carte-annonce not-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">150 000€</p>
-      </div>
-      <div class="carte-annonce-infos">
-        <h5>Maison</h5>
-        <p>7 pièces</p>
-      </div>
-    </div>
-    <div class="carte-annonce not-active">
-      <div class="carte-annonce-photo" style="background-image: url('assets/photo-test2.png');">
-        <p class="carte-annonce-prix">89 000€</p>
-      </div>
-      <div class="carte-annonce-infos">
-        <h5>Maison</h5>
-        <p>7 pièces</p>
+      <div class="homepage-expertise">
+        <img src="assets/expertise4.jpg" alt="expertise-promotion-immobiliere">
+        <h3>Promotion immobilière</h3>
+        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+        <div class="expertise-link">
+          <%= link_to(promotion_path) do %>
+            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<!-- SECTION ACTUS -->
-<div class="homepage-section orange-bg">
-  <h2>Actualités</h2>
-  <div class="carte-actus">
-    <%= image_tag 'image-test1.jpg', class: "carte-actus-photo" %>
-    <div class="carte-actus-infos">
-      <h3 class="carte-actus-titre">Lettre n° 132 - Décembre 2016</h3>
-      <h5 class="carte-actus-titre">Le notaire, acteur du divorce</h5>
-      <p>Depuis le 1er janvier 2017, le divorce par consentement mutuel se fera, sauf exception, sans passage devant le juge mais en déposant la convention précisant l'accord des époux chez un notaire...</p>
-      <a href="https://www.notaires.fr/fr/relation-presse-notaires/r%C3%A9forme-du-divorce-par-consentement-mutuel-au-1er-janvier", target="_blank", class="btn btn-primary">Consulter la lettre</a>
+<div class="homepage-section">
+  <div class="immobilier-heading">
+    <div class="section-heading-content immobilier-section-heading">
+      <span class="line-title section-line-title"></span>
+      <span class="section-subtitle">Négociation immobilière</span>
+      <h2>Nos annonces immobilières</h2>
+      <div class="section-description">
+        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+    </div>
+    <div class="section-heading-button immobilier-section-button">
+      <%= link_to "Tous nos biens", annonces_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+  <div class="homepage-annonces-box">
+    <div class="homepage-annonce">
+      <img src="assets/expertise1.jpg" alt="expertise-droit-de-la-famille">
+      <h3>Maison - 7 pièces</h3>
+      <p>Rennes 35000</p>
+    </div>
+    <div class="homepage-annonce">
+      <img src="assets/expertise2.jpg" alt="expertise-droit-des-affaires">
+      <h3>Appartement - 2 pièces</h3>
+      <p>Rennes 35000</p>
+      <div class="annonce-link">
+      </div>
+    </div>
+    <div class="homepage-annonce">
+      <img src="assets/expertise3.jpg" alt="expertise-droit-immobilier">
+      <h3>Parking - 1 pièce</h3>
+      <p>Rennes 35000</p>
+      <div class="annonce-link">
+      </div>
     </div>
   </div>
 </div>
+
+<!-- SECTION FORMULAIRE DE CONTACT -->
+<div id="homepage-contact-form-banner">
+  <div class="homepage-contact-form">
+
+  </div>
+</div>
+
 
 <!-- SECTION CONTACT -->
 <div>
