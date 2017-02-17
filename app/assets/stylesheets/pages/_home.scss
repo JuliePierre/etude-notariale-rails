@@ -8,12 +8,11 @@
 //   background-color: $secondary-color;
 // }
 
-// Banner
+// BANNER
 .homepage-header {
   position: relative;
   height: 100vh;
 }
-
 .homepage-header-background {
   background: url('../assets/image-test1.jpg') no-repeat fixed;
   position: absolute;
@@ -21,7 +20,6 @@
   height: 100%;
   background-size: cover;
 }
-
 .homepage-header-content {
   position: relative;
   top: 50%;
@@ -30,31 +28,32 @@
   text-align: center;
   z-index: 10;
 }
+// BANNER
 
-// Sections sur fond blanc, avec marges
+
+// SECTIONS
 .homepage-section {
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 10rem;
   padding-left: 10rem;
 }
+// SECTIONS
 
-// Section valeurs
+
+// SECTION VALEURS
 .homepage-values-container {
   display: flex;
   justify-content: space-between;
   padding: 0 0.75rem;
 }
-
 .value-card {
   flex: 0 0 30%;
 }
-
 .value-first-title {
   font-size: 20px;
   font-weight: 400;
 }
-
 .value-number {
   float: right;
   font-size: 60px;
@@ -64,7 +63,6 @@
   position: relative;
   bottom: 20px;
 }
-
 .value-description {
   text-align: justify;
   p {
@@ -72,26 +70,25 @@
     color: $brand-grey-text;
   }
 }
-
 .value-button {
   text-align: center;
   margin-top: 2rem;
 }
+// SECTION VALEURS
 
-// Section expertises
+
+// SECTION EXPERTISES
 .expertise-heading {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-
 .expertise-section-heading {
   flex: 0 0 50%;
   p {
     margin-bottom: 0;
   }
 }
-
 .expertise-section-button {
   flex: 0 0 25%;
 }
@@ -105,8 +102,6 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
-// CARTES SPECIALES GUIDES
 .homepage-expertise {
   position: relative;
   flex: 0 0 25%;
@@ -127,33 +122,29 @@
     text-align: initial;
   }
 }
-
 .expertise-line {
   left: 0;
   top: 240px;
 }
+// SECTION EXPERTISES
 
 
-// Section annonces
-// Version 1
+// SECTION ANNONCES
 .immobilier-heading {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-
 .immobilier-section-heading {
   flex: 0 0 50%;
   p {
     margin-bottom: 0;
   }
 }
-
 .immobilier-section-button {
   flex: 0 0 30%;
 }
-
-// CARTES EXPERTISES
+// CARTES ANNONCES
 .homepage-annonces-box {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -162,8 +153,6 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
-// CARTES SPECIALES GUIDES
 .homepage-annonce {
   position: relative;
   flex: 0 0 33%;
@@ -187,42 +176,59 @@
     text-align: initial;
   }
 }
-
 .annonce-link {
   left: 0;
   top: 240px;
 }
+// SECTION ANNONCES
 
-// Section formulaire de contact
-// Bannière de présentation : photo + titre de page
-#homepage-contact-form-banner {
-  height: 75vh;
-  width: auto;
-  background: url(photo-test3.png);
-  background-repeat:no-repeat;
-  background-size: cover;
-  position: relative;
+
+// SECTION FORMULAIRE DE CONTACT
+.homepage-contact-section {
+  display: flex;
 }
 
 .homepage-contact-form {
-  position: absolute;
-  bottom: 2rem;
-  left: 12rem;
-  h2 {
-    line-height: 1em;
-    margin: 0px;
-    color: white;
-  };
-   h4 {
-    line-height: 1em;
-    margin: 0px 0px 0.6em 0px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
+  flex: 0 0 50%;
+  background-color: $brand-grey;
+  padding: 5rem 5rem 5rem 10rem;
 }
 
-// Section Contact
+.homepage-contact-picture {
+  flex: 0 0 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+#homepage-contact-form {
+  label {
+    display: none;
+  }
+  input, textarea {
+    border-bottom: 1px solid $brand-grey-text;
+    &:focus {
+      box-shadow: initial;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+  select {
+    background-color: initial;
+  }
+  .row .col:first-child {
+    padding-left: 0;
+  }
+  .input-field {
+    width: 100%;
+  }
+}
+.btn-contact-form {
+  width: 100%;
+}
+// SECTION FORMULAIRE DE CONTACT
+
+
+// SECTION CONTACT
 .homepage-section-contact {
   position: relative;
 }
@@ -243,3 +249,4 @@
     margin: 0;
   }
 }
+// SECTION CONTACT

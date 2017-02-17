@@ -30,6 +30,7 @@ $brand-grey-text: #9e9e9e;
 
 /* FORMS */
 /* les formulaires sur le site : recherche, contact (plusieurs formulaires de contact) */
-$input-border-color: $brand-grey;
+$input-border-color: $brand-grey-text;
 $input-height: 2.5rem !default;
-$select-border: 1px solid $primary-color !default; // pour le formulaire de contact
+$select-border: 1px solid $input-border-color !default; // pour le formulaire de contact
+$placeholder-text-color: lighten($input-border-color, 10%) !default;

@@ -2,6 +2,7 @@
 <% content_for :meta_description, "Office Notarial Perraut - Pirioux - Mevel" %>
 <% content_for :meta_image, "https://unsplash.com/?photo=P3pI6xzovu0" %>
 
+<!-- Bannière -->
 <div class="homepage-header">
   <div class="homepage-header-background"></div>
   <div class="homepage-header-content">
@@ -9,6 +10,9 @@
   <h1>Notaires à Rennes</h1>
   </div>
 </div>
+<!-- Bannière -->
+
+<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 <div class="homepage-section">
   <div class="row">
     <div class="col s6">
@@ -26,6 +30,9 @@
     </div>
   </div>
 </div>
+<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
+
+<!-- 1ère section - Les valeurs : paragraphe de description -->
 <div class="homepage-section">
   <div class="homepage-values-container">
     <div class="value-card">
@@ -60,8 +67,12 @@
     <%= link_to "Découvrir l'office", office_path, class: 'btn btn-primary' %>
   </div>
 </div>
+<!-- 1ère section - Les valeurs : paragraphe de description -->
+
+<!-- 2ème section - Les expertises : background de couleur -->
 <div class="grey-bg">
   <div class="homepage-section">
+    <!-- 2ème section - Les expertises : paragraphe d'introduction -->
     <div class="expertise-heading">
       <div class="section-heading-content expertise-section-heading">
         <span class="line-title section-line-title"></span>
@@ -75,6 +86,9 @@
         <%= link_to "Toutes nos expertises", office_path, class: 'btn btn-primary' %>
       </div>
     </div>
+    <!-- 2ème section - Les expertises : paragraphe d'introduction -->
+
+    <!-- 2ème section - Les expertises : paragraphe de description -->
     <div class="homepage-expertises-box">
       <div class="homepage-expertise">
         <img src="assets/expertise1.jpg" alt="expertise-droit-de-la-famille">
@@ -117,11 +131,14 @@
         </div>
       </div>
     </div>
+    <!-- 2ème section - Les expertises : paragraphe de description -->
   </div>
 </div>
-</div>
+<!-- 2ème section - Les expertises : background de couleur -->
 
+<!-- 3ème section - Les annonces immobilières : background de couleur -->
 <div class="homepage-section">
+  <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
   <div class="immobilier-heading">
     <div class="section-heading-content immobilier-section-heading">
       <span class="line-title section-line-title"></span>
@@ -135,6 +152,9 @@
       <%= link_to "Tous nos biens", annonces_path, class: 'btn btn-primary' %>
     </div>
   </div>
+  <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
+
+  <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
   <div class="homepage-annonces-box">
     <div class="homepage-annonce">
       <img src="assets/expertise1.jpg" alt="expertise-droit-de-la-famille">
@@ -156,14 +176,70 @@
       </div>
     </div>
   </div>
+  <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
 </div>
+<!-- 3ème section - Les annonces immobilières -->
 
-<!-- SECTION FORMULAIRE DE CONTACT -->
-<div id="homepage-contact-form-banner">
+
+<!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
+<div class="homepage-contact-section">
+  <!-- 4ème SECTION - Partie gauche : le formulaire -->
   <div class="homepage-contact-form">
+    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
+    <div class="section-heading-content">
+      <span class="line-title section-line-title"></span>
+      <span class="section-subtitle">Contactez-nous</span>
+      <h2>Prendre rendez-vous</h2>
+      <div class="section-description">
+        <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+    </div>
+    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
 
+    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
+    <div id="homepage-contact-form">
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <div class="row">
+          <div class="col s12 m6">
+            <%= f.input :nom, :required => true, placeholder: 'VOTRE NOM' %>
+          </div>
+          <div class="col s12 m6">
+            <%= f.input :email, :required => true, placeholder: 'VOTRE EMAIL' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <%= f.input :telephone, placeholder: 'VOTRE NUMERO' %>
+          </div>
+          <div class="col s12 m6">
+            <%= f.input :motif, collection: Contact::CONTACTTYPES, placeholder: "MOTIF DE DEMANDE" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <%= f.input :message, :as => :text, :required => true, placeholder: 'POSEZ ICI VOTRE QUESTION' %>
+          </div>
+        </div>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+        </div>
+      <% end %>
+    </div>
+    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
   </div>
+  <!-- 4ème SECTION - Partie gauche : le formulaire -->
+
+  <!-- 4ème SECTION - Partie droite : la photo -->
+  <div class="homepage-contact-picture">
+    <%= image_tag 'photo-test2.png' %>
+  </div>
+  <!-- 4ème SECTION - Partie droite : la photo -->
 </div>
+<!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
 
 
 <!-- SECTION CONTACT -->

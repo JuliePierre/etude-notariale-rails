@@ -1,10 +1,22 @@
+.btn {
+  color: initial;
+  background-color: transparent;
+  border: 1px solid $brand-grey-text;
+  box-shadow: initial;
+}
+
 .btn-primary {
-  background-color: $primary-color;
   &:hover {
     background-color: $primary-color;
+    color: white;
+    border: none;
+    box-shadow: none;
   }
   &:focus {
     background-color: $primary-color;
+    color: white;
+    border: none;
+    box-shadow: none;
   }
 }
 

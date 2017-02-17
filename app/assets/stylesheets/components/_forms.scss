@@ -30,10 +30,3 @@ label.select {
 abbr[title] {
   border-bottom: initial;
 }
-.contact-form input, textarea {
-  border-bottom: 1px solid $primary-color !important;
-  &:focus {
-    border-bottom: 1px solid $primary-color !important;
-    box-shadow: initial;
-  }
-}

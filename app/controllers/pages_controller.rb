@@ -6,6 +6,7 @@ class PagesController < ApplicationController
 
   def home
     @results = Expertise.search('test')
+    @contact = Contact.new
   end
 
   def office
