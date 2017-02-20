@@ -1,10 +1,35 @@
+// Colonne de gauche :
+// 1. Menu
+// 2. Contact
+// 3. Telecharger plaquette ?
+#famille-menu-scrollspy {
+  position: fixed;
+  z-index: 2000;
+}
+.famille-menu-links {
+  display: inline-block;
+  font-weight: 300;
+  color: #757575;
+  padding-left: 20px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: .4;
+  display: inline-block;
+}
+
 // les headings des 4 sous catégories
 .famille-section-heading {
-  flex: 0 0 50%;
+  flex: 0 0 75%;
   padding-left: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   .line-title {
     display: inline-block;
   }
+}
+
+.famille-section-heading.couple, .famille-section-heading.transmission {
+  padding-bottom: 0;
 }
 
 .famille-heading {
@@ -51,8 +76,8 @@
   height: 0px;
   img {
     position: relative;
-    height: 60px;
-    bottom: 25px;
+    height: 45px;
+    bottom: 12px;
   }
 }
 .expertise-redirection-card-description {

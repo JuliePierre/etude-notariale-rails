@@ -4,46 +4,140 @@
     <h2>Droit des affaires</h2>
   </div>
 </div>
-<div class="page-expertise-section">
-  <h2>Présentation</h2>
-  <h3>Qu'est-ce que le droit des affaires ?</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+
+
+<div class="page-section">
+<!-- 1ERE SECTION COUPLE -->
+  <div class="expertise-heading famille-heading">
+    <div class="section-heading-content famille-section-heading">
+      <span class="section-subtitle">Expertise</span>
+      <h2><%= link_to 'LE COUPLE', couple_path %></h2>
+      <span class="line-title"></span>
+      <div class="section-description">
+        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+      <br>
+      <%= link_to(couple_path) do %>
+        <span class="btn btn-primary">En savoir plus</span>
+      <% end %>
+    </div>
+  </div>
+  <!-- expertise mariage -->
+  <div class="expertise-couple-box">
+    <div class="expertise-redirection-card">
+      <%= link_to '', mariage_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 1</p>
+      <div>
+        <span class="expertise-redirection-card-title">Mariage</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-mariage.png' %></span>
+      </div>
+      <p class="expertise-redirection-card-description">Le droit du mariage comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+    </div>
+    <!-- expertise pacs -->
+    <div class="expertise-redirection-card">
+      <%= link_to '', pacs_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 2</p>
+      <div>
+        <span class="expertise-redirection-card-title">Pacs</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-pacs.png' %></span>
+      </div>
+      <p class="expertise-redirection-card-description">Le droit du pacs comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+    </div>
+    <!-- expertise divorce -->
+    <div class="expertise-redirection-card">
+      <%= link_to '', divorce_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 3</p>
+      <div>
+        <span class="expertise-redirection-card-title">Divorce</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-divorce.png' %></span>
+      </div>
+      <p class="expertise-redirection-card-description">Le droit du divorce comprend la rupture du contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+    </div>
+  </div>
+  <!-- 1ERE SECTION COUPLE -->
 </div>
+
+<!-- 2EME SECTION SUCCESSION -->
 <div class="grey-bg">
-  <div class="page-expertise-section">
-    <h2 class="center-align section-grey-header">VOS QUESTIONS</h2>
-    <div class="faq-content">
-      <h5>Que faire si ma promesse de vente comporte une erreur ?</h5>
-      <p>Dans tous les cas, il vous faudra contacter votre notaire. Il sera en mesure d'analyser la situation et prendre les décisions nécessaires.</p>
-      <h5>Quel est l'intérêt d'un bail d'habitation notarié ?</h5>
-      <p>Avez-vous pensé au bail notarié pour votre mise en location. Rédigé, signé et conservé par le notaire, Le bail notarié vous permettra d’obtenir le paiement de vos loyers impayés, sans qu’il y ait besoin d’une décision de justice. Un bail non notarié nécessitera une procédure judiciaire souvent longue et couteuse. En résumé, signez votre bail chez le notaire.</p>
-      <h5>Doit-on avoir les diagnostics immobiliers pour la promesse de vente ?</h5>
-      <p>Les diagnostics immobiliers ont pour but d'informer votre acquéreur pour lui permettre d'acquérir en connaissance de cause. L’ensemble des diagnostics sont à fournir au notaire pour la signature de la promesse de vente.</p>
-      <div class="question-container question-active" data-target="affaires-question1">
-        <h5>A quel moment la police d'assurance multirisque du bien immobilier doit-elle être souscrite ?</h5>
-        <hr class="large-orange-hr">
-        <div class="answer-box" id="affaires-question1">
-          <br>
-          <p class="answer">La police d'assurance multirisque est à souscrire avant la signature de l'acte de vente définitif.</p>
+  <div class="page-section">
+    <div class="expertise-heading famille-heading">
+      <div class="section-heading-content famille-section-heading">
+        <span class="section-subtitle">Expertise</span>
+        <h2><%= link_to 'LA SUCCESSION', succession_path %></h2>
+        <span class="line-title"></span>
+        <div class="section-description">
+          <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
         </div>
-      </div>
-      <div class="question-container question-active" data-target="affaires-question2">
-        <h5>Je suis associé d'une SCI et je souhaite céder mes parts sociales, suis-je dans l'obligation de faire réaliser des diagnostics techniques immobiliers (amiante, gaz, ...) ?</h5>
-        <hr class="large-orange-hr">
-        <div class="answer-box" id="affaires-question2">
-          <br>
-          <p class="answer">Dans cette hypothèse, les diagnostics ne sont pas obligatoires. Néanmoins, les parties peuvent convenir et faire rentrer dans le champ contractuel la fourniture de tels diagnostics.</p>
-        </div>
-      </div>
-      <div class="question-container question-active" data-target="affaires-question3">
-        <h5>J'ai signé une promesse étude mais je souhaite changer de notaire, est-ce possible et sous quelles conditions ?</h5>
-        <div class="answer-box" id="affaires-question3">
-          <hr class="large-orange-hr">
-          <br>
-          <p class="answer">Le principe reste la liberté de choix de son notaire. Vous avez la possibilité de choisir votre propre notaire même en cours de dossier.</p>
-        </div>
+        <%= link_to(succession_path) do %>
+          <span class="btn btn-primary">En savoir plus</span>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
+<!-- 2EME SECTION SUCCESSION -->
+
+<!-- 3EME SECTION TRANSMISSION -->
+<div class="page-section">
+  <div class="expertise-heading famille-heading">
+    <div class="section-heading-content famille-section-heading">
+      <span class="section-subtitle">Expertise</span>
+      <h2><%= link_to 'LA TRANSMISSION', transmission_path %></h2>
+      <span class="line-title"></span>
+      <div class="section-description">
+        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+      <%= link_to(transmission_path) do %>
+        <span class="btn btn-primary">En savoir plus</span>
+      <% end %>
+    </div>
+  </div>
+  <!-- expertise donation -->
+  <div class="expertise-transmission-box">
+    <div class="expertise-redirection-card">
+      <%= link_to '', donation_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 1</p>
+      <div>
+        <span class="expertise-redirection-card-title">Donation</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-don.png' %></span>
+      </div>
+      <p class="expertise-redirection-card-description">La donation consiste en un don blabla, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+    </div>
+    <!-- expertise testament -->
+    <div class="expertise-redirection-card">
+      <%= link_to '', testament_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 2</p>
+      <div>
+        <span class="expertise-redirection-card-title">Testament</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-testament.png' %></span>
+      </div>
+      <p class="expertise-redirection-card-description">Il n'est pas toujours facile de réfléchir à ces sujets, nous vous accompagnons dans toutes vos démarches, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+    </div>
+  </div>
+</div>
+<!-- 3EME SECTION TRANSMISSION -->
+
+<!-- 4EME SECTION ADOTION -->
+<div class="grey-bg">
+  <div class="page-section">
+    <div class="expertise-heading famille-heading">
+      <div class="section-heading-content famille-section-heading">
+        <span class="section-subtitle">Expertise</span>
+        <h2><%= link_to "L'ADOPTION", adoption_path %></h2>
+        <span class="line-title"></span>
+        <div class="section-description">
+          <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        </div>
+        <%= link_to(adoption_path) do %>
+          <span class="btn btn-primary">En savoir plus</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4EME SECTION ADOPTION -->
