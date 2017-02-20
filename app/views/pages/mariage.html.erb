@@ -111,3 +111,15 @@
     </div>
   </div>
 </div>
+
+<% content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      var mariageMenuTop = $("#mariage-menu-scrollspy").position()['top'];
+      $(window).scroll(function(){
+        console.log(mariageMenuTop);
+        $("#mariage-menu-scrollspy").css("top", Math.max(80, mariageMenuTop - $(this).scrollTop()));
+      });
+    })
+  </script>
+<% end %>
