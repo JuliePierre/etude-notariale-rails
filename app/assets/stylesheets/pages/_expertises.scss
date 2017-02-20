@@ -1,3 +1,31 @@
+// Bannière de présentation : photo + titre de page
+#expertises-banner {
+  height: 75vh;
+  width: auto;
+  background: url(photo-test2.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.expertises-banner-header {
+  position: absolute;
+  bottom: 2rem;
+  left: 12rem;
+  h2 {
+    line-height: 1em;
+    margin: 0px;
+    color: white;
+  };
+   h4 {
+    line-height: 1em;
+    margin: 0px 0px 0.6em 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+
 .expertises-container {
   display: flex;
   align-items: flex-start;

@@ -1,0 +1,91 @@
+// les headings des 4 sous catégories
+.famille-section-heading {
+  flex: 0 0 50%;
+  padding-left: 0;
+  .line-title {
+    display: inline-block;
+  }
+}
+
+.famille-heading {
+  text-align: center;
+  justify-content: space-around;
+  a:hover {
+    color: $primary-color-light;
+  }
+  .section-description {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+// les headings des 4 sous catégories
+
+.expertise-couple-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.expertise-redirection-card {
+  flex: 0 0 32%;
+  border: 1px solid $brand-grey;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.expertise-redirection-card-line-title {
+  background-color: $brand-dark-grey;
+  margin-top: 2rem;
+  width: 30px;
+}
+.expertise-redirection-card-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.expertise-redirection-card-icon {
+  float: right;
+  height: 0px;
+  img {
+    position: relative;
+    height: 60px;
+    bottom: 25px;
+  }
+}
+.expertise-redirection-card-description {
+  font-size: 0.9rem;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+.expertise-redirection-card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.expertise-transmission-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+// comportement au hover
+.expertise-redirection-card:hover {
+  background-color: $primary-color-light;
+  .expertise-redirection-card-description {
+    color: white;
+  }
+  .expertise-redirection-card-title:hover {
+    color: white;
+  }
+}
+// comportement au hover

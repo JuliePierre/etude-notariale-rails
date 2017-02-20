@@ -1,52 +1,68 @@
-<div class="orange-bg">
-<br>
-  <h1 class="center-align">Nos domaines d'expertises</h1>
+<!-- Bannière -->
+<div id="expertises-banner">
+  <div class="expertises-banner-header">
+    <h4>Notre expertise</h4>
+  </div>
 </div>
-<div class="container">
-  <div class="expertises-container">
-    <div class="carte-expertises">
-      <div class="carte-expertises-photo">
-        <%= image_tag 'photo-test2.png' %>
-        <i class="fa fa-caret-up carte-expertises-triangle" aria-hidden="true"></i>
+<!-- Bannière -->
+
+<!-- 1ère section : les 4 grands domaines d'expertise -->
+<div class="page-section">
+  <!-- 1ère section - Les expertises : paragraphe d'introduction -->
+  <div class="expertise-heading">
+    <div class="section-heading-content expertise-section-heading">
+      <span class="line-title section-line-title"></span>
+      <span class="section-subtitle">Nous sommes là pour vous</span>
+      <h2>Nos domaines d'expertise</h2>
+      <div class="section-description">
+        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
       </div>
-      <div class="carte-expertises-infos">
-        <h4>Droit de la famille</h4>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-      <%= link_to '', famille_path, class: "carte-expertises-link" %>
-    </div>
-    <div class="carte-expertises">
-      <div class="carte-expertises-photo">
-        <%= image_tag 'photo-test2.png' %>
-        <i class="fa fa-caret-up carte-expertises-triangle" aria-hidden="true"></i>
-      </div>
-      <div class="carte-expertises-infos">
-        <h4>Immobilier</h4>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-      <%= link_to '', immobilier_path, class: "carte-expertises-link" %>
-    </div>
-    <div class="carte-expertises">
-      <div class="carte-expertises-photo">
-        <%= image_tag 'photo-test2.png' %>
-        <i class="fa fa-caret-up carte-expertises-triangle" aria-hidden="true"></i>
-      </div>
-      <div class="carte-expertises-infos">
-        <h4>Affaires</h4>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-      <%= link_to '', affaires_path, class: "carte-expertises-link" %>
-    </div>
-    <div class="carte-expertises">
-      <div class="carte-expertises-photo">
-        <%= image_tag 'photo-test2.png' %>
-        <i class="fa fa-caret-up carte-expertises-triangle" aria-hidden="true"></i>
-      </div>
-      <div class="carte-expertises-infos">
-        <h4>Promotion immobilière</h4>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      </div>
-      <%= link_to '', promotion_path, class: "carte-expertises-link" %>
     </div>
   </div>
+  <!-- 1ère section - Les expertises : paragraphe d'introduction -->
+
+  <!-- 1ère section - Les expertises : paragraphe de description -->
+  <div class="homepage-expertises-box">
+    <div class="homepage-expertise">
+      <img src="assets/expertise1.jpg" alt="expertise-droit-de-la-famille">
+      <h3>Droit de la famille</h3>
+      <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+      <div class="expertise-link">
+        <%= link_to(famille_path) do %>
+          <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+        <% end %>
+      </div>
+    </div>
+    <div class="homepage-expertise">
+      <img src="assets/expertise2.jpg" alt="expertise-droit-des-affaires">
+      <h3>Droit des affaires</h3>
+      <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+      <div class="expertise-link">
+        <%= link_to(affaires_path) do %>
+          <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+        <% end %>
+      </div>
+    </div>
+    <div class="homepage-expertise">
+      <img src="assets/expertise3.jpg" alt="expertise-droit-immobilier">
+      <h3>Droit immobilier</h3>
+      <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+      <div class="expertise-link">
+        <%= link_to(immobilier_path) do %>
+          <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+        <% end %>
+      </div>
+    </div>
+    <div class="homepage-expertise">
+      <img src="assets/expertise4.jpg" alt="expertise-promotion-immobiliere">
+      <h3>Promotion immobilière</h3>
+      <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+      <div class="expertise-link">
+        <%= link_to(promotion_path) do %>
+          <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <!-- 1ère section - Les expertises : paragraphe de description -->
 </div>

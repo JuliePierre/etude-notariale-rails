@@ -1,4 +1,32 @@
-// Les bannières sont propres à chaque page, elles figurent dans le fichier scss de la page
+// Les bannières sont propres à chaque page
+// PAGE DROIT DE LA FAMILLE
+#famille-banner {
+  height: 75vh;
+  width: auto;
+  background: url(photo-test2.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.famille-banner-header {
+  position: absolute;
+  bottom: 2rem;
+  left: 12rem;
+  h2 {
+    line-height: 1em;
+    margin: 0px;
+    color: white;
+  };
+   h4 {
+    line-height: 1em;
+    margin: 0px 0px 0.6em 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+// PAGE DROIT DE LA FAMILLE
+
 
 // Format du Contenu
 // Le container : les marges & paddings

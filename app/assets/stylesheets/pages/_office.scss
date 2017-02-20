@@ -90,13 +90,13 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 .carte-departement {
   position: relative;
-  flex: 0 0 32%;
+  flex: 0 0 25%;
   max-width: 30vw;
   margin-bottom: 0.8rem;
   img {
