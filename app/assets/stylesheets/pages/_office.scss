@@ -26,6 +26,107 @@
   }
 }
 
+// 1ère section
+.office-section1 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+}
+.office-section1-picture {
+  flex: 0 0 32%;
+  img {
+    width: 100%;
+  }
+}
+.office-section1-text {
+  flex: 0 0 32%;
+  p {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $brand-grey-text;
+    text-align: justify;
+    margin-top: 0;
+  }
+}
+.office-section1-links {
+  flex: 0 0 32%;
+  h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  }
+  p {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    margin-top: 2rem;
+  }
+}
+.office-section1-links-line-title {
+  width: 100%;
+}
+// 1ère section
+
+// 2ème SECTION EXPERTISES
+.office-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.office-section-heading {
+  flex: 0 0 50%;
+  p {
+    margin-bottom: 0;
+  }
+}
+// 2ème SECTION EXPERTISES
+
+// 3ème SECTION EQUIPE
+.equipe-section-cartes {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.carte-departement {
+  position: relative;
+  flex: 0 0 32%;
+  max-width: 30vw;
+  margin-bottom: 0.8rem;
+  img {
+    height: 75px;
+    width: auto;
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+  .btn-light {
+    text-align: initial;
+  }
+}
+.departement-line {
+  background-color: $brand-dark-grey;
+  margin-top: 1rem;
+  width: 30px;
+}
+
+// 3ème SECTION EQUIPE
+
+
 // Containers --> Même containers (padding et marge) que les pages expertises. Pour cohérence, si l'un change, modifier l'autre
 .office-content {
   margin: 0 12rem;
@@ -78,5 +179,4 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 12rem;
 }

@@ -177,18 +177,29 @@
   width: 300px;
   height: auto;
   transition: all 0.5s ease;
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
   position: relative;
   .carte-equipe-photo {
     position: relative;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     img {
       width: 100%;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
     }
   }
   .carte-equipe-infos {
     padding: 0 1em 1em 1em;
+    h5 {
+      letter-spacing: 0.5px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: $brand-grey-text;
+    }
   }
 }
