@@ -7,16 +7,30 @@
 
 // Contenu de la dropdown --> Attention, il existe un dropdown-content dans materialize, ne pas le réutiliser
 .dropdown-menu {
+  background-color: $brand-dark-grey;
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: -18px;
   z-index: 1000;
   float: left;
   min-width: 253px;
   list-style: none;
   text-align: left;
-  background-color: white;
   border-radius: 2px;
-  padding: 1em 2em !important;
+  padding: 0em 2em !important;
   background-clip: padding-box; // Aucun arrière-plan n'est dessiné dans la boîte de bordure. L'arrière-plan s'étend jusqu'à la limite de la boîte de remplissage (padding).
+  li {
+    border-bottom: 1px solid white;
+    padding: 0.5rem 0rem;
+    a {
+      color: white;
+      letter-spacing: initial;
+      &:hover {
+        color: $primary-color-light;
+      }
+    }
+  }
+  li:last-child {
+    border-bottom: initial;
+  }
 }

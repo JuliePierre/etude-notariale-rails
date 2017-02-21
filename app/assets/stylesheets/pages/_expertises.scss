@@ -1,3 +1,27 @@
+// PAGES EXPERTISES PREMIER NIVEAU
+.expertise-niveau1-section {
+  padding: 4rem 12rem;
+}
+// PAGES EXPERTISES PREMIER NIVEAU
+
+
+
+// PAGES EXPERTISES DEUXIEME NIVEAU ----- FAMILLE / AFFAIRES / IMMOBILIER / PROMOTION
+
+// PAGES EXPERTISES DEUXIEME NIVEAU ----- FAMILLE / AFFAIRES / IMMOBILIER / PROMOTION
+
+
+
+// PAGES EXPERTISES TROISIEME NIVEAU -----
+
+// PAGES EXPERTISES DEUXIEME NIVEAU -----
+
+
+
+// PAGES EXPERTISES DERNIER NIVEAU DE GRANULARITE ---- Page de contenu
+
+// PAGES EXPERTISES DERNIER NIVEAU DE GRANULARITE ---- Page de contenu
+
 // Bannière de présentation : photo + titre de page
 #expertises-banner {
   height: 75vh;
@@ -32,3 +56,61 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+
+// TEST CARTES EXPERTISE pour page Expertises.html
+.flexbox-cartes-expertise {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+// commun à toutes les cartes
+.carte-expertise {
+  flex: 0 0 46%;
+  height: auto;
+  width: auto;
+  position: relative;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+// particularité : le background
+#carte-expertise-famille {
+  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), url(expertise1.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#carte-expertise-affaires {
+  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), url(expertise2.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#carte-expertise-immobilier {
+  border: 2px solid #FBF7F7;
+  h2 {
+    color: initial;
+  }
+}
+#carte-expertise-promotion {
+}
+.carte-expertise-title {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.carte-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+

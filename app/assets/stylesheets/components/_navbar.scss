@@ -1,5 +1,5 @@
 .navbar {
-  padding: 1em 5em;
+  padding: 1rem 5rem 0rem 5rem;
   position: fixed;
   top: 0;
   background: #fff;
@@ -78,6 +78,7 @@
 // left side
 .navbar-brand {
   float: left;
+  padding-bottom: 1rem;
 }
 
 // right side
@@ -100,6 +101,7 @@
 #dropdown-full {
   display: inline;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 // search item
