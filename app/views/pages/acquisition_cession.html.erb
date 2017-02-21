@@ -1,96 +1,161 @@
 <div id="immobilier-banner">
   <div class="immobilier-banner-header">
     <h4>NOTRE EXPERTISE</h4>
-    <h2>Acquisition - Cession</h2>
+    <h2>Mariage</h2>
   </div>
 </div>
-<div class="page-expertise-section">
-  <h2>Présentation</h2>
-  <h3>Qu'est-ce que le droit immobilier ?</h3>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-</div>
-<div class="grey-bg">
-  <div class="page-expertise-section">
-    <h2 class="center-align section-grey-header">VOS QUESTIONS</h2>
-    <div class="faq-content">
-      <h5>Que faire si ma promesse de vente comporte une erreur ?</h5>
-      <p>Dans tous les cas, il vous faudra contacter votre notaire. Il sera en mesure d'analyser la situation et prendre les décisions nécessaires.</p>
-      <h5>Quel est l'intérêt d'un bail d'habitation notarié ?</h5>
-      <p>Avez-vous pensé au bail notarié pour votre mise en location. Rédigé, signé et conservé par le notaire, Le bail notarié vous permettra d’obtenir le paiement de vos loyers impayés, sans qu’il y ait besoin d’une décision de justice. Un bail non notarié nécessitera une procédure judiciaire souvent longue et couteuse. En résumé, signez votre bail chez le notaire.</p>
-      <h5>Doit-on avoir les diagnostics immobiliers pour la promesse de vente ?</h5>
-      <p>Les diagnostics immobiliers ont pour but d'informer votre acquéreur pour lui permettre d'acquérir en connaissance de cause. L’ensemble des diagnostics sont à fournir au notaire pour la signature de la promesse de vente.</p>
-      <div class="question-container question-active" data-target="immobilier-question1">
-        <h5>Que faire si ma promesse de vente comporte une erreur ?</h5>
-        <hr class="large-orange-hr">
-        <div class="answer-box" id="immobilier-question1">
-          <br>
-          <p class="answer">Dans tous les cas, il vous faudra contacter votre notaire. Il sera en mesure d'analyser la situation et prendre les décisions nécessaires.</p>
+
+<div class="page-section">
+  <div class="row">
+    <div class="col s12 m3">
+      <div id="mariage-left-menu">
+        <h2 class="left-menu-header">Mariage</h2>
+        <div class="menu-section" id="mariage-menu-scrollspy">
+          <ul class="table-of-contents">
+            <li><a href="" class="menu-link active" data-link="#introduction">Introduction</a></li>
+            <li><a href="" class="menu-link" data-link="#questions">Questions</a></li>
+            <li><a href="" class="menu-link" data-link="#fiches">Fiches pratiques</a></li>
+            <li><a href="" class="menu-link" data-link="#outils">Outils de calcul</a></li>
+          </ul>
+          <p>< Retour au droit du couple</p>
         </div>
-      </div>
-      <div class="question-container question-active" data-target="immobilier-question2">
-        <h5>Quel est l'intérêt d'un bail d'habitation notarié ?</h5>
-        <hr class="large-orange-hr">
-        <div class="answer-box" id="immobilier-question2">
-          <br>
-          <p class="answer">Avez-vous pensé au bail notarié pour votre mise en location. Rédigé, signé et conservé par le notaire, Le bail notarié vous permettra d’obtenir le paiement de vos loyers impayés, sans qu’il y ait besoin d’une décision de justice. Un bail non notarié nécessitera une procédure judiciaire souvent longue et couteuse. En résumé, signez votre bail chez le notaire.</p>
+        <div class="menu-section">
+          <h5>Contact</h5>
+          <%= link_to 'Prendre RDV', contact_path, class: "famille-menu-links" %>
         </div>
-      </div>
-      <div class="question-container question-active" data-target="immobilier-question3">
-        <h5>Doit-on avoir les diagnostics immobiliers pour la promesse de vente ?</h5>
-        <div class="answer-box" id="immobilier-question3">
-          <hr class="large-orange-hr">
-          <br>
-          <p class="answer">Les diagnostics immobiliers ont pour but d'informer votre acquéreur pour lui permettre d'acquérir en connaissance de cause. L’ensemble des diagnostics sont à fournir au notaire pour la signature de la promesse de vente.</p>
+        <div class="menu-section">
+          <h5>Guides pratiques</h5>
+          <a href="assets/guide-vente-immobiliere.pdf" target="_blank" class="btn-light">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            Vente immobilière
+          </a>
+        </div>
+        <div class="menu-section">
+          <h5>Liens utiles</h5>
+          <a href="https://www.notaires.fr/fr/contrat-de-mariage-bien-choisir-son-r%C3%A9gime-matrimonial-0"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bien choisir son régime</a>
         </div>
       </div>
     </div>
+    <div class="col s12 m9">
+      <div class="page-expertise-section" id="introduction">
+        <h2>Le  Mariage</h2>
+        <p>Il est peut-être délicat d’aborder ce sujet alors qu’on est en pleins préparatifs
+        du « plus beau jour de sa vie ». Cependant c’est le meilleur moment pour le faire.
+        Vous pouvez toujours choisir de le faire ou de le modifier plus tard, mais cela sera plus onéreux et si jamais il arrivait quelque chose entre-temps, vous pourriez le regretter.</p>
+        <p>Pour mémoire, le contrat de mariage n’est pas uniquement envisagé pour un divorce hypothétique mais également en cas de décès.
+        Certes les sujets ne sont pas très euphoriques, mais justement ils sont suffisamment douloureux pour s’éviter des difficultés supplémentaires lors de leur survenue.</p>
+      </div>
+      <div class="page-expertise-section" id="questions">
+        <h4>Qu'est-ce qu'un contrat de mariage ?</h4>
+        <p>Le contrat de mariage permet au couple de préparer les dispositions de son régime matrimonial. Ce document n'est pas obligatoire, mais il est utile pour fixer les règles de gestion du patrimoine à deux, et de prévoir ce qui se passe au moment de la dissolution du mariage.</p>
+        <h4>Pourquoi prévoir un contrat de mariage ?</h4>
+        <p>Un contrat de mariage est là pour vous protéger au mieux en fonction de votre situation. Naturellement il a vocation à se protéger des tiers.</p>
+        <h4>Suis-je obligé de signer un contrat de mariage ?</h4>
+        <p>Absolument pas. Toutefois, si vous n’en souscrivez pas, vous serez d’office sous le régime légal par défaut appelé « Communauté réduite aux acquêts». En réalité : vous subissez le contrat de mariage imposé par la loi, alors ne vaut-il pas mieux en choisir un qui réponde à vos besoins ?</p>
+        <h4>Qu’est ce que le régime par défaut : communauté réduite aux acquêts ?</h4>
+        <p>Les biens AVANT le mariage : tout ce qui est à l’un reste à l’un et ce qui est à l’autre reste à l’autre. Chacun des époux conservera aussi en propre les biens reçus par voie de succession ou donation.</p>
+        <p>Les biens APRES le mariage : tout ce qui est acquis est automatiquement commun (50/50) aux deux époux (biens comme dettes), même si l’un des deux a beaucoup plus participé que l’autre, voire a acheté tout seul.</p>
+        <h4>Dans quels cas un contrat de mariage est-il recommande ?</h4>
+        <p>On pourrait dire dans tous les cas bien sûr. Toutefois, s’il ne fallait décrire que les plus « à risque », on pourrait citer :</p>
+        <ul>
+          <li>- la femme au foyer</li>
+          <li>- le chef d’entreprise, la profession libérale ou l’auto-entrepreneur</li>
+          <li>- un des membres du couple très riche</li>
+          <li>- le couple sans enfants</li>
+          <li>- les familles recomposées</li>
+        </ul>
+        <h4>Selon mon cas quel contrat est le plus recommande ?</h4>
+        <p>Bien sûr il faut étudier au cas par cas et en fonction du profil de chacun car si vous cumulez plusieurs situations au sein même de votre famille il faudra faire des compromis. Par exemple, si madame est au foyer, monsieur chef d’entreprise, avec de grosses différences de patrimoines et famille recomposée, il faudra sûrement privilégier certains éléments par rapport à d’autres.</p>
+      </div>
+      <div class="page-expertise-section" id="fiches">
+        <h2 class="section-white-header">FICHES PRATIQUES</h2>
+        <div class="fiches-pratiques-container">
+          <div class="carte-fiche-pratique">
+            <div class="carte-fiche-header">
+              <h5>Promesse de vente</h5>
+              <p>Les documents nécessaires</p>
+            </div>
+            <div class="carte-fiche-infos">
+              <p>Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, counsels, advocates and other legal and law related services.</p>
+              <ul class="carte-fiche-liste">
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Fiche de paie</span></li>
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contrat de travail</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-fiche-pratique">
+            <div class="carte-fiche-header">
+              <h5>Promesse de vente</h5>
+              <p>Les documents nécessaires</p>
+            </div>
+            <div class="carte-fiche-infos">
+              <p>Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, counsels, advocates and other legal and law related services.</p>
+              <ul class="carte-fiche-liste">
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Fiche de paie</span></li>
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contrat de travail</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-fiche-pratique">
+            <div class="carte-fiche-header">
+              <h5>Promesse de vente</h5>
+              <p>Les documents nécessaires</p>
+            </div>
+            <div class="carte-fiche-infos">
+              <p>Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, counsels, advocates and other legal and law related services.</p>
+              <ul class="carte-fiche-liste">
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Fiche de paie</span></li>
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contrat de travail</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carte-fiche-pratique">
+            <div class="carte-fiche-header">
+              <h5>Promesse de vente</h5>
+              <p>Les documents nécessaires</p>
+            </div>
+            <div class="carte-fiche-infos">
+              <p>Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, counsels, advocates and other legal and law related services.</p>
+              <ul class="carte-fiche-liste">
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Fiche de paie</span></li>
+                <li class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Contrat de travail</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-expertise-section" id="outils">
+        <h2 class="section-white-header">COMBIEN CA COUTE ?</h2>
+        <h4><a href="https://www.immobilier.notaires.fr/fr/frais-de-notaire" target="_blank"><i class="fa fa-calculator" aria-hidden="true"></i> Calculez vos frais</a></h4>
+      </div>
+    </div>
   </div>
 </div>
-<div class="page-expertise-section">
-  <h2 class="center-align section-white-header">FICHES PRATIQUES</h2>
-  <div class="fiches-pratiques-container">
-    <div class="carte-fiche-pratique">
-      <div class="carte-fiche-header">
-        <h5>Promesse de vente</h5>
-        <p>Les documents nécessaires</p>
-      </div>
-      <div class="carte-fiche-infos">
-        <p>1. Blabla</p>
-        <p>2. Encore blabla</p>
-      </div>
-    </div>
-    <div class="carte-fiche-pratique">
-      <div class="carte-fiche-header">
-        <h5>Promesse de vente</h5>
-        <p>Les documents nécessaires</p>
-      </div>
-      <div class="carte-fiche-infos">
-        <p>1. Blabla</p>
-        <p>2. Encore blabla</p>
-      </div>
-    </div>
-    <div class="carte-fiche-pratique">
-      <div class="carte-fiche-header">
-        <h5>Promesse de vente</h5>
-        <p>Les documents nécessaires</p>
-      </div>
-      <div class="carte-fiche-infos">
-        <p>1. Blabla</p>
-        <p>2. Encore blabla</p>
-        <p>3. Toujours du blabla et du blabla</p>
-        <p>4. Ceci est un test, car c'est très important de tester !</p>
-      </div>
-    </div>
-    <div class="carte-fiche-pratique">
-      <div class="carte-fiche-header">
-        <h5>Promesse de vente</h5>
-        <p>Les documents nécessaires</p>
-      </div>
-      <div class="carte-fiche-infos">
-        <p>1. Blabla</p>
-        <p>2. Encore blabla</p>
-      </div>
-    </div>
-  </div>
-</div>
+
+<% content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      var mariageMenuTop = $("#mariage-left-menu").position()['top'];
+      $(window).scroll(function(){
+        console.log(mariageMenuTop);
+        $("#mariage-left-menu").css("top", Math.max(80, mariageMenuTop - $(this).scrollTop()));
+        if ($('#introduction').isOnScreen()) {
+          $('.table-of-contents a').removeClass('active');
+          $('.table-of-contents a[data-link="#introduction"').addClass('active');
+        };
+        if ($('#questions').isOnScreen()) {
+          $('.table-of-contents a').removeClass('active');
+          $('.table-of-contents a[data-link="#questions"').addClass('active');
+        };
+        if ($('#fiches').isOnScreen()) {
+          $('.table-of-contents a').removeClass('active');
+          $('.table-of-contents a[data-link="#fiches"').addClass('active');
+        };
+        if ($('#outils').isOnScreen()) {
+          $('.table-of-contents a').removeClass('active');
+          $('.table-of-contents a[data-link="#outils"').addClass('active');
+        };
+      });
+    })
+  </script>
+<% end %>
