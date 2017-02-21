@@ -8,15 +8,32 @@
 <div class="page-section">
   <div class="row">
     <div class="col s12 m3">
-      <div id="mariage-menu-scrollspy">
-        <h5>Mariage</h5>
-        <ul class="section table-of-contents">
-          <li><a href="" class="menu-link active" data-link="#introduction">Introduction</a></li>
-          <li><a href="" class="menu-link" data-link="#questions">Questions</a></li>
-          <li><a href="" class="menu-link" data-link="#fiches">Fiches pratiques</a></li>
-          <li><a href="" class="menu-link" data-link="#outils">Outils de calcul</a></li>
-        </ul>
-        <p>Liens utiles</p>
+      <div id="mariage-left-menu">
+        <h2 class="left-menu-header">Mariage</h2>
+        <div class="menu-section" id="mariage-menu-scrollspy">
+          <ul class="table-of-contents">
+            <li><a href="" class="menu-link active" data-link="#introduction">Introduction</a></li>
+            <li><a href="" class="menu-link" data-link="#questions">Questions</a></li>
+            <li><a href="" class="menu-link" data-link="#fiches">Fiches pratiques</a></li>
+            <li><a href="" class="menu-link" data-link="#outils">Outils de calcul</a></li>
+          </ul>
+          <p>< Retour au droit du couple</p>
+        </div>
+        <div class="menu-section">
+          <h5>Contact</h5>
+          <%= link_to 'Prendre RDV', contact_path, class: "famille-menu-links" %>
+        </div>
+        <div class="menu-section">
+          <h5>Guides pratiques</h5>
+          <a href="assets/guide-vente-immobiliere.pdf" target="_blank" class="btn-light">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            Vente immobilière
+          </a>
+        </div>
+        <div class="menu-section">
+          <h5>Liens utiles</h5>
+          <a href="https://www.notaires.fr/fr/contrat-de-mariage-bien-choisir-son-r%C3%A9gime-matrimonial-0"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Bien choisir son régime</a>
+        </div>
       </div>
     </div>
     <div class="col s12 m9">
@@ -118,10 +135,10 @@
 <% content_for(:after_js) do %>
   <script>
     $(document).ready(function() {
-      var mariageMenuTop = $("#mariage-menu-scrollspy").position()['top'];
+      var mariageMenuTop = $("#mariage-left-menu").position()['top'];
       $(window).scroll(function(){
         console.log(mariageMenuTop);
-        $("#mariage-menu-scrollspy").css("top", Math.max(80, mariageMenuTop - $(this).scrollTop()));
+        $("#mariage-left-menu").css("top", Math.max(80, mariageMenuTop - $(this).scrollTop()));
         if ($('#introduction').isOnScreen()) {
           $('.table-of-contents a').removeClass('active');
           $('.table-of-contents a[data-link="#introduction"').addClass('active');
