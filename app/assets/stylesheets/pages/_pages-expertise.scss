@@ -31,9 +31,21 @@
 // Format du Contenu
 // Le container : les marges & paddings
 .page-expertise-section {
-  margin: 0 15rem;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 0rem 2rem 2rem 2rem;
+  text-align: justify;
+  h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  h4 {
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222222;
+    font-size: 18px;
+  }
 }
 
 // Utilities communes
@@ -90,10 +102,9 @@
 // CARTES SPECIALES POUR LES FICHES PRATIQUES
 .fiches-pratiques-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: auto;
   margin-top: 2rem;
-  margin-bottom: 40rem;
   flex-wrap: wrap;
 }
 
@@ -110,6 +121,7 @@
     color: white;
     background-color: $primary-color-light;
     width: 100%;
+    padding: 1.5rem 1rem;
     h5 {
       text-align: center;
       margin-bottom: 0;
@@ -118,11 +130,22 @@
     p {
       text-align: center;
       margin-top: 0;
+      margin-bottom: 0;
     }
   }
   .carte-fiche-infos {
     margin: 0px;
     padding: 0.2em 3em;
     width: 100%;
+    p {
+      font-size: 0.9rem;
+      color: $brand-grey-text;
+    }
+  }
+  .carte-fiche-doc {
+    i {
+      color: $primary-color;
+      margin-right: 0.8rem;
+    }
   }
 }
