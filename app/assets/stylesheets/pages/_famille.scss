@@ -46,22 +46,31 @@
 }
 // les headings des 4 sous catégories
 
-.expertise-couple-box {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+// les flexbox
+.expertise-box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .expertise-redirection-card {
   flex: 0 0 32%;
-  border: 1px solid $brand-grey;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
   position: relative;
 }
+
+.couple-redirection-card, .transmission-redirection-card {
+  border: 2px solid white;
+}
+.succession-redirection-card, .adoption-redirection-card {
+  border: 2px solid $brand-grey;
+}
+
 .expertise-redirection-card-line-title {
   background-color: $brand-dark-grey;
   margin-top: 2rem;

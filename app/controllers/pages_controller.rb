@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   require 'rss'
   require 'open-uri'
 
-  skip_before_action :authenticate_user!, only: [ :home, :office, :expertises, :famille, :couple, :mariage, :pacs, :divorce, :succession, :transmission, :donation, :testament, :adoption, :affaires, :societe, :acquisition_cession, :bail_commercial, :droit_immobilier, :acheter, :vendred, :promotion, :faq, :contact, :negociation ]
+  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :mariage, :pacs, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe, :acquisition_cession, :bail_commercial, :droit_immobilier, :acheter, :vendred, :promotion, :faq, :contact, :negociation ]
 
   def home
     @results = Expertise.search('test')
@@ -13,13 +13,10 @@ class PagesController < ApplicationController
   end
 
   # Partie expertises
-  def expertises
-    # 4 grandes expertises :
     # 1. droit de la famille
     # 2. droit des affaires
     # 3. droit immobilier
     # 4. promotion immobilière
-  end
 
   # Droit de la famille
   def famille
@@ -30,11 +27,9 @@ class PagesController < ApplicationController
   end
 
   # 1. Couple
-  def couple
     # 1. Mariage
     # 2. Pacs
     # 3. Divorce
-  end
 
   def mariage
   end
@@ -50,10 +45,8 @@ class PagesController < ApplicationController
   end
 
   # 3. Transmission
-  def transmission
     # 1. Donation
     # 2. Testament
-  end
 
   def donation
   end

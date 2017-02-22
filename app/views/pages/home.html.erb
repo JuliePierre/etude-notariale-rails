@@ -82,9 +82,6 @@
           <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
         </div>
       </div>
-      <div class="section-heading-button expertise-section-button">
-        <%= link_to "Toutes nos expertises", office_path, class: 'btn btn-primary' %>
-      </div>
     </div>
     <!-- 2ème section - Les expertises : paragraphe d'introduction -->
 
@@ -139,17 +136,16 @@
 <!-- 3ème section - Les annonces immobilières : background de couleur -->
 <div class="homepage-section">
   <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
-  <div class="immobilier-heading">
-    <div class="section-heading-content immobilier-section-heading">
-      <span class="line-title section-line-title"></span>
-      <span class="section-subtitle">Négociation immobilière</span>
-      <h2>Nos annonces immobilières</h2>
-      <div class="section-description">
-        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Négociation immobilière</span>
+        <h2>NOS ANNONCES IMMOBILIÈRES</h2>
+        <div class="section-description">
+          <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        </div>
       </div>
-    </div>
-    <div class="section-heading-button immobilier-section-button">
-      <%= link_to "Tous nos biens", annonces_path, class: 'btn btn-primary' %>
     </div>
   </div>
   <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
@@ -175,6 +171,9 @@
       <div class="annonce-link">
       </div>
     </div>
+  </div>
+  <div class="value-button">
+    <%= link_to "Voir toutes nos offres", annonces_path, class: 'btn btn-primary' %>
   </div>
   <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
 </div>

@@ -57,7 +57,7 @@
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
   }
   p {
     text-transform: uppercase;
@@ -69,6 +69,18 @@
 .office-section1-links-line-title {
   width: 100%;
 }
+
+// Partie Values
+.office-values-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  .value-title {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $primary-color-light;
+  }
+}
+
 // 1ère section
 
 // 2ème SECTION EXPERTISES

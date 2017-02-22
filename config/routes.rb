@@ -9,17 +9,14 @@ Rails.application.routes.draw do
   get 'vente-immobilier', to: 'pages#vente', as: 'vente'
 
   # Routes des pages expertises dans l'ordre
-  get 'expertises', to: 'pages#expertises', as: 'expertises'
   get 'expertises/search', to: 'expertises#search', as: 'search'
 
   # Droit de la famille
   get 'expertises/droit-de-la-famille', to: 'pages#famille', as: 'famille'
-  get 'expertises/droit-de-la-famille/couple', to: 'pages#couple', as: 'couple'
   get 'expertises/droit-de-la-famille/mariage', to: 'pages#mariage', as: 'mariage'
   get 'expertises/droit-de-la-famille/pacs', to: 'pages#pacs', as: 'pacs'
   get 'expertises/droit-de-la-famille/divorce', to: 'pages#divorce', as: 'divorce'
   get 'expertises/droit-de-la-famille/succession', to: 'pages#succession', as: 'succession'
-  get 'expertises/droit-de-la-famille/transmission', to: 'pages#transmission', as: 'transmission'
   get 'expertises/droit-de-la-famille/donation', to: 'pages#donation', as: 'donation'
   get 'expertises/droit-de-la-famille/testament', to: 'pages#testament', as: 'testament'
   get 'expertises/droit-de-la-famille/adoption', to: 'pages#adoption', as: 'adoption'

@@ -6,138 +6,125 @@
 </div>
 <!-- Bannière -->
 
-
+<!-- Section d'introduction -->
 <div class="page-section">
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Expertise</span>
+        <h2>Droit de la famille</h2>
+        <div class="section-description">
+          <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section d'introduction -->
+
 <!-- 1ERE SECTION COUPLE -->
-  <div class="expertise-heading famille-heading">
-    <div class="section-heading-content famille-section-heading">
-      <span class="section-subtitle">Expertise</span>
-      <h2><%= link_to 'LE COUPLE', couple_path %></h2>
-      <span class="line-title"></span>
-      <div class="section-description">
-        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
-      </div>
-      <br>
-      <%= link_to(couple_path) do %>
-        <span class="btn btn-primary">En savoir plus</span>
-      <% end %>
-    </div>
-  </div>
-  <!-- expertise mariage -->
-  <div class="expertise-couple-box">
-    <div class="expertise-redirection-card">
-      <%= link_to '', mariage_path, class: 'expertise-redirection-card-link' %>
-      <span class="line-title expertise-redirection-card-line-title"></span>
-      <p>Domaine 1</p>
-      <div>
-        <span class="expertise-redirection-card-title">Mariage</span>
-        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-mariage.png' %></span>
-      </div>
-      <p class="expertise-redirection-card-description">Le droit du mariage comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
-    </div>
-    <!-- expertise pacs -->
-    <div class="expertise-redirection-card">
-      <%= link_to '', pacs_path, class: 'expertise-redirection-card-link' %>
-      <span class="line-title expertise-redirection-card-line-title"></span>
-      <p>Domaine 2</p>
-      <div>
-        <span class="expertise-redirection-card-title">Pacs</span>
-        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-pacs.png' %></span>
-      </div>
-      <p class="expertise-redirection-card-description">Le droit du pacs comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
-    </div>
-    <!-- expertise divorce -->
-    <div class="expertise-redirection-card">
-      <%= link_to '', divorce_path, class: 'expertise-redirection-card-link' %>
-      <span class="line-title expertise-redirection-card-line-title"></span>
-      <p>Domaine 3</p>
-      <div>
-        <span class="expertise-redirection-card-title">Divorce</span>
-        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-divorce.png' %></span>
-      </div>
-      <p class="expertise-redirection-card-description">Le droit du divorce comprend la rupture du contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
-    </div>
-  </div>
-  <!-- 1ERE SECTION COUPLE -->
-</div>
-
-<!-- 2EME SECTION SUCCESSION -->
 <div class="grey-bg">
   <div class="page-section">
-    <div class="expertise-heading famille-heading">
-      <div class="section-heading-content famille-section-heading">
-        <span class="section-subtitle">Expertise</span>
-        <h2><%= link_to 'LA SUCCESSION', succession_path %></h2>
-        <span class="line-title"></span>
-        <div class="section-description">
-          <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+    <!-- expertise mariage -->
+    <div class="expertise-box">
+      <div class="expertise-redirection-card couple-redirection-card">
+        <%= link_to '', mariage_path, class: 'expertise-redirection-card-link' %>
+        <span class="line-title expertise-redirection-card-line-title"></span>
+        <p>Domaine 1</p>
+        <div>
+          <span class="expertise-redirection-card-title">Mariage</span>
+          <span class="expertise-redirection-card-icon"><%= image_tag 'icone-mariage.png' %></span>
         </div>
-        <%= link_to(succession_path) do %>
-          <span class="btn btn-primary">En savoir plus</span>
-        <% end %>
+        <p class="expertise-redirection-card-description">Le droit du mariage comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+      </div>
+      <!-- expertise pacs -->
+      <div class="expertise-redirection-card couple-redirection-card">
+        <%= link_to '', pacs_path, class: 'expertise-redirection-card-link' %>
+        <span class="line-title expertise-redirection-card-line-title"></span>
+        <p>Domaine 2</p>
+        <div>
+          <span class="expertise-redirection-card-title">Pacs</span>
+          <span class="expertise-redirection-card-icon"><%= image_tag 'icone-pacs.png' %></span>
+        </div>
+        <p class="expertise-redirection-card-description">Le droit du pacs comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+      </div>
+      <!-- expertise divorce -->
+      <div class="expertise-redirection-card couple-redirection-card">
+        <%= link_to '', divorce_path, class: 'expertise-redirection-card-link' %>
+        <span class="line-title expertise-redirection-card-line-title"></span>
+        <p>Domaine 3</p>
+        <div>
+          <span class="expertise-redirection-card-title">Divorce</span>
+          <span class="expertise-redirection-card-icon"><%= image_tag 'icone-divorce.png' %></span>
+        </div>
+        <p class="expertise-redirection-card-description">Le droit du divorce comprend la rupture du contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
       </div>
     </div>
   </div>
 </div>
-<!-- 2EME SECTION SUCCESSION -->
+<!-- 1ERE SECTION COUPLE -->
 
-<!-- 3EME SECTION TRANSMISSION -->
+<!-- 2EME SECTION SUCCESSION -->
 <div class="page-section">
-  <div class="expertise-heading famille-heading">
-    <div class="section-heading-content famille-section-heading">
-      <span class="section-subtitle">Expertise</span>
-      <h2><%= link_to 'LA TRANSMISSION', transmission_path %></h2>
-      <span class="line-title"></span>
-      <div class="section-description">
-        <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+  <div class="expertise-box">
+    <div class="expertise-redirection-card succession-redirection-card">
+      <%= link_to '', succession_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 4</p>
+      <div>
+        <span class="expertise-redirection-card-title">Succession</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-succession.png' %></span>
       </div>
-      <%= link_to(transmission_path) do %>
-        <span class="btn btn-primary">En savoir plus</span>
-      <% end %>
+      <p class="expertise-redirection-card-description">La succession etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, excepturi. Animi aperiam quo debitis quis suscipit commodi, alias ipsum accusantium, corporis eum, expedita voluptas voluptates illo nesciunt enim assumenda esse.</p>
     </div>
   </div>
-  <!-- expertise donation -->
-  <div class="expertise-transmission-box">
-    <div class="expertise-redirection-card">
-      <%= link_to '', donation_path, class: 'expertise-redirection-card-link' %>
-      <span class="line-title expertise-redirection-card-line-title"></span>
-      <p>Domaine 1</p>
-      <div>
-        <span class="expertise-redirection-card-title">Donation</span>
-        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-don.png' %></span>
+</div>
+<!-- 2EME SECTION SUCCESSION -->
+
+<!-- 3EME SECTION TRANSMISSION -->
+<div class="grey-bg">
+  <div class="page-section">
+    <!-- expertise donation -->
+    <div class="expertise-box">
+      <div class="expertise-redirection-card transmission-redirection-card">
+        <%= link_to '', donation_path, class: 'expertise-redirection-card-link' %>
+        <span class="line-title expertise-redirection-card-line-title"></span>
+        <p>Domaine 1</p>
+        <div>
+          <span class="expertise-redirection-card-title">Donation</span>
+          <span class="expertise-redirection-card-icon"><%= image_tag 'icone-don.png' %></span>
+        </div>
+        <p class="expertise-redirection-card-description">La donation consiste en un don blabla, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
       </div>
-      <p class="expertise-redirection-card-description">La donation consiste en un don blabla, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
-    </div>
-    <!-- expertise testament -->
-    <div class="expertise-redirection-card">
-      <%= link_to '', testament_path, class: 'expertise-redirection-card-link' %>
-      <span class="line-title expertise-redirection-card-line-title"></span>
-      <p>Domaine 2</p>
-      <div>
-        <span class="expertise-redirection-card-title">Testament</span>
-        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-testament.png' %></span>
+      <!-- expertise testament -->
+      <div class="expertise-redirection-card transmission-redirection-card">
+        <%= link_to '', testament_path, class: 'expertise-redirection-card-link' %>
+        <span class="line-title expertise-redirection-card-line-title"></span>
+        <p>Domaine 2</p>
+        <div>
+          <span class="expertise-redirection-card-title">Testament</span>
+          <span class="expertise-redirection-card-icon"><%= image_tag 'icone-testament.png' %></span>
+        </div>
+        <p class="expertise-redirection-card-description">Il n'est pas toujours facile de réfléchir à ces sujets, nous vous accompagnons dans toutes vos démarches, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
       </div>
-      <p class="expertise-redirection-card-description">Il n'est pas toujours facile de réfléchir à ces sujets, nous vous accompagnons dans toutes vos démarches, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
     </div>
   </div>
 </div>
 <!-- 3EME SECTION TRANSMISSION -->
 
-<!-- 4EME SECTION ADOTION -->
-<div class="grey-bg">
-  <div class="page-section">
-    <div class="expertise-heading famille-heading">
-      <div class="section-heading-content famille-section-heading">
-        <span class="section-subtitle">Expertise</span>
-        <h2><%= link_to "L'ADOPTION", adoption_path %></h2>
-        <span class="line-title"></span>
-        <div class="section-description">
-          <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
-        </div>
-        <%= link_to(adoption_path) do %>
-          <span class="btn btn-primary">En savoir plus</span>
-        <% end %>
+<!-- 4EME SECTION ADOPTION -->
+<div class="page-section">
+  <div class="expertise-box">
+    <div class="expertise-redirection-card adoption-redirection-card">
+      <%= link_to '', adoption_path, class: 'expertise-redirection-card-link' %>
+      <span class="line-title expertise-redirection-card-line-title"></span>
+      <p>Domaine 4</p>
+      <div>
+        <span class="expertise-redirection-card-title">Adoption</span>
+        <span class="expertise-redirection-card-icon"><%= image_tag 'icone-famille.png' %></span>
       </div>
+      <p class="expertise-redirection-card-description">La adoption etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, excepturi. Animi aperiam quo debitis quis suscipit commodi, alias ipsum accusantium, corporis eum, expedita voluptas voluptates illo nesciunt enim assumenda esse.</p>
     </div>
   </div>
 </div>

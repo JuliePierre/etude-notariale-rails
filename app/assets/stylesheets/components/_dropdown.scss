@@ -2,7 +2,8 @@
 
 // Element sur lequel on clique pour faire appraître la dropdown
 .dropdown-link {
-  cursor: pointer;
+  cursor: default;
+  letter-spacing: 0.1rem;
 }
 
 // Contenu de la dropdown --> Attention, il existe un dropdown-content dans materialize, ne pas le réutiliser
