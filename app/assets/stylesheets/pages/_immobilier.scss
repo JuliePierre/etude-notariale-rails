@@ -12,16 +12,16 @@
   position: absolute;
   bottom: 8rem;
   right: 10rem;
-  h2 {
+  h1 {
     line-height: 1em;
     margin: 0px;
     color: $secondary-color;
   };
-   h4 {
-    line-height: 1em;
-    margin: 0px 0px 0.6em 0px;
-    color: $secondary-color;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
+}
+.immobilier-banner-title {
+  line-height: 1em;
+  margin: 0px 0px 0.6em 0px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-weight: 200;
 }

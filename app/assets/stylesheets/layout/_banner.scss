@@ -1,0 +1,19 @@
+.page-banner {
+  position: relative;
+}
+
+.banner-header {
+  position: absolute;
+  h1 {
+    line-height: 1em;
+    margin: 0px;
+    color: $secondary-color;
+  }
+}
+.banner-title {
+  line-height: 1em;
+  margin: 0px 0px 0.6em 0px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-weight: 200;
+}
