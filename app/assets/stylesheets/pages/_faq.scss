@@ -1,3 +1,31 @@
+#page-faq-questions {
+  text-align: justify;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  h4 {
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #222222;
+    font-size: 18px;
+  }
+  .collapsible-header {
+    padding: 0 3rem;
+  }
+  .collapsible-body {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+
+
+// ANCIENNE VERSION - A REVOIR
+
+
 // Bannière de présentation : photo + titre de page
 #guides-banner {
   height: 75vh;
