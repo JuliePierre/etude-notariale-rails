@@ -43,6 +43,10 @@
   right: 0;
 }
 
+.navbar-link.active::before {
+  right: 0;
+}
+
 // idem pour le lien de la dropdown
 .navbar-dropdown-link {
   display: inline-block;

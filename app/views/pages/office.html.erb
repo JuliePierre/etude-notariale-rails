@@ -191,3 +191,12 @@
   <a href='assets/document-test.pdf' id="telecharger-plaquette" class="btn btn-primary" download='plaquette_perraut_pirioux_mevel'><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
 </div>
 <!-- Bouton télécharger la plaquette -->
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(document).ready(function(){
+      $('.navbar-link').removeClass('active');
+      $('.navbar-link[data-link="office"').addClass('active');
+    });
+  </script>
+<% end %>

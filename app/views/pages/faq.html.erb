@@ -74,3 +74,12 @@
     </div>
   </div>
 </div>
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(document).ready(function(){
+      $('.navbar-link').removeClass('active');
+      $('.navbar-link[data-link="faq"').addClass('active');
+    });
+  </script>
+<% end %>
