@@ -7,23 +7,10 @@
   background-size: cover;
   position: relative;
 }
-
-.office-banner-header {
+#contact-banner-header {
   position: absolute;
-  bottom: 2rem;
-  left: 12rem;
-  h2 {
-    line-height: 1em;
-    margin: 0px;
-    color: white;
-  };
-   h4 {
-    line-height: 1em;
-    margin: 0px 0px 0.6em 0px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
+  bottom: 8rem;
+  right: 10rem;
 }
 
 // 1ère section

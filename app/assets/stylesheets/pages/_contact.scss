@@ -1,3 +1,33 @@
+// Bannière de présentation : photo + titre de page
+#contact-banner {
+  height: 75vh;
+  width: auto;
+  background: url(photo-test3.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-banner-header {
+  position: absolute;
+  bottom: 2rem;
+  left: 12rem;
+  h2 {
+    line-height: 1em;
+    margin: 0px;
+    color: white;
+  };
+   h4 {
+    line-height: 1em;
+    margin: 0px 0px 0.6em 0px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+// Bannière de présentation : photo + titre de page
+
+
 #map {
   height: 300px;
 }
