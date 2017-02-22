@@ -1,21 +1,97 @@
-<div class="orange-bg">
-  <div id="vente-banner">
-    <h1>Vente immobilière</h1>
-    <h5>Vous vendez <span class="rotate">une maison, un appartement, un chateau, un parking</span> ?</h5>
+<!-- Bannière -->
+<div class="page-banner" id="vente-banner">
+  <div class="banner-header" id="vente-banner-header">
+    <h5 class="banner-title">Vous vendez <span class="rotate">une maison, un appartement, un chateau, un parking</span> ?</h5>
   </div>
 </div>
-<div class="grey-bg">
-  <div class="page-immobilier-section">
-    <h2>Notre expertise</h2>
-    <p>Notre office vous accompagne dans la recherche d'acquéreurs grâce à un négociateur, etc etc.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia pariatur sint, ex deserunt reprehenderit repellendus illum doloremque tenetur, omnis tempora nam nobis. Quos beatae repellendus earum est dignissimos ipsum?</p>
-  </div>
-</div>
-<div>
-  <div class="vente-contact-form">
-    <div style="width: 55%;">
-      <h2>Contactez-nous</h2>
-      <%= render 'shared/contact-form', contact: @contact %>
+<!-- Bannière -->
+
+<!-- Sous-navigation -->
+<div class="expertise-sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-menu">
+      <span class="sub-nav-item"><%= link_to 'Accueil', root_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item"><%= link_to 'Négociation immobilière', negociation_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item">Vendre</span>
     </div>
   </div>
 </div>
+<!-- Sous-navigation -->
+
+<div class="page-section">
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Expertise</span>
+        <h2>VENTE IMMOBILIERE</h2>
+        <div class="section-description">
+          <p>Notre office vous accompagne dans la recherche d'acquéreurs grâce à un négociateur, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia pariatur sint, ex deserunt reprehenderit repellendus illum doloremque tenetur, omnis tempora nam nobis. Quos beatae repellendus earum est dignissimos ipsum?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <%= link_to 'En savoir plus', immobilier_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+
+<!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
+<div class="vente-contact-section">
+  <!-- 4ème SECTION - Partie droite : la photo -->
+  <div id="vente-contact-picture">
+  </div>
+  <!-- 4ème SECTION - Partie droite : la photo -->
+
+  <!-- 4ème SECTION - Partie gauche : le formulaire -->
+  <div class="homepage-contact-form">
+    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
+    <div class="section-heading-content">
+      <span class="line-title section-line-title"></span>
+      <span class="section-subtitle">Contactez-nous</span>
+      <h2>Prendre rendez-vous</h2>
+      <div class="section-description">
+        <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
+    </div>
+    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
+
+    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
+    <div id="homepage-contact-form">
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        <div class="row">
+          <div class="col s12 m6">
+            <%= f.input :nom, :required => true, placeholder: 'VOTRE NOM' %>
+          </div>
+          <div class="col s12 m6">
+            <%= f.input :email, :required => true, placeholder: 'VOTRE EMAIL' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <%= f.input :telephone, placeholder: 'VOTRE NUMERO' %>
+          </div>
+          <div class="col s12 m6">
+            <%= f.input :motif, collection: Contact::CONTACTTYPES, placeholder: "MOTIF DE DEMANDE" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <%= f.input :message, :as => :text, :required => true, placeholder: 'POSEZ ICI VOTRE QUESTION' %>
+          </div>
+        </div>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
+        </div>
+        <div class="homepage-contact-button">
+          <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+        </div>
+      <% end %>
+    </div>
+    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
+  </div>
+  <!-- 4ème SECTION - Partie gauche : le formulaire -->
+</div>
+<!-- 4ème SECTION - FORMULAIRE DE CONTACT -->

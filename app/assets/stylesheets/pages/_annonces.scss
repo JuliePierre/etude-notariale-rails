@@ -49,9 +49,37 @@
     color: $primary-color;
   }
 }
-
-
 // PAGE ANNONCES IMMOBILIERES - INDEX
+
+
+
+// PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
+// Bannière
+#vente-banner {
+  background: url(immobilier.jpg);
+  height: 60vh;
+  width: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#vente-banner-header {
+  bottom: 5rem;
+  right: 10rem;
+}
+
+// Partie contact
+.vente-contact-section {
+  display: flex;
+}
+#vente-contact-picture {
+  flex: 0 0 50%;
+  background: url(promotion.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+// PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
+
 
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
