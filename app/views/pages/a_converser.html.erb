@@ -1,0 +1,59 @@
+<h2>La lettre de mon notaire</h2>
+<ul>
+  <% @feed_lettre_des_notaires.items.each do |item| %>
+  <li>
+    <%= item.title %>
+    <a href="<%= item.link %>" target="_blank" class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+  </li>
+  <% end %>
+</ul>
+<div class="guides-section-cartes">
+  <div class="carte-guide">
+    <img src="assets/guide-notaires-succession.jpg" alt="guide-notaires-succession">
+    <span class="line-title carte-guide-line"></span>
+    <h3>Succession - L'un de vos proches est décédé</h3>
+    <p>Qui hérite? Dans quelle proportion? Quel en est le coût? Votre notaire est là pour vous aider et vous assister dans les opérations successorales que vous aurez à effectuer...</p>
+    <div class="carte-guide-link">
+      <div class="btn-light">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        Consulter le guide
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="carte-guide">
+    <img src="assets/guide-vente-immobiliere.jpg" alt="guide-vente-immobiliere">
+    <span class="line-title carte-guide-line"></span>
+    <h3>Vente immobilière - mode d'emploi</h3>
+    <p>Quels documents dois-je fournir? Dès qu'un accord est trouvé avec l'acquéreur, je remets au notaire les documents portant sur ma situation personnelle ...</p>
+    <div class="carte-guide-link">
+      <a href="assets/guide-vente-immobiliere.pdf" target="_blank" class="btn-light">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        Consulter le guide
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="carte-guide">
+    <img src="assets/guide-achat-immobilier.jpg" alt="guide-achat-immobiliere">
+    <span class="line-title carte-guide-line"></span>
+    <h3>Achat immobilier - mode d'emploi</h3>
+    <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+    <div class="carte-guide-link">
+      <div class="btn-light">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        Consulter le guide
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<h2>Actualités des notaires en France</h2>
+  <ul>
+    <% @feed_actualites.items.each do |item| %>
+    <li>
+      <%= item.title %>
+      <a href="<%= item.link %>" target="_blank" class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+    </li>
+    <% end %>
+  </ul>
