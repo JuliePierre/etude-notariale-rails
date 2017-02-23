@@ -26,11 +26,8 @@
     <div class="col s6">
       <div class="section-heading-content">
         <span class="line-title section-line-title"></span>
-        <span class="section-subtitle"><%= @annonce.ville %> <%= @annonce.code_postal %></span>
+        <span class="section-subtitle">Ref. <%= @annonce.reference %></span>
         <h2><%= @annonce.genre %></h2>
-        <div class="section-description">
-          <p><%= @annonce.description %></p>
-        </div>
       </div>
     </div>
   </div>
@@ -40,17 +37,20 @@
 <div class="annonces-show-container">
   <div class="annonces-show-photo">
     <%= cl_image_tag @annonce.photo, crop: :fill %>
-    <h5><%= @annonce.prix_total.to_i %> €</h5>
+    <span class="annonce-price"><%= @annonce.prix_total.to_i %> €</span>
+    <h3>Description</h3>
+    <p><%= @annonce.description %></p>
     <div class="reseaux-sociaux-container">
       <h3>Partager</h3>
       <span id="shareBtn" class="btn-social"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></span>
       <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
     </div>
-    <%= link_to 'Retour aux annonces', annonces_path, class: 'btn btn-primary' %>
+    <h3>Vous souhaitez en savoir plus ?</h3>
+    <%= link_to 'Contactez-nous', contact_path, class: 'btn btn-primary' %>
   </div>
 
+
   <div class="annonces-show-infos">
-    <p>Ref. <%= @annonce.reference %></p>
       <div class="annonces-show-descriptif">
         <table class="annonces-show-tableau">
           <tr>
@@ -96,6 +96,9 @@
         </table>
       </div>
   </div>
+</div>
+<div class="page-section">
+  <%= link_to 'Retour aux annonces', annonces_path, class: 'btn btn-primary' %>
 </div>
 
 <script>
