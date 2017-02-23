@@ -1,37 +1,7 @@
-.expertise-sub-nav {
-  text-align: center;
-  padding: 3rem 10rem 0rem 10rem;
+// Bannière
+#pacs-banner {
+  background: url(immobilier.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
 }
-.sub-nav-container {
-  position: relative;
-}
-.sub-nav-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -100;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #e5e5e5;
-}
-.sub-nav-menu {
-  background-color: white;
-  display: inline-block;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  i {
-    margin: 0 0.8rem;
-  }
-}
-.sub-nav-item {
-  color: $brand-dark-grey;
-  letter-spacing: .04em;
-  a:hover {
-    color: $primary-color;
-  }
-}
-.sub-nav-menu .sub-nav-item:last-child {
-  color: $brand-grey-text;
-}
+// Bannière

@@ -1,16 +1,8 @@
 // Bannière de présentation : photo + titre de page
 #office-banner {
-  height: 75vh;
-  width: auto;
   background: url(photo-test3.png);
   background-repeat:no-repeat;
   background-size: cover;
-  position: relative;
-}
-#contact-banner-header {
-  position: absolute;
-  bottom: 8rem;
-  right: 10rem;
 }
 
 // 1ère section

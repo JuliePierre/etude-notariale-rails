@@ -1,19 +1,45 @@
+// Bannière
 .page-banner {
+  height: 75vh;
+  width: auto;
   position: relative;
 }
+// pour chaque page, la bannière a un id qui permet d'indiquer le background
 
-.banner-header {
+// Position des titres
+.page-banner-header {
   position: absolute;
+  bottom: 5rem; // chaque header est à la même position horizontale mais peut être à droit ou à gauche selon la photo
+  // span pour les sous-titres
+  .page-banner-subtitle {
+    line-height: 1em;
+    margin: 0px 0px 0.6em 0px;
+    color: white; // la couleur est partout la même pour l'instant
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.6rem;
+  }
+  // h1 pour les titres
   h1 {
+    font-size: 3rem;
     line-height: 1em;
     margin: 0px;
-    color: $secondary-color;
+    color: white; // la couleur est partout la même pour l'instant
   }
 }
-.banner-title {
-  line-height: 1em;
-  margin: 0px 0px 0.6em 0px;
-  color: $secondary-color;
-  text-transform: uppercase;
-  font-weight: 200;
+.page-banner-header.left {
+  left: 10rem;
+}
+.page-banner-header.right {
+  right: 10rem;
+}
+
+// Variante de couleur pour les titres
+.page-banner-header.header-red {
+  .page-banner-subtitle {
+    color: $secondary-color;
+  }
+  h1 {
+    color: $secondary-color;
+  }
 }
