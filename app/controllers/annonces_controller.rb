@@ -60,7 +60,7 @@ class AnnoncesController < ApplicationController
   private
 
   def set_annonce
-    @annonce = Annonce.find(params[:id])
+    @annonce = Annonce.friendly.find(params[:id])
   end
 
   def annonce_params
