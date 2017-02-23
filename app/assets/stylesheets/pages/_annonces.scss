@@ -2,14 +2,8 @@
 // Bannière
 #annonces-banner {
   background: url(immobilier.jpg);
-  height: 60vh;
-  width: 100%;
   background-repeat:no-repeat;
   background-size: cover;
-}
-#annonces-banner-header {
-  bottom: 5rem;
-  right: 10rem;
 }
 // Bannière
 
@@ -57,14 +51,12 @@
 // Bannière
 #vente-banner {
   background: url(immobilier.jpg);
-  height: 60vh;
-  width: 100%;
   background-repeat:no-repeat;
   background-size: cover;
 }
+// particularité de ce header qui doit être fixé par la gauche pour que le rotate ne décale pas toute la phrase
 #vente-banner-header {
-  bottom: 5rem;
-  right: 10rem;
+  left: 50rem;
 }
 
 // Partie contact
