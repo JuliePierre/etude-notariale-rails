@@ -57,3 +57,7 @@
     </li>
     <% end %>
   </ul>
+
+<!-- Bouton pour partager l'url -->
+<input id="post-shortlink" value="<%= @url %>">
+<button class="btn btn-primary" id="copy-button" data-clipboard-target="#post-shortlink" onclick="Materialize.toast('URL copiée', 2000)">Copier l'url</button>

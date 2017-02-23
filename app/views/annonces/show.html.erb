@@ -1,74 +1,99 @@
 <!-- Bannière -->
-<div id="annonces-banner">
-  <div class="annonces-banner-header">
-    <h4>L'office</h4>
+<div class="page-banner" id="annonce-banner">
+  <div class="page-banner-header right header-red">
+    <span class="page-banner-subtitle">Vente immobilière</span>
+    <h1>Annonces immobilières</h1>
   </div>
 </div>
 <!-- Bannière -->
 
-<div class="page-wrapper">
-  <div class="annonces-show-container">
-    <div class="annonces-show-photo">
-      <%= cl_image_tag @annonce.photo, crop: :fill %>
-      <div class="reseaux-sociaux">
-        <div id="shareBtn" class="btn btn-primary">Partager sur Facebook</div>
-        <a class="twitter-share-button btn btn-primary"
-          href="<%= @twitter_text %>" target="_blank">
-        Partager sur Twitter</a>
-        <input id="post-shortlink" value="<%= @url %>">
-        <button class="btn btn-primary" id="copy-button" data-clipboard-target="#post-shortlink" onclick="Materialize.toast('URL copiée', 2000)">Copier l'url</button>
+<!-- Subnavigation -->
+<div class="sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-menu">
+      <span class="sub-nav-item"><%= link_to 'Accueil', root_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item"><%= link_to 'Annonces immobilières', annonces_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item">Annonce <%= @annonce.reference %></span>
+    </div>
+  </div>
+</div>
+<!-- Subnavigation -->
+
+<div class="page-section">
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle"><%= @annonce.ville %> <%= @annonce.code_postal %></span>
+        <h2><%= @annonce.genre %></h2>
+        <div class="section-description">
+          <p><%= @annonce.description %></p>
+        </div>
       </div>
     </div>
-    <div class="annonces-show-infos">
-      <h2><%= @annonce.genre %></h2>
-      <h4><%= @annonce.ville %> <%= @annonce.code_postal %> </h4>
-      <p>Ref. <%= @annonce.reference %></p>
-      <h5><%= @annonce.prix_total.to_i %> €</h5>
-        <div class="annonces-show-descriptif">
-          <table class="annonces-show-tableau">
-            <tr>
-              <td>
-                <p>Description</p>
-                <p style="font-size: 4rem;"><i class="fa fa-home" aria-hidden="true"></i></p>
-              </td>
-              <td>
-                <p>Surface habitable : <%= @annonce.surface_habitable %></p>
-                <p>Surface terrain : <%= @annonce.surface_terrain %></p>
-              </td>
-              <td>
-                <p>Pièces : <%= @annonce.nb_pieces %></p>
-                <p>Chambres : <%= @annonce.nb_chambres %></p>
-              </td>
-            </tr>
-            <tr>
-              <td><p>Prix</p></td>
-              <td>
-                <p><%= @annonce.prix_total.to_i %>€</p>
-                <p><%= @annonce.prix_vente.to_i %>€</p>
-              </td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                <p>Equipements</p>
-                <p style="font-size: 4rem;"><i class="fa fa-users" aria-hidden="true"></i></p>
-              </td>
-              <td>
-                <% t = @annonce.terrasse ? "Oui" : "Non" %>
-                <p>Terrasse : <%= t %></p>
-                <% t = @annonce.piscine ? "Oui" : "Non" %>
-                <p>Piscine : <%= t %></p>
-              </td>
-              <td>
-                <% t = @annonce.cave ? "Oui" : "Non" %>
-                <p>Cave : <%= t %></p>
-                <% t = @annonce.stationnement ? "Oui" : "Non" %>
-                <p>Parking : <%= t %></p>
-              </td>
-            </tr>
-          </table>
-        </div>
+  </div>
+</div>
+
+
+<div class="annonces-show-container">
+  <div class="annonces-show-photo">
+    <%= cl_image_tag @annonce.photo, crop: :fill %>
+    <h5><%= @annonce.prix_total.to_i %> €</h5>
+    <div class="reseaux-sociaux">
+    <h3>Partager</h3>
+    <span id="shareBtn" class="btn-social"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></span>
+    <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
+
     </div>
+  </div>
+  <div class="annonces-show-infos">
+    <p>Ref. <%= @annonce.reference %></p>
+      <div class="annonces-show-descriptif">
+        <table class="annonces-show-tableau">
+          <tr>
+            <td>
+              <p>Description</p>
+              <p style="font-size: 4rem;"><i class="fa fa-home" aria-hidden="true"></i></p>
+            </td>
+            <td>
+              <p>Surface habitable : <%= @annonce.surface_habitable %></p>
+              <p>Surface terrain : <%= @annonce.surface_terrain %></p>
+            </td>
+            <td>
+              <p>Pièces : <%= @annonce.nb_pieces %></p>
+              <p>Chambres : <%= @annonce.nb_chambres %></p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Prix</p></td>
+            <td>
+              <p><%= @annonce.prix_total.to_i %>€</p>
+              <p><%= @annonce.prix_vente.to_i %>€</p>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <p>Equipements</p>
+              <p style="font-size: 4rem;"><i class="fa fa-users" aria-hidden="true"></i></p>
+            </td>
+            <td>
+              <% t = @annonce.terrasse ? "Oui" : "Non" %>
+              <p>Terrasse : <%= t %></p>
+              <% t = @annonce.piscine ? "Oui" : "Non" %>
+              <p>Piscine : <%= t %></p>
+            </td>
+            <td>
+              <% t = @annonce.cave ? "Oui" : "Non" %>
+              <p>Cave : <%= t %></p>
+              <% t = @annonce.stationnement ? "Oui" : "Non" %>
+              <p>Parking : <%= t %></p>
+            </td>
+          </tr>
+        </table>
+      </div>
   </div>
 </div>
 

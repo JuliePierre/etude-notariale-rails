@@ -75,6 +75,11 @@
 
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
+#annonce-banner {
+  background: url(immobilier.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
 .annonces-show-container {
   margin: 0 10rem;
   padding-top: 4rem;
@@ -108,9 +113,31 @@
     border-top: 1px solid $primary-color-light;
   }
   i {
-    color: $primary-color;
+    color: initial;
   }
 }
+
+// Réseaux sociaux
+.reseaux-sociaux {
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+.btn-social {
+  .fa {
+    background-color: $primary-color-light;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 34px;
+    font-size: 15px;
+  }
+}
+
 
 // Boutons partage réseaux sociaux
 #toast-container {
