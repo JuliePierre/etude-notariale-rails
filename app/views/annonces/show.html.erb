@@ -41,13 +41,14 @@
   <div class="annonces-show-photo">
     <%= cl_image_tag @annonce.photo, crop: :fill %>
     <h5><%= @annonce.prix_total.to_i %> €</h5>
-    <div class="reseaux-sociaux">
-    <h3>Partager</h3>
-    <span id="shareBtn" class="btn-social"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></span>
-    <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
-
+    <div class="reseaux-sociaux-container">
+      <h3>Partager</h3>
+      <span id="shareBtn" class="btn-social"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></span>
+      <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
     </div>
+    <%= link_to 'Retour aux annonces', annonces_path, class: 'btn btn-primary' %>
   </div>
+
   <div class="annonces-show-infos">
     <p>Ref. <%= @annonce.reference %></p>
       <div class="annonces-show-descriptif">
@@ -113,3 +114,4 @@ document.getElementById('shareBtn').onclick = function() {
   }, function(response){});
 }
 </script>
+
