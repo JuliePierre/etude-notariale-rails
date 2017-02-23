@@ -1,3 +1,4 @@
+// PAGE DE RECHERCHE
 .search-page-wrapper.active {
   background-color: $brand-grey;
   opacity: 1;
@@ -33,3 +34,19 @@
     }
   }
 }
+// PAGE DE RECHERCHE
+
+// PAGE DE RESULTATS
+// Bannière
+#search-banner {
+  background: url(photo-test3.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.search-answer-container {
+  margin-bottom: 4rem;
+  h2 {
+    font-size: 2rem;
+  }
+}
+// PAGE DE RESULTATS
