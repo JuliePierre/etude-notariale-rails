@@ -14,38 +14,43 @@
   justify-content: space-between;
   padding: 0rem 10rem;
 }
-.negociation-choice-card {
+
+// Les cartes
+.immobilier-redirection-card {
+  flex: 0 0 32%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4rem;
   position: relative;
-  background-color: white;
   opacity: 0.9;
-  padding: 2rem 4rem;
-  flex: 0 0 35%;
-  cursor: pointer;
+}
+.immobilier-redirection-card:hover {
+  background-color: $primary-color-light;
+  opacity: 1;
+}
+
+.immobilier-redirection-card-line-title {
+  background-color: $brand-dark-grey;
+  margin-top: 4rem;
+  width: 30px;
+}
+.immobilier-redirection-card-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.immobilier-redirection-card-icon {
+  float: right;
+  height: 0px;
   img {
-    width: 100%;
-    margin-bottom: 2rem;
+    position: relative;
+    height: 45px;
+    bottom: 12px;
   }
 }
-.negociation-choice-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 2rem;
-  text-align: center;
-}
-.card_link {
+.immobilier-redirection-card-link {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
 }
-
-// Au hover
-.negociation-choice-card:hover {
-  opacity: 0.7;
-  .negociation-choice-title {
-    color: $primary-color;
-  }
-}
-

@@ -54,7 +54,7 @@ padding-top: 3em;
 .annonce-tableau {
   flex: 0 0 50%;
   background-color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   tr {
     border-bottom: 1px solid $primary-color-light;
     td:first-child {

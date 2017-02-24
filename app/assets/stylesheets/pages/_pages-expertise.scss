@@ -69,7 +69,7 @@
   padding: 1.5rem 2rem;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgba(1, 1, 1, 0.2);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   position: relative;
   cursor: pointer;
   margin-bottom: 2rem;
@@ -101,28 +101,31 @@
 }
 
 .carte-fiche-pratique {
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); // même box-shadow que les fiches de présentation des notaires de la page Office
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   width: 300px;
   height: auto;
   flex: 0 0 24%;
-  border: 3px solid $primary-color-light;
+  border: 1px solid $primary-color-light;
   margin-bottom: 2rem;
   .carte-fiche-header {
     color: white;
     background-color: $primary-color-light;
     width: 100%;
     padding: 1.5rem 1rem;
-    h5 {
-      text-align: center;
-      margin-bottom: 0;
-      margin-top: 0;
+    text-align: center;
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1rem;
+      margin: 0.6rem 0 0 0;
     }
-    p {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 0;
+    .carte-fiche-subtitle {
+      line-height: 1em;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 1rem;
     }
   }
   .carte-fiche-infos {

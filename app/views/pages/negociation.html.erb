@@ -1,21 +1,26 @@
 <div id="negociation-banner">
   <div class="negociation-choice-container">
-    <div class="negociation-choice-card">
-      <%= image_tag 'icone-achat.png' %>
-      <h2 class="negociation-choice-title">
-        J'achète un bien
-      </h2>
-      <%= link_to '', annonces_path, class: 'card_link' %>
+    <div class="immobilier-redirection-card couple-redirection-card">
+      <%= link_to '', annonces_path, class: 'immobilier-redirection-card-link' %>
+      <span class="line-title immobilier-redirection-card-line-title"></span>
+      <p>Négociation immobilière</p>
+      <div>
+        <span class="immobilier-redirection-card-title">J'achète</span>
+        <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-achat.png' %></span>
+      </div>
     </div>
-    <div class="negociation-choice-card">
-      <%= image_tag 'icone-vente.png' %>
-      <h2 class="negociation-choice-title">
-        Je vends un bien
-      </h2>
-      <%= link_to '', vente_path, class: 'card_link' %>
+    <div class="immobilier-redirection-card couple-redirection-card">
+      <%= link_to '', vente_path, class: 'immobilier-redirection-card-link' %>
+      <span class="line-title immobilier-redirection-card-line-title"></span>
+      <p>Négociation immobilière</p>
+      <div>
+        <span class="immobilier-redirection-card-title">Je vends</span>
+        <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-vente.png' %></span>
+      </div>
     </div>
   </div>
 </div>
+
 
 <%= content_for(:after_js) do %>
   <script>
