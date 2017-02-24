@@ -1,0 +1,35 @@
+#contact-link {
+  background-color: $primary-color-light;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: fixed;
+  top: 600px;
+  right: -135px;
+  z-index: 2000;
+  transition: all 0.5s ease;
+  width: 190px;
+}
+
+.contact-link-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-link-icon {
+  flex: 0 0 30%;
+}
+
+.contact-link-text {
+  flex: 0 0 70%;
+}
+
+#contact-link:hover {
+  right: 0;
+  cursor: pointer;
+}
+
+

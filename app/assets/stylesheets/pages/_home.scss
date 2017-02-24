@@ -209,33 +209,6 @@
     height: 100%;
   }
 }
-#homepage-contact-form {
-  label {
-    display: none;
-  }
-  input, textarea {
-    border-bottom: 1px solid $brand-grey-text;
-    &:focus {
-      box-shadow: initial;
-      border-bottom: 1px solid $primary-color;
-    }
-  }
-  select {
-    background-color: initial;
-  }
-  .row .col:first-child {
-    padding-left: 0;
-  }
-  .input-field {
-    width: 100%;
-  }
-}
-.homepage-contact-button {
-  padding-right: 1.5rem;
-}
-.btn-contact-form {
-  width: 100%;
-}
 // SECTION FORMULAIRE DE CONTACT
 
 
