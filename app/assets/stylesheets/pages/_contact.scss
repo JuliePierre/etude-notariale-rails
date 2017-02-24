@@ -21,28 +21,6 @@
   padding: 0px 1em;
 }
 
-// Formulaire de contact
-#page-contact-form {
-  padding-right: 1rem;
-  label {
-    display: none;
-  }
-  input, textarea {
-    border: 1px solid $brand-grey;
-    padding: 0 1rem;
-    &:focus {
-      border: 1px solid $primary-color-light;
-    }
-  }
-  .input-field {
-    width: 100%;
-  }
-}
-#first-row {
-  .input-field {
-    margin-top: 0;
-  }
-}
 // Formulaire de contact - Sur la page contact ET sur la homepage
 // Coordonnées
 #page-contact-infos {

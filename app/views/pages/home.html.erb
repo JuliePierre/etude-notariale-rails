@@ -12,8 +12,6 @@
 </div>
 <!-- Bannière -->
 
-<%= render 'shared/contact-form', contact: @contact %>
-
 <!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 <div class="homepage-section">
   <div class="row">
@@ -200,35 +198,7 @@
 
     <!-- 4ème SECTION - Partie gauche // Le formulaire -->
     <div id="homepage-contact-form">
-      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-        <div class="row">
-          <div class="col s12 m6">
-            <%= f.input :nom, :required => true, placeholder: 'VOTRE NOM' %>
-          </div>
-          <div class="col s12 m6">
-            <%= f.input :email, :required => true, placeholder: 'VOTRE EMAIL' %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m6">
-            <%= f.input :telephone, placeholder: 'VOTRE NUMERO' %>
-          </div>
-          <div class="col s12 m6">
-            <%= f.input :motif, collection: Contact::CONTACTTYPES, placeholder: "MOTIF DE DEMANDE" %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <%= f.input :message, :as => :text, :required => true, placeholder: 'POSEZ ICI VOTRE QUESTION' %>
-          </div>
-        </div>
-        <div class= "hidden">
-          <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
-        </div>
-        <div class="homepage-contact-button">
-          <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
-        </div>
-      <% end %>
+      <%= render 'shared/contact-form', contact: @contact %>
     </div>
     <!-- 4ème SECTION - Partie gauche // Le formulaire -->
     </div>

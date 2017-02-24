@@ -1,4 +1,4 @@
-<%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+<%= simple_form_for contact, :html => {:class => 'form-horizontal' } do |f| %>
   <div class="row">
     <div class="col s12 m6">
       <%= f.input :nom, :required => true, placeholder: 'Votre nom' %>
@@ -31,7 +31,9 @@
   <div class= "hidden">
     <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
   </div>
-  <div class="homepage-contact-button">
-    <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+  <div class="col s12">
+    <div class="contact-form-button">
+      <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+    </div>
   </div>
 <% end %>

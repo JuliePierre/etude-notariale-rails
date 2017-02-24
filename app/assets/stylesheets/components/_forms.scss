@@ -5,7 +5,7 @@ label {
   display: none;
 }
 input {
-  border: 1px solid $brand-grey !important;
+  border: 1px solid #eee !important;
   padding: 0 1rem !important;
   border-radius: 3px !important;
   height: 2.4rem !important;
@@ -13,12 +13,12 @@ input {
   box-sizing: inherit !important;
 }
 textarea {
-  border: 1px solid $brand-grey !important;
-  padding: 0.8rem 1rem !important;
+  border: 1px solid #eee !important;
   border-radius: 3px !important;
   height: 2.4rem !important;
   font-size: 0.9rem !important;
   box-sizing: inherit !important;
+  padding: 0.8rem 0 4.6rem 1rem !important;
 }
 .select-dropdown {
   color: $brand-grey-text !important;
@@ -39,6 +39,10 @@ textarea {
 }
 .input-field {
   width: 100%;
+}
+
+.contact-form-button {
+  padding: 0 0.75rem;
 }
 // COMMUN A TOUS LES FORMULAIRES
 
