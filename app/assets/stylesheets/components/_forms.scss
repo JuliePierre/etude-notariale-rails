@@ -1,32 +1,44 @@
-select {
-  display: block;
+// COMMUN A TOUS LES FORMULAIRES
+
+// Pas de label au-dessus des input
+label {
+  display: none;
 }
-
-// écraser les variables de materilialize pour un formulaire qui tient la route !
-.input-field.col label {
-  top: -0.8rem;
-  left: 0px;
-  color: $secondary-color;
+input {
+  border: 1px solid $brand-grey !important;
+  padding: 0 1rem !important;
+  border-radius: 3px !important;
+  height: 2.4rem !important;
+  font-size: 0.9rem !important;
+  box-sizing: inherit !important;
 }
-
-[type="checkbox"] + label:before {
-  border: 2px solid $brand-grey;
+textarea {
+  border: 1px solid $brand-grey !important;
+  padding: 0.8rem 1rem !important;
+  border-radius: 3px !important;
+  height: 2.4rem !important;
+  font-size: 0.9rem !important;
+  box-sizing: inherit !important;
 }
-
-
-// contact form
-.contact-form {
+.select-dropdown {
+  color: $brand-grey-text !important;
+  font-size: 0.9rem !important;
+  span {
+    color: $brand-grey-text !important;
+    font-size: 0.9rem !important;
+  }
+}
+.select-wrapper {
+  span.caret {
+    color: $primary-color !important;
+    right: 1rem !important;
+  }
+  .dropdown-content li:hover {
+    background-color: $primary-color-light;
+  }
+}
+.input-field {
   width: 100%;
 }
-.contact-form .input-field.col label {
-  color: $primary-color !important;
-}
-.contact-form .input-field.col.select {
-  margin-bottom: 2rem;
-}
-label.select {
-  top: -1.8rem !important;
-}
-abbr[title] {
-  border-bottom: initial;
-}
+// COMMUN A TOUS LES FORMULAIRES
+

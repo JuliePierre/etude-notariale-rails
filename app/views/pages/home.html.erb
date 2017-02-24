@@ -12,6 +12,8 @@
 </div>
 <!-- Bannière -->
 
+<%= render 'shared/contact-form', contact: @contact %>
+
 <!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 <div class="homepage-section">
   <div class="row">
@@ -302,6 +304,11 @@
         handler.fitMapToBounds();
         handler.getMap().setZoom(14);
       });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
     });
   </script>
 <% end %>

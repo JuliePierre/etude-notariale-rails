@@ -83,6 +83,7 @@ class PagesController < ApplicationController
 
 
   def promotion
+    @contact = Contact.new
   end
   # Fin des expertises
 
