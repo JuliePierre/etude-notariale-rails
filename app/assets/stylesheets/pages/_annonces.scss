@@ -1,7 +1,7 @@
 // PAGE ANNONCES IMMOBILIERES - INDEX
 // Bannière
 #annonces-banner {
-  background: url(immobilier.jpg);
+  background: url('immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -50,7 +50,7 @@
 // PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
 // Bannière
 #vente-banner {
-  background: image-url(immobilier.jpg);
+  background: image-url('immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -65,7 +65,7 @@
 }
 #vente-contact-picture {
   flex: 0 0 50%;
-  background: url(promotion.jpg);
+  background: url('promotion.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -76,7 +76,7 @@
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
 #annonce-banner {
-  background: url(immobilier.jpg);
+  background: url('immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }

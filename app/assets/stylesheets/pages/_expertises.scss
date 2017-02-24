@@ -26,7 +26,7 @@
 #expertises-banner {
   height: 75vh;
   width: auto;
-  background: image-url(photo-test2.png);
+  background: image-url('photo-test2.png');
   background-repeat:no-repeat;
   background-size: cover;
   position: relative;
@@ -81,12 +81,12 @@
 }
 // particularité : le background
 #carte-expertise-famille {
-  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), url(expertise1.jpg);
+  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), image-url('expertise1.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
 #carte-expertise-affaires {
-  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), url(expertise2.jpg);
+  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), image-url('expertise2.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
