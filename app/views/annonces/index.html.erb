@@ -42,3 +42,13 @@
   </div>
 </div>
 <!-- Les annonces -->
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(document).ready(function(){
+      $('.navbar-link').removeClass('active');
+      $('.navbar-link[data-link="immobilier"').addClass('active');
+    });
+  </script>
+<% end %>
+
