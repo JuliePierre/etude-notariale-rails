@@ -26,12 +26,7 @@
   bottom: 0;
   background: $primary-color;
   height: 4px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  transition: right 0.5s ease-out;
 }
 
 .navbar-link:hover {
@@ -45,6 +40,7 @@
 
 .navbar-link.active::before {
   right: 0;
+  transition: none;
 }
 
 // idem pour le lien de la dropdown
