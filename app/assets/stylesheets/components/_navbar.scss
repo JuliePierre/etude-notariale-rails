@@ -112,8 +112,7 @@
 #navbar-search-icon {
   cursor: pointer;
   &:hover {
-    color: black;
-    opacity: 0.2;
+    color: $primary-color;
   }
 }
 
