@@ -1,31 +1,26 @@
 // Bannière de présentation : photo + titre de page
 #faq-banner {
-  background: image-url('guides.jpg');
+  background: image-url('banner-faq.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
 // Bannière
 
-#page-faq-questions {
+// Boite a questions --> même format pour la page faq et la faq sur les pages expertise
+.faq-questions {
   text-align: justify;
-  h2 {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.4rem;
-  }
-  h4 {
-    line-height: 24px;
-    font-weight: 700;
-    font-style: normal;
-    color: #222222;
-    font-size: 18px;
-  }
   .collapsible-header {
-    padding: 0 3rem;
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 1rem;
   }
   .collapsible-body {
     padding-right: 5rem;
     padding-left: 5rem;
+    p {
+      font-size: 1rem;
+      color: $brand-grey-text;
+    }
   }
 }
 .collapsible {
