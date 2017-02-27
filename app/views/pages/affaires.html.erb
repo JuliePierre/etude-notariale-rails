@@ -86,3 +86,26 @@
   </div>
 </div>
 <!-- 1ERE SECTION COUPLE -->
+
+<!-- Bouton Contact -->
+<div id="contact-link">
+  <div class="contact-link-content">
+    <span class="contact-link-icon valign-wrapper"><i class="material-icons valign">email</i></span>
+    <span class="contact-link-text">Contactez-nous</span>
+    <%= link_to '', contact_path, class: 'carte-link' %>
+  </div>
+</div>
+<!-- Bouton Contact -->
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(document).ready(function(){
+      $('.navbar-link').removeClass('active');
+      $('.navbar-link[data-link="expertises"').addClass('active');
+      var contactLinkPosition = $('#contact-link').offset().top;
+      $(window).scroll(function(){
+        $("#contact-link").css("top", Math.max(80, contactLinkPosition - $(this).scrollTop()));
+      });
+    });
+  </script>
+<% end %>
