@@ -1,8 +1,5 @@
 class ContactsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:new, :create]
-  def new
-    @contact = Contact.new
-  end
 
   def create
     @contact = Contact.new(params[:contact])
@@ -11,7 +8,8 @@ class ContactsController < ApplicationController
       flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
     else
       flash.now[:error] = 'Cannot send message.'
-      render :new
+      render 'pages/contact.html'
     end
+    raise
   end
 end

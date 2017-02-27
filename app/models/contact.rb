@@ -7,7 +7,7 @@ class Contact < MailForm::Base
   attribute :telephone
   attribute :message
   attribute :nickname,  :captcha  => true
-  attribute :motif,  :validate => ["Demander un RDV", "Poser une question"]
+  attribute :motif,  :validate => CONTACTTYPES
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.

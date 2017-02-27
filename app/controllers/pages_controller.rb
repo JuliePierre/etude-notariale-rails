@@ -100,7 +100,6 @@ class PagesController < ApplicationController
 
   def contact
     @contact = Contact.new
-    @contact_types = Contact::CONTACTTYPES
   end
 
   # Négociation immobilière
