@@ -1,116 +1,76 @@
-// PAGES EXPERTISES PREMIER NIVEAU
-.expertise-niveau1-section {
-  padding: 4rem 12rem;
-}
-// PAGES EXPERTISES PREMIER NIVEAU
+// STYLESHEET COMMUNE AUX PAGES DES EXPERTISES : du premier niveau au dernier niveau (Famille --> Pacs)
 
-
-
-// PAGES EXPERTISES DEUXIEME NIVEAU ----- FAMILLE / AFFAIRES / IMMOBILIER / PROMOTION
-
-// PAGES EXPERTISES DEUXIEME NIVEAU ----- FAMILLE / AFFAIRES / IMMOBILIER / PROMOTION
-
-
-
-// PAGES EXPERTISES TROISIEME NIVEAU -----
-
-// PAGES EXPERTISES DEUXIEME NIVEAU -----
-
-
-
-// PAGES EXPERTISES DERNIER NIVEAU DE GRANULARITE ---- Page de contenu
-
-// PAGES EXPERTISES DERNIER NIVEAU DE GRANULARITE ---- Page de contenu
-
-// Bannière de présentation : photo + titre de page
-#expertises-banner {
-  height: 75vh;
-  width: auto;
-  background: image-url('photo-test2.png');
-  background-repeat:no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.expertises-banner-header {
-  position: absolute;
-  bottom: 2rem;
-  left: 12rem;
-  h2 {
-    line-height: 1em;
-    margin: 0px;
-    color: white;
-  };
-   h4 {
-    line-height: 1em;
-    margin: 0px 0px 0.6em 0px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
-}
-
-.expertises-container {
+// PAGE 1ER NIVEAU
+// Section de redirection vers les expertises
+// Sections sur fond gris et fond blanc & cartes expertises
+.expertise-box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
-  align-items: flex-start;
   justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
-
-
-// TEST CARTES EXPERTISE pour page Expertises.html
-.flexbox-cartes-expertise {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 4rem;
-}
-// commun à toutes les cartes
-.carte-expertise {
-  flex: 0 0 46%;
-  height: auto;
-  width: auto;
+.expertise-redirection-card {
+  flex: 0 0 32%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
   position: relative;
-  text-align: center;
-  padding: 3rem 2rem;
-  margin-bottom: 3rem;
-  &:hover {
-    opacity: 0.5;
+}
+.couple-redirection-card, .white-redirection-card {
+  background-color: white;
+}
+.succession-redirection-card, .grey-redirection-card {
+  background-color: $brand-grey;
+}
+.expertise-redirection-card-line-title {
+  background-color: $brand-dark-grey;
+  margin-top: 2rem;
+  width: 30px;
+}
+.expertise-redirection-card-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.expertise-redirection-card-icon {
+  float: right;
+  height: 0px;
+  img {
+    position: relative;
+    height: 45px;
+    bottom: 12px;
   }
 }
-// particularité : le background
-#carte-expertise-famille {
-  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), image-url('expertise1.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-#carte-expertise-affaires {
-  background-image: linear-gradient(135deg, rgba(240, 174, 44, 0.2) 0%, rgba(240, 174, 44, 0.5) 50%), image-url('expertise2.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-#carte-expertise-immobilier {
-  border: 2px solid #FBF7F7;
-  h2 {
-    color: initial;
-  }
-}
-#carte-expertise-promotion {
-}
-.carte-expertise-title {
-  color: white;
-  text-align: center;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 500;
+.expertise-redirection-card-description {
+  font-size: 0.9rem;
+  text-align: justify;
   margin-bottom: 0;
 }
-.carte-link {
+.expertise-redirection-card-link {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
 }
-
+.expertise-transmission-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+// comportement au hover
+.expertise-redirection-card:hover {
+  background-color: $primary-color-light;
+  .expertise-redirection-card-description {
+    color: white;
+  }
+  .expertise-redirection-card-title:hover {
+    color: white;
+  }
+}
+// comportement au hover
+// EXPERTISES

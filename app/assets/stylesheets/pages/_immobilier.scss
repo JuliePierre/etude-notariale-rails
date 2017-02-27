@@ -1,27 +1,7 @@
-// Bannière de présentation : photo + titre de page
+// BANNIERE
 #immobilier-banner {
-  height: 75vh;
-  width: auto;
-  background: image-url('immobilier.jpg');
+  background: image-url('photo-test2.png');
   background-repeat:no-repeat;
   background-size: cover;
-  position: relative;
 }
-
-.immobilier-banner-header {
-  position: absolute;
-  bottom: 8rem;
-  right: 10rem;
-  h1 {
-    line-height: 1em;
-    margin: 0px;
-    color: $secondary-color;
-  };
-}
-.immobilier-banner-title {
-  line-height: 1em;
-  margin: 0px 0px 0.6em 0px;
-  color: $secondary-color;
-  text-transform: uppercase;
-  font-weight: 200;
-}
+// BANNIERE
