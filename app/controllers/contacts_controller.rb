@@ -10,6 +10,5 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message.'
       render 'pages/contact.html'
     end
-    raise
   end
 end
