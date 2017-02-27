@@ -64,6 +64,6 @@ class AnnoncesController < ApplicationController
   end
 
   def annonce_params
-    params.require(:annonce).permit(:genre_transaction, :genre, :reference, :prix_total, :prix_vente, :ville, :code_postal, :description, :surface_habitable, :surface_terrain, :surface_sejour, :nb_pieces, :nb_niveaux, :nb_chambres, :stationnement, :nb_places_stationnement, :terrasse, :cave, :piscine, :dpe, :ges, :photo, :photo_cache)
+    params.require(:annonce).permit(:genre_transaction, :genre, :reference, :prix_total, :prix_vente, :ville, :code_postal, :description, :surface_habitable, :surface_terrain, :nb_pieces, :nb_chambres, :dpe, :ges, photos: [])
   end
 end

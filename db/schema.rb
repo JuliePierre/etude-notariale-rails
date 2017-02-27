@@ -10,15 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170223180341) do
+ActiveRecord::Schema.define(version: 20170227181750) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "annonces", force: :cascade do |t|
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.string   "photo"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "genre_transaction"
     t.string   "genre"
     t.string   "reference"
@@ -29,20 +28,28 @@ ActiveRecord::Schema.define(version: 20170223180341) do
     t.string   "description"
     t.float    "surface_habitable"
     t.float    "surface_terrain"
-    t.float    "surface_sejour"
     t.integer  "nb_pieces"
     t.integer  "nb_chambres"
-    t.integer  "nb_niveaux"
-    t.boolean  "stationnement"
-    t.integer  "nb_places_stationnement"
-    t.boolean  "terrasse"
-    t.boolean  "cave"
-    t.boolean  "piscine"
     t.string   "dpe"
     t.string   "ges"
-    t.string   "amenagements"
     t.string   "slug"
     t.string   "nom"
+    t.string   "photos"
+  end
+
+  create_table "attachinary_files", force: :cascade do |t|
+    t.string   "attachinariable_type"
+    t.integer  "attachinariable_id"
+    t.string   "scope"
+    t.string   "public_id"
+    t.string   "version"
+    t.integer  "width"
+    t.integer  "height"
+    t.string   "format"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
   end
 
   create_table "contacts", force: :cascade do |t|

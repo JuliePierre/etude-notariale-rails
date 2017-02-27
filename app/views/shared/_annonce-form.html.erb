@@ -9,18 +9,10 @@
   <%= f.input :description %>
   <%= f.input :surface_habitable %>
   <%= f.input :surface_terrain %>
-  <%= f.input :surface_sejour %>
   <%= f.input :nb_pieces %>
-  <%= f.input :nb_niveaux %>
   <%= f.input :nb_chambres %>
-  <%= f.input :stationnement %>
-  <%= f.input :nb_places_stationnement %>
-  <%= f.input :terrasse %>
-  <%= f.input :cave %>
-  <%= f.input :piscine %>
   <%= f.input :dpe %>
   <%= f.input :ges %>
-  <%= f.file_field :photo %>
-  <%= f.hidden_field :photo_cache %>
+  <%= f.input :photos, as: :attachinary %>
   <%= f.submit "Valider l'annonce", class: "btn btn-primary" %>
 <% end %>
