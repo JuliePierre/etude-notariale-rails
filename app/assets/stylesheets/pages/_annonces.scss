@@ -152,6 +152,7 @@
 .btn-social {
   .fa {
     background-color: $primary-color-light;
+    cursor: pointer;
     color: white;
     border-radius: 2px;
     display: inline-block;
@@ -160,6 +161,11 @@
     text-align: center;
     width: 45px;
     font-size: 25px;
+    &:hover {
+      background-color: white;
+      color: $primary-color-light;
+      border: 1px solid $primary-color-light;
+    }
   }
 }
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
