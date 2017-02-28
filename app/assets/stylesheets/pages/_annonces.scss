@@ -46,7 +46,6 @@
 // PAGE ANNONCES IMMOBILIERES - INDEX
 
 
-
 // PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
 // Bannière
 #vente-banner {
@@ -69,9 +68,7 @@
   background-repeat:no-repeat;
   background-size: cover;
 }
-
 // PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
-
 
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
@@ -147,15 +144,11 @@
     font-size: 25px;
   }
 }
-
-
-// Boutons partage réseaux sociaux
-#toast-container {
-  right: auto !important;
-  left: 11% !important;
-  top: 25% !important;
-  .toast {
-    background-color: $secondary-color;
-  }
-}
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
+
+// COMMUN : SLIDESHOW
+.slider .indicators .indicator-item.active {
+  background-color: $primary-color;
+}
+// COMMUN : SLIDESHOW
+

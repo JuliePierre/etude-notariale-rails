@@ -19,4 +19,59 @@
 </div>
 <!-- Subnavigation -->
 
+<!-- Introduction -->
+<div class="page-section">
+  <div class="row">
+    <div class="col s6">
+      <div class="section-heading-content">
+        <span class="line-title section-line-title"></span>
+        <span class="section-subtitle">Ref. <%= @annonce.reference %></span>
+        <h2><%= @annonce.genre %></h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Introduction -->
+
+<!-- Slideshow -->
+<div class="page-section">
+  <div class="slider">
+    <ul class="slides">
+      <% @annonce.photos.each do |photo| %>
+        <li>
+          <%= cl_image_tag photo.path %>
+          <div class="caption center-align">
+            <h5 class="light grey-text text-lighten-3">Test</h5>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<!-- Slideshow -->
+
 En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours
+
+<%= content_for(:after_js) do %>
+  <script>
+    document.getElementById('shareBtn').onclick = function() {
+      var pictureUrl = '<%= @annonce.photos[0].path %>';
+      console.log(pictureUrl);
+      FB.ui({
+        method: 'share',
+        display: 'popup',
+        // href: 'https://developers.facebook.com/docs/',
+        // href: 'http://localhost:3000/annonces/<%= @annonce.id %>',
+        // href: 'http://localhost:3000/annonces/6',
+        title: 'Testing',  // The same than name in feed method
+        picture: pictureUrl,
+        description: 'Test description',
+      }, function(response){});
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+  </script>
+<% end %>
