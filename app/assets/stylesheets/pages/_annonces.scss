@@ -77,51 +77,62 @@
   background-repeat:no-repeat;
   background-size: cover;
 }
-.annonces-show-container {
-  margin: 0 10rem;
-  padding-bottom: 4rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.annonces-show-photo {
-  flex: 0 0 60%;
-  img {
-    width: 100%;
-  }
-  h3 {
-    font-size: 20px;
-    font-weight: 400;
-  }
+#annonce-show-section {
+  padding-top: 0;
 }
 
-.annonces-show-infos {
-  flex: 0 0 35%;
-  background-color: white;
-  padding: 0rem 2rem;
+.annonce-infos-container {
+  padding: 0 2rem;
+  .col {
+    padding: 0;
+  }
 }
-
-.annonces-show-tableau {
-  td {
-    vertical-align: top;
-    p {
-      margin: 0;
-    }
-  }
-  tr {
-    border-top: 1px solid $primary-color-light;
-  }
-  i {
-    color: initial;
-  }
+// prix
+.annonce-price-label {
+  line-height: 1em;
+  margin: 0px 0px 0.6em 0px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1rem;
 }
 .annonce-price {
   font-size: 2rem;
-  color: $primary-color-light;
-  font-weight: 400;
-  margin-top: 1rem;
+  line-height: 2rem;
+  margin: 0 0 3rem 0;
 }
+// prix
+
+// autres infos
+.annonce-infos-label {
+  line-height: 1em;
+  margin: 0px 0px 0.6em 0px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.annonce-infos-content {
+  font-size: 1.5rem;
+  line-height: 1em;
+  margin: 0px;
+}
+// autres infos
+
+// description
+.annonce-infos-header {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+
+}
+.annonce-descriptif {
+  margin-top: 2rem;
+  p {
+    margin-top: 0;
+  }
+}
+// description
 
 // Réseaux sociaux
 .reseaux-sociaux-container {

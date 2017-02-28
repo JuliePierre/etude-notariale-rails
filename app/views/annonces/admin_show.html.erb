@@ -26,16 +26,18 @@
       <div class="section-heading-content">
         <span class="line-title section-line-title"></span>
         <span class="section-subtitle">Ref. <%= @annonce.reference %></span>
-        <h2><%= @annonce.genre %></h2>
+        <h2><%= @annonce.genre_transaction %> <%= @annonce.genre %> - <%= @annonce.ville %> (<%= @annonce.code_postal %>)</h2>
+        <p>En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours</p>
       </div>
     </div>
   </div>
 </div>
 <!-- Introduction -->
 
-<!-- Slideshow -->
-<div class="page-section">
+<!-- Contenu -->
+<div class="page-section" id="annonce-show-section">
   <div class="row">
+    <!-- Slideshow -->
     <div class="col s12 m6">
       <div class="slider">
         <ul class="slides">
@@ -49,16 +51,65 @@
           <% end %>
         </ul>
       </div>
+      <div class="annonce-show-share">
+        <h2 class="annonce-infos-header">Partager</h2>
+        <span id="shareBtn" class="btn-social"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></span>
+        <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
+      </div>
     </div>
+    <!-- Slideshow -->
+    <!-- Description -->
+    <div class="col s12 m6">
+      <div class="annonce-infos-container">
+        <div class="annonce-infos-price">
+          <span class="annonce-price-label">Prix total</span>
+          <h3 class="annonce-price"><%= @annonce.prix_total.to_i %> €</h3>
+        </div>
+        <!-- 1ère partie : nb pièces et nb chambres -->
+        <div class="row">
+          <div class="col s6">
+            <span class="annonce-infos-label">Nombre de pièces</span>
+            <h3 class="annonce-infos-content"><%= @annonce.nb_pieces %></h3>
+          </div>
+          <div class="col s6">
+            <span class="annonce-infos-label">Nombre de chambres</span>
+            <h3 class="annonce-infos-content"><%= @annonce.nb_chambres %></h3>
+          </div>
+        </div>
+        <!-- 2ème partie : surfaces -->
+        <div class="row">
+          <div class="col s6">
+            <span class="annonce-infos-label">Surface habitable</span>
+            <h3 class="annonce-infos-content"><%= @annonce.surface_habitable %> m2</h3>
+          </div>
+          <div class="col s6">
+            <span class="annonce-infos-label">Surface du terrain</span>
+            <h3 class="annonce-infos-content"><%= @annonce.surface_terrain %> m2</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="annonce-descriptif">
+              <h2 class="annonce-infos-header">Description</h2>
+              <p><%= @annonce.description %></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <span><%= link_to "Modifier l'annonce", edit_annonce_path(@annonce),class: 'btn btn-primary' %></span>
+          </div>
+          <div class="col s6">
+            <span><%= link_to "Retour aux annonces", annonces_path, class: 'btn btn-primary' %></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Description -->
   </div>
 </div>
-<!-- Slideshow -->
 
-<div class="page-section text-center">
-  <%= link_to "Modifier l'annonce", edit_annonce_path(@annonce),class: 'btn btn-primary' %>
-</div>
 
-En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours
 
 <%= content_for(:after_js) do %>
   <script>
