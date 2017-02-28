@@ -49,6 +49,7 @@
 <div class="vente-contact-section">
   <!-- 4ème SECTION - Partie droite : la photo -->
   <div id="vente-contact-picture">
+    <%= image_tag 'small-contact.jpg' %>
   </div>
   <!-- 4ème SECTION - Partie droite : la photo -->
 
@@ -93,8 +94,12 @@
         <div class= "hidden">
           <%= f.input :nickname, :hint => 'Laissez ce champ vide pour test' %>
         </div>
-        <div class="homepage-contact-button">
-          <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+        <div class="row">
+          <div class="col s12">
+            <div class="contact-form-button">
+              <%= f.button :submit, 'Envoyer ma demande', :class=> "btn btn-primary btn-contact-form" %>
+            </div>
+          </div>
         </div>
       <% end %>
     </div>
