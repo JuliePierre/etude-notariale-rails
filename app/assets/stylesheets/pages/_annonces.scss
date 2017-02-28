@@ -63,7 +63,7 @@
 }
 #vente-contact-picture {
   flex: 0 0 50%;
-  background: url('promotion.jpg');
+  background: image-url('banner-promotion.jpg');
   background-repeat:no-repeat;
   background-size: cover;
   img {
@@ -76,7 +76,7 @@
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
 #annonce-banner {
-  background: url('immobilier.jpg');
+  background: image-url('banner-immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
