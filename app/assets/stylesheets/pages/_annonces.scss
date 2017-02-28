@@ -147,6 +147,10 @@
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
 
 // COMMUN : SLIDESHOW
+.slider img {
+  height: auto !important;
+}
+
 .slider .indicators .indicator-item.active {
   background-color: $primary-color;
 }

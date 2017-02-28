@@ -1,6 +1,6 @@
 class AnnoncesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new]
-  before_action :set_annonce, only: [:show, :admin_show, :update, :destroy]
+  before_action :set_annonce, only: [:show, :admin_show, :edit, :update, :destroy]
   before_action :annonce_params, only: [:create, :update]
 
   DONNEES = { "id" => "Identifiant", "photo" => "Photo", "genre_transaction" => "Genre de transation", "genre" => "Type d'habitation", "reference" => "Référence", "prix_total" => "Prix total", "prix_vente" => "Prix de vente", "ville" => "Ville", "code_postal" => "Code postal", "description" => "Description", "surface_habitable" => "Surface habitable", "surface_terrain" => "Surface du terrain", "surface_sejour" => "Surface du séjour", "nb_pieces" => "Nombre de pièces", "nb_chambres" => "Nombre de chambres", "nb_niveaux" => "Nombre de niveaux", "stationnement" => "Stationnement", "nb_places_stationnement" => "Nombre de places", "terrasse" => "Terrasse", "cave" => "Cave", "piscine" => "Piscine", "dpe" => "Diagnostic DPE", "ges" => "Diagnostic GES", "amenagements" => "Les aménagements" }
@@ -46,7 +46,8 @@ class AnnoncesController < ApplicationController
     end
   end
 
-  # pas de methode edit car le formulaire est dans une modal
+  def edit
+  end
 
   def update
     if @annonce.update(annonce_params)

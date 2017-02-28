@@ -37,26 +37,27 @@
 
 <!-- Slideshow -->
 <div class="page-section">
-  <div class="slider">
-    <ul class="slides">
-      <% @annonce.photos.each do |photo| %>
-        <li>
-          <%= cl_image_tag photo.path %>
-          <div class="caption center-align">
-            <h5 class="light grey-text text-lighten-3">Test</h5>
-          </div>
-        </li>
-      <% end %>
-    </ul>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="slider">
+        <ul class="slides">
+          <% @annonce.photos.each do |photo| %>
+            <li>
+              <%= cl_image_tag photo.path %>
+              <div class="caption center-align">
+                <h5 class="light grey-text text-lighten-3">Test</h5>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 <!-- Slideshow -->
 
-
-
 <div class="annonces-show-container">
   <div class="annonces-show-photo">
-    <%= cl_image_tag @annonce.photos[0].path, crop: :fill %>
     <span class="annonce-price"><%= @annonce.prix_total.to_i %> €</span>
     <h3>Description</h3>
     <p><%= @annonce.description %></p>

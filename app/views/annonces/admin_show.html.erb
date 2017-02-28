@@ -35,20 +35,28 @@
 
 <!-- Slideshow -->
 <div class="page-section">
-  <div class="slider">
-    <ul class="slides">
-      <% @annonce.photos.each do |photo| %>
-        <li>
-          <%= cl_image_tag photo.path %>
-          <div class="caption center-align">
-            <h5 class="light grey-text text-lighten-3">Test</h5>
-          </div>
-        </li>
-      <% end %>
-    </ul>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="slider">
+        <ul class="slides">
+          <% @annonce.photos.each do |photo| %>
+            <li>
+              <%= cl_image_tag photo.path %>
+              <div class="caption center-align">
+                <h5 class="light grey-text text-lighten-3">Test</h5>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 <!-- Slideshow -->
+
+<div class="page-section text-center">
+  <%= link_to "Modifier l'annonce", edit_annonce_path(@annonce),class: 'btn btn-primary' %>
+</div>
 
 En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours
 

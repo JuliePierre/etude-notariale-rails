@@ -38,7 +38,7 @@ Rails.application.routes.draw do
   get 'expertises/promotion-immobiliere', to: 'pages#promotion', as: 'promotion'
 
 
-  resources :annonces, only: [:index, :show, :new, :create, :update, :destroy]
+  resources :annonces, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'
   get 'annonces-immobilieres/admin/:id', to: 'annonces#admin_show', as: 'test'
 
