@@ -11,18 +11,17 @@
 .annonces-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .annonces-carte-annonce {
   flex: 0 0 32%;
   text-align: center;
   margin-bottom: 4rem;
+  margin-right: 1rem;
   position: relative;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  img {
-    width: 100%;
-  }
+  height: 395px;
   h3 {
     text-align: center;
     font-size: 1.5rem;
@@ -83,6 +82,10 @@
 }
 #annonce-show-section {
   padding-top: 0;
+}
+
+.annonce-show-share {
+  margin-top: 3rem;
 }
 
 .annonce-infos-container {
