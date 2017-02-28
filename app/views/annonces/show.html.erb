@@ -116,16 +116,13 @@
   <script>
     document.getElementById('shareBtn').onclick = function() {
       var pictureUrl = '<%= @annonce.photos[0].path %>';
-      console.log(pictureUrl);
       FB.ui({
         method: 'share',
         display: 'popup',
-        // href: 'https://developers.facebook.com/docs/',
-        // href: 'http://localhost:3000/annonces/<%= @annonce.id %>',
-        // href: 'http://localhost:3000/annonces/6',
+        href: '<%= request.original_url %>',
         title: 'Testing',  // The same than name in feed method
-        picture: pictureUrl,
-        description: 'Test description',
+        picture: 'http://res.cloudinary.com/dmx5zou5e/image/upload/' + pictureUrl,
+        description: '<%= @annonce.description %>',
       }, function(response){});
     }
   </script>
