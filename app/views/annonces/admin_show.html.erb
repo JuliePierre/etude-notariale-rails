@@ -124,14 +124,10 @@
 <%= content_for(:after_js) do %>
   <script>
     document.getElementById('shareBtn').onclick = function() {
-      var pictureUrl = '<%= @annonce.photos[0].path %>';
       FB.ui({
         method: 'share',
         display: 'popup',
         href: '<%= request.original_url %>',
-        title: 'Testing',  // The same than name in feed method
-        picture: 'http://res.cloudinary.com/dmx5zou5e/image/upload/' + pictureUrl,
-        description: '<%= @annonce.description %>',
       }, function(response){});
     }
   </script>
