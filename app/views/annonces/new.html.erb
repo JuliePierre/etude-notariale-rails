@@ -1,0 +1,32 @@
+<!-- Bannière -->
+<div class="page-banner" id="admin-new-banner">
+  <div class="page-banner-header right header-red">
+    <span class="page-banner-subtitle">Votre plateforme d'annonces</span>
+    <h1>Créer une nouvelle annonce</h1>
+  </div>
+</div>
+<!-- Bannière -->
+
+<!-- Sous-navigation -->
+<div class="sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-menu">
+      <span class="sub-nav-item">Nouvelle annonce</span>
+    </div>
+  </div>
+</div>
+<!-- Sous-navigation -->
+
+<div class="page-section">
+  <div id="new-annonce-form">
+    <%= render 'shared/annonce-form', annonce: @annonce %>
+  </div>
+</div>
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+  </script>
+<% end %>

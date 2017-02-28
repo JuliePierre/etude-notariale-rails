@@ -1,18 +1,71 @@
-<%= simple_form_for [annonce] do |f| %>
-  <%= f.input :genre_transaction %>
-  <%= f.input :genre %>
-  <%= f.input :reference %>
-  <%= f.input :prix_total %>
-  <%= f.input :prix_vente %>
-  <%= f.input :ville %>
-  <%= f.input :code_postal %>
-  <%= f.input :description %>
-  <%= f.input :surface_habitable %>
-  <%= f.input :surface_terrain %>
-  <%= f.input :nb_pieces %>
-  <%= f.input :nb_chambres %>
-  <%= f.input :dpe %>
-  <%= f.input :ges %>
-  <%= f.input :photos, as: :attachinary %>
+<%= simple_form_for annonce do |f| %>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="form-infos-header">
+        <h2>Informations générales</h2>
+      </div>
+      <div class="form-infos-content">
+        <div class="row">
+          <div class="col s12">
+            <%= f.input :reference, placeholder: 'ex : 0100' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <div class="input-field">
+              <select name="annonce[genre_transaction]">
+                <option value="" disabled selected>Transaction</option>
+                <option value="vente">Vente</option>
+                <option value="location">Location</option>
+              </select>
+              <label>Type de transaction</label>
+            </div>
+          </div>
+          <div class="input-field col s6">
+            <select name="annonce[genre]">
+              <option value="" disabled selected>Bien</option>
+              <option value="maison">Maison</option>
+              <option value="appartement">Appartement</option>
+              <option value="terrain">Terrain</option>
+            </select>
+            <label>Type de bien</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6"><%= f.input :prix_total, placeholder: 'ex : 250000' %></div>
+          <div class="col s6"><%= f.input :prix_vente, placeholder: 'ex : 235000' %></div>
+        </div>
+        <div class="row">
+          <div class="col s6"><%= f.input :code_postal, placeholder: 'ex : 35000' %></div>
+          <div class="col s6"><%= f.input :ville, placeholder: 'ex : Rennes' %></div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <div class="form-infos-header">
+        <h2>Description du bien</h2>
+      </div>
+      <div class="form-infos-content">
+        <div class="row">
+          <div class="col s6"><%= f.input :nb_pieces, placeholder: 'ex : 7' %></div>
+          <div class="col s6"><%= f.input :nb_chambres, placeholder: 'ex : 3' %></div>
+        </div>
+        <div class="row">
+          <div class="col s6"><%= f.input :surface_habitable, placeholder: 'ex : 250' %></div>
+          <div class="col s6"><%= f.input :surface_terrain, placeholder: 'ex : 500' %></div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <%= f.input :description, :as => :text %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <%= f.input :photos, as: :attachinary %>
+          </div>
+        </div>
+      </div>
+  </div>
   <%= f.submit "Valider l'annonce", class: "btn btn-primary" %>
+  </div>
 <% end %>

@@ -26,7 +26,7 @@
         <h3><%= annonce.genre %> - <%= pluralize annonce.nb_pieces, 'pièce' %></h3>
         <span><%= annonce.prix_total.to_i %>€</span>
         <p><%= annonce.ville %> <%= annonce.code_postal %></p>
-        <%= link_to '', annonce_path(annonce), class: 'carte-link' %>
+        <%= link_to '', test_path(annonce), class: 'carte-link' %>
       </div>
     <% end %>
   </div>
@@ -44,15 +44,5 @@
 <!-- Sous-navigation -->
 
 <div class="page-section text-center">
-  <a class="modal-trigger waves-effect waves-light btn btn-primary" href="#modal-nouvelle-annonce">Créer nouvelle annonce</a>
-  <!-- Modal Nouvelle annonce -->
-  <div id="modal-nouvelle-annonce" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h2>Nouvelle annonce</h2>
-      <%= render 'shared/annonce-form', annonce: @annonce %>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-action modal-close waves-effect waves-green btn">Fermer</a>
-    </div>
-  </div>
+  <%= link_to 'Créer une nouvelle annonce', new_annonce_path, class: 'btn btn-primary' %>
 </div>

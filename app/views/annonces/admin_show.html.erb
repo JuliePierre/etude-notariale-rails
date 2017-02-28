@@ -1,52 +1,22 @@
-<div class="admin-section orange-bg">
-  <div class="container">
-    <h1>Annonce immobilière - Ref : <%= @annonce.reference %></h1>
-      <h4 class="italic">En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours</h4>
+<!-- Bannière -->
+<div class="page-banner" id="admin-show-banner">
+  <div class="page-banner-header right header-red">
+    <span class="page-banner-subtitle">Vente immobilière</span>
+    <h1>Annonce Ref.<%= @annonce.reference %></h1>
   </div>
 </div>
-<div class="admin-wrapper">
-  <div class="container admin-page-container">
-    <div class="admin-page-contenu">
-      <% @annonce.photos.each do |photo| %>
-        <%= cl_image_tag photo.path %>
-      <% end %>
-      <div class="annonce-tableau">
-        <table>
-          <thead class="annonce-tableau-header">
-            <tr>
-              <th style="width: 30%;">Description</th>
-              <th><a class="modal-trigger edit-cell" href="#modal-modification-annonce"><i class="fa fa-pencil" aria-hidden="true"></i> MODIFIER</a></th>
-            </tr>
-          </thead>
-          <tbody>
-          <% @colonnes_annonce.each do |colonne| %>
-            <tr>
-              <td>
-                <%= @donnees[colonne] %>
-              </td>
-              <td>
-                <%= @annonce[colonne] || "-" %>
-              </td>
-            </tr>
-          <% end %>
-          </tbody>
-        </table>
-        <!-- Modal Modification d'une annonce -->
-        <div id="modal-modification-annonce" class="modal modal-fixed-footer">
-          <div class="modal-content">
-            <%= image_tag 'close-window-icon-white.png', class: 'modal-action modal-close', id: 'close-window-modal' %>
-            <h2>Modification annonce</h2>
-            <%= render 'shared/annonce-form', annonce: @annonce %>
-          </div>
-          <div class="modal-footer">
-            <p class="center-align">Plus</p>
-          </div>
-        </div>
-      </div>
-      <div class="annonce-partage-reseaux">
-        <div><button class="btn btn-primary">Partager sur les réseaux</button></div>
-        <%= link_to "Supprimer l'annonce", annonce_path(@annonce), method: :delete, class: "btn" %>
-      </div>
+<!-- Bannière -->
+
+<!-- Subnavigation -->
+<div class="sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-menu">
+      <span class="sub-nav-item"><%= link_to 'Plateforme Admin', tests_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item">Annonce <%= @annonce.reference %></span>
     </div>
   </div>
 </div>
+<!-- Subnavigation -->
+
+En ligne depuis <%= (Date.today.to_datetime - @annonce.created_at.to_datetime).to_i %> jours

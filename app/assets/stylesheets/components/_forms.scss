@@ -58,3 +58,31 @@ textarea {
 }
 // SPECIFIQUE FORMULAIRE DE LA PAGE SEARCH
 
+// SPECIFIQUE FORMULAIRE DE CREATION D UNE ANNONCE -- annonce-form.html.erb
+#new-annonce-form {
+  label {
+    display: initial !important;
+    position: absolute;
+    top: -2rem;
+    color: $brand-dark-grey;
+    font-size: 0.9rem;
+  }
+  .select-wrapper + label {
+    font-size: 0.9rem;
+  }
+}
+.form-infos-header {
+  margin-bottom: 3rem;
+  h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+.form-infos-content {
+  .col {
+    padding: 0;
+  }
+}
+// SPECIFIQUE FORMULAIRE DE CREATION D UNE ANNONCE

@@ -1,5 +1,5 @@
 class AnnoncesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :new]
   before_action :set_annonce, only: [:show, :admin_show, :update, :destroy]
   before_action :annonce_params, only: [:create, :update]
 
@@ -31,6 +31,10 @@ class AnnoncesController < ApplicationController
     # set_annonce before action ok
     @colonnes_annonce = Annonce.column_names.reject {|column| (column == "created_at" || column == "updated_at") || column == "photo" }
     @donnees = DONNEES
+  end
+
+  def new
+    @annonce = Annonce.new
   end
 
   def create
