@@ -7,7 +7,7 @@
 /* COLORS */
 
 // Orange
-$primary-color: #F0AE2C !default;
+$primary-color: #E96A41 !default; // ancienne couleur #F0AE2C
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
@@ -23,7 +23,7 @@ $link-color: initial !default;
 
 // Autres couleurs
 $brand-yellow: #F9D00F;
-$brand-grey: #FBF7F7;
+$brand-grey: #F2F2F3; // pour les background
 $brand-dark-grey: #484848;
 $brand-grey-text: #9e9e9e;
 

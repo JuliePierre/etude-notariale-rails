@@ -221,12 +221,13 @@
   width: 100%;
 }
 .section-contact-infos {
-  background-color: white;
   position: absolute;
-  top: 60px;
-  left: 50px;
+  background-color: white;
   padding: 2rem 4rem;
   opacity: 0.9;
+  top: 4rem;
+  left: 4rem;
+  bottom: 4rem;
 }
 .section-contact-header {
   h2 {

@@ -15,6 +15,7 @@
 .navbar-link {
   display: inline-block;
   position: relative;
+  font-weight: 400;
 }
 
 .navbar-link::before {
@@ -79,6 +80,7 @@
 .navbar-brand {
   float: left;
   padding-bottom: 1rem;
+  font-weight: 400;
 }
 
 // right side
