@@ -13,6 +13,9 @@
     padding: 0 2rem;
     font-weight: 400;
     font-size: 1rem;
+    &:hover {
+      color: $primary-color-light;
+    }
   }
   .collapsible-body {
     padding-right: 5rem;
