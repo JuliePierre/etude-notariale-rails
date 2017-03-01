@@ -1,8 +1,9 @@
 <!-- Les meta tags -->
 <% content_for :meta_title, "Annonce" %>
 <% content_for :meta_description, @annonce.description %>
-<% content_for :meta_image, @annonce.photos[0].path %>
+<% content_for :meta_image, cl_image_path(@annonce.photos[0].path) %>
 <!-- Les meta tags -->
+<!-- "http://res.cloudinary.com/dmx5zou5e/image/upload/#{@annonce.photos[0].path}" -->
 
 <!-- Bannière -->
 <div class="page-banner" id="annonce-banner">
