@@ -27,7 +27,39 @@
   transform: translateY(-50%);
   text-align: center;
   z-index: 10;
+  h1 {
+    font-size: 3.5rem;
+    line-height: 110%;
+    letter-spacing: 0.1rem;
+    margin: 2.1rem 0 1.68rem 0;
+  }
 }
+.banner-logo-container {
+  display: flex;
+  align-items: center;
+}
+.banner-logo {
+  flex: 0 0 50%;
+  text-align: right;
+}
+.banner-names {
+  text-align: left;
+  .names {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin: 0 0 0.5rem 1rem;
+    margin-left: 1rem;
+    letter-spacing: .1em;
+    font-weight: 400;
+    display: block;
+  }
+}
+#banner-logo {
+  border-right: 1px solid $brand-grey-text;
+  padding-right: 1rem;
+}
+
 // BANNER
 
 
