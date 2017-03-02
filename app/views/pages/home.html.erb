@@ -162,21 +162,24 @@
   <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
   <div class="homepage-annonces-box">
     <div class="homepage-annonce">
-      <%= image_tag 'annonce1.jpg' %>
-      <h3>Maison - 7 pièces</h3>
-      <p>Rennes 35000</p>
+      <% a = Annonce.all[0] %>
+      <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill %>
+      <h3><%= a.genre %> - <%= a.nb_pieces %> pièces</h3>
+      <p><%= a.ville %> <%= a.code_postal %></p>
     </div>
     <div class="homepage-annonce">
-      <%= image_tag 'annonce2.jpg' %>
-      <h3>Maison - 9 pièces</h3>
-      <p>Rennes 35000</p>
+      <% b = Annonce.all[1] %>
+      <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill %>
+      <h3><%= b.genre %> - <%= b.nb_pieces %> pièces</h3>
+      <p><%= b.ville %> <%= b.code_postal %></p>
       <div class="annonce-link">
       </div>
     </div>
     <div class="homepage-annonce">
-      <%= image_tag 'annonce3.jpg' %>
-      <h3>Maison - 6 pièces</h3>
-      <p>Rennes 35000</p>
+      <% c = Annonce.all[2] %>
+      <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill %>
+      <h3><%= c.genre %> - <%= c.nb_pieces %> pièces</h3>
+      <p><%= c.ville %> <%= c.code_postal %></p>
       <div class="annonce-link">
       </div>
     </div>
