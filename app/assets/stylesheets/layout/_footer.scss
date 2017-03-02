@@ -1,1 +1,36 @@
 // Your footer style
+#footer {
+  background-color: $primary-color;
+  color: white;
+  h5 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  a {
+    color: white;
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+.footer-container {
+  display: flex;
+  padding: 3rem 5rem 2rem 5rem;
+  justify-content: space-between;
+}
+.footer-presentation {
+  flex: 0 0 20%;
+}
+.footer-expertises {
+  flex: 0 0 20%;
+  a {
+    display: block;
+  }
+}
+.footer-office {
+  flex: 0 0 20%
+}
+.footer-contact {
+  flex: 0 0 20%;
+}
