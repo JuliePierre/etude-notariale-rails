@@ -1,9 +1,33 @@
 // Admin Index
+// banner
 #admin-index-banner {
   background: image-url('immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
+
+// ajouter aux favoris
+.icone-favori {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 2rem;
+  opacity: 0.5;
+  z-index: 100;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    color: $primary-color-light;
+  }
+}
+.annonces-carte-annonce.active .icone-favori {
+  opacity: 1;
+  color: $primary-color;
+}
+
+
+
 // Admin Index
 
 // Admin NEW annonce
@@ -26,7 +50,6 @@
 .admin-wrapper {
   background-color: $brand-grey;
 }
-
 .admin-header {
   h2 {
     display: inline-block;

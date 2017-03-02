@@ -1,6 +1,6 @@
 class AnnoncesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new]
-  before_action :set_annonce, only: [:show, :admin_show, :edit, :update, :destroy]
+  before_action :set_annonce, only: [:show, :admin_show, :edit, :update, :destroy, :add_as_favorite]
   before_action :annonce_params, only: [:create, :update]
 
   DONNEES = { "id" => "Identifiant", "photo" => "Photo", "genre_transaction" => "Genre de transation", "genre" => "Type d'habitation", "reference" => "Référence", "prix_total" => "Prix total", "prix_vente" => "Prix de vente", "ville" => "Ville", "code_postal" => "Code postal", "description" => "Description", "surface_habitable" => "Surface habitable", "surface_terrain" => "Surface du terrain", "surface_sejour" => "Surface du séjour", "nb_pieces" => "Nombre de pièces", "nb_chambres" => "Nombre de chambres", "nb_niveaux" => "Nombre de niveaux", "stationnement" => "Stationnement", "nb_places_stationnement" => "Nombre de places", "terrasse" => "Terrasse", "cave" => "Cave", "piscine" => "Piscine", "dpe" => "Diagnostic DPE", "ges" => "Diagnostic GES", "amenagements" => "Les aménagements" }
@@ -19,10 +19,10 @@ class AnnoncesController < ApplicationController
   def admin_index
     # set_annonce before action ok
     # autres variables
-    @annonces = Annonce.all
+    @annonces = Annonce.all.order(:id)
     @annonce = Annonce.new
 
-
+    @favorite_annonces = Annonce.where(favorite: true).order(:id)
   end
 
   # pas de methode new car le formulaire est dans une modal
@@ -60,6 +60,18 @@ class AnnoncesController < ApplicationController
   def destroy
     @annonce.destroy
     redirect_to tests_path
+  end
+
+  def add_as_favorite
+    @favorite_annonces = Annonce.where(favorite: true).order(:id)
+    if @favorite_annonces.count < 3
+      if @annonce.favorite
+        @annonce.favorite = false
+      else
+        @annonce.favorite = true
+      end
+    @annonce.save
+    end
   end
 
   private

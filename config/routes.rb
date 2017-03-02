@@ -39,6 +39,7 @@ Rails.application.routes.draw do
 
 
   resources :annonces, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  get 'annonces/:id/add_as_favorite', to: 'annonces#add_as_favorite'
   get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'
   get 'annonces-immobilieres/admin/:id', to: 'annonces#admin_show', as: 'test'
 

@@ -7,7 +7,8 @@ class PagesController < ApplicationController
   def home
     @results = Expertise.search('test')
     @contact = Contact.new
-    @annonces = Annonce.all
+    @annonces = Annonce.all.order(:id)
+    @favorite_annonces = Annonce.where(favorite: true).order(:id)
   end
 
   def office
