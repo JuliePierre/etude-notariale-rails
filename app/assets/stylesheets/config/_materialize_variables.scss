@@ -3,6 +3,19 @@
  * (see https://github.com/mkhairi/materialize-sass/blob/master/app/assets/stylesheets/materialize/components/_variables.scss)
  * ------------------------------------- */
 
+/* MEDIA QUERIES */
+$very-small-screen: 320px !default; //iphone 5
+$small-screen: 375px !default; // iphone6
+
+$medium-screen: 768px !default; //ipad
+$medium-plus-screen: 1024px !default; //ipad pro
+
+$large-screen: 1280px !default; //laptop MDPI screen
+$large-plus-screen: 1440px !default; //laptop HiDPi screen
+
+$very-large-screen: 2880px !default; // macbookpro ecran retina
+/* MEDIA QUERIES */
+
 
 /* COLORS */
 

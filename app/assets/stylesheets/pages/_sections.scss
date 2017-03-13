@@ -8,6 +8,10 @@
 // SECTIONS
 
 .section-heading-content {
+  @media (max-width: $small-screen) {
+    padding-left: 0;
+    position: initial;
+  }
   padding-left: 100px;
   position: relative;
   h2 {
@@ -19,6 +23,9 @@
 }
 
 .section-line-title {
+  @media (max-width: $small-screen) {
+    position: initial;
+  }
   left: 0;
   position: absolute;
   top: 31px;

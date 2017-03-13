@@ -3,7 +3,7 @@
     <div class="navbar-brand unmargined">
       <%= link_to "ACCUEIL", root_path %>
     </div>
-    <ul class="navbar-menu unmargined">
+    <ul class="navbar-menu unmargined hide-on-med-and-down">
       <li class="navbar-menu-item"><%= link_to "L'OFFICE", office_path, class: 'navbar-link', "data-link": "office" %></li>
       <!-- lien vers dropdown - EXPERTISES -->
       <div id="dropdown-full">
@@ -25,8 +25,24 @@
       <li class="navbar-menu-item">
         <p class="navbar-menu-item", id="navbar-search-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
       </li>
-    </div>
+    </ul>
+    <a href="#" class="navbar-mobile-link unmargined hide-on-large-only valign-wrapper">
+      <i class="material-icons">menu</i>
+    </a>
   </div>
 </div>
+<ul id="mobile-navbar" class="hidden">
+  <li><%= link_to "L'office", office_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+  <li id="dropdown-navbar-mobile"><a href="">Expertises</a><i class="fa fa-angle-right right" aria-hidden="true" id="expertises-angle-right"></i><i class="fa fa-angle-down right hidden" aria-hidden="true"></i></li>
+    <ul class="hidden" id="dropdown-menu-mobile">
+      <li><%= link_to "Droit de la famille", famille_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+      <li><%= link_to "Immobilier", immobilier_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+      <li><%= link_to "Droit des affaires", affaires_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+      <li><%= link_to "Promotion immobilière", promotion_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+    </ul>
+  <li><%= link_to "Immobilier", negociation_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+  <li><%= link_to "Foire aux questions", faq_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+  <li><%= link_to "Contact", contact_path %><i class="fa fa-angle-right right" aria-hidden="true"></i></li>
+</ul>
 
 <%= render 'shared/search' %>
