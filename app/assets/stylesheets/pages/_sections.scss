@@ -15,6 +15,9 @@
   padding-left: 100px;
   position: relative;
   h2 {
+    @media (max-width: $small-screen) {
+      margin-top: 1.4rem;
+    }
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 500;

@@ -1,4 +1,5 @@
-$('.navbar-mobile-link').click(function() {
+$('.navbar-mobile-link').click(function(event) {
+  event.preventDefault();
   $('#mobile-navbar').toggleClass('hidden');
 });
 $('#dropdown-navbar-mobile').click(function(event) {
