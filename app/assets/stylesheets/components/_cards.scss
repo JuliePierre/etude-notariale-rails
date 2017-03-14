@@ -173,6 +173,10 @@
 
 // CARTES EQUIPE
 .carte-equipe {
+  @media (max-width: $small-screen) {
+    width: auto;
+    margin-bottom: 3rem;
+  }
   background-color: white;
   width: 300px;
   height: auto;

@@ -9,9 +9,16 @@
 // Position des titres
 .page-banner-header {
   position: absolute;
+  @media (max-width: $small-screen) {
+    bottom: 10rem;
+    padding: 0 2rem;
+  }
   bottom: 5rem; // chaque header est à la même position horizontale mais peut être à droit ou à gauche selon la photo
   // span pour les sous-titres
   .page-banner-subtitle {
+    @media (max-width: $small-screen) {
+      font-size: 1.2rem;
+    }
     line-height: 1em;
     margin: 0px 0px 0.6em 0px;
     color: white; // la couleur est partout la même pour l'instant
@@ -21,6 +28,9 @@
   }
   // h1 pour les titres
   h1 {
+    @media (max-width: $small-screen) {
+      font-size: 2rem;
+    }
     font-size: 3rem;
     line-height: 1em;
     margin: 0px;
@@ -28,6 +38,9 @@
   }
 }
 .page-banner-header.left {
+  @media (max-width: $small-screen) {
+    left: 0;
+  }
   left: 10rem;
 }
 .page-banner-header.right {

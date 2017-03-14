@@ -1,4 +1,7 @@
 #contact-link {
+  @media (max-width: $small-screen) {
+    display: none;
+  }
   background-color: $primary-color;
   color: white;
   padding: 0.5rem 1rem;

@@ -1,9 +1,9 @@
 // SECTIONS
 .page-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 10rem;
-  padding-left: 10rem;
+  @media (max-width: $small-screen) {
+    padding: 2rem;
+  }
+  padding: 3rem 10rem;
 }
 // SECTIONS
 
