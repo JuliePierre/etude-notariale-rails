@@ -10,6 +10,9 @@
 .faq-questions {
   text-align: justify;
   .collapsible-header {
+    @media (max-width: $small-screen) {
+      padding: 0 1rem;
+    }
     padding: 0 2rem;
     font-weight: 400;
     font-size: 1rem;
@@ -18,6 +21,10 @@
     }
   }
   .collapsible-body {
+    @media (max-width: $small-screen) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
     padding-right: 5rem;
     padding-left: 5rem;
     p {
