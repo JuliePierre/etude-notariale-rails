@@ -38,6 +38,12 @@
   width: 30px;
 }
 .expertise-redirection-card-title {
+  @media (max-width: $medium-screen) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: $small-screen) {
+    font-size: 2rem;
+  }
   font-size: 2rem;
   font-weight: 400;
 }
@@ -45,6 +51,12 @@
   float: right;
   height: 0px;
   img {
+    @media (max-width: $medium-screen) {
+      height: 38px;
+    }
+    @media (max-width: $small-screen) {
+      height: 45px;
+    }
     position: relative;
     height: 45px;
     bottom: 12px;

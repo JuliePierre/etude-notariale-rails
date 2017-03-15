@@ -98,6 +98,9 @@
 }
 
 .carte-fiche-pratique {
+  @media (max-width: $medium-screen) {
+    flex: 0 0 48%;
+  }
   @media (max-width: $small-screen) {
     flex: 0 0 100%;
   }
