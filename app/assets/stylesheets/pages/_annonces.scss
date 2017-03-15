@@ -213,6 +213,9 @@
 
 // COMMUN : SLIDESHOW
 .slider {
+  @media (max-width: $medium-screen) {
+    height: 380px !important;
+  }
   @media (max-width: $small-screen) {
     height: 290px !important;
   }
@@ -220,7 +223,7 @@
     height: auto !important;
   }
   .slides {
-    @media (max-width: $small-screen) {
+    @media (max-width: $medium-screen) {
       height: auto !important;
     }
   }
