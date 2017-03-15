@@ -1,4 +1,7 @@
 #negociation-banner {
+  @media (max-width: $small-screen) {
+    height: calc(100vh - 52px);
+  }
   background: image-url('immobilier.jpg');
   height: 100vh;
   width: 100vw;
@@ -7,16 +10,25 @@
   position: relative;
 }
 .negociation-choice-container {
+  @media (max-width: $small-screen) {
+    margin-top: 52px;
+    padding: 0rem 2rem;
+  }
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0rem 10rem;
+  flex-wrap: wrap;
 }
 
 // Les cartes
 .immobilier-redirection-card {
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
+    padding: 0 2rem 2rem 2rem;
+  }
   flex: 0 0 32%;
   padding-left: 4rem;
   padding-right: 4rem;
