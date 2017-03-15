@@ -44,6 +44,9 @@
   left: 10rem;
 }
 .page-banner-header.right {
+  @media (max-width: $small-screen) {
+    right: 0rem;
+  }
   right: 10rem;
 }
 
