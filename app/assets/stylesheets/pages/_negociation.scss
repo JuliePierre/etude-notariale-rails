@@ -25,8 +25,11 @@
 
 // Les cartes
 .immobilier-redirection-card {
-  @media (max-width: $small-screen) {
+  @media (max-width: $medium-screen) {
     flex: 0 0 100%;
+    padding: 0 4rem 6rem 4rem;
+  }
+  @media (max-width: $small-screen) {
     padding: 0 2rem 2rem 2rem;
   }
   flex: 0 0 32%;
@@ -42,6 +45,12 @@
 }
 
 .immobilier-redirection-card-line-title {
+  @media (max-width: $medium-screen) {
+    margin-top: 6rem;
+  }
+  @media (max-width: $small-screen) {
+    margin-top: 4rem;
+  }
   background-color: $brand-dark-grey;
   margin-top: 4rem;
   width: 30px;
