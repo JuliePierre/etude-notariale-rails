@@ -3,8 +3,8 @@
 // Format du Contenu
 // Le container : les marges & paddings
 .page-expertise-section {
-  text-align: justify;
   h2 {
+    text-align: initial;
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 500;
@@ -18,6 +18,7 @@
     font-size: 18px;
   }
   p {
+    text-align: justify;
     font-size: 1rem;
     color: $brand-grey-text;
   }
@@ -74,6 +75,19 @@
   display: block;
 }
 
+// FAQ
+#questions .collapsible-header {
+  @media (max-width: $small-screen) {
+    min-height: initial;
+    line-height: 1rem;
+    padding: 1rem 1rem;
+  }
+}
+
+#questions span {
+  color: $brand-grey-text;
+}
+
 // CARTES SPECIALES POUR LES FICHES PRATIQUES
 .fiches-pratiques-container {
   display: flex;
@@ -84,6 +98,9 @@
 }
 
 .carte-fiche-pratique {
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
+  }
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); // même box-shadow que les fiches de présentation des notaires de la page Office
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

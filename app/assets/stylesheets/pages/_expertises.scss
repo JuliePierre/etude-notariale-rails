@@ -5,6 +5,9 @@
 // Section de redirection vers les expertises
 // Sections sur fond gris et fond blanc & cartes expertises
 .expertise-box {
+  @media (max-width: $small-screen) {
+    margin-bottom: 0;
+  }
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
@@ -13,6 +16,10 @@
   flex-wrap: wrap;
 }
 .expertise-redirection-card {
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
+    margin-bottom: 3rem;
+  }
   flex: 0 0 32%;
   padding-left: 2rem;
   padding-right: 2rem;
