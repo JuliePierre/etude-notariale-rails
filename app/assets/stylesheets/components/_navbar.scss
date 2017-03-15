@@ -134,6 +134,9 @@
 
 // mobile navbar
 #mobile-navbar {
+  @media (min-width: $medium-screen) {
+    padding: 1rem 5rem;
+  }
   position: fixed;
   top: 52px;
   z-index: 10000;

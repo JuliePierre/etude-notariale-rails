@@ -1,5 +1,11 @@
 // Bannière
 .page-banner {
+  @media (max-width: $medium-screen) {
+    height: 60vh;
+  }
+  @media (max-width: $small-screen) {
+    height: 75vh;
+  }
   height: 75vh;
   width: auto;
   position: relative;
@@ -9,6 +15,9 @@
 // Position des titres
 .page-banner-header {
   position: absolute;
+  @media (max-width: $medium-screen) {
+    bottom: 17rem;
+  }
   @media (max-width: $small-screen) {
     bottom: 10rem;
     padding: 0 2rem;

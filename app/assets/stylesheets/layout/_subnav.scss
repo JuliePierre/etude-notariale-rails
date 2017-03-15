@@ -1,4 +1,7 @@
 .sub-nav {
+  @media (max-width: $medium-screen) {
+    padding: 3rem 5rem 0 5rem;
+  }
   @media (max-width: $small-screen) {
     padding: 2rem 1rem 0 1rem;
   }

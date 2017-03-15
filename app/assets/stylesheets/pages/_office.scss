@@ -70,6 +70,9 @@
   justify-content: space-between;
 }
 .office-section-heading {
+  @media (max-width: $medium-screen) {
+    flex: 0 0 66%;
+  }
   @media (max-width: $small-screen) {
     flex: 0 0 100%;
   }
@@ -183,4 +186,12 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.team-member {
+  @media (max-width: $medium-screen) {
+    flex: 0 0 32%;
+  }
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
+  }
 }
