@@ -95,13 +95,25 @@
 }
 
 .annonce-show-share {
+  @media (max-width: $small-screen) {
+    margin-top: 2rem;
+  }
   margin-top: 3rem;
 }
 
 .annonce-infos-container {
+  @media (max-width: $small-screen) {
+    padding: 0;
+    margin-top: 2rem;
+  }
   padding: 0 2rem;
   .col {
     padding: 0;
+  }
+  .btn-primary {
+    @media (max-width: $small-screen) {
+      margin-bottom: 1rem;
+    }
   }
 }
 // prix
@@ -113,6 +125,9 @@
   font-size: 1rem;
 }
 .annonce-price {
+  @media (max-width: $small-screen) {
+    margin-bottom: 2rem;
+  }
   font-size: 2rem;
   line-height: 2rem;
   margin: 0 0 3rem 0;
@@ -144,6 +159,9 @@
 
 }
 .annonce-descriptif {
+  @media (max-width: $small-screen) {
+    text-align: justify;
+  }
   margin-top: 2rem;
   p {
     margin-top: 0;
@@ -181,8 +199,18 @@
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
 
 // COMMUN : SLIDESHOW
-.slider img {
-  height: auto !important;
+.slider {
+  @media (max-width: $small-screen) {
+    height: 290px !important;
+  }
+  img {
+    height: auto !important;
+  }
+  .slides {
+    @media (max-width: $small-screen) {
+      height: auto !important;
+    }
+  }
 }
 
 .slider .indicators .indicator-item.active {
