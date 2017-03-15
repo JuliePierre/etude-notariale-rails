@@ -9,16 +9,22 @@
 
 // LES ANNONCES
 .annonces-container {
+  @media (max-width: $medium-screen) {
+    justify-content: space-between;
+  }
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 .annonces-carte-annonce {
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
+  @media (max-width: $medium-screen) {
+    flex: 0 0 48%;
     height: auto;
     padding-bottom: 1rem;
+  }
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
   }
   flex: 0 0 33%;
   text-align: center;
@@ -38,7 +44,7 @@
     text-align: center;
   }
   img {
-    @media (max-width: $small-screen) {
+    @media (max-width: $medium-screen) {
       height: auto;
       width: 100%;
     }
