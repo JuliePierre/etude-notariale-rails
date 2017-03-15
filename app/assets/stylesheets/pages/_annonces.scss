@@ -64,14 +64,21 @@
 }
 // particularité de ce header qui doit être fixé par la gauche pour que le rotate ne décale pas toute la phrase
 #vente-banner-header {
+  @media (max-width: $small-screen) {
+    left: 0;
+  }
   left: 50rem;
 }
 
 // Partie contact
 .vente-contact-section {
   display: flex;
+  flex-wrap: wrap;
 }
 #vente-contact-picture {
+  @media (max-width: $small-screen) {
+    flex: 0 0 100%;
+  }
   flex: 0 0 50%;
   background: image-url('banner-promotion.jpg');
   background-repeat:no-repeat;
