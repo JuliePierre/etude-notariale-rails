@@ -299,6 +299,9 @@
   @media (max-width: $medium-screen) {
     height: 400px;
   }
+  @media (max-width: $small-screen) {
+    height: 300px;
+  }
   height: 550px;
   width: 100%;
 }
