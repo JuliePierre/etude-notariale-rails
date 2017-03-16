@@ -21,6 +21,11 @@ $very-large-screen: 2880px !default; // macbookpro ecran retina
     font-size: 30px !important;
   }
 }
+@media only screen and (min-width: 4096px) {
+  html {
+    font-size: 45px !important;
+  }
+}
 
 .row {
   margin-bottom: 1.2rem !important;
