@@ -10,11 +10,10 @@
 .dropdown-menu {
   background-color: $brand-dark-grey;
   position: absolute;
-  top: 35px;
-  left: -18px;
+  top: 2.3rem;
+  left: 0.8em;
+  min-width: 14rem;
   z-index: 1000;
-  float: left;
-  min-width: 253px;
   list-style: none;
   text-align: left;
   border-radius: 2px;
