@@ -278,6 +278,11 @@
     padding: 2rem 2rem;
   }
   padding: 5rem 5rem 5rem 5rem;
+  .row {
+    @media (min-width: $very-large-screen) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 .homepage-contact-picture {
