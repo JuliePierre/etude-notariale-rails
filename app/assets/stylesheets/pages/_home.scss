@@ -322,9 +322,39 @@
     left: 9rem;
     bottom: 10rem;
   }
+  @media (max-width: $small-screen) {
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 2rem;
+  }
+  display: none;
+  .contact-form-infos {
+    @media (max-width: $small-screen) {
+      margin-top: 1rem;
+    }
+    .contact-form-label {
+      @media (max-width: $small-screen) {
+        font-size: 0.9rem;
+      }
+    }
+    .row {
+      @media (max-width: $small-screen) {
+        margin: 0;
+      }
+      .col {
+        margin: 0;
+      }
+    }
+  }
 }
 .section-contact-header {
   h2 {
+    @media (max-width: $small-screen) {
+      font-size: 1rem;
+      margin: 0;
+    }
     font-size: 1.5rem;
     line-height: 1rem;
     margin: 0.6rem 0 0 0;
