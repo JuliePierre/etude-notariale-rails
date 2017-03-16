@@ -87,7 +87,7 @@
   <script>
     $(document).ready(function(){
       $('.navbar-link').removeClass('active');
-      $('.navbar-link[data-link="expertises"').addClass('active');
+      $('.navbar-link[data-link="expertises"]').addClass('active');
       var contactLinkPosition = $('#contact-link').offset().top;
       $(window).scroll(function(){
         $("#contact-link").css("top", Math.max(80, contactLinkPosition - $(this).scrollTop()));

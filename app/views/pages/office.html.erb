@@ -219,8 +219,9 @@
 <%= content_for(:after_js) do %>
   <script>
     $(document).ready(function(){
+      console.log('toto');
       $('.navbar-link').removeClass('active');
-      $('.navbar-link[data-link="office"').addClass('active');
+      $('.navbar-link[data-link="office"]').addClass('active');
       var contactLinkPosition = $('#contact-link').offset().top;
       $(window).scroll(function(){
         $("#contact-link").css("top", Math.max(80, contactLinkPosition - $(this).scrollTop()));
