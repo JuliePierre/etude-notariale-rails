@@ -109,6 +109,9 @@
     font-size: 40px;
     bottom: 10px;
   }
+  @media (min-width: $very-large-screen) {
+    font-size: 4rem;
+  }
   float: right;
   font-size: 60px;
   line-height: 29px;
@@ -180,7 +183,7 @@
   flex: 0 0 24%;
   img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
   }
   h3 {
     font-size: 1.5rem;
@@ -236,7 +239,7 @@
   flex: 0 0 32%;
   img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
   }
   h3 {
     text-align: center;
@@ -301,6 +304,9 @@
   }
   @media (max-width: $small-screen) {
     height: 300px;
+  }
+  @media (min-width: $very-large-screen) {
+    height: 60vh;
   }
   height: 550px;
   width: 100%;

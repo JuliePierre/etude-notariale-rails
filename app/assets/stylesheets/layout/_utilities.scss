@@ -33,6 +33,9 @@ body {
 }
 
 .line-title {
+  @media (min-width: $very-large-screen) {
+    width: 2.5rem;
+  }
   background: $primary-color;
   height: 3px;
   width: 45px;

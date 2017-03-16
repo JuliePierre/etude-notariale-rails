@@ -3,6 +3,10 @@
   background-color: transparent;
   border: 1px solid $brand-grey-text;
   box-shadow: initial;
+  @media (min-width: $very-large-screen) {
+    height: 2rem !important;
+    line-height: 2rem !important;
+  }
 }
 
 .btn-primary {

@@ -16,6 +16,11 @@ $large-plus-screen: 1440px !default; //laptop HiDPi screen
 $very-large-screen: 2880px !default; // macbookpro ecran retina
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 2880px) {
+  html {
+    font-size: 30px !important;
+  }
+}
 
 /* COLORS */
 

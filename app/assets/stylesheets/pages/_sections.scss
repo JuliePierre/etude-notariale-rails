@@ -15,6 +15,9 @@
     padding-left: 0;
     position: initial;
   }
+  @media (min-width: $very-large-screen) {
+    padding-left: 4rem;
+  }
   padding-left: 100px;
   position: relative;
   h2 {
