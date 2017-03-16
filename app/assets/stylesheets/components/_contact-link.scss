@@ -9,21 +9,24 @@
   border-bottom-left-radius: 5px;
   position: fixed;
   top: 80vh;
-  right: -135px;
+  right: -8rem;
   z-index: 2000;
   transition: right 0.5s ease;
-  width: 190px;
+  width: 12rem;
 }
 
 .contact-link-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   position: relative;
 }
 
 .contact-link-icon {
   flex: 0 0 30%;
+  .material-icons {
+    font-size: 2rem !important;
+  }
 }
 
 .contact-link-text {

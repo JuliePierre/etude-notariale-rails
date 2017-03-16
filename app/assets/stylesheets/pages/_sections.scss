@@ -18,7 +18,7 @@
   @media (min-width: $very-large-screen) {
     padding-left: 4rem;
   }
-  padding-left: 100px;
+  padding-left: 6rem;
   position: relative;
   h2 {
     @media (max-width: $small-screen) {
@@ -38,14 +38,14 @@
   }
   left: 0;
   position: absolute;
-  top: 31px;
+  top: 2rem;
 }
 
 .section-subtitle {
   font-size: 1rem;
   line-height: normal;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-weight: 400;
 }
 

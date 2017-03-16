@@ -304,16 +304,7 @@
   position: relative;
 }
 #map-homepage {
-  @media (max-width: $medium-screen) {
-    height: 400px;
-  }
-  @media (max-width: $small-screen) {
-    height: 300px;
-  }
-  @media (min-width: $very-large-screen) {
-    height: 60vh;
-  }
-  height: 550px;
+  height: 60vh;
   width: 100%;
 }
 .section-contact-infos {
