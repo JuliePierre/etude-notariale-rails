@@ -14,7 +14,7 @@
   }
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .annonces-carte-annonce {
@@ -25,13 +25,12 @@
   @media (max-width: $small-screen) {
     flex: 0 0 100%;
   }
-  flex: 0 0 32%;
+  flex: 0 0 31%;
   text-align: center;
-  margin-bottom: 4rem;
   position: relative;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   height: auto;
-  margin: 0 0.2rem;
+  margin: 0 0.2rem 4rem 0.2rem;
   h3 {
     text-align: center;
     font-size: 1.5rem;
