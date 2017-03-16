@@ -103,6 +103,9 @@
 
 // right side on mobile only
 .navbar-mobile-link {
+  @media (min-width: 769px) {
+    display: none;
+  }
   @media (max-width: $small-screen) {
     padding: 0;
   }
