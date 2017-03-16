@@ -20,18 +20,18 @@
 .annonces-carte-annonce {
   @media (max-width: $medium-screen) {
     flex: 0 0 48%;
-    height: auto;
     padding-bottom: 1rem;
   }
   @media (max-width: $small-screen) {
     flex: 0 0 100%;
   }
-  flex: 0 0 33%;
+  flex: 0 0 32%;
   text-align: center;
   margin-bottom: 4rem;
   position: relative;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  height: 395px;
+  height: auto;
+  margin: 0 0.2rem;
   h3 {
     text-align: center;
     font-size: 1.5rem;
@@ -44,10 +44,8 @@
     text-align: center;
   }
   img {
-    @media (max-width: $medium-screen) {
-      height: auto;
-      width: 100%;
-    }
+    height: auto;
+    width: 100%;
   }
 }
 .annonces-carte-annonce:hover {
@@ -186,13 +184,6 @@
 // description
 
 // Réseaux sociaux
-.reseaux-sociaux-container {
-  margin-bottom: 2rem;
-  h3 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-}
 .btn-social {
   .fa {
     background-color: $primary-color-light;
