@@ -190,11 +190,11 @@
     color: white;
     border-radius: 2px;
     display: inline-block;
-    height: 45px;
-    line-height: 45px;
+    height: 2.5rem;
+    line-height: 2.5rem;
     text-align: center;
-    width: 45px;
-    font-size: 25px;
+    width: 2.5rem;
+    font-size: 1.5em;
     &:hover {
       background-color: white;
       color: $primary-color-light;
@@ -206,19 +206,14 @@
 
 // COMMUN : SLIDESHOW
 .slider {
-  @media (max-width: $medium-screen) {
-    height: 380px !important;
-  }
-  @media (max-width: $small-screen) {
-    height: 290px !important;
-  }
-  img {
-    height: auto !important;
-  }
+  height: 30rem !important;
   .slides {
-    @media (max-width: $medium-screen) {
-      height: auto !important;
-    }
+    height: 26rem !important;
+  }
+  .indicator-item {
+    height: 1rem !important;
+    width: 1rem !important;
+    margin: 0 1rem !important;
   }
 }
 

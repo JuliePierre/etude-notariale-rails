@@ -35,7 +35,7 @@
 .expertise-redirection-card-line-title {
   background-color: $brand-dark-grey;
   margin-top: 2rem;
-  width: 30px;
+  width: 2rem;
 }
 .expertise-redirection-card-title {
   @media (max-width: $medium-screen) {
@@ -51,15 +51,9 @@
   float: right;
   height: 0px;
   img {
-    @media (max-width: $medium-screen) {
-      height: 38px;
-    }
-    @media (max-width: $small-screen) {
-      height: 45px;
-    }
     position: relative;
-    height: 45px;
-    bottom: 12px;
+    height: 3rem;
+    bottom: 1rem;
   }
 }
 .expertise-redirection-card-description {
