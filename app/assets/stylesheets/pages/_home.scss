@@ -162,26 +162,26 @@
 
 // CARTES EXPERTISES
 .homepage-expertises-box {
-  @media (max-width: $medium-screen) {
-    margin-bottom: 0;
-  }
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  // @media (max-width: $medium-screen) {
+  //   margin-bottom: 0;
+  // }
+  // margin-top: 5rem;
+  // margin-bottom: 5rem;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
 }
 .homepage-expertise {
   position: relative;
-  @media (max-width: $medium-screen) {
-    flex: 0 0 48%;
-    margin-bottom: 3rem;
-  }
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-  }
-  flex: 0 0 24%;
+  // @media (max-width: $medium-screen) {
+  //   flex: 0 0 48%;
+  //   margin-bottom: 3rem;
+  // }
+  // @media (max-width: $small-screen) {
+  //   flex: 0 0 100%;
+  // }
+  // flex: 0 0 24%;
   img {
     height: auto;
     width: 100%;
@@ -221,19 +221,19 @@
 }
 // CARTES ANNONCES
 .homepage-annonces-box {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  // margin-top: 5rem;
+  // margin-bottom: 5rem;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
 }
 .homepage-annonce {
   position: relative;
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-  }
-  flex: 0 0 32%;
+  // @media (max-width: $small-screen) {
+  //   flex: 0 0 100%;
+  // }
+  // flex: 0 0 32%;
   img {
     height: auto;
     width: 100%;
