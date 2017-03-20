@@ -19,6 +19,9 @@
   right: 5em;
   max-width: 4em;
   cursor: pointer;
+  @media (max-width: $small-screen) {
+    width: 3rem;
+  }
 }
 
 // formulaire de recherche
@@ -46,7 +49,10 @@
 .search-answer-container {
   margin-bottom: 4rem;
   h2 {
-    font-size: 2rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
   }
 }
 // PAGE DE RESULTATS
