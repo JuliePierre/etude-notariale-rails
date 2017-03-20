@@ -19,6 +19,10 @@
   padding: 2rem;
   position: relative;
 }
+.expertise-redirection-card-header {
+  width: 100%;
+  position: relative;
+}
 
 // ajouter des marges
 .expertise-box .row .col {
@@ -46,18 +50,21 @@
     font-size: 1.4rem;
   }
   @media (max-width: $small-screen) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   font-size: 2rem;
   font-weight: 400;
+  max-width: 75%;
 }
 .expertise-redirection-card-icon {
-  float: right;
-  height: 0px;
+  position: absolute;
+  right: 0;
+  top: -1rem;
   img {
-    position: relative;
     height: 3rem;
-    bottom: 1rem;
+    @media (max-width: $small-screen) {
+      height: 2rem;
+    }
   }
 }
 .expertise-redirection-card-description {
