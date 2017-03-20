@@ -9,28 +9,16 @@
 
 // LES ANNONCES
 .annonces-container {
-  @media (max-width: $medium-screen) {
-    justify-content: space-between;
+  .col {
+    padding: 0 0.75rem 1.25rem 0.75rem !important;
   }
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 .annonces-carte-annonce {
-  @media (max-width: $medium-screen) {
-    flex: 0 0 48%;
-    padding-bottom: 1rem;
-  }
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-  }
-  flex: 0 0 31%;
+  padding: 0 0 0.75rem 0;
   text-align: center;
   position: relative;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   height: auto;
-  margin: 0 0.2rem 4rem 0.2rem;
   h3 {
     text-align: center;
     font-size: 1.5rem;

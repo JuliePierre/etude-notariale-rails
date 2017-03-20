@@ -19,15 +19,17 @@
 
 <!-- Les annonces -->
 <div class="page-section">
-  <div class="annonces-container">
+  <div class="row annonces-container">
     <% @annonces.each do |annonce| %>
-      <div class="annonces-carte-annonce" data-ref="<%= annonce.id %>">
-        <%= cl_image_tag annonce.photos[0].path, width: 730, height: 500, crop: :fill %>
-        <h3><%= annonce.genre %> - <%= pluralize annonce.nb_pieces, 'pièce' %></h3>
-        <span><%= annonce.prix_total.to_i %>€</span>
-        <p><%= annonce.ville %> <%= annonce.code_postal %></p>
-        <%= link_to '', test_path(annonce), class: 'carte-link' %>
-        <span class="icone-favori"><i class="fa fa-heart" aria-hidden="true"></i></span>
+      <div class="col s12 m4">
+        <div class="annonces-carte-annonce" data-ref="<%= annonce.id %>">
+          <%= cl_image_tag annonce.photos[0].path, width: 730, height: 500, crop: :fill %>
+          <h3><%= annonce.genre %> - <%= pluralize annonce.nb_pieces, 'pièce' %></h3>
+          <span><%= annonce.prix_total.to_i %>€</span>
+          <p><%= annonce.ville %> <%= annonce.code_postal %></p>
+          <%= link_to '', test_path(annonce), class: 'carte-link' %>
+          <span class="icone-favori"><i class="fa fa-heart" aria-hidden="true"></i></span>
+        </div>
       </div>
     <% end %>
   </div>
