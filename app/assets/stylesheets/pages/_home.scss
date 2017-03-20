@@ -258,26 +258,34 @@
 
 // SECTION FORMULAIRE DE CONTACT
 .homepage-contact-section {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 50%;
   height: 85vh;
 }
+.homepage-contact-section-tablet {
+  display: flex;
+  align-items: center;
+  position: relative;
 
-.homepage-contact-form {
-  // @media (max-width: $medium-screen) {
-  //   flex: 0 0 100%;
-  // }
-  // flex: 0 0 50%;
-  background-color: $brand-grey;
 }
 
+// .homepage-contact-form {
+//   // @media (max-width: $medium-screen) {
+//   //   flex: 0 0 100%;
+//   // }
+//   // flex: 0 0 50%;
+//   height: 100%;
+//   background-color: $brand-grey;
+// }
+
 #homepage-contact-container {
+  background-color: $brand-grey;
   @media (max-width: $small-screen) {
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
   }
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 0rem 4rem;
   .row {
     @media (min-width: $very-large-screen) {
       margin-bottom: 2rem;
@@ -296,6 +304,29 @@
 }
 // SECTION FORMULAIRE DE CONTACT
 
+#homepage-contact-section-desktop {
+  @media (max-width: $medium-plus-screen) {
+    display: none;
+  }
+}
+#homepage-contact-section-tablet {
+  background: image-url('small-contact') no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  @media (max-width: $medium-screen-down) {
+    display: none;
+  }
+  @media (min-width: $medium-plus-screen-up) {
+    display: none;
+  }
+}
+#homepage-contact-infos-tablet {
+  background-color: white;
+  opacity: 0.8;
+  margin: 3rem 4rem;
+  padding: 2rem 2rem;
+}
 
 // SECTION CONTACT
 .homepage-section-contact {
@@ -304,9 +335,12 @@
 #map-homepage {
   height: 70vh;
   width: 100%;
+  @media (max-width: $medium-plus-screen) {
+    height: 40vh;
+  }
 }
 .section-contact-infos {
-  @media (max-width: $medium-screen) {
+  @media (max-width: $medium-plus-screen) {
     display: none;
   }
   position: absolute;

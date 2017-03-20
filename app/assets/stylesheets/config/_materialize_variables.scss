@@ -7,8 +7,10 @@
 $very-small-screen: 320px !default; //iphone 5
 $small-screen: 375px !default; // iphone6
 
+$medium-screen-down: 767px !default; //ipad
 $medium-screen: 768px !default; //ipad
 $medium-plus-screen: 1024px !default; //ipad pro
+$medium-plus-screen-up: 1025px !default; //ipad pro
 
 $large-screen: 1280px !default; //laptop MDPI screen
 $large-plus-screen: 1440px !default; //laptop HiDPi screen

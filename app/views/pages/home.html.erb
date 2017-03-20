@@ -192,11 +192,10 @@
 
 
 <!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
-<div class="grey-bg homepage-contact-section">
-  <!-- 4ème SECTION - Partie gauche : le formulaire -->
-  <div class="homepage-contact-form">
-    <div id="homepage-contact-container">
-    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
+<div class="grey-bg homepage-contact-section" id="homepage-contact-section-desktop">
+  <!-- 4ème SECTION - Partie droite : le formulaire -->
+  <div id="homepage-contact-container">
+  <!-- 4ème SECTION - Partie droite : le formulaire // Heading -->
     <div class="section-heading-content">
       <span class="section-subtitle">Contactez-nous</span>
       <span class="line-title section-line-title"></span>
@@ -211,54 +210,97 @@
     <div id="homepage-contact-form">
       <%= render 'shared/contact-form', contact: @contact %>
     </div>
-    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
-    </div>
   </div>
-  <!-- 4ème SECTION - Partie gauche : le formulaire -->
 
-  <!-- 4ème SECTION - Partie droite : la photo -->
+  <!-- 4ème SECTION - Partie gauche : la photo -->
   <div class="homepage-contact-picture">
-    <%#= image_tag 'small-contact.jpg' %>
-    <div class="section-contact-infos" id="section-contact-infos-mobile">
-      <div class="section-contact-header">
-        <span class="section-contact-subtitle">Office notarial à Rennes</span>
-        <h2>Perraut - Pirioux - Mevel</h2>
+  </div>
+</div>
+
+<!-- SECTION CONTACT POUR TABLETTE -->
+<div class="homepage-contact-section-tablet" id="homepage-contact-section-tablet">
+  <!-- Introduction -->
+  <div id="homepage-contact-infos-tablet">
+    <div class="row">
+      <div class="col s12 m8 l6">
+        <div class="section-heading-content">
+          <span class="section-subtitle">Get in touch</span>
+          <span class="line-title section-line-title"></span>
+          <h2>Contact us</h2>
+        </div>
       </div>
-      <div class="contact-form-infos">
-        <div class="row">
-          <span class="contact-form-label">Adresse</span>
-          <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
+    </div>
+    <!-- Formulaire de contact -->
+    <div class="row">
+      <div class="col s12 m8 l8">
+        <div id="page-contact-form">
+          <%= render 'shared/contact-form', contact: @contact %>
         </div>
-        <div class="row">
-          <div class="col s12 m6">
-            <span class="contact-form-label">Téléphone</span>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
-            <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
-          </div>
-          <div class="col s12 m6">
-            <span class="contact-form-label">Email</span>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
-          </div>
-        </div>
-        <div class="row hide-on-small-only">
-          <span class="contact-form-label">Standard</span><p>Ouvert de 9h à 12h et de 14h à 18h (17h le vendredi).<br>Etude fermée le samedi (sauf sur rendez-vous).</p>
-        </div>
-        <span class="contact-form-label hide-on-small-only">Accès</span>
-        <div class="row hide-on-small-only">
-          <div class="col s12 m6">
-            <p><i class="fa fa-subway" aria-hidden="true"></i>Station Sainte Anne</p>
-          </div>
-          <div class="col s12 m6">
-            <p><i class="fa fa-car" aria-hidden="true"></i>Parking Hoche</p>
+      </div>
+      <div class="col s12 m4 l4">
+        <div id="page-contact-infos">
+          <span class="contact-form-header">Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, and other legal and law related services.</span>
+          <div class="contact-form-infos">
+            <div class="row">
+              <div class="col s12 m6">
+                <span class="contact-form-label">Téléphone</span>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
+                <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
+              </div>
+              <div class="col s12 m6">
+                <span class="contact-form-label">Email</span>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
+              </div>
+            </div>
+            <div>
+              <span class="contact-form-label">Adresse</span>
+              <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- 4ème SECTION - Partie droite : la photo -->
 </div>
-<!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
 
+<!-- SECTION CONTACT POUR MOBILE -->
+<div class="hidden homepage-contact-picture">
+  <div class="section-contact-infos" id="section-contact-infos-mobile">
+    <div class="section-contact-header">
+      <span class="section-contact-subtitle">Office notarial à Rennes</span>
+      <h2>Perraut - Pirioux - Mevel</h2>
+    </div>
+    <div class="contact-form-infos">
+      <div class="row">
+        <span class="contact-form-label">Adresse</span>
+        <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <span class="contact-form-label">Téléphone</span>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
+          <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
+        </div>
+        <div class="col s12 m6">
+          <span class="contact-form-label">Email</span>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
+        </div>
+      </div>
+      <div class="row hide-on-small-only">
+        <span class="contact-form-label">Standard</span><p>Ouvert de 9h à 12h et de 14h à 18h (17h le vendredi).<br>Etude fermée le samedi (sauf sur rendez-vous).</p>
+      </div>
+      <span class="contact-form-label hide-on-small-only">Accès</span>
+      <div class="row hide-on-small-only">
+        <div class="col s12 m6">
+          <p><i class="fa fa-subway" aria-hidden="true"></i>Station Sainte Anne</p>
+        </div>
+        <div class="col s12 m6">
+          <p><i class="fa fa-car" aria-hidden="true"></i>Parking Hoche</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- SECTION CONTACT -->
 <div class="homepage-section-contact">
