@@ -16,16 +16,21 @@
   // flex-wrap: wrap;
 }
 .expertise-redirection-card {
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-    margin-bottom: 3rem;
-  }
-  flex: 0 0 30%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   position: relative;
 }
+
+// ajouter des marges
+.expertise-box .row .col {
+  @media (max-width: 1000px) {
+    margin-bottom: 2rem;
+  }
+}
+// supprimer la marge en trop du dernier élément
+.expertise-box .row .col:last-child {
+  margin-bottom: 0 !important;
+}
+
 .couple-redirection-card, .white-redirection-card {
   background-color: white;
 }
@@ -34,7 +39,6 @@
 }
 .expertise-redirection-card-line-title {
   background-color: $brand-dark-grey;
-  margin-top: 2rem;
   width: 2rem;
 }
 .expertise-redirection-card-title {
