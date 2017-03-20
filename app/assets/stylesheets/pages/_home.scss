@@ -82,16 +82,16 @@
 
 // SECTION VALEURS
 .homepage-values-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.75rem;
-  flex-wrap: wrap;
+  // display: flex;
+  // justify-content: space-between;
+  // padding: 0 0.75rem;
+  // flex-wrap: wrap;
 }
 .value-card {
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-  }
-  flex: 0 0 30%;
+  // @media (max-width: $small-screen) {
+  //   flex: 0 0 100%;
+  // }
+  // flex: 0 0 30%;
 }
 .value-first-title {
   @media (max-width: $small-screen) {
