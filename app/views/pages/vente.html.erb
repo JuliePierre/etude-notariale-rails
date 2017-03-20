@@ -109,3 +109,14 @@
   </div>
 </div>
 <!-- 4ème SECTION - FORMULAIRE DE CONTACT -->
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      console.log('toto');
+      $('.navbar-link').removeClass('active');
+      $('.navbar-link[data-link="immobilier"]').addClass('active');
+      $('select').material_select();
+    });
+  </script>
+<% end %>

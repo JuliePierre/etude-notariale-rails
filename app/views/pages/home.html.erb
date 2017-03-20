@@ -95,45 +95,55 @@
     <!-- 2ème section - Les expertises : paragraphe d'introduction -->
 
     <!-- 2ème section - Les expertises : paragraphe de description -->
-    <div class="row homepage-expertises-box">
-      <div class="col s12 m6 l3 homepage-expertise">
-        <%= image_tag 'small-famille.jpg' %>
-        <h3>Droit de la famille</h3>
-        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
-        <div class="expertise-link">
-          <%= link_to(famille_path) do %>
-            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-          <% end %>
+    <div class="homepage-expertises-box">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="homepage-expertise">
+            <%= image_tag 'small-famille.jpg' %>
+            <h3>Droit de la famille</h3>
+            <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+            <div class="expertise-link">
+              <%= link_to(famille_path) do %>
+                <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+              <% end %>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col s12 m6 l3 homepage-expertise">
-        <%= image_tag 'small-affaires.jpg' %>
-        <h3>Droit des affaires</h3>
-        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
-        <div class="expertise-link">
-          <%= link_to(affaires_path) do %>
-            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-          <% end %>
+        <div class="col s12 m6 l3">
+          <div class="homepage-expertise">
+            <%= image_tag 'small-affaires.jpg' %>
+            <h3>Droit des affaires</h3>
+            <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+            <div class="expertise-link">
+              <%= link_to(affaires_path) do %>
+                <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+              <% end %>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col s12 m6 l3 homepage-expertise">
-        <%= image_tag 'small-immobilier.jpg' %>
-        <h3>Droit immobilier</h3>
-        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
-        <div class="expertise-link">
-          <%= link_to(immobilier_path) do %>
-            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-          <% end %>
+        <div class="col s12 m6 l3">
+          <div class="homepage-expertise">
+            <%= image_tag 'small-immobilier.jpg' %>
+            <h3>Droit immobilier</h3>
+            <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+            <div class="expertise-link">
+              <%= link_to(immobilier_path) do %>
+                <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+              <% end %>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col s12 m6 l3 homepage-expertise">
-        <%= image_tag 'small-promotion.jpg' %>
-        <h3>Promotion immobilière</h3>
-        <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
-        <div class="expertise-link">
-          <%= link_to(promotion_path) do %>
-            <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-          <% end %>
+        <div class="col s12 m6 l3">
+          <div class="homepage-expertise">
+            <%= image_tag 'small-promotion.jpg' %>
+            <h3>Promotion immobilière</h3>
+            <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
+            <div class="expertise-link">
+              <%= link_to(promotion_path) do %>
+                <span class="btn-light">En savoir plus  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+              <% end %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -160,35 +170,41 @@
   <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
 
   <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
-  <div class="row homepage-annonces-box">
-    <div class="col s12 m4 homepage-annonce">
-      <% a = @favorite_annonces[0] || a = @annonces[0] %>
-      <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill %>
-      <h3><%= a.genre %> - <%= a.nb_pieces %> pièces</h3>
-      <p><%= a.ville %> <%= a.code_postal %></p>
-      <%= link_to '', annonce_path(a), class: 'carte-link' %>
+  <div class="row ">
+    <div class="homepage-annonces-box">
+      <div class="col s12 m4">
+        <div class="homepage-annonce">
+          <% a = @favorite_annonces[0] || a = @annonces[0] %>
+          <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <h3><%= a.genre %> - <%= a.nb_pieces %> pièces</h3>
+          <p><%= a.ville %> <%= a.code_postal %></p>
+          <%= link_to '', annonce_path(a), class: 'carte-link' %>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="homepage-annonce">
+          <% b = @favorite_annonces[1] || b = @annonces[1] %>
+          <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <h3><%= b.genre %> - <%= b.nb_pieces %> pièces</h3>
+          <p><%= b.ville %> <%= b.code_postal %></p>
+          <%= link_to '', annonce_path(b), class: 'carte-link' %>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="homepage-annonce">
+          <% c = @favorite_annonces[2] || c = @annonces[2] %>
+          <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <h3><%= c.genre %> - <%= c.nb_pieces %> pièces</h3>
+          <p><%= c.ville %> <%= c.code_postal %></p>
+          <%= link_to '', annonce_path(c), class: 'carte-link' %>
+        </div>
+      </div>
     </div>
-    <div class="col s12 m4 homepage-annonce">
-      <% b = @favorite_annonces[1] || b = @annonces[1] %>
-      <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill %>
-      <h3><%= b.genre %> - <%= b.nb_pieces %> pièces</h3>
-      <p><%= b.ville %> <%= b.code_postal %></p>
-      <%= link_to '', annonce_path(b), class: 'carte-link' %>
-    </div>
-    <div class="col s12 m4 homepage-annonce">
-      <% c = @favorite_annonces[2] || c = @annonces[2] %>
-      <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill %>
-      <h3><%= c.genre %> - <%= c.nb_pieces %> pièces</h3>
-      <p><%= c.ville %> <%= c.code_postal %></p>
-      <%= link_to '', annonce_path(c), class: 'carte-link' %>
+    <div class="value-button">
+      <%= link_to "Voir toutes nos offres", annonces_path, class: 'btn btn-primary' %>
     </div>
   </div>
-  <div class="value-button">
-    <%= link_to "Voir toutes nos offres", annonces_path, class: 'btn btn-primary' %>
-  </div>
-  <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
 </div>
-<!-- 3ème section - Les annonces immobilières -->
 
 
 <!-- 4ème SECTION - FORMULAIRE DE CONTACT -->

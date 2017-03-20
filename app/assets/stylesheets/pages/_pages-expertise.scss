@@ -98,16 +98,9 @@
 }
 
 .carte-fiche-pratique {
-  @media (max-width: $medium-screen) {
-    flex: 0 0 48%;
-  }
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-  }
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); // même box-shadow que les fiches de présentation des notaires de la page Office
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  width: 300px;
   height: auto;
   flex: 0 0 24%;
   border: 1px solid $primary-color-light;
