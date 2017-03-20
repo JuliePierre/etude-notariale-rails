@@ -283,9 +283,9 @@
 #homepage-contact-container {
   background-color: $brand-grey;
   @media (max-width: $small-screen) {
-    padding: 0rem 2rem;
+    padding: 2rem 2rem;
   }
-  padding: 0rem 4rem;
+  padding: 2rem 4rem;
   .row {
     @media (min-width: $very-large-screen) {
       margin-bottom: 2rem;
@@ -321,11 +321,28 @@
     display: none;
   }
 }
+#homepage-contact-section-mobile {
+  @media (min-width: $medium-screen) {
+    display: none;
+  }
+}
+#homepage-contact-photo-mobile {
+  background: image-url('small-contact') no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
 #homepage-contact-infos-tablet {
   background-color: white;
   opacity: 0.8;
   margin: 3rem 4rem;
   padding: 2rem 2rem;
+}
+#homepage-contact-infos-mobile {
+  background-color: white;
+  opacity: 0.8;
+  padding: 2rem 0rem 1rem 0rem;
+  text-align: center;
 }
 
 // SECTION CONTACT

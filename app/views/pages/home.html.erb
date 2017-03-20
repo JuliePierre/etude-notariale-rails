@@ -264,43 +264,83 @@
 </div>
 
 <!-- SECTION CONTACT POUR MOBILE -->
-<div class="hidden homepage-contact-picture">
-  <div class="section-contact-infos" id="section-contact-infos-mobile">
-    <div class="section-contact-header">
-      <span class="section-contact-subtitle">Office notarial à Rennes</span>
-      <h2>Perraut - Pirioux - Mevel</h2>
+<div id="homepage-contact-section-mobile">
+  <div class="grey-bg" id="homepage-contact-container">
+    <div class="section-heading-content">
+      <span class="section-subtitle">Contactez-nous</span>
+      <span class="line-title section-line-title"></span>
+      <h2>Prendre rendez-vous</h2>
+      <div class="section-description">
+        <p>Créé en 2000, l'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+      </div>
     </div>
-    <div class="contact-form-infos">
-      <div class="row">
-        <span class="contact-form-label">Adresse</span>
-        <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
+    <div id="homepage-contact-form">
+      <%= render 'shared/contact-form', contact: @contact %>
+    </div>
+  </div>
+  <div id="homepage-contact-photo-mobile">
+    <div id="homepage-contact-infos-mobile">
+      <div class="section-contact-header">
+        <span class="section-contact-subtitle">Office notarial à Rennes</span>
+        <h2>Perraut - Pirioux - Mevel</h2>
       </div>
-      <div class="row">
-        <div class="col s12 m6">
-          <span class="contact-form-label">Téléphone</span>
-          <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
-          <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
+      <div class="contact-form-infos">
+        <div class="row">
+          <span class="contact-form-label">Adresse</span>
+          <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
         </div>
-        <div class="col s12 m6">
-          <span class="contact-form-label">Email</span>
-          <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
+        <div class="row">
+          <div class="col s12 m6">
+            <span class="contact-form-label">Téléphone</span>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
+            <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
+          </div>
+          <div class="col s12 m6">
+            <span class="contact-form-label">Email</span>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
+          </div>
         </div>
-      </div>
-      <div class="row hide-on-small-only">
-        <span class="contact-form-label">Standard</span><p>Ouvert de 9h à 12h et de 14h à 18h (17h le vendredi).<br>Etude fermée le samedi (sauf sur rendez-vous).</p>
-      </div>
-      <span class="contact-form-label hide-on-small-only">Accès</span>
-      <div class="row hide-on-small-only">
-        <div class="col s12 m6">
-          <p><i class="fa fa-subway" aria-hidden="true"></i>Station Sainte Anne</p>
+        <div class="row hide-on-small-only">
+          <span class="contact-form-label">Standard</span><p>Ouvert de 9h à 12h et de 14h à 18h (17h le vendredi).<br>Etude fermée le samedi (sauf sur rendez-vous).</p>
         </div>
-        <div class="col s12 m6">
-          <p><i class="fa fa-car" aria-hidden="true"></i>Parking Hoche</p>
+        <span class="contact-form-label hide-on-small-only">Accès</span>
+        <div class="row hide-on-small-only">
+          <div class="col s12 m6">
+            <p><i class="fa fa-subway" aria-hidden="true"></i>Station Sainte Anne</p>
+          </div>
+          <div class="col s12 m6">
+            <p><i class="fa fa-car" aria-hidden="true"></i>Parking Hoche</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- SECTION CONTACT -->
 <div class="homepage-section-contact">
