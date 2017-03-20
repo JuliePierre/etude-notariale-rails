@@ -18,26 +18,20 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0rem 10rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 // Les cartes
 .immobilier-redirection-card {
-  @media (max-width: $medium-screen) {
-    flex: 0 0 100%;
-    padding: 0 4rem 6rem 4rem;
-  }
-  @media (max-width: $small-screen) {
-    padding: 0 2rem 2rem 2rem;
-  }
-  flex: 0 0 32%;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4rem;
+  width: 26rem;
+  max-width: 90vw;
+  padding: 3rem 4rem;
   position: relative;
   opacity: 0.9;
+  @media (max-width: $small-screen) {
+    padding: 2rem 2rem;
+  }
 }
 .immobilier-redirection-card:hover {
   background-color: $primary-color-light;
@@ -45,15 +39,9 @@
 }
 
 .immobilier-redirection-card-line-title {
-  @media (max-width: $medium-screen) {
-    margin-top: 6rem;
-  }
-  @media (max-width: $small-screen) {
-    margin-top: 4rem;
-  }
   background-color: $brand-dark-grey;
-  margin-top: 4rem;
-  width: 30px;
+  margin-top: 2rem;
+  width: 2.5rem;
 }
 .immobilier-redirection-card-title {
   font-size: 2rem;
@@ -64,8 +52,8 @@
   height: 0px;
   img {
     position: relative;
-    height: 45px;
-    bottom: 12px;
+    height: 3rem;
+    bottom: 1rem;
   }
 }
 .immobilier-redirection-card-link {
