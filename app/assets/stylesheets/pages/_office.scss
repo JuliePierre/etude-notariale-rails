@@ -51,10 +51,6 @@
 
 // Partie Values
 .office-values-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.75rem;
-  flex-wrap: wrap;
   .value-title {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid $primary-color-light;
@@ -91,20 +87,9 @@
   }
   margin-top: 5rem;
   margin-bottom: 5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 .carte-departement {
-  @media (max-width: $small-screen) {
-    flex: 0 0 100%;
-    max-width: initial;
-    margin-bottom: 3rem;
-  }
   position: relative;
-  flex: 0 0 25%;
-  max-width: 30vw;
   margin-bottom: 0.8rem;
   img {
     height: 3rem;
@@ -182,10 +167,6 @@
 
 .team-content {
   padding-top: 2em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .team-member {
   @media (max-width: $small-screen) {
