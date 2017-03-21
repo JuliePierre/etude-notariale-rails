@@ -5,10 +5,15 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:notice] = "Merci pour votre message. Nous vous contacterons très prochainement."
+      respond_to do |format|
+        format.html { redirect_to contact_path }
+        format.js  # <-- will render `app/views/contacts/create.js.erb`
+      end
     else
-      flash.now[:error] = "Nous n'avons pas pu envoyer votre message. Merci de réessayer."
-      render 'pages/contact.html'
+      respond_to do |format|
+        format.html { redirect_to contact_path }
+        format.js  # <-- idem
+      end
     end
   end
 end

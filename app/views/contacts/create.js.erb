@@ -1,0 +1,8 @@
+// app/views/reviews/create.js.erb
+// Here you will write *javascript* that would be executed by the browser
+<% if @contact.errors.any? %>
+  $('#page-contact-form').html("<%= j render 'shared/contact_form', contact: @contact %>");
+<% else %>
+  // Create a paragraph for the new review. But hide it.
+  alert("Votre message a bien été envoyé. Nous vous contacterons rapidement.");
+<% end %>
