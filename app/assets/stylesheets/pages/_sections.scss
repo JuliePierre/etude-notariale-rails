@@ -34,7 +34,6 @@
     font-size: 2rem;
   }
 }
-
 .section-line-title {
   @media (max-width: $small-screen) {
     position: initial;
@@ -42,6 +41,9 @@
   left: 0;
   position: absolute;
   top: 2rem;
+}
+.white-line {
+  background: white !important;
 }
 
 .section-subtitle {

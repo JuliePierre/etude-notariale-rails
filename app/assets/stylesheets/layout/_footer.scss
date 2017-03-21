@@ -1,3 +1,7 @@
+#first-footer {
+  background-color: $primary-color;
+  color: white;
+}
 .footer-section {
   @media (max-width: $medium-plus-screen) {
     padding: 2rem 4rem;
@@ -56,7 +60,7 @@
 }
 
 #second-footer {
-  background-color: $primary-color;
+  background-color: $brand-dark-grey;
   text-align: center;
   a {
     color: white;
@@ -71,3 +75,18 @@
   text-transform: uppercase;
   font-weight: 400;
 }
+
+// styles pour la ligne de démarcation (version antérieure)
+// .footer-whitespace {
+//   @media (max-width: $medium-plus-screen) {
+//     padding: 0rem 4rem;
+//   }
+//   @media (max-width: $small-screen) {
+//     padding: 0 2rem;
+//   }
+//   padding: 0rem 10rem;
+// }
+// .footer-line {
+//   border-bottom: 1px solid $brand-grey-text;
+//   display: block;
+// }
