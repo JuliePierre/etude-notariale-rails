@@ -1,36 +1,75 @@
 // Your footer style
-#footer {
-  background-color: $primary-color;
+#first-footer {
+  background-color: $primary-color-light;
   color: white;
-  h5 {
-    margin-top: 0;
-    font-size: 1.2rem;
+}
+
+.footer-section {
+  @media (max-width: $medium-plus-screen) {
+    padding: 2rem 4rem;
   }
-  a {
-    color: white;
-    font-size: 0.9rem;
+  @media (max-width: $small-screen) {
+    padding: 2rem 2rem;
+  }
+  padding: 2rem 4rem;
+  .row {
+    margin-bottom: 0 !important;
+  }
+}
+.second-footer-section {
+  padding: 1rem 0rem;
+}
+
+.footer-heading h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  @media (max-width: $small-screen) {
+    margin: 1rem 0 0 0;
+  }
+}
+
+.footer-contact-form-infos {
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+    @media (max-width: $small-screen) {
+      margin-bottom: 1rem;
+    }
+  .row {
+    @media (max-width: $small-screen) {
+      margin-bottom: 0;
+    }
+  }
   }
   p {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 0.9rem;
+    color: white;
+  }
+  .fa {
+    font-size: initial;
+    margin-right: 0.4rem;
+    color: white;
   }
 }
-.footer-container {
-  display: flex;
-  padding: 3rem 10rem 2rem 10rem;
-  justify-content: space-between;
+.footer-contact-form-label {
+  color: $primary-color;
 }
-.footer-presentation {
-  flex: 0 0 18%;
-}
-.footer-expertises {
-  flex: 0 0 18%;
+
+#second-footer {
+  background-color: $brand-dark-grey;
+  text-align: center;
   a {
+    color: white;
+  }
+}
+.footer-links {
+  display: inline;
+  @media (max-width: $small-screen) {
     display: block;
   }
-}
-.footer-office {
-  flex: 0 0 18%
-}
-.footer-contact {
-  flex: 0 0 18%;
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }

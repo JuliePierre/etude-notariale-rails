@@ -1,25 +1,44 @@
-<div id="footer">
-  <div class="footer-container">
-    <div class="footer-presentation">
-      <h5>Nous connaître</h5>
-      <p>L'office notarial Perraut Pirioux Mevel est animé par le souci d'offrir à ses clients un service juridique de qualité</p>
+<div id="first-footer">
+  <div class="footer-section">
+    <div class="row">
+      <div class="col s12 m6 l4 offset-l2">
+        <div class="section-heading-content footer-heading">
+          <span class="section-subtitle">Office notarial à Rennes</span>
+          <span class="line-title section-line-title"></span>
+          <h4>PERRAUT - PIRIOUX - MEVEL</h4>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="footer-contact-form-infos">
+          <div class="row">
+            <div class="col s12 m6">
+              <span class="footer-contact-form-label">Adresse</span>
+              <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
+            </div>
+            <div class="col s12 m6">
+              <span class="footer-contact-form-label">Téléphone</span>
+              <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
+              <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col s12">
+              <span class="footer-contact-form-label">Email</span>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer-expertises">
-      <h5>Nos expertises</h5>
-      <%= link_to 'Droit de la famille', famille_path %>
-      <%= link_to 'Droit des affaires', affaires_path %>
-      <%= link_to 'Droit immobilier', immobilier_path %>
-      <%= link_to 'Promotion immobilière', promotion_path %>
-    </div>
-    <div class="footer-office">
-      <h5>Notre office</h5>
-      <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
-      <p>Lundi à Vendredi, de 9h à 12h et de 14h à 18h</p>
-      <p>Fermé le weekend sauf sur rendez-vous</p>
-    </div>
-    <div class="footer-contact">
-      <h5>Nous contacter</h5>
-      <%= link_to 'Contactez-nous', contact_path, class: 'btn btn-primary' %>
-    </div>
+  </div>
+</div>
+<div id="second-footer">
+  <div class="second-footer-section">
+    <ul>
+      <li class="footer-links"><%= link_to "Contact", contact_path %></li>
+      <li class="footer-links"><%= link_to "Plan du site" %></li>
+      <li class="footer-links"><%= link_to "Mentions légales" %></li>
+    </ul>
   </div>
 </div>
