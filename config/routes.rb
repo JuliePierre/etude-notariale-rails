@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'vente-immobilier', to: 'pages#vente', as: 'vente'
   get 'plan-du-site', to: 'pages#sitemap', as: 'sitemap'
   get 'mentions-légales', to: 'pages#legal', as: 'legal'
+  get 'credits', to: 'pages#credits', as: 'credits'
 
   # Routes des pages expertises dans l'ordre
   get 'expertises/search', to: 'expertises#search', as: 'search'
