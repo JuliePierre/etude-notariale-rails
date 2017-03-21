@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact', as: 'contact'
   get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
   get 'vente-immobilier', to: 'pages#vente', as: 'vente'
+  get 'plan-du-site', to: 'pages#sitemap', as: 'sitemap'
 
   # Routes des pages expertises dans l'ordre
   get 'expertises/search', to: 'expertises#search', as: 'search'

@@ -1,0 +1,75 @@
+<!-- Bannière -->
+<div class="page-banner" id="sitemap-banner">
+  <div class="page-banner-header left">
+    <span class="page-banner-subtitle">Plan du site</span>
+  </div>
+</div>
+<!-- Bannière -->
+
+<!-- Subnavigation -->
+<div class="sub-nav">
+  <div class="sub-nav-container">
+    <div class="sub-nav-menu">
+      <span class="sub-nav-item"><%= link_to 'Accueil', root_path %></span>
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      <span class="sub-nav-item">Plan du site</span>
+    </div>
+  </div>
+</div>
+<!-- Subnavigation -->
+
+<!-- Plan -->
+<div class="page-section">
+  <div class="sitemap-category">
+    <h4><%= link_to "Accueil", root_path %></h4>
+    <span class="line-title"></span>
+  </div>
+  <div class="sitemap-category">
+    <h4><%= link_to "L'office", office_path %></h4>
+    <span class="line-title"></span>
+  </div>
+  <div class="sitemap-category">
+    <h4>Expertises</h4>
+    <span class="line-title"></span>
+    <ul>
+      <li><h5><%= link_to "Droit de la famille", famille_path %></h5></li>
+        <ul>
+          <li><%= link_to "Mariage", mariage_path %></li>
+          <li><%= link_to "Pacs", pacs_path %></li>
+          <li><%= link_to "Divorce", divorce_path %></li>
+          <li><%= link_to "Adoption", adoption_path %></li>
+          <li><%= link_to "Succession", succession_path %></li>
+          <li><%= link_to "Donation", donation_path %></li>
+          <li><%= link_to "Testament", testament_path %></li>
+        </ul>
+      <li><h5><%= link_to "Droit immobilier", immobilier_path %></h5></li>
+        <ul>
+          <li><%= link_to "Achat immobilier", acheter_path %></li>
+          <li><%= link_to "Vente immobilière", vendre_path %></li>
+        </ul>
+      <li><h5><%= link_to "Droit des affaires", affaires_path %></h5></li>
+        <ul>
+          <li><%= link_to "Création de société", societe_path %></li>
+          <li><%= link_to "Acquisition - Cession", acquisition_cession_path %></li>
+          <li><%= link_to "Bail commercial", bail_commercial_path %></li>
+        </ul>
+      <li><h5><%= link_to "Promotion immobilière", promotion_path %></h5></li>
+    </ul>
+  </div>
+  <div class="sitemap-category">
+    <h4><%= link_to "Biens à vendre", negociation_path %></h4>
+    <span class="line-title"></span>
+    <ul>
+      <li><%= link_to "Annonces immobilières", annonces_path %></li>
+      <li><%= link_to "Vendre un bien", vente_path %></li>
+    </ul>
+  </div>
+  <div class="sitemap-category">
+    <h4><%= link_to "Foire aux questions", faq_path %></h4>
+    <span class="line-title"></span>
+  </div>
+  <div class="sitemap-category">
+    <h4><%= link_to "Contact", contact_path %></h4>
+    <span class="line-title"></span>
+  </div>
+</div>
