@@ -1,9 +1,3 @@
-// Your footer style
-#first-footer {
-  background-color: $primary-color-light;
-  color: white;
-}
-
 .footer-section {
   @media (max-width: $medium-plus-screen) {
     padding: 2rem 4rem;
@@ -12,10 +6,14 @@
     padding: 2rem 2rem;
   }
   padding: 2rem 4rem;
-  .row {
-    margin-bottom: 0 !important;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.footer-subtitle {
+  margin-bottom: 0 !important;
+}
+
 .second-footer-section {
   padding: 1rem 0rem;
 }

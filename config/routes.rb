@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
   get 'vente-immobilier', to: 'pages#vente', as: 'vente'
   get 'plan-du-site', to: 'pages#sitemap', as: 'sitemap'
+  get 'mentions légales', to: 'pages#legal', as: 'legal'
 
   # Routes des pages expertises dans l'ordre
   get 'expertises/search', to: 'expertises#search', as: 'search'
