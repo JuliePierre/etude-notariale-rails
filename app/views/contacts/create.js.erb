@@ -1,7 +1,7 @@
 // app/views/reviews/create.js.erb
 // Here you will write *javascript* that would be executed by the browser
 <% if @contact.errors.any? %>
-  $('#page-contact-form').html("<%= j render 'shared/contact_form', contact: @contact %>");
+  Materialize.toast("Nous n'avons pas pu envoyer votre message, nous vous invitons à essayer de nouveau ultérieurement.", 4000);
 <% else %>
   // Create a paragraph for the new review. But hide it.
   Materialize.toast('Nous vous remercions pour votre message. Nous vous contacterons dans les meilleurs délais.', 4000);
