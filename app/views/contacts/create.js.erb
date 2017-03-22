@@ -4,5 +4,17 @@
   $('#page-contact-form').html("<%= j render 'shared/contact_form', contact: @contact %>");
 <% else %>
   // Create a paragraph for the new review. But hide it.
-  alert("Votre message a bien été envoyé. Nous vous contacterons rapidement.");
+  Materialize.toast('Nous vous remercions pour votre message. Nous vous contacterons dans les meilleurs délais.', 4000);
+  $('input#contact_nom')[0].value = "";
+  $('input#contact_nom')[1].value = "";
+  $('input#contact_nom')[2].value = "";
+  $('input#contact_email')[0].value = "";
+  $('input#contact_email')[1].value = "";
+  $('input#contact_email')[2].value = "";
+  $('input#contact_telephone')[0].value = "";
+  $('input#contact_telephone')[1].value = "";
+  $('input#contact_telephone')[2].value = "";
+  $('textarea#contact_message')[0].value = "";
+  $('textarea#contact_message')[1].value = "";
+  $('textarea#contact_message')[2].value = "";
 <% end %>
