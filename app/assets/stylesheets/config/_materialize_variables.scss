@@ -49,14 +49,14 @@ $secondary-color: #F92727 !default;
 $success-color: #2AAF74 !default;
 $error-color: #F92727 !default;
 
-// Liens : couleur de base
-$link-color: initial !default;
-
 // Autres couleurs
 $brand-yellow: #F9D00F;
 $brand-grey: #F2F2F3; // pour les background
 $brand-dark-grey: #484848;
 $brand-grey-text: #9e9e9e;
+
+// Liens : couleur de base
+$link-color: $brand-grey-text !default;
 
 
 /* FORMS */

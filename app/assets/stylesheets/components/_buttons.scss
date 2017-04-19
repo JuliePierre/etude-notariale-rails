@@ -2,7 +2,7 @@
   color: $brand-dark-grey;
   background-color: transparent;
   border: 1px solid $brand-grey-text;
-  box-shadow: initial;
+  box-shadow: none;
   @media (min-width: $very-large-screen) {
     height: 2rem !important;
     line-height: 2rem !important;

@@ -24,13 +24,13 @@
     padding: 0.5rem 0rem;
     a {
       color: white;
-      letter-spacing: initial;
+      letter-spacing: 0;
       &:hover {
         color: $primary-color-light;
       }
     }
   }
   li:last-child {
-    border-bottom: initial;
+    border-bottom: none;
   }
 }

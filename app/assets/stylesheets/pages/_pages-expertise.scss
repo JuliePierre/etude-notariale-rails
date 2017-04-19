@@ -4,7 +4,7 @@
 // Le container : les marges & paddings
 .page-expertise-section {
   h2 {
-    text-align: initial;
+    text-align: left;
     margin-top: 0;
     text-transform: uppercase;
     font-weight: 500;
@@ -78,7 +78,7 @@
 // FAQ
 #questions .collapsible-header {
   @media (max-width: $small-screen) {
-    min-height: initial;
+    min-height: 1rem;
     line-height: 1rem;
     padding: 1rem 1rem;
   }

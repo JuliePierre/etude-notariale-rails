@@ -61,7 +61,7 @@ textarea {
 // SPECIFIQUE FORMULAIRE DE CREATION D UNE ANNONCE -- annonce-form.html.erb
 #new-annonce-form {
   label {
-    display: initial !important;
+    display: block !important;
     position: absolute;
     top: -2rem;
     color: $brand-dark-grey;

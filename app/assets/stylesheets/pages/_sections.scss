@@ -16,7 +16,7 @@
 .section-heading-content {
   @media (max-width: $small-screen) {
     padding-left: 0;
-    position: initial;
+    position: static;
   }
   @media (min-width: $very-large-screen) {
     padding-left: 4rem;
@@ -36,7 +36,7 @@
 }
 .section-line-title {
   @media (max-width: $small-screen) {
-    position: initial;
+    position: static;
   }
   left: 0;
   position: absolute;

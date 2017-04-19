@@ -165,7 +165,7 @@
     font-size: 0.8rem;
   }
   .btn-light {
-    text-align: initial;
+    text-align: left;
   }
 }
 // SECTION EXPERTISES
@@ -220,7 +220,7 @@
     text-align: center;
   }
   .btn-light {
-    text-align: initial;
+    text-align: left;
   }
 }
 // SECTION ANNONCES
@@ -348,7 +348,7 @@
 
 #section-contact-infos-mobile {
   @media (max-width: $medium-screen) {
-    display: initial;
+    display: block;
     padding: 5rem 6rem 2rem 6rem;
     top: 7rem;
     left: 9rem;

@@ -51,9 +51,9 @@
     color: $brand-grey-text;
   }
   .fa {
-    color: initial;
-    font-size: initial;
-    margin-right: 0.4rem;
+    color: $brand-dark-grey;
+    font-size: 1rem;
+    margin-right: 0.5rem;
   }
 }
 .contact-form-label {
