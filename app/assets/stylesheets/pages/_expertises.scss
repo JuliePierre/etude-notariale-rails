@@ -55,6 +55,9 @@
   font-size: 2rem;
   font-weight: 400;
   max-width: 75%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .expertise-redirection-card-icon {
   position: absolute;
@@ -93,7 +96,7 @@
   .expertise-redirection-card-description {
     color: white;
   }
-  .expertise-redirection-card-title:hover {
+  .expertise-redirection-card-title {
     color: white;
   }
 }
