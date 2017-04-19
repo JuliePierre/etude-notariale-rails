@@ -5,23 +5,27 @@
 <!-- Les meta tags -->
 
 <div id="negociation-banner">
-  <div class="negociation-choice-container">
-    <div class="immobilier-redirection-card couple-redirection-card">
-      <%= link_to '', annonces_path, class: 'immobilier-redirection-card-link' %>
-      <span class="line-title immobilier-redirection-card-line-title"></span>
-      <p>Négociation immobilière</p>
-      <div>
-        <span class="immobilier-redirection-card-title">J'achète</span>
-        <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-achat.png' %></span>
-      </div>
-    </div>
-    <div class="immobilier-redirection-card couple-redirection-card">
-      <%= link_to '', vente_path, class: 'immobilier-redirection-card-link' %>
-      <span class="line-title immobilier-redirection-card-line-title"></span>
-      <p>Négociation immobilière</p>
-      <div>
-        <span class="immobilier-redirection-card-title">Je vends</span>
-        <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-vente.png' %></span>
+  <div class="row">
+    <div class="col s12">
+      <div class="negociation-choice-container">
+        <div class="immobilier-redirection-card couple-redirection-card">
+          <%= link_to '', annonces_path, class: 'immobilier-redirection-card-link' %>
+          <span class="line-title immobilier-redirection-card-line-title"></span>
+          <p>Négociation immobilière</p>
+          <div>
+            <span class="immobilier-redirection-card-title">J'achète</span>
+            <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-achat.png' %></span>
+          </div>
+        </div>
+        <div class="immobilier-redirection-card couple-redirection-card">
+          <%= link_to '', vente_path, class: 'immobilier-redirection-card-link' %>
+          <span class="line-title immobilier-redirection-card-line-title"></span>
+          <p>Négociation immobilière</p>
+          <div>
+            <span class="immobilier-redirection-card-title">Je vends</span>
+            <span class="immobilier-redirection-card-icon"><%= image_tag 'icone-vente.png' %></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

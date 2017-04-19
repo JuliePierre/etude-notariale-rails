@@ -252,14 +252,13 @@
 
 #homepage-contact-container {
   background-color: $brand-grey;
+  max-height: 100%;
+  padding: 2rem 4rem;
   @media (max-width: $small-screen) {
     padding: 2rem 2rem;
   }
-  padding: 2rem 4rem;
-  .row {
-    @media (min-width: $very-large-screen) {
-      margin-bottom: 2rem;
-    }
+  @media (min-width: $very-large-screen) {
+    padding: 0 4rem;
   }
 }
 
@@ -324,6 +323,9 @@
   width: 100%;
   @media (max-width: $medium-plus-screen) {
     height: 40vh;
+  }
+  @media (min-width: $medium-plus-screen) and (max-height: 800px) {
+    height: 90vh;
   }
 }
 .section-contact-infos {
