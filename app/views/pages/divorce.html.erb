@@ -169,13 +169,7 @@
 </div>
 
 <!-- Bouton Contact -->
-<div id="contact-link">
-  <div class="contact-link-content">
-    <span class="contact-link-icon valign-wrapper"><i class="material-icons valign">email</i></span>
-    <span class="contact-link-text">Contactez-nous</span>
-    <%= link_to '', contact_path, class: 'carte-link' %>
-  </div>
-</div>
+<%= render 'shared/contact-link' %>
 <!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
