@@ -256,7 +256,7 @@
         </div>
       </div>
       <div class="col s12 m4 l4">
-        <div id="page-contact-infos">
+        <div class="page-contact-infos">
           <span class="contact-form-header">Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, and other legal and law related services.</span>
           <div class="contact-form-infos">
             <div class="row">
@@ -365,6 +365,30 @@
   <script>
     $(document).ready(function() {
       $('select').material_select();
+    });
+  </script>
+  <script>
+    // Released under MIT license: http://www.opensource.org/licenses/mit-license.php
+
+    $('[placeholder]').focus(function() {
+      var input = $(this);
+      if (input.val() == input.attr('placeholder')) {
+        input.val('');
+        input.removeClass('placeholder');
+      }
+    }).blur(function() {
+      var input = $(this);
+      if (input.val() == '' || input.val() == input.attr('placeholder')) {
+        input.addClass('placeholder');
+        input.val(input.attr('placeholder'));
+      }
+    }).blur().parents('form').submit(function() {
+      $(this).find('[placeholder]').each(function() {
+        var input = $(this);
+        if (input.val() == input.attr('placeholder')) {
+          input.val('');
+        }
+      })
     });
   </script>
 <% end %>
