@@ -1,0 +1,18 @@
+<div class="col s12 m6 l3">
+  <div class="carte-fiche-pratique center-align">
+    <div class="carte-fiche-header">
+      <span class="carte-fiche-type"><%= document_type %></span>
+    </div>
+    <div class="carte-fiche-infos">
+      <h3 class="carte-fiche-title"><%= document_title %></h3>
+      <!-- <div class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Télécharger la fiche</span></div> -->
+    </div>
+    <% if document_type == "Fiche conseil" %>
+      <div class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span><%= link_to 'Consulter la fiche', image_url(document), target: "_blank" %></span></div>
+      <div class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span><%= link_to 'Télécharger la fiche', image_url(document), download: document %></span></div>
+    <% else %>
+      <div class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span><%= link_to 'Consulter le guide', image_url(document), target: "_blank" %></span></div>
+      <div class="carte-fiche-doc"><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span><%= link_to 'Télécharger le guide', image_url(document), download: document %></span></div>
+    <% end %>
+  </div>
+</div>

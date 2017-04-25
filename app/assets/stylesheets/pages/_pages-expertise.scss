@@ -105,18 +105,15 @@
   flex: 0 0 24%;
   border: 1px solid $primary-color-light;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
   .carte-fiche-header {
     color: white;
     background-color: $primary-color-light;
     width: 100%;
     padding: 1.5rem 1rem;
     text-align: center;
-    h3 {
-      font-size: 1.5rem;
-      line-height: 1rem;
-      margin: 0.6rem 0 0 0;
-    }
-    .carte-fiche-subtitle {
+    .carte-fiche-type {
       line-height: 1em;
       margin: 0;
       text-transform: uppercase;
@@ -126,11 +123,17 @@
   }
   .carte-fiche-infos {
     margin: 0px;
-    padding: 0.2em 3em;
+    padding: 0 2rem;
     width: 100%;
     p {
       font-size: 0.9rem;
       color: $brand-grey-text;
+    }
+    .carte-fiche-title {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin: 2rem 0 2rem 0;
+      text-align: center;
     }
   }
   .carte-fiche-doc {
