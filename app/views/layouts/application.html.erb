@@ -10,6 +10,7 @@
       rel="stylesheet">
 
     <!-- Meta tags-->
+
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
 
@@ -17,22 +18,20 @@
     <meta property="og:title" content="<%= meta_title %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<%= request.original_url %>" />
-    <meta property="og:image" content="<%= image_url(meta_image) %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
     <meta property="og:description" content="<%= meta_description %>" />
-    <meta property="fb:app_id" content="365983583801132" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@JuliePetere">
     <meta name="twitter:title" content="<%= meta_title %>">
     <meta name="twitter:description" content="<%= meta_description %>">
-    <meta name="twitter:creator" content="@JuliePetere">
-    <meta name="twitter:image:src" content="<%= image_url(meta_image) %>">
+    <meta name="twitter:image:src" content="<%= meta_image %>">
 
     <!-- Google+ Schema.org markup -->
     <meta itemprop="name" content="<%= meta_title %>">
     <meta itemprop="description" content="<%= meta_description %>">
-    <meta itemprop="image" content="<%= image_url(meta_image) %>">
+    <meta itemprop="image" content="<%= meta_image %>">
   </head>
   <body>
     <script>
