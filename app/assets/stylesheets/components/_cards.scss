@@ -38,8 +38,10 @@
 .card-reveal {
   opacity: 0.9;
   margin-bottom: 2rem;
+  padding: 2rem;
   p {
     margin: 0;
+    line-height: 1.2rem;
   }
   h6 {
     margin-bottom: 0;
@@ -55,7 +57,7 @@
   letter-spacing: 0.5px;
   font-size: 1.2rem !important;
   font-weight: 500 !important;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   i {
     line-height: inherit;
   }
