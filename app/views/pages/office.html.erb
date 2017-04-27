@@ -217,143 +217,90 @@
 </div>
 <%= image_tag('banner-famille.jpg', class: 'team-picture') %>
 
-<!-- Equipe - Les tabs -->
-<ul id="tabs-swipe-demo" class="tabs">
-  <li class="tab col s1"><a href="#test-swipe-1">Tous</a></li>
-  <li class="tab col s1"><a class="active" href="#test-swipe-2">Promotion immobilière</a></li>
-  <li class="tab col s1"><a href="#test-swipe-3">Droit de la famille</a></li>
-  <li class="tab col s1"><a href="#test-swipe-4">Droit des affaires</a></li>
-  <li class="tab col s1"><a href="#test-swipe-5">Droit immobilier</a></li>
-  <li class="tab col s1"><a href="#test-swipe-6">Comptabilité - Formalités</a></li>
-  <li class="tab col s1"><a href="#test-swipe-7">Négociation immobilière</a></li>
-</ul>
-<div id="test-swipe-1" class="col s12 blue">
-  <p>Vanessa Pette</p>
-  <p>Ronan Trassin</p>
-  <p>Justine Poulain</p>
-  <p>Magali Poirier</p>
-  <p>Karine Martin</p>
-  <p>Stéphanie Piégué</p>
-  <p>Stéphane Gautier</p>
-  <p>Antoine de Lafforest</p>
-  <p>Edith Savenay</p>
-  <p>Sylvie Hamon</p>
-  <p>Amélie Robert</p>
-  <p>Pauline Bodolec</p>
-  <p>Laëtitia Le Gall</p>
-  <p>Gaëtan Fouché</p>
-  <p>Brigitte Saint-Hilaire</p>
-  <p>Adélaïde Robillard</p>
-  <p>Françoise Gouriou</p>
-  <p>Valérie Petithomme</p>
-  <p>Charles Deplagne</p>
-</div>
-<div id="test-swipe-2" class="col s12 red">Promotion immobilière</div>
-<div id="test-swipe-3" class="col s12 green">Droit de la famille</div>
-<div id="test-swipe-4" class="col s12 green">Droit des affaires</div>
-<div id="test-swipe-5" class="col s12 green">Droit immobilier</div>
-<div id="test-swipe-6" class="col s12 green">Comptabilité - Formalités</div>
-<div id="test-swipe-7" class="col s12 green">Négociation immobilière</div>
-
-
-
-<!-- 3ème section - Le reste de l'équipe -->
 <div class="page-section">
-  <!-- 3ème section - Le reste de l'équipe : paragraphe d'introduction -->
-  <div class="office-heading">
-    <div class="section-heading-content office-section-heading">
-      <span class="section-subtitle">Toute l'équipe</span>
-      <span class="line-title section-line-title"></span>
-      <h2>Une équipe dédiée</h2>
-      <div class="section-description">
-        <p>L'office Notarial est composé de plusieurs services afin de vous assister dans tous vos projets.</p>
-      </div>
+  <!-- Equipe - Les tabs -->
+  <ul id="tabs-swipe-demo" class="tabs center-align">
+    <li class="tab"><a class="active" href="#test-swipe-1">Tous</a></li>
+    <li class="tab"><a href="#test-swipe-2">Promotion immobilière</a></li>
+    <li class="tab"><a href="#test-swipe-3">Droit de la famille</a></li>
+    <li class="tab"><a href="#test-swipe-4">Droit des affaires</a></li>
+    <li class="tab"><a href="#test-swipe-5">Droit immobilier</a></li>
+    <li class="tab"><a href="#test-swipe-6">Comptabilité</a></li>
+    <li class="tab"><a href="#test-swipe-7">Négociation immobilière</a></li>
+  </ul>
+  <div id="test-swipe-1">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Vanessa Pette", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "vanessa@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Ronan Trassin", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "ronan@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Justine Poulain", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "justine@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Magali Poirier", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "magali@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Karine Martin", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "karine@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Stéphanie Piégué", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "stephanie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Stéphane Gautier", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "stephane@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Antoine de Lafforest", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "antoine@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Edith Savenay", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "edith@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Sylvie Hamon", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "sylvie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Amélie Robert", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "amelie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Pauline Bodolec", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "pauline@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Laetitia Le Gall", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "laetitia@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Gaetan Fouché", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "gaetan@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Brigitte Saint-Hilaire", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "brigitte@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Adélaïde Robillard", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "adelaide@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Françoise Gouriou", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "francoise@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Valérie Petithomme", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "valerie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Charles Deplagne", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "charles@notaires.fr" %>
     </div>
   </div>
-  <!-- 3ème section - Le reste de l'équipe : paragraphe d'introduction -->
-
-  <!-- 3ème section - Le reste de l'équipe : paragraphe de description -->
-  <div class="equipe-section-cartes">
+  <div id="test-swipe-2">
     <div class="row">
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-promotion.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Promotion immobilière</h3>
-          <p>Vanessa Pette</p>
-          <p>Ronan Trassin</p>
-          <p>Justine Poulain</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-famille.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Droit de la famille</h3>
-          <p>Magali Poirier</p>
-          <p>Karine Martin</p>
-          <p>Stéphanie Piégué</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-affaires.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Droit des affaires</h3>
-          <p>Stéphane Gautier</p>
-          <p>Antoine de Lafforest</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-immobilier.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Droit immobilier</h3>
-          <p>Stéphane Gautier</p>
-          <p>Antoine de Lafforest</p>
-          <p>Edith Savenay</p>
-          <p>Sylvie Hamon</p>
-          <p>Amélie Robert</p>
-          <p>Pauline Bodolec</p>
-          <p>Laëtitia Le Gall</p>
-          <p>Gaëtan Fouché</p>
-          <p>Brigitte Saint-Hilaire</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-compta.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Comptabilité - Formalités</h3>
-          <p>Adélaïde Robillard</p>
-          <p>Françoise Gouriou</p>
-          <p>Valérie Petithomme</p>
-        </div>
-      </div>
-      <div class="col s12 m3">
-        <div class="carte-departement">
-          <%= image_tag 'icone-negociation.png' %>
-          <span class="line-title departement-line"></span>
-          <h3>Négociation immobilière</h3>
-          <p>Charles Deplagne</p>
-        </div>
-      </div>
+      <%= render 'shared/team-contact', nom_collaborateur: "Vanessa Pette", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "vanessa@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Ronan Trassin", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "ronan@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Justine Poulain", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "justine@notaires.fr" %>
     </div>
   </div>
-  <!-- 3ème section - Le reste de l'équipe : paragraphe de description -->
-  <div class="value-button">
-    <%= link_to "Contacter l'office", contact_path, class: 'btn btn-primary' %>
+  <div id="test-swipe-3">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Magali Poirier", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "magali@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Karine Martin", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "karine@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Stéphanie Piégué", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "stephanie@notaires.fr" %>
+    </div>
+  </div>
+  <div id="test-swipe-4">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Stéphane Gautier", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "stephane@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Antoine de Lafforest", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "antoine@notaires.fr" %>
+    </div>
+  </div>
+  <div id="test-swipe-5">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Stéphane Gautier", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "stephane@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Antoine de Lafforest", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "antoine@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Edith Savenay", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "edith@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Sylvie Hamon", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "sylvie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Amélie Robert", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "amelie@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Pauline Bodolec", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "pauline@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Laetitia Le Gall", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "laetitia@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Gaetan Fouché", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "gaetan@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Brigitte Saint-Hilaire", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "brigitte@notaires.fr" %>
+    </div>
+  </div>
+  <div id="test-swipe-6">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Adélaïde Robillard", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "adelaide@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Françoise Gouriou", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "francoise@notaires.fr" %>
+      <%= render 'shared/team-contact', nom_collaborateur: "Valérie Petithomme", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "valerie@notaires.fr" %>
+    </div>
+  </div>
+  <div id="test-swipe-7">
+    <div class="row">
+      <%= render 'shared/team-contact', nom_collaborateur: "Charles Deplagne", position_collaborateur: "Clerc de notaires - Promotion immobilière", email_collaborateur: "charles@notaires.fr" %>
+    </div>
   </div>
 </div>
-<!-- 3ème section - Le reste de l'équipe -->
 
-
-
-
-
-
+<div class="contacter-office-btn center-align">
+  <%= link_to "Contacter l'office", contact_path, class: 'btn btn-primary' %>
+</div>
 
 <!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>

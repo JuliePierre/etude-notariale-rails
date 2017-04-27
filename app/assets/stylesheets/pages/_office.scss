@@ -182,6 +182,55 @@
   width: 100%;
 }
 
+// tabs
+.indicator {
+  display: none;
+}
 
+#tabs-swipe-demo {
+  margin-bottom: 3rem;
+}
 
+.tabs {
+  height: 2.5rem;
+}
 
+.tabs .tab {
+  text-transform: none;
+  line-height: 2.5rem;
+  height: 2.5rem;
+}
+
+.tabs .tab a {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.tabs .tab a.active {
+  border-bottom: 4px solid $primary-color;
+}
+
+// team members
+.carte-collaborateur {
+  margin-bottom: 3rem;
+}
+
+.nom-collaborateur {
+  letter-spacing: 0.5px;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 1rem;
+}
+
+.position-collaborateur {
+  margin-bottom: 0;
+}
+
+.email-collaborateur {
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.contacter-office-btn {
+  margin-bottom: 6rem;
+}
