@@ -18,8 +18,7 @@ Rails.application.routes.draw do
 
   # Droit de la famille
   get 'expertises/droit-de-la-famille', to: 'pages#famille', as: 'famille'
-  get 'expertises/droit-de-la-famille/mariage', to: 'pages#mariage', as: 'mariage'
-  get 'expertises/droit-de-la-famille/pacs', to: 'pages#pacs', as: 'pacs'
+  get 'expertises/droit-de-la-famille/union', to: 'pages#union', as: 'union'
   get 'expertises/droit-de-la-famille/divorce', to: 'pages#divorce', as: 'divorce'
   get 'expertises/droit-de-la-famille/succession', to: 'pages#succession', as: 'succession'
   get 'expertises/droit-de-la-famille/donation', to: 'pages#donation', as: 'donation'
