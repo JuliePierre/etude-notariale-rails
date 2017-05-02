@@ -27,9 +27,14 @@ Rails.application.routes.draw do
 
   # Droit des affaires
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
-  get 'expertises/droit-des-affaires/societe', to: 'pages#societe', as: 'societe'
-  get 'expertises/droit-des-affaires/acquisition-cession', to: 'pages#acquisition_cession', as: 'acquisition_cession'
+
+  get 'expertises/droit-des-affaires/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
+  get 'expertises/droit-des-affaires/societe-transmission', to: 'pages#societe-transmission', as: 'societe_transmission'
+  get 'expertises/droit-des-affaires/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
+
+  get 'expertises/droit-des-affaires/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'
   get 'expertises/droit-des-affaires/bail-commercial', to: 'pages#bail_commercial', as: 'bail_commercial'
+  get 'expertises/droit-des-affaires/location-gerance', to: 'pages#location_gerance', as: 'location_gerance'
 
   # Droit immobilier
   get 'expertises/droit-immobilier', to: 'pages#immobilier', as: 'immobilier'
