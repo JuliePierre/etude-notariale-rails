@@ -1,6 +1,9 @@
 // Bannière de présentation : photo + titre de page
 #contact-banner {
-  background: image-url('photo-test3.png');
+  background: image-url('banner-home.jpg');
+  @media (max-width: $small-screen) {
+    background: image-url('small-banner-home.jpg');
+  }
   background-repeat:no-repeat;
   background-size: cover;
 }
