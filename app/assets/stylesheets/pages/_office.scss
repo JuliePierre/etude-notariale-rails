@@ -1,6 +1,9 @@
 // Bannière de présentation : photo + titre de page
 #office-banner {
   background: image-url('banner-office.jpg');
+  @media (max-width: $small-screen) {
+    background: image-url('small-banner-office.jpg')
+  }
   background-repeat:no-repeat;
   background-size: cover;
 }

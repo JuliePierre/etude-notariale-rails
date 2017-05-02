@@ -2,7 +2,10 @@
   @media (max-width: $small-screen) {
     height: calc(100vh - 52px);
   }
-  background: image-url('immobilier.jpg');
+  background: image-url('banner-immobilier.jpg');
+  @media (max-width: $small-screen) {
+    background: image-url('small-banner-immobilier.jpg');
+  }
   height: 100vh;
   width: 100vw;
   background-repeat:no-repeat;
