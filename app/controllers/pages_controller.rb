@@ -2,7 +2,11 @@ class PagesController < ApplicationController
   require 'rss'
   require 'open-uri'
 
-  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe, :acquisition_cession, :bail_commercial, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :sitemap, :legal, :credits ]
+  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe, :acquisition_cession, :bail_commercial, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :sitemap, :legal, :credits, :brouillon ]
+
+  def brouillon
+
+  end
 
   def home
     @results = Expertise.search('test')
