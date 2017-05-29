@@ -79,6 +79,10 @@ body {
   color: white;
 }
 
+.underline {
+  text-decoration: underline $brand-grey-text;
+}
+
 // Others
 .hidden {
   display: none;
