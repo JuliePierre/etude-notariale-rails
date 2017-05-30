@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe_creation, :societe_transmission, :societe_secretariat, :fonds_commerce, :bail_commercial, :location_gerance, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :sitemap, :legal, :credits ]
 
   def home
-    @results = Expertise.search('test')
     @contact = Contact.new
     @annonces = Annonce.all.order(:id)
     @favorite_annonces = Annonce.where(favorite: true).order(:id)

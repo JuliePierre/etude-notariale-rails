@@ -4,5 +4,6 @@ class ExpertisesController < ApplicationController
     @search = params[:search]
     @questions = Question.search(@search)
     @expertises = Expertise.search(@search)
+    @definitions = Definition.search(@search)
   end
 end

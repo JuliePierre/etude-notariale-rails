@@ -31,73 +31,10 @@
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <div class="faq-questions">
-      <ul class="collapsible" data-collapsible="expandable">
-        <li>
-          <div class="collapsible-header">Quel régime choisir pour le PACS ?</div>
-          <div class="collapsible-body">
-            <p>Sauf dispositions contraires de la convention de pacs, chacun des partenaires conserve l’administration, la jouissance et la libre disposition de ses biens personnels. Chacun d’eux reste seul tenu des dettes personnelles nées avant ou pendant le pacte, sauf exception en ce qui concerne les dettes solidaires. Ils sont soumis à un régime séparatiste.</p>
-            <p>Les partenaires peuvent néanmoins adopter le <span class="underline">régime de l’indivision</span>. Dans cette hypothèse, les biens acquis en cours de PACS appartiennent aux deux partenaires, et ce, quel que soit l’apport de chacun dans le financement.</p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header">PACS : pas de testament, pas d'héritage !</div>
-          <div class="collapsible-body">
-            <p>Contrairement au mariage, les partenaires pacsés ne sont pas automatiquement héritiers l’un de l’autre.</p>
-            <p>Ainsi, pour pouvoir hériter de son partenaire de PACS, il faut que celui-ci l’ai prévu par testament . Il est donc indispensable de rédiger un testament  et de le déposer chez votre notaire.</p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header">Quel contrat de mariage choisir ?</div>
-          <div class="collapsible-body">
-            <p>A défaut de contrat de mariage, les époux sont soumis au régime légal de la communauté réduite aux acquêts. Or, si celui-ci n’est pas adapté aux époux, il est possible d’aménager le régime légal via <span class="underline">des clauses spécifiques</span> ou <span class="underline">opter pour un autre régime.</span></p>
-            <p>Pour ce faire, il est nécessaire de faire appel à son notaire, afin qu’il établisse un contrat de mariage.</p>
-            <p>Le choix du contrat de mariage est une question délicate. Nous nous tenons à votre disposition pour déterminer le contrat qui s’adapte au mieux à votre situation.</p>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header">Peut-on changer de régime matrimonial ?</div>
-          <div class="collapsible-body">
-            <p>La situation familiale, professionnelle et patrimoniale des époux peut évoluer en cours d’union. Le choix d’un régime n’est pas définitif.</p>
-            <p>Après deux ans d’application, les époux peuvent en changer ou l’aménager d’un commun accord et dans l’intérêt de la famille.</p>
-            <p>Un acte notarié doit être établi.</p>
-            <p>L’homologation du changement de régime par le juge aux affaires familiales n’est nécessaire que s’il y a un enfant mineur, ou une opposition d’un enfant majeur ou d’un créancier. A défaut de présence de mineur ou d’opposition, le changement est acquis aux époux passé un délai de trois mois après la signature du nouveau contrat.</p>
-            <p>Entre les époux, le changement de régime matrimonial produit ses effets à la date de l’acte notarié ou du jugement d’homologation et vis à vis des tiers trois mois après mention du changement en marge de l’acte de mariage.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
 
 <!-- Lexique -->
-<div class="page-section">
-  <div class="page-expertise-section" id="introduction">
-    <h2>Lexique</h2>
-    <div class="row">
-      <div class="col s12 m6">
-        <p><span class="lexique-word">Avantages matrimoniaux</span> : Bénéfices résultant de l'application des clauses du contrat de mariage de communauté ou de participation aux acquêts. Ils ne sont pas considérés comme des donations, sauf en cas d'existence d'enfant d'un précédent mariage. En cas de divorce, les avantages matrimoniaux sont assimilés aux donations et sont maintenus ou révoqués suivant les cas de divorce et la volonté des époux.</p>
-        <p><span class="lexique-word">Charges du mariage</span> : Ce sont les dépenses qu'entraîne la vie commune des époux. Elles sont supportées par chacun d'eux en proportion de ses ressources, sauf stipulation du contrat de mariage rarement adoptée.</p>
-        <p><span class="lexique-word">Communauté universelle</span> : C'est un régime conventionnel, adopté généralement par changement de régime matrimonial. Tous les biens dépendent de la communauté. Le plus souvent, ce régime est assorti d'une clause d'attribution intégrale au profit du survivant des époux. Ce régime permet alors la transmission de tous les biens à l'époux survivant, sans droits de mutation.</p>
-        <p><span class="lexique-word">Garde des enfants</span> : Droit et devoir de garder un enfant mineur sous sa protection, c'est-à-dire de fixer sa résidence, de veiller sur sa santé, sa sécurité, sa moralité.</p>
-        <p><span class="lexique-word">Obligation alimentaire</span> : Devoir de fournir des aliments résultant de la loi ou de la volonté du débiteur.</p>
-        <p><span class="lexique-word">Pacs</span> : Contrat conclu par deux personnes physiques majeures, de sexe différent ou de même sexe, pour organiser leur vie commune.</p>
-        <p><span class="lexique-word">Régime matrimonial</span> : C'est l'ensemble des règles qui s'appliquent aux époux en matière patrimoniale, tant entre eux que dans leurs rapports avec les tiers. Plus concrètement, le régime matrimonial détermine à qui appartiennent les biens, désigne celui des époux qui a le pouvoir de gérer ces biens et celui qui est responsable des dettes.</p>
-      </div>
-      <div class="col s12 m6">
-        <p><span class="lexique-word">Changement de régime matrimonial</span> : Une nouvelle loi applicable depuis le 1er janvier 2007 réforme en profondeur la procédure de changement de régime matrimonial. L'homologation judiciaire n'est plus nécessaire pour les couples sans enfant ou ceux dont les enfants majeurs consentent à ce changement. Il suffit alors de signer le contrat contenant adoption d'un nouveau régime matrimonial chez son notaire.</p>
-        <p><span class="lexique-word">Communauté légale</span> : C'est le régime matrimonial des époux mariés sans contrat de mariage. Les biens acquis pendant le mariage avec les revenus des époux dépendent de la communauté. Les dettes souscrites par chacun des époux engagent, sauf exception, l'ensemble des biens communs. Les biens possédés au jour du mariage et ceux qu'ils reçoivent par succession ou donation pendant le mariage restent propres aux époux.</p>
-        <p><span class="lexique-word">Concubinage</span> : Union de fait, caractérisée par une vie commune présentant un caractère de stabilité et de continuité, entre deux personnes, de sexe différent ou de même sexe, qui vivent en couple (Code civil, art. 515-8, loi du 15 novembre 1999 relative au pacte civil de solidarité).</p>
-        <p><span class="lexique-word">Ménage</span> : Ensemble de personnes qui partagent la même résidence principale, que ces personnes soient ou non unies par des liens de parenté.</p>
-        <p><span class="lexique-word">Obligation de secours</span> : Devoir pour chaque époux de subvenir aux besoins de l'autre. Pendant le mariage, cette obligation correspond à celle de contribuer aux charges du mariage. Après le divorce, l'obligation de secours peut subsister sous forme d'obligation alimentaire.</p>
-        <p><span class="lexique-word">Participation aux acquêts</span> : C'est un régime de séparation de biens tant que dure le mariage. À la dissolution, il y a une répartition de l'enrichissement réalisé par chacun des époux. Celui qui a acheté le plus de biens doit une créance de participation égale à la moitié de la différence constatée entre les acquêts.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/lexique', expertise: @expertise %>
 
 <!-- Fiches pratiques -->
 <div class="page-section">

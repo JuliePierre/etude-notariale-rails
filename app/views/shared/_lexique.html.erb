@@ -1,0 +1,15 @@
+<div class="page-section">
+  <div class="page-expertise-section" id="lexique">
+    <h2>Lexique</h2>
+      <div class="row">
+      <% slice = (@expertise.definitions.size <= 1)? 2 : @expertise.definitions.size/2 %>
+      <% @expertise.definitions.each_slice(slice) do |block| %>
+        <div class="col s12 m6">
+          <% block.each do |definition| %>
+            <p><span class="lexique-word"><%= definition.nom %></span> : <%= definition.definition %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

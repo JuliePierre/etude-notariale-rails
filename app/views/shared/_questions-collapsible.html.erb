@@ -1,0 +1,15 @@
+<div class="page-section">
+  <div class="page-expertise-section" id="questions">
+    <h2>Questions</h2>
+    <div class="faq-questions">
+      <ul class="collapsible" data-collapsible="expandable">
+        <% @expertise.questions.each do |question| %>
+          <li>
+            <div class="collapsible-header"><%= question.description %></div>
+            <div class="collapsible-body"><%= question.reponse.html_safe %></div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

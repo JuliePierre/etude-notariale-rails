@@ -31,53 +31,8 @@
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <ul class="collapsible" data-collapsible="expandable">
-      <li>
-        <div class="collapsible-header">Puis-je confier à mon notaire la mise en vente de mon bien?</div>
-        <div class="collapsible-body">
-          <p>Par leur connaissance approfondie du marché immobilier et de ses mécanismes, certains notaires pratiquent la négociation immobilière et l’expertise et assistent le vendeur comme l'acquéreur dans leur recherche.</p>
-          <p>L’Office Notarial PERRAUT-PIRIOUX-MEVEL met à votre disposition un service de négociation immobilière.</p>
-          <p>Depuis le 1er mars 2016, cette activité n'est plus soumise à un tarif national règlementé. Les  honoraires de négociation s’ajoutent aux frais d’acquisition, lesquels comprennent essentiellement les impôts (80% en moyenne du total des frais).</p>
-          <p>Voir la question Dans EXPERTISE/ACHAT.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Combien de temps dure un dossier de vente ?</div>
-        <div class="collapsible-body">
-          <p>Compte tenu du délai laissé à l’administration pour exercer son droit de préemption, et à l’acquéreur pour obtenir son prêt, il faut compter environ trois mois pour que le dossier soit complet et que l’acte authentique puisse être signé.</p>
-          <p>La dématérialisation accrue des échanges entre les études et les administrations devraient raccourcir les délais. Toutefois, certains d’entre eux notamment le délai de préemption de la commune, les délais pour réunir l’ensemble des pièces et pour les contrôler demeurent pour le moment incompressibles.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quels sont les frais qui sont prélevés sur le prix de vente ?</div>
-        <div class="collapsible-body">
-          <p>Voici les sommes qui sont principalement prélevées sur le prix de vente :</p>
-          <ol>
-            <li>Votre prêt immobilier et les frais de mainlevée : si le prêt a été assorti d’une garantie hypothécaire.</li>
-            <li>Toutes les sommes dues au syndic : si le bien dépend du régime de la copropriété.</li>
-            <li>L’impôt de plus-value : pour aller plus loin : voir Fiche pratique et voir outil de calcul de la plus-value.</li>
-          </ol>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Peut-on se rétracter après la signature d’une promesse de vente ou d’un compromis ?</div>
-        <div class="collapsible-body">
-          <p>Non, seul l’acquéreur bénéficie d’un délai de rétractation.</p>
-          <p>Voir la question Dans EXPERTISE/ACHAT.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quel délai pour percevoir le prix de vente ?</div>
-        <div class="collapsible-body">
-          <p>vide pour l'instant</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
+
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
     <h2 class="section-white-header">FICHES PRATIQUES</h2>

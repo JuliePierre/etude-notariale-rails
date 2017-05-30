@@ -27,46 +27,10 @@
 </div>
 <!-- Navigation -->
 
-<div class="page-section">
-  <div class="page-expertise-section" id="introduction">
-    <h2>Qu'est-ce que la promotion immobilière?</h2>
-    <p>Il est peut-être délicat d’aborder ce sujet alors qu’on est en pleins préparatifs
-    du « plus beau jour de sa vie ». Cependant c’est le meilleur moment pour le faire.
-    Vous pouvez toujours choisir de le faire ou de le modifier plus tard, mais cela sera plus onéreux et si jamais il arrivait quelque chose entre-temps, vous pourriez le regretter.</p>
-    <p>Pour mémoire, le contrat de mariage n’est pas uniquement envisagé pour un divorce hypothétique mais également en cas de décès.
-    Certes les sujets ne sont pas très euphoriques, mais justement ils sont suffisamment douloureux pour s’éviter des difficultés supplémentaires lors de leur survenue.</p>
-  </div>
-</div>
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <ul class="collapsible" data-collapsible="expandable">
-      <li>
-        <div class="collapsible-header">Qu'est-ce qu'un contrat de mariage ?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-      </li>
-      <li>
-        <div class="collapsible-header">Pourquoi prévoir un contrat de mariage ?</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-      </li>
-      <li>
-        <div class="collapsible-header">Suis-je obligé de signer un contrat de mariage ?</div>
-        <div class="collapsible-body">
-          <span>
-            <p>On pourrait dire dans tous les cas bien sûr. Toutefois, s’il ne fallait décrire que les plus « à risque », on pourrait citer :</p>
-            <ul>
-              <li>- la femme au foyer</li>
-              <li>- le chef d’entreprise, la profession libérale ou l’auto-entrepreneur</li>
-              <li>- un des membres du couple très riche</li>
-              <li>- le couple sans enfants</li>
-              <li>- les familles recomposées</li>
-            </ul>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<%= render 'shared/show-expertise-intro', expertise: @expertise %>
+
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
+
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
     <h2 class="section-white-header">FICHES PRATIQUES</h2>

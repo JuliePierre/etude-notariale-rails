@@ -31,56 +31,10 @@
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <ul class="collapsible" data-collapsible="expandable">
-      <li>
-        <div class="collapsible-header">Quelle est la différence entre une adoption simple et une adoption plénière ?</div>
-        <div class="collapsible-body">
-          <p>Selon sa forme, simple ou plénière, l’adoption ne produit pas les mêmes effets. L’adoption plénière rompt définitivement le lien de filiation entre l’adopté et sa famille d’origine. L’adoption simple crée un nouveau lien de filiation entre l’adoptant et l’adopté. Mais elle ne supprime pas les liens de filiation entre l’adopté et sa famille d’origine : les deux liens de filiation coexistent.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quelle conséquence pour l'enfant adopté en adoption plénière ?</div>
-        <div class="collapsible-body">
-          <p>L'adopté change de famille dans l'adoption plénière.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quel nom l’adopté porte-t-il ?</div>
-        <div class="collapsible-body">
-          <p>Par principe, le nom de l’adoptant s’ajoute au nom de l’adopté. Il peut même le remplacer. Il est aussi possible de demander au tribunal un changement de prénom.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quel est le rôle du notaire lors d'une adoption ?</div>
-        <div class="collapsible-body">
-          <p>Le parcours de l'adoption est souvent long et difficile. N'hésitez pas à vous renseigner auprès de votre notaire. Il vous expliquera les effets des différentes procédures (adoption simple et adoption plénière), ainsi que leurs conséquences juridiques et fiscales.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
 
 <!-- Lexique -->
-<div class="page-section">
-  <div class="page-expertise-section" id="introduction">
-    <h2>Lexique</h2>
-    <div class="row">
-      <div class="col s12 m6">
-        <p><span class="lexique-word">Adoption</span> : Lien de filiation résultant d'un jugement. On distingue l'adoption plénière qui entraîne rupture des liens de l'enfant avec sa famille d'origine et l'adoption simple qui n'a pas cette conséquence.</p>
-        <p><span class="lexique-word">Filiation</span> : Lien de parenté unissant un enfant à son père et à sa mère. La filiation est légitime lorsque les père et mère sont mariés, naturelle dans le cas contraire et adoptive lorsque l'enfant a été adopté.</p>
-        <p><span class="lexique-word">Juge aux affaires familiales</span> : C'est le juge qui est chargé, notamment, du divorce. Avant la loi du 8 janvier 1993, il était nommé "Juge aux affaires matrimoniales".</p>
-      </div>
-      <div class="col s12 m6">
-        <p><span class="lexique-word">Autorité parentale</span> : Droits et devoirs des père et mère relativement à la personne et aux biens de leurs enfants mineurs. Avant la loi du 4 juin 1970, il s'agissait de l'autorité paternelle.</p>
-        <p><span class="lexique-word">Héritier</span> : Personne parente du défunt appelée à la succession en vertu de la loi, compte tenu de la proximité de son lien de parenté.</p>
-        <p><span class="lexique-word">Réserve héréditaire</span> : C'est la fraction de succession qui revient obligatoirement aux parents les plus proches : descendants ou encore, à défaut de ces derniers, conjoint survivant. Le montant est de 1/2 si le défunt laisse un enfant, 2/3 s'il y a deux enfants, 3/4 s'il y a trois enfants ou davantage. Celle du conjoint est de 1/4 en l'absence de descendant.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/lexique', expertise: @expertise %>
 
 <!-- Fiches pratiques -->
 

@@ -1,12 +1,12 @@
-class Question < ApplicationRecord
+class Definition < ApplicationRecord
   belongs_to :expertise
   searchkick
   scope :search_import, -> { includes(:expertise) }
 
   def search_data
     {
-      question: description,
-      reponse: reponse,
+      mot: nom,
+      definition: definition,
       expertise: expertise.nom,
       description_expertise: expertise.description
     }

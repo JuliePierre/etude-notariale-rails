@@ -21,7 +21,10 @@
 
 <!-- Résultats de recherche -->
 <div class="page-section">
-  <% @expertises.each do |expertise| %>
+
+  <!-- Expertise -->
+  <p class="result-sub-label"><%= pluralize @expertises.size, "expertise" %></p>
+    <% @expertises.each do |expertise| %>
     <div class="search-answer-container">
       <div class="search-answer">
         <h2><%= expertise.nom %></h2>
@@ -29,19 +32,37 @@
         <p><%= expertise.description %></p>
       </div>
       <% lien = expertise.motcle %>
-      <%= link_to "Lire l'article", send("#{lien}_path"), class: 'btn btn-primary' %>
+      <%= link_to "Consulter la page", send("#{lien}_path"), class: 'btn btn-primary' %>
     </div>
   <% end %>
+
+  <!-- Questions -->
+  <p class="result-sub-label"><%= pluralize @questions.size, "question" %> en lien avec cette recherche</p>
   <% @questions.each do |question| %>
     <div class="search-answer-container">
       <div class="search-answer">
-        <h2><%= question.description %></h2>
+        <h3><%= question.description %></h3>
         <span class="line-title"></span>
         <p><%= question.reponse %></p>
       </div>
       <% lien = question.expertise.motcle %>
-      <%= link_to "Lire l'article", send("#{lien}_path"), class: 'btn btn-primary' %>
+      <%= link_to "Consulter la page", send("#{lien}_path"), class: 'btn btn-primary' %>
     </div>
   <% end %>
+
+  <!-- Questions -->
+  <p class="result-sub-label"><%= pluralize @definitions.size, "définition" %> en lien avec cette recherche</p>
+  <% @definitions.each do |definition| %>
+    <div class="search-answer-container">
+      <div class="search-answer">
+        <h3><%= definition.nom %></h3>
+        <span class="line-title"></span>
+        <p><%= definition.definition %></p>
+      </div>
+      <% lien = definition.expertise.motcle %>
+      <%= link_to "Consulter la page #{definition.expertise.nom}", send("#{lien}_path"), class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+
 </div>
 <!-- Résultats de recherche -->

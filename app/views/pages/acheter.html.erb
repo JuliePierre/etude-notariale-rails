@@ -31,54 +31,8 @@
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <ul class="collapsible" data-collapsible="expandable">
-      <li>
-        <div class="collapsible-header"> Peut-on se rétracter après la signature de la promesse de vente ou du compromis ?</div>
-        <div class="collapsible-body">
-          <p>L’acquéreur non professionnel, qui conclut un avant-contrat ayant pour objet l’acquisition d’un immeuble à usage d’habitation bâti, bénéficie d’un délai de rétractation de dix jours avant de s’engager définitivement. Le délai court à compter du lendemain de la première présentation par lettre recommandée lui notifiant l’avant-contrat.</p>
-          <p>La lettre recommandée peut être remplacée par tout autre moyen présentant des garanties équivalentes (remise en mains propres, remise électronique, clé USB, CD ...).</p>
-          <p>La rétractation n’a pas à être motivée et doit être exercée par lettre recommandée avec avis de réception. Elle doit être envoyée dans le délai de rétractation.</p>
-          <p>Pour aller plus loin : télécharger la fiche conseil.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Aurai-je mon titre de propriété le jour de la signature de l’acte de vente ?</div>
-        <div class="collapsible-body">
-          <p>Votre titre de propriété vous sera adressé après accomplissement de toutes les formalités auprès du Service de publicité foncière. Les délais varient selon les SPF de 1 mois à 1an (!).</p>
-          <p>Dans l'attente, le jour de la signature, le notaire vous remettra des attestations de propriété et une copie intégrale de l’acte signé et de ses annexes par mail ou sur support électronique.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Les frais sont-ils plus élevés avec 2 notaires ?</div>
-        <div class="collapsible-body">
-          <p>Non : Lorsqu'il y a plusieurs notaires, ils se partagent les émoluments. Il n'a y a donc aucune augmentation des frais.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Le saviez-vous : ce qu’on appelle « les frais de notaire » constitue principalement des taxes ?</div>
-        <div class="collapsible-body">
-          <p>Les frais d’acte de vente sont à la charge de l’acquéreur du bien immobilier (article 1593 du code civil).</p>
-          <p>Les sommes versées au notaire, en plus du prix de vente, et souvent appelées « frais de notaire » sont composées de plusieurs éléments.</p>
-          <p>Pour une vente, la rémunération du notaire ne représente qu'une petite partie de cette somme.</p>
-          <p>Près de 80% du montant des frais d’acquisition sont composés d’impôts et de taxes, au profit de l’Etat lui-même et également des collectivités locales.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quelle somme doit-on verser à la signature de la promesse ou du compromis ?</div>
-        <div class="collapsible-body">
-          <p>Dans la promesse de vente, le propriétaire s'engage auprès du candidat acheteur à lui vendre son bien à un prix déterminé.</p>
-          <p>Durant cette période, il lui est interdit de renoncer à la vente ou de proposer le bien à un autre acquéreur. Le candidat acheteur bénéficie, lui, de la promesse pour décider s'il souhaite acheter ou non. En contrepartie, il verse au vendeur une indemnité d'immobilisation en principe égale à 10 % du prix de vente.</p>
-          <p>S'il se décide à acquérir, cette indemnité s'imputera sur la somme à régler. Mais s'il renonce à acheter ou s'il ne manifeste pas son acceptation dans le délai d'option, l'indemnité restera acquise au propriétaire à titre de dédommagement.</p>
-          <p>Dans le compromis de vente, vendeur et acheteur s'engagent l'un comme l'autre à conclure la vente à un prix déterminé en commun.  Si l'une des parties renonce à la transaction, l'autre peut l'y contraindre par voie de justice, en exigeant de surcroît des dommages et intérêts.</p>
-          <p>La signature du compromis s'accompagne du versement par l'acquéreur d'une somme d'environ entre 5 % et 10 % du prix de vente. Appelée dépôt de garantie, elle s'imputera sur le prix lors de la signature de l'acte notarié.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
+
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
     <h2 class="section-white-header">FICHES PRATIQUES</h2>

@@ -31,59 +31,9 @@
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
-<div class="page-section">
-  <div class="page-expertise-section" id="questions">
-    <h2>Questions</h2>
-    <ul class="collapsible" data-collapsible="expandable">
-      <li>
-        <div class="collapsible-header">Quelle est la différence entre une SARL et une EURL ?</div>
-        <div class="collapsible-body">
-          <p>Il n’y a pas de différence entre les deux structures : l’EURL est une SARL unipersonnelle. Le terme EURL - Entreprise unipersonnelle à responsabilité limitée n'est pas reconnu juridiquement. Dans les textes légaux, le terme employé est SARL - Société à responsabilité limitée constituée d'un associé unique.﻿</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Qui peut-être associé d’une SCI ?</div>
-        <div class="collapsible-body">
-          <p>Sauf clauses restrictives des statuts, toute personne physique ou morale capable peut être associée d'une SCI.</p>
-          <p>Les associés doivent être au minimum deux.</p>
-          <p>La nationalité des associés et leur domiciliation n'ont pas d'importance.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Puis-je domicilier ma société à mon domicile ?</div>
-        <div class="collapsible-body">
-          <p>Suivant l'article L. 123-11-1 du Code de commerce, le créateur d'entreprise a la possibilité de domicilier sa SARL à son domicile s'il est nommé gérant de sa société et dès lors qu'aucune disposition législative ou conventionnelle ne s'y oppose. En cas de dispositions contraires, cette faculté lui est reconnue uniquement pour une durée maximale de 5 ans à compter de l'immatriculation de la SARL au registre du commerce.</p>
-        </div>
-      </li>
-      <li>
-        <div class="collapsible-header">Quelles sont les démarches pour immatriculer une Société ?</div>
-        <div class="collapsible-body">
-          <p>1. Signature des statuts</p>
-          <p>2. Enregistrement des statuts auprès de l’administration fiscale.</p>
-          <p>3. Insertion d’un avis de la constitution de la société dans un journal d’annonces légales.</p>
-          <p>4. Dépôt d’un dossier auprès du greffe du Tribunal de Commerce ou auprès d’un Centre de Formalités des Entreprises (CFE) pour l’immatriculation définitive au Registre du Commerce et des Sociétés (RCS).</p>
-          <p>Il est toutefois important de préciser qu’en cas d’apport de fonds de commerce ou d’immeubles, des formalités particulières de publicité devront être effectuées.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="page-section">
-  <div class="page-expertise-section" id="introduction">
-    <h2>Lexique</h2>
-    <div class="row">
-      <div class="col s12 m6">
-        <p><span class="lexique-word">Entreprise individuelle</span> : Il s’agit d’une entreprise dirigée par une seule personne et qui n’a pas la personnalité morale, bien qu’elle soit inscrite au répertoire des métiers ou au registre du commerce et des Sociétés.</p>
-        <p><span class="lexique-word">SA (Société Anonyme)</span> : Il s’agit d’une Société de capitaux rassemblant des personnes dont la participation est fondée sur les capitaux qu’ils ont investis dans l’entreprise.</p>
-        <p><span class="lexique-word">SNC (Société en Nom Collectif)</span> : Il s’agit d’une société de personnes formée entre au moins deux personnes et dans laquelle chacun des associés est personnellement et solidairement responsable de dette de la Société.</p>
-      </div>
-      <div class="col s12 m6">
-        <p><span class="lexique-word">EIRL (Entreprise Individuelle à Responsabilité Limitée)</span> : Ce régime s’adresse aux entrepreneurs individuels qui souhaitent limiter l’étendue de leur responsabilité en constituant un patrimoine d’affectation, dédié à leur activité professionnelle, sans à constituer de Société.</p>
-        <p><span class="lexique-word">SAS (Société par Actions Simplifiée)</span> : Il s’agit d’une Société qui est à la fois une Société de capitaux, ce qui la rapproche de la société anonyme, et sociétés de personnes, ce qui en fait une société mixte.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
+
+<%= render 'shared/lexique', expertise: @expertise %>
 
 <!-- Fiches pratiques-->
 <div class="page-section">
