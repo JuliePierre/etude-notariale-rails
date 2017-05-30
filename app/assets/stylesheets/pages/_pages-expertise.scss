@@ -12,10 +12,15 @@
   }
   h4 {
     line-height: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
-    color: #222222;
-    font-size: 1.2rem;
+    color: $brand-grey-text;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    a:hover {
+      color: $primary-color;
+    }
   }
   p {
     text-align: justify;
