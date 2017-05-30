@@ -213,6 +213,19 @@
   border-bottom: 4px solid $primary-color;
 }
 
+// partie trois notaires
+.team-member {
+  .collapsible-header {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  i {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+}
+
 // team members
 .carte-collaborateur {
   margin-bottom: 3rem;
