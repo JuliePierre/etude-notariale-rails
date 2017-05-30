@@ -63,12 +63,16 @@ textarea {
   label {
     display: block !important;
     position: absolute;
-    top: -2rem;
+    top: 0;
     color: $brand-dark-grey;
     font-size: 0.9rem;
+    &.attachinary {
+      top: -1.6rem;
+    }
   }
   .select-wrapper + label {
     font-size: 0.9rem;
+    top: -1.6rem;
   }
 }
 .form-infos-header {

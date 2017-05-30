@@ -35,7 +35,7 @@
         <div class="annonces-carte-annonce">
           <%= cl_image_tag annonce.photos[0].path, width: 730, height: 500, crop: :fill %>
           <h3><%= annonce.genre %> - <%= pluralize annonce.nb_pieces, 'pièce' %></h3>
-          <span><%= annonce.prix_total.to_i %>€</span>
+          <span><%= annonce.prix_vente_total.to_i %>€</span>
           <p><%= annonce.ville %> <%= annonce.code_postal %></p>
           <%= link_to '', annonce_path(annonce), class: 'carte-link' %>
         </div>

@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170302143952) do
+ActiveRecord::Schema.define(version: 20170530074031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "annonces", force: :cascade do |t|
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
     t.string   "genre_transaction"
     t.string   "genre"
     t.string   "reference"
-    t.float    "prix_total"
-    t.float    "prix_vente"
+    t.float    "prix_net_vendeur"
+    t.float    "prix_vente_total"
     t.string   "ville"
     t.string   "code_postal"
     t.string   "description"
@@ -35,7 +35,11 @@ ActiveRecord::Schema.define(version: 20170302143952) do
     t.string   "slug"
     t.string   "nom"
     t.string   "photos"
-    t.boolean  "favorite",          default: false
+    t.boolean  "favorite",                  default: false
+    t.integer  "nb_lots"
+    t.float    "charges_annuelles"
+    t.float    "honoraires"
+    t.float    "honoraires_en_pourcentage"
   end
 
   create_table "attachinary_files", force: :cascade do |t|

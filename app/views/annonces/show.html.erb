@@ -45,33 +45,57 @@
 <!-- Contenu -->
 <div class="page-section" id="annonce-show-section">
   <div class="row">
-    <!-- Slideshow -->
     <div class="col s12 m6">
+      <!-- Slideshow -->
       <div class="slider">
         <ul class="slides">
           <% @annonce.photos.each do |photo| %>
             <li>
               <%= cl_image_tag photo.path %>
-<!--               <div class="caption center-align">
-                <h5 class="light grey-text text-lighten-3">Test</h5>
-              </div> -->
             </li>
           <% end %>
         </ul>
       </div>
+      <!-- Slideshow -->
+
+      <!-- Description -->
+      <div class="row">
+        <div class="col s12">
+          <div class="annonce-descriptif">
+            <h2 class="annonce-infos-header">Description</h2>
+            <p><%= @annonce.description %></p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Partage réseaux sociaux -->
       <div class="annonce-show-share">
         <h2 class="annonce-infos-header">Partager</h2>
         <span class="btn-social" data-href="<%= request.original_url %>" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fetude-notariale.herokuapp.com%2Fannonces%2Fvente-maison-170m2-7pieces-rennes-35&amp;src=sdkpreparse"><i class="fa fa-facebook btn-social" aria-hidden="true"></i></a></span>
         <a href="<%= @twitter_text %>" target="_blank"><span class="btn-social"><i class="fa fa-twitter btn-social" aria-hidden="true"></i></span></a>
       </div>
+      <!-- Partage réseaux sociaux -->
     </div>
-    <!-- Slideshow -->
+
     <!-- Description -->
     <div class="col s12 m6">
       <div class="annonce-infos-container">
         <div class="annonce-infos-price">
-          <span class="annonce-price-label">Prix total</span>
-          <h3 class="annonce-price"><%= @annonce.prix_total.to_i %> €</h3>
+          <span class="annonce-price-label">Prix total de vente</span>
+          <h3 class="annonce-price"><%= @annonce.prix_vente_total.to_i %> €</h3>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <span class="annonce-sub-label">Prix net vendeur</span>
+            <p class="annonce-sub"><%= @annonce.prix_net_vendeur.to_i %> €</p>
+          </div>
+          <div class="col s6">
+            <span class="annonce-sub-label">Honoraires</span>
+            <p class="annonce-sub"><%= @annonce.honoraires.to_i %> €</p>
+            <span class="annonce-sub-description">Soit en % du prix net vendeur</span>
+            <p class="annonce-sub"><%= @annonce.honoraires_en_pourcentage.to_i %>%</p>
+          </div>
         </div>
         <!-- 1ère partie : nb pièces et nb chambres -->
         <div class="row">
@@ -95,14 +119,22 @@
             <h3 class="annonce-infos-content"><%= @annonce.surface_terrain %> m2</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12">
-            <div class="annonce-descriptif">
-              <h2 class="annonce-infos-header">Description</h2>
-              <p><%= @annonce.description %></p>
+
+        <div class="diagnostics">
+          <div class="row">
+            <span class="annonce-infos-label">Diagnostics de performance énergétique</span>
+            <div class="col s12 m6">
+              <span class="annonce-sub-label">Classe énergétique : <%= @annonce.dpe %></span>
+              <%= image_tag @annonce.dpe_image %>
+            </div>
+            <div class="col s12 m6">
+              <span class="annonce-sub-label">Emission de gaz à effet de serre : <%= @annonce.ges %></span>
+              <%= image_tag @annonce.ges_image %>
             </div>
           </div>
         </div>
+
+        <!-- Boutons -->
         <div>
           <%= link_to "Contactez-nous", contact_path, class: 'btn btn-primary' %>
         </div>

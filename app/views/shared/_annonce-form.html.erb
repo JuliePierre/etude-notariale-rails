@@ -32,8 +32,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s6"><%= f.input :prix_total, placeholder: 'ex : 250000' %></div>
-          <div class="col s6"><%= f.input :prix_vente, placeholder: 'ex : 235000' %></div>
+          <div class="col s6"><%= f.input :prix_net_vendeur, placeholder: 'ex : 235000' %></div>
+          <div class="col s6"><%= f.input :prix_vente_total, placeholder: 'ex : 250000' %></div>
+        </div>
+        <div class="row">
+          <div class="col s6"><%= f.input :honoraires, placeholder: 'ex : 15000' %></div>
+          <div class="col s6"><%= f.input :honoraires_en_pourcentage, placeholder: 'ex : 10' %></div>
         </div>
         <div class="row">
           <div class="col s6"><%= f.input :code_postal, placeholder: 'ex : 35000' %></div>
@@ -55,8 +59,12 @@
           <div class="col s6"><%= f.input :surface_terrain, placeholder: 'ex : 500' %></div>
         </div>
         <div class="row">
+          <div class="col s6"><%= f.input :dpe, collection: Annonce::DPE %></div>
+          <div class="col s6"><%= f.input :ges, collection: Annonce::GES %></div>
+        </div>
+        <div class="row">
           <div class="col s12">
-            <%= f.input :description, :as => :text %>
+            <%= f.input :description, :as => :text, placeholder: "Exclusif - Immeuble de standing de 2007 'Le Carré Volney' - Appartement T5 de 109m² comprenant un séjour de 35m² sur balcon Sud-Ouest sans vis-à-vis, cuisine équipée et aménagée, trois chambres dont deux avec placards - 2 salles d'eau, dressing - Garage et parking - chauffage individuel au gaz - Classe énergie : B" %>
           </div>
         </div>
         <div class="row">
@@ -65,7 +73,20 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="form-infos-header">
+          <h2>Pour les biens en copropriété</h2>
+        </div>
+        <div class="form-infos-content">
+          <div class="row">
+            <div class="col s6"><%= f.input :nb_lots, placeholder: 'ex : 60' %></div>
+            <div class="col s6"><%= f.input :charges_annuelles, placeholder: 'ex : 350' %></div>
+          </div>
+        </div>
+      </div>
+    </div>
   <%= f.submit "Valider l'annonce", class: "btn btn-primary" %>
   </div>
 <% end %>
