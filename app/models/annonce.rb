@@ -14,11 +14,11 @@ class Annonce < ApplicationRecord
 
   def dpe_image
     letter = self.dpe
-    return "etiquette-dpe-#{letter.downcase}"
+    return "etiquette-dpe-#{letter.downcase}.png"
   end
 
   def ges_image
     letter = self.ges
-    return "etiquette-ges-#{letter.downcase}"
+    return "etiquette-ges-#{letter.downcase}.png"
   end
 end
