@@ -226,6 +226,15 @@
   }
 }
 
+#whole-team-banner {
+  background: image-url('whole-team.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: auto;
+  background-position: center;
+}
+
 // team members
 .carte-collaborateur {
   margin-bottom: 3rem;
