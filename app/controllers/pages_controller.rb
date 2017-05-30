@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   require 'rss'
   require 'open-uri'
 
-  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe, :acquisition_cession, :bail_commercial, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :sitemap, :legal, :credits ]
+  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe_creation, :societe_transmission, :societe_secretariat, :fonds_commerce, :bail_commercial, :location_gerance, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :sitemap, :legal, :credits ]
 
   def home
     @results = Expertise.search('test')
@@ -14,7 +14,10 @@ class PagesController < ApplicationController
   def office
   end
 
-  # Partie expertises
+  ###########################
+  # PARTIE EXPERTISES
+  ###########################
+
     # 1. droit de la famille
     # 2. droit des affaires
     # 3. droit immobilier
@@ -22,55 +25,60 @@ class PagesController < ApplicationController
 
   # Droit de la famille
   def famille
-    # 1. Couple
-    # 2. Succession
-    # 3. Transmission (Donation - Testament)
-    # 4. Adoption
   end
 
-  # 1. Couple
-    # 1. Union
-    # 2. Divorce
-    # 3. Adoption
-
   def union
+    @expertise = Expertise.find_by_nom("Union - Vie à deux")
   end
 
   def divorce
+    @expertise = Expertise.find_by_nom("Divorce")
   end
 
   def adoption
+    @expertise = Expertise.find_by_nom("Adoption")
   end
 
-  # 2. Succession
   def succession
+    @expertise = Expertise.find_by_nom("Succession")
   end
-
-  # 3. Transmission
-    # 1. Donation
-    # 2. Testament
 
   def donation
+    @expertise = Expertise.find_by_nom("Donation")
   end
 
   def testament
+    @expertise = Expertise.find_by_nom("Testament")
   end
 
   # Droit des affaires
   def affaires
-    # 1. Société
-    # 2. Acquisition / Cession
-    # 3. Bail commercial
-    # 4. Secrétariat juridique de l'entreprise
   end
 
-  def societe
+  # 1 Societe
+  def societe_creation
+    @expertise = Expertise.find_by_nom("Créer sa société")
   end
 
-  def acquisition_cession
+  def societe_transmission
+    @expertise = Expertise.find_by_nom("Transmettre sa société")
+  end
+
+  def societe_secretariat
+    @expertise = Expertise.find_by_nom("Secrétariat de société")
+  end
+
+  # Autres droit des affaires
+  def fonds_commerce
+    @expertise = Expertise.find_by_nom("Fonds de commerce")
   end
 
   def bail_commercial
+    @expertise = Expertise.find_by_nom("Bail commercial")
+  end
+
+  def location_gerance
+    @expertise = Expertise.find_by_nom("Location - Gérance")
   end
 
   # Droit immobilier
@@ -78,13 +86,16 @@ class PagesController < ApplicationController
   end
 
   def acheter
+    @expertise = Expertise.find_by_nom("Achat immobilier")
   end
 
   def vendre
+    @expertise = Expertise.find_by_nom("Vente immobilière")
   end
 
 
   def promotion
+    @expertise = Expertise.find_by_nom("Promotion immobilière")
     @contact = Contact.new
   end
   # Fin des expertises

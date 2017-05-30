@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
 
   get 'expertises/droit-des-affaires/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
-  get 'expertises/droit-des-affaires/societe-transmission', to: 'pages#societe-transmission', as: 'societe_transmission'
+  get 'expertises/droit-des-affaires/societe-transmission', to: 'pages#societe_transmission', as: 'societe_transmission'
   get 'expertises/droit-des-affaires/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
 
   get 'expertises/droit-des-affaires/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'

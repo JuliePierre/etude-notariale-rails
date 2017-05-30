@@ -55,7 +55,6 @@
   font-size: 2rem;
   font-weight: 400;
   max-width: 75%;
-  z-index: 1000;
   &:hover {
     cursor: pointer;
   }
@@ -77,6 +76,7 @@
   margin-bottom: 0;
 }
 .expertise-redirection-card-link {
+  z-index: 1000;
   position: absolute;
   top: 0;
   bottom: 0;
