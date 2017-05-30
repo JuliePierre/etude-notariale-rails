@@ -89,6 +89,7 @@
           <div class="col s6">
             <span class="annonce-sub-label">Prix net vendeur</span>
             <p class="annonce-sub"><%= @annonce.prix_net_vendeur.to_i %> €</p>
+            <a class="honoraires-link" href="#">Voir le détail du calcul de nos honoraires</a>
           </div>
           <div class="col s6">
             <span class="annonce-sub-label">Honoraires</span>
@@ -122,13 +123,13 @@
 
         <div class="diagnostics">
           <div class="row">
-            <span class="annonce-infos-label">Diagnostics de performance énergétique</span>
+            <div class="annonce-infos-label">Diagnostics de performance énergétique</div>
             <div class="col s12 m6">
-              <span class="annonce-sub-label">Classe énergétique : <%= @annonce.dpe %></span>
+              <div class="annonce-sub-label">Classe énergétique : <%= @annonce.dpe %></div>
               <%= image_tag @annonce.dpe_image %>
             </div>
             <div class="col s12 m6">
-              <span class="annonce-sub-label">Emission de gaz à effet de serre : <%= @annonce.ges %></span>
+              <div class="annonce-sub-label">Emission de gaz à effet de serre : <%= @annonce.ges %></div>
               <%= image_tag @annonce.ges_image %>
             </div>
           </div>

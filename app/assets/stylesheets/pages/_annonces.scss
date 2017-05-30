@@ -149,6 +149,12 @@
 .annonce-sub-description {
   font-weight: 200;
 }
+.honoraires-link {
+  font-size: 0.8rem;
+  &:hover {
+    color: $primary-color;
+  }
+}
 // prix
 
 
@@ -193,6 +199,9 @@
   margin-top: 2rem;
   img {
     max-width: 100%;
+  }
+  .annonce-sub-label {
+    margin: 1rem 0px 1rem 0px;
   }
 }
 
