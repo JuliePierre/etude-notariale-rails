@@ -7,7 +7,7 @@
   <div class="homepage-header-background"></div>
   <div class="homepage-header-content">
     <div class="banner-logo-container">
-      <div class="banner-logo"><%= image_tag 'logo-notaires.png', id: "banner-logo" %></div>
+      <div class="banner-logo"><%= image_tag 'logo-notaires.png', id: "banner-logo", alt: 'logo notaires rennes' %></div>
       <div class="banner-names">
         <span class="names">Perraut</span>
         <span class="names">Pirioux</span>
@@ -99,7 +99,7 @@
       <div class="row">
         <div class="col s12 m6 l3">
           <div class="homepage-expertise">
-            <%= image_tag 'small-famille.jpg' %>
+            <%= image_tag 'small-famille.jpg', alt: 'notaires expertise droit famille' %>
             <h3>Droit de la famille</h3>
             <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
             <div class="expertise-link">
@@ -111,7 +111,7 @@
         </div>
         <div class="col s12 m6 l3">
           <div class="homepage-expertise">
-            <%= image_tag 'small-affaires.jpg' %>
+            <%= image_tag 'small-affaires.jpg', alt: 'notaires expertise droit affaires' %>
             <h3>Droit des affaires</h3>
             <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
             <div class="expertise-link">
@@ -123,7 +123,7 @@
         </div>
         <div class="col s12 m6 l3">
           <div class="homepage-expertise">
-            <%= image_tag 'small-immobilier.jpg' %>
+            <%= image_tag 'small-immobilier.jpg', alt: 'notaires expertise droit immobilier' %>
             <h3>Droit immobilier</h3>
             <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
             <div class="expertise-link">
@@ -135,7 +135,7 @@
         </div>
         <div class="col s12 m6 l3">
           <div class="homepage-expertise">
-            <%= image_tag 'small-promotion.jpg' %>
+            <%= image_tag 'small-promotion.jpg', alt: 'notaires expertise promotion immobilière' %>
             <h3>Promotion immobilière</h3>
             <p>Acheter un bien immobilier relève souvent du parcours du combattant.Quelles précautions prendre..?</p>
             <div class="expertise-link">
@@ -175,7 +175,7 @@
       <div class="col s12 m4">
         <div class="homepage-annonce">
           <% a = @favorite_annonces[0] || a = @annonces[0] %>
-          <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill, alt: a.description %>
           <h3><%= a.genre %> - <%= a.nb_pieces %> pièces</h3>
           <p><%= a.ville %> <%= a.code_postal %></p>
           <%= link_to '', annonce_path(a), class: 'carte-link' %>
@@ -184,7 +184,7 @@
       <div class="col s12 m4">
         <div class="homepage-annonce">
           <% b = @favorite_annonces[1] || b = @annonces[1] %>
-          <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill, alt: b.description %>
           <h3><%= b.genre %> - <%= b.nb_pieces %> pièces</h3>
           <p><%= b.ville %> <%= b.code_postal %></p>
           <%= link_to '', annonce_path(b), class: 'carte-link' %>
@@ -193,7 +193,7 @@
       <div class="col s12 m4">
         <div class="homepage-annonce">
           <% c = @favorite_annonces[2] || c = @annonces[2] %>
-          <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill %>
+          <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill, alt: c.description %>
           <h3><%= c.genre %> - <%= c.nb_pieces %> pièces</h3>
           <p><%= c.ville %> <%= c.code_postal %></p>
           <%= link_to '', annonce_path(c), class: 'carte-link' %>

@@ -29,7 +29,7 @@
       <div class="search-answer">
         <h2><%= expertise.nom %></h2>
         <span class="line-title"></span>
-        <p><%= expertise.description %></p>
+        <p><%= expertise.description.html_safe %></p>
       </div>
       <% lien = expertise.motcle %>
       <%= link_to "Consulter la page", send("#{lien}_path"), class: 'btn btn-primary' %>
@@ -41,7 +41,7 @@
   <% @questions.each do |question| %>
     <div class="search-answer-container">
       <div class="search-answer">
-        <h3><%= question.description %></h3>
+        <h3><%= question.description.html_safe %></h3>
         <span class="line-title"></span>
         <p><%= question.reponse %></p>
       </div>
