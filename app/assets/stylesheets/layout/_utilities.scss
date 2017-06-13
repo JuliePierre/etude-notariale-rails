@@ -79,6 +79,10 @@ body {
   color: white;
 }
 
+.grey-title {
+  color: $brand-dark-grey !important;
+}
+
 .underline {
   text-decoration: underline $brand-grey-text;
 }
