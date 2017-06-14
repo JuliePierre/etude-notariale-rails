@@ -1,6 +1,6 @@
 class Annonce < ApplicationRecord
-  DPE = %w(A B C D E F G)
-  GES = %w(A B C D E F G)
+  DPE = %w(A B C D E F G Vierge)
+  GES = %w(A B C D E F G Vierge)
   has_attachments :photos, maximum: 5
   extend FriendlyId
   friendly_id :nom, :use => :slugged

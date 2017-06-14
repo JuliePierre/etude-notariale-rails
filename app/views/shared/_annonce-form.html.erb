@@ -30,6 +30,9 @@
               <option value="maison">Maison</option>
               <option value="appartement">Appartement</option>
               <option value="terrain">Terrain</option>
+              <option value="terrain">Bureau</option>
+              <option value="terrain">Local professionnel</option>
+              <option value="terrain">Garage</option>
             </select>
             <label>Type de bien</label>
           </div>
@@ -72,7 +75,8 @@
         </div>
         <div class="row">
           <div class="col s12">
-            <%= f.input :photos, as: :attachinary %>
+            <%= f.attachinary_file_field(:photos, :cloudinary => { :transformation => {:width=>2000, :height=>1500, :crop=>:limit }}) %>
+
           </div>
         </div>
       </div>
