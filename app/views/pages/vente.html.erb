@@ -35,7 +35,8 @@
         <span class="line-title section-line-title"></span>
         <h2>VENTE IMMOBILIERE</h2>
         <div class="section-description">
-          <p>Notre office vous accompagne dans la recherche d'acquéreurs grâce à un négociateur, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia pariatur sint, ex deserunt reprehenderit repellendus illum doloremque tenetur, omnis tempora nam nobis. Quos beatae repellendus earum est dignissimos ipsum?</p>
+          <% expertise = Expertise.find_by_nom('Vente immobilière') %>
+          <%= expertise.description.html_safe %>
         </div>
       </div>
     </div>
