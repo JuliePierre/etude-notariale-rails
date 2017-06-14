@@ -38,7 +38,7 @@
 #   )
 # testament = Expertise.create!(
 #     nom: "Testament",
-#     description: "A compléter",
+#     description: "<p>Le testament est bien souvent le meilleur moyen de se protéger. Il permet de léguer un bien ou une somme d'argent à la personne de son choixOn peut aussi régler des questions personnelles, comme par exemple désigner la personne qui prendra soin de ses enfants en cas de décès. La loi offre une grande liberté dans ce domaine, à condition de respecter les règles juridiques précises.</p>",
 #     motcle: "testament"
 #   )
 # achat_immo = Expertise.create!(
@@ -672,7 +672,7 @@ Definition.create(
 # # Question liées à l'expertise DONATION
 # Question.create(
 #   description: "Est-il possible de donner tout en conservant l’usage du bien ou la perception des revenus ?",
-#   reponse: "<p>A compléter</p>",
+#   reponse: "<p>Oui, cela est envisageable en procédant à une donation de la nue-propriété du bien. Le donateur se réserve l'usufruit du bien donné.</p>",
 #   expertise: donation
 #   )
 # Question.create(
@@ -789,11 +789,6 @@ Definition.create(
 #   description: "Peut-on se rétracter après la signature d’une promesse de vente ou d’un compromis ?",
 #   reponse: "<p>Non, seul l’acquéreur bénéficie d’un délai de rétractation.</p>
 #           <p>Voir la question Dans EXPERTISE/ACHAT.</p>",
-#   expertise: vente_immo
-#   )
-# Question.create(
-#   description: "Quel délai pour percevoir le prix de vente ?",
-#   reponse: "<p>A compléter</p>",
 #   expertise: vente_immo
 #   )
 

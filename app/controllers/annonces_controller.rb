@@ -42,7 +42,7 @@ class AnnoncesController < ApplicationController
     if @annonce.save
       redirect_to test_path(@annonce)
     else
-      render :admin
+      render :new
     end
   end
 
@@ -53,7 +53,7 @@ class AnnoncesController < ApplicationController
     if @annonce.update(annonce_params)
       redirect_to test_path(@annonce)
     else
-      render :admin
+      render :admin_show
     end
   end
 
@@ -81,6 +81,6 @@ class AnnoncesController < ApplicationController
   end
 
   def annonce_params
-    params.require(:annonce).permit(:genre_transaction, :genre, :reference, :prix_total, :prix_vente, :ville, :code_postal, :description, :surface_habitable, :surface_terrain, :nb_pieces, :nb_chambres, :dpe, :ges, photos: [])
+    params.require(:annonce).permit(:genre_transaction, :genre, :reference, :prix_vente_total, :prix_net_vendeur, :ville, :code_postal, :description, :surface_habitable, :surface_terrain, :nb_pieces, :nb_chambres, :dpe, :ges, :nb_lots, :charges_annuelles, :honoraires, :honoraires_en_pourcentage, :nom, photos: [])
   end
 end

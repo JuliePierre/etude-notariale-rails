@@ -2,7 +2,6 @@ class Annonce < ApplicationRecord
   DPE = %w(A B C D E F G)
   GES = %w(A B C D E F G)
   has_attachments :photos, maximum: 5
-  validates :reference, presence: true
   extend FriendlyId
   friendly_id :nom, :use => :slugged
 
