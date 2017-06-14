@@ -63,15 +63,12 @@ class AnnoncesController < ApplicationController
   end
 
   def add_as_favorite
-    @favorite_annonces = Annonce.where(favorite: true).order(:id)
-    if @favorite_annonces.count < 3
-      if @annonce.favorite
-        @annonce.favorite = false
-      else
-        @annonce.favorite = true
-      end
-    @annonce.save
+   if @annonce.favorite
+      @annonce.favorite = false
+    else
+      @annonce.favorite = true
     end
+    @annonce.save
   end
 
   private

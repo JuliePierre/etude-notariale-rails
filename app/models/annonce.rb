@@ -17,6 +17,9 @@ class Annonce < ApplicationRecord
   validates :honoraires_en_pourcentage, presence: true
   validates :description, presence: true
 
+  validates :ville, presence: true
+  validates :code_postal, presence: true
+
   validates :dpe, presence: true, inclusion: { in: DPE }
   validates :ges, presence: true, inclusion: { in: GES }
 

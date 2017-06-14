@@ -55,11 +55,11 @@
   <script>
     $(document).ready(function() {
       <% @favorite_annonces.each do |favorite| %>
-        $('.annonces-carte-annonce[data-ref=<%= favorite.id %>]').addClass('active');
+        $('.annonces-carte-annonce[data-ref=<%= favorite.id %>] .icone-favori').addClass('active');
       <% end %>
-    $('.annonces-carte-annonce').click(function() {
+    $('.annonces-carte-annonce .icone-favori').click(function() {
       $(this).toggleClass('active');
-      var id = $(this).data('ref');
+      var id = $(this).parent().data('ref');
       $.ajax({
         type: "GET",
         url: "/annonces/" + id + "/add_as_favorite",

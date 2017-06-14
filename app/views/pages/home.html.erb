@@ -172,33 +172,9 @@
   <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
   <div class="row ">
     <div class="homepage-annonces-box">
-      <div class="col s12 m4">
-        <div class="homepage-annonce">
-          <% a = @favorite_annonces[0] || a = @annonces[0] %>
-          <%= cl_image_tag a.photos[0].path, width: 365, height: 274, crop: :fill, alt: a.description %>
-          <h3><%= a.genre %> - <%= a.nb_pieces %> pièces</h3>
-          <p><%= a.ville %> <%= a.code_postal %></p>
-          <%= link_to '', annonce_path(a), class: 'carte-link' %>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="homepage-annonce">
-          <% b = @favorite_annonces[1] || b = @annonces[1] %>
-          <%= cl_image_tag b.photos[0].path, width: 365, height: 274, crop: :fill, alt: b.description %>
-          <h3><%= b.genre %> - <%= b.nb_pieces %> pièces</h3>
-          <p><%= b.ville %> <%= b.code_postal %></p>
-          <%= link_to '', annonce_path(b), class: 'carte-link' %>
-        </div>
-      </div>
-      <div class="col s12 m4">
-        <div class="homepage-annonce">
-          <% c = @favorite_annonces[2] || c = @annonces[2] %>
-          <%= cl_image_tag c.photos[0].path, width: 365, height: 274, crop: :fill, alt: c.description %>
-          <h3><%= c.genre %> - <%= c.nb_pieces %> pièces</h3>
-          <p><%= c.ville %> <%= c.code_postal %></p>
-          <%= link_to '', annonce_path(c), class: 'carte-link' %>
-        </div>
-      </div>
+      <% @annonces_to_display.each do |annonce| %>
+        <%= render 'shared/annonces-homepage', annonce: annonce %>
+      <% end %>
     </div>
     <div class="value-button">
       <%= link_to "Voir toutes nos offres", annonces_path, class: 'btn btn-primary' %>
