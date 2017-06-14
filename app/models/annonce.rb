@@ -5,11 +5,20 @@ class Annonce < ApplicationRecord
   extend FriendlyId
   friendly_id :nom, :use => :slugged
 
+  validates :reference, presence: true
+  validates :nom, presence: true
+
+  validates :genre_transaction, presence: true
+  validates :genre, presence: true
+
+  validates :prix_vente_total, presence: true
+  validates :prix_net_vendeur, presence: true
+  validates :honoraires, presence: true
+  validates :honoraires_en_pourcentage, presence: true
+  validates :description, presence: true
+
   validates :dpe, presence: true, inclusion: { in: DPE }
   validates :ges, presence: true, inclusion: { in: GES }
-  validates :prix_vente_total, presence: true
-  validates :reference, presence: true
-  validates :description, presence: true
 
   def dpe_image
     letter = self.dpe
