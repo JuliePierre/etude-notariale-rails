@@ -9,15 +9,19 @@ class PagesController < ApplicationController
     @annonces = Annonce.all.order(:id)
     @favorite_annonces = Annonce.where(favorite: true).order(:id)
     @annonces_to_add = []
-    if @favorite_annonces.size < 3
+    if @annonces.size < 3
+      @annonces_to_display = @annonces
+    elsif @favorite_annonces.size < 3
       diff = 3 - @favorite_annonces.size
       @not_favorite_annonces = Annonce.where(favorite: false)
       @not_favorite_annonces[0...diff].each do |annonce|
         p annonce
         @annonces_to_add << annonce
       end
+      @annonces_to_display = [@favorite_annonces, @annonces_to_add].flatten
+    else
+      @annonces_to_display = @favorite_annonces
     end
-    @annonces_to_display = [@favorite_annonces, @annonces_to_add].flatten
   end
 
   def office

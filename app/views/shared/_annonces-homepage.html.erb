@@ -1,7 +1,7 @@
 <div class="col s12 m4">
   <div class="homepage-annonce">
     <%= cl_image_tag annonce.photos[0].path, width: 365, height: 274, crop: :fill, alt: annonce.description %>
-    <h3><%= annonce.genre %> - <%= annonce.nb_pieces %> pièces</h3>
+    <h3><%= annonce.genre.capitalize %> - <%= annonce.nb_pieces %> pièces</h3>
     <p><%= annonce.ville %> <%= annonce.code_postal %></p>
     <%= link_to '', annonce_path(annonce), class: 'carte-link' %>
   </div>
