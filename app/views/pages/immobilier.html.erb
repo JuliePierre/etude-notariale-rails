@@ -57,7 +57,9 @@
               <div class="expertise-redirection-card-title">Achat immobilier</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-achat.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Acquérir un bien immobilier est une étape clé. Parce qu’elle vous engage pour l’avenir, elle nécessite de vous poser les bonnes questions et de vous prémunir de risques éventuels. Nous vous accompagnons dans cette nouvelle étape pour sécuriser votre projet !</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Achat immobilier") %>
+            <div class="expertise-redirection-card-description immobilier"><%= expertise.description.html_safe %></div>
           </div>
         </div>
         <!-- vente immobilière -->
@@ -70,8 +72,9 @@
               <div class="expertise-redirection-card-title">Vente immobilière</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-vente.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Spécialiste du droit de l’immobilier, nous vous accompagnons dans votre projet de vente immobilière avec la volonté de sécuriser votre transaction, sur ses aspects juridiques et fiscaux, de la mise en vente à la signature de l’acte authentique de vente.</p>
-            <p class="expertise-redirection-card-description">Nos équipes vous accompagnerons pour un suivi personnalisé sur chaque dossier qui nous est confié.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Vente immobilière") %>
+            <div class="expertise-redirection-card-description immobilier"><%= expertise.description.html_safe %></div>
           </div>
         </div>
       </div>

@@ -58,7 +58,9 @@
               <div class="expertise-redirection-card-title">Union</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-mariage.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Le droit du mariage comprend le contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Union - Vie à deux") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
         <!-- expertise divorce -->
@@ -71,7 +73,9 @@
               <div class="expertise-redirection-card-title">Divorce</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-divorce.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Le droit du divorce comprend la rupture du contrat de mariage, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Divorce") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
         <!-- expertise adoption -->
@@ -84,7 +88,9 @@
             <div class="expertise-redirection-card-title">Adoption</div>
             <span class="expertise-redirection-card-icon"><%= image_tag 'icone-famille.png' %></span>
           </div>
-          <p class="expertise-redirection-card-description">La adoption etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, excepturi. Animi aperiam quo debitis quis suscipit commodi, alias ipsum accusantium, corporis eum, expedita voluptas voluptates illo nesciunt enim assumenda esse.</p>
+          <br>
+            <% expertise = Expertise.find_by_nom("Adoption") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
       </div>
@@ -107,7 +113,9 @@
             <div class="expertise-redirection-card-title">Succession</div>
             <span class="expertise-redirection-card-icon"><%= image_tag 'icone-succession.png' %></span>
           </div>
-          <p class="expertise-redirection-card-description">La succession etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, excepturi. Animi aperiam quo debitis quis suscipit commodi, alias ipsum accusantium, corporis eum, expedita voluptas voluptates illo nesciunt enim assumenda esse.</p>
+          <br>
+            <% expertise = Expertise.find_by_nom("Succession") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
       <!-- expertise donation -->
@@ -120,7 +128,9 @@
             <div class="expertise-redirection-card-title">Donation</div>
             <span class="expertise-redirection-card-icon"><%= image_tag 'icone-don.png' %></span>
           </div>
-          <p class="expertise-redirection-card-description">La donation consiste en un don blabla, les status etc etc. Blabla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+          <br>
+            <% expertise = Expertise.find_by_nom("Donation") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
       <!-- expertise testament -->
@@ -133,7 +143,9 @@
             <div class="expertise-redirection-card-title">Testament</div>
             <span class="expertise-redirection-card-icon"><%= image_tag 'icone-testament.png' %></span>
           </div>
-          <p class="expertise-redirection-card-description">Il n'est pas toujours facile de réfléchir à ces sujets, nous vous accompagnons dans toutes vos démarches, etc etc. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit officia id tempore quos maxime dolores, magni culpa nesciunt.</p>
+          <br>
+            <% expertise = Expertise.find_by_nom("Testament") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
     </div>

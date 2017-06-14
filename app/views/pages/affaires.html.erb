@@ -60,7 +60,9 @@
               <div class="expertise-redirection-card-title">Société - <br>Constitution</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-societe.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Le saviez vous ? Le notaire peut constituer vos statuts !<br>Afin que la constitution de votre société se déroule dans les meilleures conditions, contactez nous : En tant qu'expert du droit de l'entreprise, nous répondrons à toutes vos questions tant financières, juridiques, que personnelles.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Créer sa société") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
         <!-- expertise transmission de société -->
@@ -73,7 +75,9 @@
               <div class="expertise-redirection-card-title">Société -<br>Transmission</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-acquisition.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">La transmission de société- blablabla</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Transmettre sa société") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
         <!-- expertise secrétariat -->
@@ -86,7 +90,9 @@
               <div class="expertise-redirection-card-title">Société -<br>Secrétariat</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-societe.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">La transmission de société- blablabla</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Secrétariat de société") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
           </div>
         </div>
       </div>
@@ -109,7 +115,9 @@
               <div class="expertise-redirection-card-title">Fonds<br>de commerce</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-bail.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Le fonds de commerce blablabla.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Fonds de commerce") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
       <!-- expertise donation -->
@@ -122,7 +130,9 @@
               <div class="expertise-redirection-card-title">Bail<br>commercial</div>
               <span class="expertise-redirection-card-icon"><%= image_tag 'icone-bail.png' %></span>
             </div>
-            <p class="expertise-redirection-card-description">Le bail commercial. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor alias sint dolorem mollitia nobis commodi itaque laborum dolores, minus hic, architecto magnam laudantium quos ut tenetur fuga numquam aspernatur quo.</p>
+            <br>
+            <% expertise = Expertise.find_by_nom("Bail commercial") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
       <!-- expertise testament -->
@@ -135,7 +145,9 @@
             <div class="expertise-redirection-card-title">Location -<br>Gérance</div>
             <span class="expertise-redirection-card-icon"><%= image_tag 'icone-bail.png' %></span>
           </div>
-          <p class="expertise-redirection-card-description">La location gérance blablabla</p>
+          <br>
+            <% expertise = Expertise.find_by_nom("Location - Gérance") %>
+            <div class="expertise-redirection-card-description famille"><%= expertise.description.html_safe %></div>
         </div>
       </div>
     </div>
