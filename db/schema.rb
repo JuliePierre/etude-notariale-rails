@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170530123440) do
+ActiveRecord::Schema.define(version: 20170615153828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20170530123440) do
     t.integer  "nb_lots"
     t.float    "charges_annuelles"
     t.float    "honoraires"
-    t.float    "honoraires_en_pourcentage"
+    t.string   "honoraires_en_pourcentage"
   end
 
   create_table "attachinary_files", force: :cascade do |t|
