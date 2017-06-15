@@ -141,8 +141,12 @@ Question.create(
 
 # promotion_immo = Expertise.create!(
 #     nom: "Promotion immobilière",
-#     description: "A compléter",
-#     motcle: "promotion_immo"
+#     description: "<p>Vous achetez dans un immeuble neuf en cours de construction pour vous loger ou investir ? Lors de la signature de l’acte, vous achèterez un bien qui n’existe pas encore !</p>
+#     <p>Que se passe-t-il si l’immeuble n’est pas achevé ? Que se passe-t-il si l’immeuble est mal construit ?</p>
+#     <p>Pour répondre à ces questions, nous veillerons au strict respect du statut protecteur instauré par la loi et notamment à la souscription par le promoteur d’une GFA (Garantie Financière d’Achèvement).</p>
+#     <p>Cette garantie devra émaner d’un établissement financier connu et solvable garantissant l’achèvement de l’immeuble en cas de défaillance du promoteur. Il conviendra également de s’assurer de la souscription des assurances constructions, notamment la DO (Assurance dommage-ouvrage) qui couvre la garantie décennale et de l’obtention de la justification du paiement de la prime pour toute la durée de la garantie.</p>
+#     <p>La promotion immobilière constitue pour notre Office Notarial un secteur d’activité important dans lequel notre savoir-faire est reconnu : profitez-en !</p>",
+#     motcle: "promotion"
 #   )
 
 # # Seed du lexique
@@ -773,7 +777,7 @@ Question.create(
 #   )
 # Question.create(
 #   description: "Qu’est-ce qu’un testament international ?",
-#   reponse: "<p>A compléter</p>",
+#   reponse: "<p>Le testament international a été créé par la Convention de Washington du 26 octobre 1973 et introduit en France le 1er décembre 1994.</p><p>L'intérêt de ce testament tient au fait qu'il est valable quel que soit le pays où il a été rédigé, la situation des biens, la nationalité, le domicile ou la résidence du testateur .</p>",
 #   expertise: testament
 #   )
 

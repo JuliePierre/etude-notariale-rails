@@ -44,7 +44,6 @@ Rails.application.routes.draw do
   # Promotion immobilière
   get 'expertises/promotion-immobiliere', to: 'pages#promotion', as: 'promotion'
 
-
   resources :annonces, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   get 'annonces/:id/add_as_favorite', to: 'annonces#add_as_favorite'
   get 'annonces-immobilieres/admin', to: 'annonces#admin_index', as: 'tests'

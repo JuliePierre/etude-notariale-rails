@@ -93,7 +93,7 @@
           <div class="col s6">
             <span class="annonce-sub-label">Prix net vendeur</span>
             <p class="annonce-sub"><%= @annonce.prix_net_vendeur.to_i %> €</p>
-            <a class="honoraires-link" href="#">Voir le détail du calcul de nos honoraires</a>
+            <%= link_to "Voir le détail du calcul de nos honoraires", faq_path, class:' honoraires-link', target: "_blank" %>
           </div>
           <div class="col s6">
             <span class="annonce-sub-label">Honoraires</span>
