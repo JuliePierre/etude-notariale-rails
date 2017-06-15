@@ -90,3 +90,10 @@ textarea {
   }
 }
 // SPECIFIQUE FORMULAIRE DE CREATION D UNE ANNONCE
+textarea {
+  outline: none !important;
+  &:focus {
+    border-bottom: 1px solid #f1a086;
+    box-shadow: 0 1px 0 0 #f1a086;
+  }
+}

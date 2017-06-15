@@ -1,7 +1,5 @@
 class Contact < MailForm::Base
 
-  CONTACTTYPES = ['Demande de RDV', 'Question']
-
   attribute :nom,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :telephone
