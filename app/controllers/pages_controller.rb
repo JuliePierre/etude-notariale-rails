@@ -114,6 +114,7 @@ class PagesController < ApplicationController
   # Fin des expertises
 
   def faq
+    @expertise = Expertise.find_by_nom('faq')
     url = 'https://www.notaires.fr/fr/actualites-rss'
     open(url) do |rss|
       @feed_actualites = RSS::Parser.parse(rss)

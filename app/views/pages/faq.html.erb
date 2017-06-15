@@ -24,25 +24,7 @@
 </div>
 <!-- Navigation -->
 
-<div class="page-section">
-  <div class="faq-questions">
-    <ul class="collapsible" data-collapsible="collapsible">
-    <li>
-      <div class="collapsible-header active">Combien ça coûte ?</div>
-      <div class="collapsible-body">
-        <h6>Emoluments, Honoraires - Définition</h6>
-        <h6>Emoluments - Calcul</h6>
-        <a href="http://www.paris.notaires.fr/outil/immobilier/calcul-de-frais-dachat" class="btn-light">Comprendre le calcul  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-        <h6>Honoraires - Calcul</h6>
-        <p>Les honoraires dépendant des opérations effectuées, etc etc, blablabla</p>
-      </div>
-    </li>
-  </ul>
-
-
-
-  </div>
-</div>
+<%= render 'shared/questions-collapsible', expertise: @expertise %>
 
 <%= content_for(:after_js) do %>
   <script>
