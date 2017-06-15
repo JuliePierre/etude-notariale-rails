@@ -43,7 +43,7 @@
       <div class="search-answer">
         <h3><%= question.description.html_safe %></h3>
         <span class="line-title"></span>
-        <p><%= question.reponse %></p>
+        <p><%= question.reponse.html_safe %></p>
       </div>
       <% lien = question.expertise.motcle %>
       <%= link_to "Consulter la page", send("#{lien}_path"), class: 'btn btn-primary' %>
