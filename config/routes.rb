@@ -18,23 +18,23 @@ Rails.application.routes.draw do
 
   # Droit de la famille
   get 'expertises/droit-de-la-famille', to: 'pages#famille', as: 'famille'
-  get 'expertises/droit-de-la-famille/union', to: 'pages#union', as: 'union'
-  get 'expertises/droit-de-la-famille/divorce', to: 'pages#divorce', as: 'divorce'
-  get 'expertises/droit-de-la-famille/succession', to: 'pages#succession', as: 'succession'
-  get 'expertises/droit-de-la-famille/donation', to: 'pages#donation', as: 'donation'
-  get 'expertises/droit-de-la-famille/testament', to: 'pages#testament', as: 'testament'
-  get 'expertises/droit-de-la-famille/adoption', to: 'pages#adoption', as: 'adoption'
+  get 'expertises/union', to: 'pages#union', as: 'union'
+  get 'expertises/divorce', to: 'pages#divorce', as: 'divorce'
+  get 'expertises/succession', to: 'pages#succession', as: 'succession'
+  get 'expertises/donation', to: 'pages#donation', as: 'donation'
+  get 'expertises/testament', to: 'pages#testament', as: 'testament'
+  get 'expertises/adoption', to: 'pages#adoption', as: 'adoption'
 
   # Droit des affaires
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
 
-  get 'expertises/droit-des-affaires/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
-  get 'expertises/droit-des-affaires/societe-transmission', to: 'pages#societe_transmission', as: 'societe_transmission'
-  get 'expertises/droit-des-affaires/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
+  get 'expertises/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
+  get 'expertises/societe-transmission', to: 'pages#societe_transmission', as: 'societe_transmission'
+  get 'expertises/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
 
-  get 'expertises/droit-des-affaires/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'
-  get 'expertises/droit-des-affaires/bail-commercial', to: 'pages#bail_commercial', as: 'bail_commercial'
-  get 'expertises/droit-des-affaires/location-gerance', to: 'pages#location_gerance', as: 'location_gerance'
+  get 'expertises/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'
+  get 'expertises/bail-commercial', to: 'pages#bail_commercial', as: 'bail_commercial'
+  get 'expertises/location-gerance', to: 'pages#location_gerance', as: 'location_gerance'
 
   # Droit immobilier
   get 'expertises/droit-immobilier', to: 'pages#immobilier', as: 'immobilier'

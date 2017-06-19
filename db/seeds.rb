@@ -1,49 +1,49 @@
-faq = Expertise.create!(
-  nom: "faq",
-  description: "Foire aux questions",
-  motcle: "faq"
-)
+# faq = Expertise.create!(
+#   nom: "faq",
+#   description: "Foire aux questions",
+#   motcle: "faq"
+# )
 
-Question.create(
-  description: "Comment sont calculés nos honoraires de négociation ?",
-  reponse: "<p>Les honoraires de négociation sont calculés en fonction de la valeur du bien acquis : </p>
-  <p>Pour les biens dont la valeur est inférieure à 80.000 €, les honoraires de négociations sont fixés à un montant forfaitaire de 4.000,00 € TTC</p>
-  <p>Pour les biens dont la valeur est située entre 80.001 € et 150.000 €, les honoraires de négociations sont fixés à un montant forfaitaire de 6.000,00 € TTC</p>
-  <p>Pour les biens dont la valeur est supérieure à 150.000 €, les honoraires de négociations correspondent à 4% TTC du prix de vente.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Comment sont calculés nos honoraires de négociation ?",
+#   reponse: "<p>Les honoraires de négociation sont calculés en fonction de la valeur du bien acquis : </p>
+#   <p>Pour les biens dont la valeur est inférieure à 80.000 €, les honoraires de négociations sont fixés à un montant forfaitaire de 4.000,00 € TTC</p>
+#   <p>Pour les biens dont la valeur est située entre 80.001 € et 150.000 €, les honoraires de négociations sont fixés à un montant forfaitaire de 6.000,00 € TTC</p>
+#   <p>Pour les biens dont la valeur est supérieure à 150.000 €, les honoraires de négociations correspondent à 4% TTC du prix de vente.</p>",
+#   expertise: faq
+#   )
 
-Question.create(
-  description: "Est-ce que je paie à l’issue du premier rendez-vous ?",
-  reponse: "<p>Non, nous ne facturons pas le premier rendez-vous de renseignement. Si vous avez des interrogations, n’hésitez pas à fixer un rendez-vous auprès du secrétariat, nous répondrons à vos questions et pourront envisager, ensemble, la suite à donner à votre projet.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Est-ce que je paie à l’issue du premier rendez-vous ?",
+#   reponse: "<p>Non, nous ne facturons pas le premier rendez-vous de renseignement. Si vous avez des interrogations, n’hésitez pas à fixer un rendez-vous auprès du secrétariat, nous répondrons à vos questions et pourront envisager, ensemble, la suite à donner à votre projet.</p>",
+#   expertise: faq
+#   )
 
-Question.create(
-  description: "Quels sont les créneaux de RDV ?",
-  reponse: "<p>Nous nous adaptons à vos disponibilités. Aussi, il est tout à fait possible d’envisager des RDV en dehors des heures d’ouverture du standard.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Quels sont les créneaux de RDV ?",
+#   reponse: "<p>Nous nous adaptons à vos disponibilités. Aussi, il est tout à fait possible d’envisager des RDV en dehors des heures d’ouverture du standard.</p>",
+#   expertise: faq
+#   )
 
-Question.create(
-  description: "Qu’appelle-t-on les « frais de notaire » ?",
-  reponse: "<p>On appelle abusivement « frais de notaire » toutes les sommes qui sont versées au notaire lors de la rédaction d’un acte.</p>
-  <p>En réalité, seule une partie de ces sommes lui revient au titre de ses émoluments. Le reste est reversé au Trésor Public au titre des droits d’enregistrement, taxes et impôts qui grèvent l’acte, ou à diverses administrations et professionnels dont l’intervention est nécessaire.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Qu’appelle-t-on les « frais de notaire » ?",
+#   reponse: "<p>On appelle abusivement « frais de notaire » toutes les sommes qui sont versées au notaire lors de la rédaction d’un acte.</p>
+#   <p>En réalité, seule une partie de ces sommes lui revient au titre de ses émoluments. Le reste est reversé au Trésor Public au titre des droits d’enregistrement, taxes et impôts qui grèvent l’acte, ou à diverses administrations et professionnels dont l’intervention est nécessaire.</p>",
+#   expertise: faq
+#   )
 
-Question.create(
-  description: "Qu’est-ce que la signature électronique ?",
-  reponse: "<p>L’Office Notarial de  Maîtres Loïc PERRAUT, Jean-Charles PIRIOUX et Céline MÉVEL est équipé de la signature électronique.</p>
-  <p>La signature est dématérialisée et deux signatures suffisent : les parties signent directement sur la tablette l’acte et les annexes. Une fois les signatures recueillies, le notaire signe l’acte au moyen de sa clé Real, protégée par son code secret. L’acte devient authentique. Il est envoyé instantanément, sur les serveurs dédiés du notariat, dans un coffre-fort électronique que l’on appelle le « minutier central », auquel seul le notaire a accès.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Qu’est-ce que la signature électronique ?",
+#   reponse: "<p>L’Office Notarial de  Maîtres Loïc PERRAUT, Jean-Charles PIRIOUX et Céline MÉVEL est équipé de la signature électronique.</p>
+#   <p>La signature est dématérialisée et deux signatures suffisent : les parties signent directement sur la tablette l’acte et les annexes. Une fois les signatures recueillies, le notaire signe l’acte au moyen de sa clé Real, protégée par son code secret. L’acte devient authentique. Il est envoyé instantanément, sur les serveurs dédiés du notariat, dans un coffre-fort électronique que l’on appelle le « minutier central », auquel seul le notaire a accès.</p>",
+#   expertise: faq
+#   )
 
-Question.create(
-  description: "Est-possible d’obtenir la copie d’un acte dont j’ai perdu la copie authentique ?",
-  reponse: "<p>Oui, le notaire conserve ses archives pendant 75 ans. Il peut donc vous communiquer une copie des actes vous concernant.</p>",
-  expertise: faq
-  )
+# Question.create(
+#   description: "Est-possible d’obtenir la copie d’un acte dont j’ai perdu la copie authentique ?",
+#   reponse: "<p>Oui, le notaire conserve ses archives pendant 75 ans. Il peut donc vous communiquer une copie des actes vous concernant.</p>",
+#   expertise: faq
+#   )
 
 # Users
 # User.destroy_all
@@ -85,7 +85,7 @@ Question.create(
 #   )
 # testament = Expertise.create!(
 #     nom: "Testament",
-#     description: "<p>Le testament est bien souvent le meilleur moyen de se protéger. Il permet de léguer un bien ou une somme d'argent à la personne de son choixOn peut aussi régler des questions personnelles, comme par exemple désigner la personne qui prendra soin de ses enfants en cas de décès. La loi offre une grande liberté dans ce domaine, à condition de respecter les règles juridiques précises.</p>",
+#     description: "<p>Le testament est bien souvent le meilleur moyen de se protéger. Il permet de léguer un bien ou une somme d'argent à la personne de son choix. On peut aussi régler des questions personnelles, comme par exemple désigner la personne qui prendra soin de ses enfants en cas de décès. La loi offre une grande liberté dans ce domaine, à condition de respecter les règles juridiques précises.</p>",
 #     motcle: "testament"
 #   )
 # achat_immo = Expertise.create!(
