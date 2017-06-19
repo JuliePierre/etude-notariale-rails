@@ -154,9 +154,9 @@
 
 // PROMOTION
 #promotion-banner {
-  background: image-url('banner-promotion.jpg');
+  background: image-url('immobilier.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-promotion.jpg')
+    background: image-url('small-banner-immobilier.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
@@ -165,9 +165,9 @@
 
 // sitemap
 #sitemap-banner {
-  background: image-url('banner-promotion.jpg');
+  background: image-url('immobilier.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-banner-immobilier.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
