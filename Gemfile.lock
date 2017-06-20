@@ -267,7 +267,6 @@ DEPENDENCIES
   sass-rails
   searchkick
   simple_form
-  social-share-button
   spring
   spring-watcher-listen (~> 2.0.0)
   uglifier
