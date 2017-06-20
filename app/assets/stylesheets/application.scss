@@ -3,8 +3,6 @@
 @import "config/variables"; // pour définir mes propres variables
 
 // External libraries
-@import "font-awesome-sprockets";
-@import "font-awesome";
 @import "materialize/components/color";
 @import 'materialize';
 
@@ -12,4 +10,3 @@
 @import "layout/index";
 @import "components/index";
 @import "pages/index";
-@import "vendor/index";

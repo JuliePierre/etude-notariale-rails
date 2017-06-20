@@ -1,8 +1,3 @@
-<!-- Les meta tags -->
-  <!-- Rien exprès pour avoir les meta tags par défaut -->
-<!-- Les meta tags -->
-
-<!-- Bannière -->
 <div class="homepage-header">
   <div class="homepage-header-background"></div>
   <div class="homepage-header-content">
@@ -17,9 +12,6 @@
     <h1 class="hide-on-small-only">Notaires à Rennes</h1>
   </div>
 </div>
-<!-- Bannière -->
-
-<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 <div class="homepage-section">
   <div class="row">
     <div class="col s12 m8 l6">
@@ -37,9 +29,6 @@
     </div>
   </div>
 </div>
-<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
-
-<!-- 1ère section - Les valeurs : paragraphe de description -->
 <div class="homepage-section">
   <div class="row">
     <div class="col s12 m4 value-card">
@@ -80,12 +69,8 @@
     <%= link_to "Découvrir l'office", office_path, class: 'btn btn-primary' %>
   </div>
 </div>
-<!-- 1ère section - Les valeurs : paragraphe de description -->
-
-<!-- 2ème section - Les expertises : background de couleur -->
 <div class="grey-bg">
   <div class="homepage-section">
-    <!-- 2ème section - Les expertises : paragraphe d'introduction -->
     <div class="row">
       <div class="col s12 m8 l6">
         <div class="section-heading-content expertise-section-heading">
@@ -102,9 +87,6 @@
         </div>
       </div>
     </div>
-    <!-- 2ème section - Les expertises : paragraphe d'introduction -->
-
-    <!-- 2ème section - Les expertises : paragraphe de description -->
     <div class="homepage-expertises-box">
       <div class="row">
         <div class="col s12 m6 l3">
@@ -157,14 +139,9 @@
         </div>
       </div>
     </div>
-    <!-- 2ème section - Les expertises : paragraphe de description -->
   </div>
 </div>
-<!-- 2ème section - Les expertises : background de couleur -->
-
-<!-- 3ème section - Les annonces immobilières : background de couleur -->
 <div class="homepage-section">
-  <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
   <div class="row">
     <div class="col s12 m8 l6">
       <div class="section-heading-content">
@@ -177,9 +154,6 @@
       </div>
     </div>
   </div>
-  <!-- 3ème section - Les annonces immobilières : paragraphe d'introduction -->
-
-  <!-- 3ème section - Les annonces immobilières : paragraphe de description -->
   <div class="row ">
     <div class="homepage-annonces-box">
       <% @annonces_to_display.each do |annonce| %>
@@ -191,13 +165,8 @@
     </div>
   </div>
 </div>
-
-
-<!-- SECTION CONTACT POUR DESKTOP -->
 <div class="grey-bg homepage-contact-section" id="homepage-contact-section-desktop">
-  <!-- 4ème SECTION - Partie droite : le formulaire -->
   <div id="homepage-contact-container">
-  <!-- 4ème SECTION - Partie droite : le formulaire // Heading -->
     <div class="section-heading-content">
       <span class="section-subtitle">Contactez-nous</span>
       <span class="line-title section-line-title"></span>
@@ -206,66 +175,13 @@
         <p>Nous nous adaptons à vos disponibilités. Aussi, il est tout à fait possible d’envisager des RDV en dehors des heures d’ouverture du standard. N’hésitez pas à contacter le secrétariat pour prendre un RDV ou compléter directement le formulaire ci-dessous.</p>
       </div>
     </div>
-    <!-- 4ème SECTION - Partie gauche : le formulaire // Heading -->
-
-    <!-- 4ème SECTION - Partie gauche // Le formulaire -->
     <div id="homepage-contact-form">
       <%= render 'shared/contact-form', contact: @contact %>
     </div>
   </div>
-
-  <!-- 4ème SECTION - Partie gauche : la photo -->
   <div class="homepage-contact-picture">
   </div>
 </div>
-
-<!-- SECTION CONTACT POUR TABLETTE -->
-<div class="homepage-contact-section-tablet" id="homepage-contact-section-tablet">
-  <!-- Introduction -->
-  <div id="homepage-contact-infos-tablet">
-    <div class="row">
-      <div class="col s12 m8 l6">
-        <div class="section-heading-content">
-          <span class="section-subtitle">Get in touch</span>
-          <span class="line-title section-line-title"></span>
-          <h2>Contact us</h2>
-        </div>
-      </div>
-    </div>
-    <!-- Formulaire de contact -->
-    <div class="row">
-      <div class="col s12 m8 l8">
-        <div id="page-contact-form">
-          <%= render 'shared/contact-form', contact: @contact %>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="page-contact-infos">
-          <span class="contact-form-header">Trust is a business theme perfectly suited legal advisers and offices, lawyers, attorneys, and other legal and law related services.</span>
-          <div class="contact-form-infos">
-            <div class="row">
-              <div class="col s12 m6">
-                <span class="contact-form-label">Téléphone</span>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>02 99 67 39 39</p>
-                <p><i class="fa fa-fax" aria-hidden="true"></i>02 99 67 34 54</p>
-              </div>
-              <div class="col s12 m6">
-                <span class="contact-form-label">Email</span>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i>perraut-pirioux-mevel@notaires.fr</p>
-              </div>
-            </div>
-            <div>
-              <span class="contact-form-label">Adresse</span>
-              <p>7 rue de la Visitation<br>CS 60808<br>35108 RENNES CEDEX 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION CONTACT POUR MOBILE -->
 <div id="homepage-contact-section-mobile">
   <div class="grey-bg" id="homepage-contact-container">
     <div class="section-heading-content">
@@ -273,7 +189,7 @@
       <span class="line-title section-line-title"></span>
       <h2>Prendre rendez-vous</h2>
       <div class="section-description">
-        <p>Créé en 2000, l'office notarial Perraut Pirioux Mével est animé par le souci d'offrir à ses clients un service juridique de qualité. L'équipe est composée de trois notaires et d'une vingtaine de collaborateurs : juristes, assistants, notaires stagiaires et collaborateurs dédiés à des fonctions spécifiques.</p>
+        <p>Nous nous adaptons à vos disponibilités. Aussi, il est tout à fait possible d’envisager des RDV en dehors des heures d’ouverture du standard. N’hésitez pas à contacter le secrétariat pour prendre un RDV ou compléter directement le formulaire ci-dessous.</p>
       </div>
     </div>
     <div id="homepage-contact-form">
@@ -281,8 +197,6 @@
     </div>
   </div>
 </div>
-
-<!-- SECTION MAPS -->
 <div class="homepage-section-contact">
   <div id="map-homepage"></div>
   <div class="section-contact-infos">
@@ -323,13 +237,9 @@
     </div>
   </div>
 </div>
-
-
-
 <% content_for(:after_js) do %>
   <script type="text/javascript">
     $(document).on('ready', function() {
-      console.log('toto');
       var handler = Gmaps.build('Google');
       var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]}]
       handler.buildMap({ provider: { scrollwheel: false, styles: styles }, internal: { id: 'map-homepage' } }, function(){

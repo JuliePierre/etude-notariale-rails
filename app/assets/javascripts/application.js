@@ -1,8 +1,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require materialize-sprockets
-//= require_tree .
 //= require underscore
+//= require_tree .
 //= require gmaps/google
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary

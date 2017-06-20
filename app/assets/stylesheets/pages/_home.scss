@@ -276,20 +276,17 @@
 // SECTION FORMULAIRE DE CONTACT
 
 #homepage-contact-section-desktop {
-  @media (max-width: $medium-plus-screen) {
-    display: none;
-  }
-}
-#homepage-contact-section-tablet {
-  background: image-url('small-contact') no-repeat;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
   @media (max-width: $medium-screen-down) {
     display: none;
   }
-  @media (min-width: $medium-plus-screen-up) {
-    display: none;
+  @media (max-width: $medium-plus-screen-up) {
+    padding-left: 0;
+    height: auto;
+  }
+    .homepage-contact-picture {
+      @media (max-width: $medium-plus-screen-up) {
+        display: none;
+    }
   }
 }
 #homepage-contact-section-mobile {
