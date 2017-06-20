@@ -27,8 +27,6 @@ gem "gmaps4rails"
 
 gem 'searchkick'
 
-gem 'social-share-button'
-
 gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
