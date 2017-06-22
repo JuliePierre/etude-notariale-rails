@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact', as: 'contact'
   get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
   get 'vente-immobilier', to: 'pages#vente', as: 'vente'
-  get 'plan-du-site', to: 'pages#sitemap', as: 'sitemap'
+  get 'plan-du-site', to: 'pages#plan_du_site', as: 'plan_du_site'
   get 'mentions-légales', to: 'pages#legal', as: 'legal'
   get 'credits', to: 'pages#credits', as: 'credits'
 
@@ -58,4 +58,7 @@ Rails.application.routes.draw do
   get 'annonces-immobilier-notaire-35', to: redirect('annonces')
   get 'office-notarial-rennes-loic_perraut_jean-charles_pirioux_et_celine_mevel', to: redirect('/')
 
+  get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
+
 end
+
