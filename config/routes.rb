@@ -52,10 +52,10 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
 
   # Redirections des anciennes url
-  get 'notaire-roles-fonctions', to: 'pages#office'
-  get 'liens-utiles', to: 'pages#faq'
-  get 'contact-notaire-rennes', to: 'pages#contact'
-  get 'annonces-immobilier-notaire-35', to: 'annonces#index'
-  get 'office-notarial-rennes-loic_perraut_jean-charles_pirioux_et_celine_mevel', to: 'pages#office'
+  get 'notaire-roles-fonctions', to: redirect('office')
+  get 'liens-utiles', to: redirect('foire-aux-questions')
+  get 'contact-notaire-rennes', to: redirect('contact')
+  get 'annonces-immobilier-notaire-35', to: redirect('annonces')
+  get 'office-notarial-rennes-loic_perraut_jean-charles_pirioux_et_celine_mevel', to: redirect('/')
 
 end
