@@ -1,15 +1,35 @@
 <div class="page-section">
   <div class="page-expertise-section" id="lexique">
     <h2>Lexique</h2>
-      <div class="row">
-      <% slice = (@expertise.definitions.size <= 1)? 2 : @expertise.definitions.size/2 %>
-      <% @expertise.definitions.each_slice(slice) do |block| %>
-        <div class="col s12 m6">
-          <% block.each do |definition| %>
-            <p><span class="lexique-word"><%= definition.nom %></span> : <%= definition.definition %></p>
-          <% end %>
-        </div>
+    <div class="faq-questions">
+      <% cut = @expertise.definitions.size / 2 %>
+      <% if @expertise.definitions.size.even? %>
+        <% sep = cut %>
+      <% else %>
+        <% sep = cut + 1 %>
       <% end %>
+      <div class="row">
+        <div class="col s12 m6">
+          <ul class="collapsible" data-collapsible="expandable">
+            <% @expertise.definitions[0...sep].each do |definition| %>
+              <li>
+                <div class="collapsible-header lexique-word"><%= definition.nom %></div>
+                <p class="collapsible-body"><%= definition.definition %></p>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col s12 m6">
+          <ul class="collapsible" data-collapsible="expandable">
+            <% @expertise.definitions[sep...@expertise.definitions.size].each do |definition| %>
+              <li>
+                <div class="collapsible-header lexique-word"><%= definition.nom %></div>
+                <p class="collapsible-body"><%= definition.definition %></p>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

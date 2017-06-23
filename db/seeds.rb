@@ -67,7 +67,9 @@
 #   )
 # adoption = Expertise.create!(
 #     nom: "Adoption",
-#     description: "<p>L’acte de consentement à adoption se régularise chez un notaire. Si l’adopté est majeur, le notaire qu’il y consent de façon libre et éclairée. Si l’enfant est mineur, le notaire recueillera le consentement de son représentant légal. Le notaire rédigera l’acte de consentement à adoption qui va valider la volonté de l’adoptant et de l’adopté.</p>",
+#     description: "<p>Dans le cadre de familles recomposées, il est très fréquent que des liens affectifs forts se créent entre les enfants de l’un des époux et l’autre époux. Malheureusement, les enfants de son conjoint n’ont pas la qualité d'héritiers vis-à- vis de leur « beau-parent ». Il est donc difficile de leur transmettre une partie de ses biens sans se heurter à une taxation fiscale importante au taux de 60%.</p>
+#     <p>Pour remédier à cela, il est possible de recourir à l’adoption. Il existe deux types d’adoption : l’adoption plénière et l’adoption simple. Chacune de ces solutions implique des procédures d’adoption différentes.</p>
+#     <p>L'adoption n'est pas seulement un moyen de transmission, elle est une décision importante qui génère de véritables droits et obligations. Nous sommes à votre écoute pour cous accompagner dans cette démarche.</p>",
 #     motcle: "adoption"
 #   )
 # succession = Expertise.create!(
