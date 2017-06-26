@@ -13,7 +13,8 @@ class Contact < MailForm::Base
     {
       :subject => "Vous avez reçu un nouveau message",
       :to => "accueil.35009@notaires.fr",
-      :from => %("#{nom}" <#{email}>)
+      :from => %("#{nom}" <#{self.email}>),
+      :reply_to => self.email
     }
   end
 end
