@@ -57,6 +57,15 @@ Rails.application.routes.draw do
   get 'contact-notaire-rennes', to: redirect('contact')
   get 'annonces-immobilier-notaire-35', to: redirect('annonces')
   get 'office-notarial-rennes-loic_perraut_jean-charles_pirioux_et_celine_mevel', to: redirect('/')
+  get 'expertises/droit-de-la-famille/union', to: redirect('expertises/union')
+  get 'expertises/droit-de-la-famille/divorce', to: redirect('expertises/divorce')
+  get 'expertises/droit-de-la-famille/succession', to: redirect('expertises/succession')
+  get 'expertises/droit-de-la-famille/donation', to: redirect('expertises/donation')
+  get 'expertises/droit-de-la-famille/testament', to: redirect('expertises/testament')
+  get 'expertises/droit-des-affaires/fonds_commerce', to: redirect('expertises/fonds_commerce')
+  get 'expertises/droit-des-affaires/bail_commercial', to: redirect('expertises/bail_commercial')
+
+
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
 
