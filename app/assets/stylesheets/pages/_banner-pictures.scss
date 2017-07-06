@@ -1,7 +1,7 @@
 #office-landing-picture {
   background: image-url('office-notarial-rennes.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-office-notarial-rennes.jpg');
+    background: image-url('office-notarial-rennes-mobile.jpg');
     background-repeat:no-repeat;
     background-size: cover;
   }
