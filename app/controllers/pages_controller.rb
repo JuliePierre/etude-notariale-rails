@@ -115,14 +115,6 @@ class PagesController < ApplicationController
 
   def faq
     @expertise = Expertise.find_by_nom('faq')
-    url = 'https://www.notaires.fr/fr/actualites-rss'
-    open(url) do |rss|
-      @feed_actualites = RSS::Parser.parse(rss)
-    end
-    url = 'https://www.notaires.fr/fr/la-lettre-des-notaires-de-France-rss'
-    open(url) do |rss|
-      @feed_lettre_des_notaires = RSS::Parser.parse(rss)
-    end
   end
 
   def contact

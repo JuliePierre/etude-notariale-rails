@@ -1,14 +1,3 @@
-// Bannière de présentation : photo + titre de page
-#office-landing-picture {
-  background: image-url('office-notarial-rennes.jpg');
-  @media (max-width: $small-screen) {
-    background: image-url('small-office-notarial-rennes.jpg')
-  }
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
 // 1ère section
 .office-section1 {
   display: flex;
