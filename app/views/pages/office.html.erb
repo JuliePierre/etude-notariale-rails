@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Office Notarial à Rennes | Perraut - Pirioux - Mével" %>
 <% content_for :meta_description, "Situé à Rennes, notre Office Notarial est une étude généraliste avec des savoir-faire spécialisés. Composée de trois notaires et d’une vingtaine de collaborateurs, sa taille humaine permet un véritable travail d’équipe aussi bien au niveau des collaborateurs que des notaires eux-mêmes." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="office-banner">
-  <div class="page-banner-header left">
-    <span class="page-banner-subtitle">Office notarial à Rennes</span>
+<div class="page-landing-picture" id="office-landing-picture">
+  <div class="page-landing-picture-header left">
+    <span class="page-landing-picture-subtitle">Office notarial à Rennes</span>
     <h1>Perraut - Pirioux - Mével</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Subnavigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -22,9 +17,7 @@
     </div>
   </div>
 </div>
-<!-- Subnavigation -->
 
-<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 <div class="page-section">
   <div class="row">
     <div class="col s12 m8 l6">
@@ -78,13 +71,9 @@
     </div>
   </div>
 </div>
-<!-- 1ère section - Les valeurs : paragraphe d'introduction -->
 
-
-<!-- 2ème section - Les notaires : background de couleur -->
 <div class="grey-bg">
   <div class="page-section">
-    <!-- 2ème section - Les notaires : paragraphe d'introduction -->
     <div class="office-heading">
       <div class="section-heading-content office-section-heading">
         <span class="section-subtitle">Trois notaires</span>
@@ -95,17 +84,24 @@
         </div>
       </div>
     </div>
-    <!-- 2ème section - Les notaires : paragraphe d'introduction -->
-
-    <!-- 2ème section - Les notaires : paragraphe de description -->
       <div class="team-content">
         <div class="row">
           <div class="col s12 m4">
             <div class="team-member">
-              <ul class="collapsible popout" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">add</i>Loïc Perraut</div>
-                <div class="collapsible-body">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag('loic-perraut-notaire-rennes.jpg', class: 'activator') %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title activator">
+                    Loïc Perraut
+                  </span>
+                  <div class="card-btn">
+                    <i class="material-icons">add</i>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Loïc Perraut<i class="material-icons right">close</i></span>
                   <h6>Diplôme</h6>
                   <p>Diplôme Supérieur du Notariat</p>
                   <h6>Particularités</h6>
@@ -118,15 +114,25 @@
                   <h6>Email</h6>
                   <p>loic.perraut@notaires.fr</p>
                 </div>
-              </li>
+              </div>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="team-member">
-              <ul class="collapsible popout" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">add</i>Céline Mével</div>
-                <div class="collapsible-body">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag('celine-mevel-notaire-rennes.jpg', class: 'activator') %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title activator">
+                    Céline Mével
+                  </span>
+                  <div class="card-btn">
+                    <i class="material-icons">add</i>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Céline Mével<i class="material-icons right">close</i></span>
                   <h6>Diplôme</h6>
                   <p>Diplôme Supérieur du Notariat</p>
                   <p>DU Gestion du Patrimoine (AUREP)</p>
@@ -140,15 +146,25 @@
                   <h6>Email</h6>
                   <p>celine.mevel@notaires.fr</p>
                 </div>
-              </li>
+              </div>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="team-member">
-              <ul class="collapsible popout" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">add</i>Jean-Charles Pirioux</div>
-                <div class="collapsible-body">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag('jean-charles-pirioux-notaire-rennes.jpg', class: 'activator') %>
+                </div>
+                <div class="card-content activator">
+                  <span class="card-title activator">
+                    Jean-Charles Pirioux
+                  </span>
+                  <div class="card-btn">
+                    <i class="material-icons">add</i>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Jean-Charles Pirioux<i class="material-icons right">close</i></span>
                   <h6>Diplôme</h6>
                   <p>Diplôme Supérieur du Notariat</p>
                   <h6>Particularités</h6>
@@ -159,21 +175,14 @@
                   <h6>Email</h6>
                   <p>jean-charles.pirioux@notaires.fr</p>
                 </div>
-              </li>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    <!-- 2ème section - Les notaires : paragraphe de description -->
   </div>
 </div>
-<!-- 2ème section - Les notaires : background de couleur -->
-
-
-
-<!-- 3ème section - Le reste de l'équipe - TEST-->
 <div class="page-section">
-  <!-- 3ème section - Le reste de l'équipe : paragraphe d'introduction -->
   <div class="office-heading">
     <div class="section-heading-content office-section-heading">
       <span class="section-subtitle">Toute l'équipe</span>
@@ -185,11 +194,10 @@
     </div>
   </div>
 </div>
-<div id="whole-team-banner">
+<div id="whole-team-landing-picture">
 </div>
 
 <div class="page-section">
-  <!-- Equipe - Les tabs -->
   <ul id="tabs-swipe-demo" class="tabs center-align">
     <li class="tab"><a class="active" href="#test-swipe-1">Tous</a></li>
     <li class="tab"><a href="#test-swipe-2">Promotion immobilière</a></li>
@@ -272,7 +280,6 @@
 </div>
 
 <div class="page-section">
-  <!-- 3ème section - Le reste de l'équipe : paragraphe d'introduction -->
   <div class="office-heading">
     <div class="section-heading-content">
       <span class="section-subtitle">VISIO - CONFERENCE</span>
@@ -289,14 +296,7 @@
   <%= link_to "Contacter l'office", contact_path, class: 'btn btn-primary' %>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
-
-<!-- Ligne de démarcation avec le footer // vieille version -->
-<!-- <div class="footer-whitespace">
-  <span class="footer-line"></span>
-</div> -->
 
 <%= content_for(:after_js) do %>
   <script>

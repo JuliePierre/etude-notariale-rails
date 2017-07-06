@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Bail commercial - Notaires à Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Pour vous accompagner dans votre vie professionnelle, nous veillons, en tant qu’officier public, à la rédaction équilibrée du contrat dans le respect de la volonté des parties et des règles de droits." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="acquisition-banner">
-  <div class="page-banner-header left header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="acquisition-landing-picture">
+  <div class="page-landing-picture-header left header-red">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>Bail commercial</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -26,7 +21,6 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
@@ -118,9 +112,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Promotion immobilière - Notaires Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "La promotion immobilière constitue pour notre Office Notarial un secteur d’activité important dans lequel notre savoir-faire est reconnu : profitez-en !" %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="promotion-banner">
-  <div class="page-banner-header right header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="promotion-landing-picture">
+  <div class="page-landing-picture-header right">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>Promotion immobilière</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -24,17 +19,11 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
 <%#= render 'shared/questions-collapsible', expertise: @expertise %>
 
-<!-- <div class="page-section">
-  <div class="page-expertise-section" id="fiches">
-    <h2 class="section-white-header">FICHES PRATIQUES</h2>
-  </div>
-</div> -->
 <div class="page-section">
   <div class="page-expertise-section" id="outils">
     <h2 class="section-white-header">COMBIEN CA COUTE ?</h2>
@@ -52,9 +41,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>
@@ -68,8 +55,3 @@
     });
   </script>
 <% end %>
-<!-- Les meta tags -->
-<% content_for :meta_title, "Promotion immobilière - Notaires à Rennes | Perraut Pirioux Mével" %>
-<% content_for :meta_description, "Les trois notaires de l'office et une vingtaine de collaborateurs sont à votre écoute et interviennent en promotion immobilière." %>
-<% content_for :meta_image, "https://unsplash.com/?photo=P3pI6xzovu0" %>
-<!-- Les meta tags -->

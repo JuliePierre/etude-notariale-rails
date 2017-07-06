@@ -1,10 +1,10 @@
-// BANNER -- Idem à Homepage
+// landing-picture -- Idem à Homepage
 .sessions-header {
   position: relative;
   height: 100vh;
 }
 .sessions-header-background {
-  background: image-url('banner-home') no-repeat fixed;
+  background: image-url('landing-picture-home') no-repeat fixed;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -18,7 +18,7 @@
   text-align: center;
   z-index: 10;
 }
-// BANNER
+// landing-picture
 
 // FORMULAIRE
 .log-in-form {

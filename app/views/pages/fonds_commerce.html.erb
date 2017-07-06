@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Créer sa société - Notaires à Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Pour vous accompagner dans votre vie professionnelle, nous veillons, en tant qu’officier public, à la rédaction équilibrée du contrat dans le respect de la volonté des parties et des règles de droits." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="pacs-banner">
-  <div class="page-banner-header left header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="pacs-landing-picture">
+  <div class="page-landing-picture-header left header-red">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>Créer sa société</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -26,25 +21,7 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
-<%= render 'shared/show-expertise-intro', expertise: @expertise %>
-
-<%= render 'shared/questions-collapsible', expertise: @expertise %>
-
-<!-- Fiches pratiques-->
-<div class="page-section">
-  <div class="page-expertise-section" id="fiches">
-    <h2 class="section-white-header">FICHES PRATIQUES</h2>
-    <div class="fiches-pratiques-container">
-      <div class="row">
-        <%= render 'shared/download-document-card', document: "fiche-societe-anonyme.pdf", document_type: "Fiche conseil", document_title: "La société anonyme", document_intro: nil %>
-        <%= render 'shared/download-document-card', document: "fiche-societe-action-simplifiee.pdf", document_type: "Fiche conseil", document_title: "La société par action simplifiée", document_intro: nil %>
-        <%= render 'shared/download-document-card', document: "fiche-societe-civile-immobiliere.pdf", document_type: "Fiche conseil", document_title: "La société civile immobilière", document_intro: nil %>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="page-section">
   <div class="page-expertise-section" id="outils">
     <h2 class="section-white-header">COMBIEN CA COUTE ?</h2>
@@ -68,9 +45,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

@@ -1,12 +1,12 @@
-// BANNER
+// landing-picture
 .homepage-header {
   position: relative;
   height: 100vh;
 }
 .homepage-header-background {
-  background: image-url('banner-home.jpg') no-repeat fixed;
+  background: image-url('notaires-rennes-perraut-pirioux-mevel') no-repeat fixed;
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-home.jpg') no-repeat fixed;
+    background: image-url('notaires-rennes-perraut-pirioux-mevel-mobile.jpg') no-repeat fixed;
   }
   position: absolute;
   width: 100%;
@@ -29,15 +29,15 @@
     margin: 2.1rem 0 1.68rem 0;
   }
 }
-.banner-logo-container {
+.landing-picture-logo-container {
   display: flex;
   align-items: center;
 }
-.banner-logo {
+.landing-picture-logo {
   flex: 0 0 50%;
   text-align: right;
 }
-.banner-names {
+.landing-picture-names {
   text-align: left;
   .names {
     text-transform: uppercase;
@@ -50,13 +50,13 @@
     display: block;
   }
 }
-#banner-logo {
+#landing-picture-logo {
   border-right: 1px solid $brand-grey-text;
   padding-right: 1rem;
   width: 8rem;
 }
 
-// BANNER
+// landing-picture
 
 
 // SECTIONS

@@ -1,32 +1,16 @@
-// Bannière de présentation : photo + titre de page
-#contact-banner {
-  background: image-url('banner-home.jpg');
-  background-position: center;
-  @media (max-width: $small-screen) {
-    background: image-url('small-banner-home.jpg');
-  }
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-// Bannière de présentation : photo + titre de page
 #map {
   height: 45vh;
 }
-
 .contact-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .contact-left-side, .contact-right-side {
   flex: 0 0 50%;
   padding: 0px 1em;
 }
-
-// Formulaire de contact - Sur la page contact ET sur la homepage
-// Coordonnées
 .page-contact-infos {
   padding-left: 1rem;
 }
@@ -63,4 +47,3 @@
 .contact-form-label {
   color: $primary-color;
 }
-// Coordonnées

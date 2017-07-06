@@ -1,18 +1,12 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Office notarial - Foire aux Questions | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "L'office Perraut Pirioux Mével répond à toutes vos questions concernant vos démarches auprès des notaires." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="faq-banner">
-  <div class="page-banner-header left">
-    <span class="page-banner-subtitle">Tout savoir sur vos démarches</span>
+<div class="page-landing-picture" id="faq-landing-picture">
+  <div class="page-landing-picture-header right">
+    <span class="page-landing-picture-subtitle">Tout savoir sur vos démarches</span>
     <h1>Foire aux questions</h1>
   </div>
 </div>
-<!-- Bannière -->
-
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -22,7 +16,6 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/questions-collapsible', expertise: @expertise %>
 

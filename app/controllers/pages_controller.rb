@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   require 'rss'
   require 'open-uri'
 
-  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe_creation, :societe_transmission, :societe_secretariat, :fonds_commerce, :bail_commercial, :location_gerance, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :negociation, :vente, :plan_du_site, :legal, :credits ]
+  skip_before_action :authenticate_user!, only: [ :home, :office, :famille, :union, :divorce, :succession, :donation, :testament, :adoption, :affaires, :societe_creation, :societe_transmission, :societe_secretariat, :fonds_commerce, :bail_commercial, :location_gerance, :immobilier, :acheter, :vendre, :promotion, :faq, :contact, :plan_du_site, :legal, :credits ]
 
   def home
     @contact = Contact.new
@@ -126,14 +126,6 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @contact = Contact.new
-  end
-
-  # Négociation immobilière
-  def negociation
-  end
-
-  def vente
     @contact = Contact.new
   end
 

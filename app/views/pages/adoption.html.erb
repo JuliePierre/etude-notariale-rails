@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Adoption - Notaires Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Adoption. Quel est le rôle du notaire ? Quel nom l'adopté porte-t-il ? Quelles conséquences ? Trois notaires et une vingtaine de collaborateurs répondent à toutes vos questions sur l'adoption." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="adoption-banner">
-  <div class="page-banner-header right header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="adoption-landing-picture">
+  <div class="page-landing-picture-header right header-red">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>L'adoption</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -26,16 +21,12 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
 <%= render 'shared/questions-collapsible', expertise: @expertise %>
 
-<!-- Lexique -->
 <%= render 'shared/lexique', expertise: @expertise %>
-
-<!-- Fiches pratiques -->
 
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
@@ -68,9 +59,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

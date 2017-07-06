@@ -1,16 +1,12 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Droit immobilier - Notaires Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Droit immobilier. Nous intervenons pour la vente de tout bien immobilier (appartement, maison, terrain, ...) ainsi que toutes vos démarches immobilières (rédaction des contrats et actes, sécurisation de projets immobiliers complexes, résolution de problématiques relatives à la copropriété, etc)" %>
-<!-- Les meta tags -->
 
-<div class="page-banner" id="immobilier-banner">
-  <div class="page-banner-header left">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="immobilier-landing-picture">
+  <div class="page-landing-picture-header left">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>Droit immobilier</h1>
   </div>
 </div>
-
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -22,9 +18,6 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
-
-<!-- Section d'introduction -->
 <div class="page-section">
   <div class="row">
     <div class="col s12 m8 l6">
@@ -40,12 +33,8 @@
     </div>
   </div>
 </div>
-<!-- Section d'introduction -->
-
-<!-- 1ERE SECTION -->
 <div class="grey-bg">
   <div class="page-section">
-    <!-- achat immobilier -->
     <div class="expertise-box">
       <div class="row">
         <div class="col s12 l5">
@@ -62,7 +51,6 @@
             <div class="expertise-redirection-card-description immobilier"><%= expertise.description.html_safe %></div>
           </div>
         </div>
-        <!-- vente immobilière -->
         <div class="col s12 l5 offset-l2">
           <div class="expertise-redirection-card white-redirection-card">
             <%= link_to '', vendre_path, class: 'expertise-redirection-card-link' %>
@@ -81,11 +69,7 @@
     </div>
   </div>
 </div>
-<!-- 1ERE SECTION -->
-
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

@@ -1,175 +1,162 @@
-// FAMILLE
-#famille-banner {
-  background: image-url('banner-famille.jpg');
+#famille-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat: no-repeat;
   background-size: cover;
 }
-// FAMILLE
-
-// Union
-#union-banner {
-  background: image-url('banner-famille.jpg');
+#union-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Union
-
-// Divorce
-#divorce-banner {
-  background: image-url('banner-famille.jpg');
+#divorce-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Divorce
-
-// Adoption
-#adoption-banner {
-  background: image-url('banner-famille.jpg');
+#adoption-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Adoption
-
-// Donation
-#donation-banner {
-  background: image-url('banner-famille.jpg');
+#donation-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Donation
-
-// Succession
-#succession-banner {
-  background: image-url('banner-famille.jpg');
+#succession-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Succession
-
-// Testament
-#testament-banner {
-  background: image-url('banner-famille.jpg');
+#testament-landing-picture {
+  background: image-url('landing-picture-famille.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-famille.jpg')
+    background: image-url('small-landing-picture-famille.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Testament
-
-// IMMOBILIER
-#immobilier-banner {
-  background: image-url('banner-immobilier.jpg');
+#immobilier-landing-picture {
+  background: image-url('landing-picture-immobilier.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-immobilier.jpg')
+    background: image-url('small-landing-picture-immobilier.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
+  background-position: center;
 }
-// IMMOBILIER
-
-// Achat immobilier
-#acheter-banner {
+#acheter-landing-picture {
   background: image-url('immobilier.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-immobilier.jpg')
+    background: image-url('small-landing-picture-immobilier.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Achat immobilier
-
-// Vente immobilière
-#vendre-banner {
+#vendre-landing-picture {
   background: image-url('immobilier.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-immobilier.jpg')
+    background: image-url('small-landing-picture-immobilier.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Vente immobilière
-
-// AFFAIRES
-#affaires-banner {
-  background: image-url('banner-affaires.jpg');
+#affaires-landing-picture {
+  background: image-url('landing-picture-affaires.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-affaires.jpg')
+    background: image-url('small-landing-picture-affaires.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// AFFAIRES
-
-// Société
-#societe-banner {
+#societe-landing-picture {
   background: image-url('affaires.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-affaires.jpg')
+    background: image-url('small-landing-picture-affaires.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Société
-
-// Acquisition - Cession
-#acquisition-banner {
+#acquisition-landing-picture {
   background: image-url('affaires.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-affaires.jpg')
+    background: image-url('small-landing-picture-affaires.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Acquisition - Cession
-
-// Bail commercial
-#bail-banner {
+#bail-landing-picture {
   background: image-url('affaires.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-affaires.jpg')
+    background: image-url('small-landing-picture-affaires.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// Bail commercial
-
-// PROMOTION
-#promotion-banner {
-  background: image-url('immobilier.jpg');
+#promotion-landing-picture {
+  background: image-url('promotion-immobiliere-notaire-rennes.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-immobilier.jpg')
+    background: image-url('promotion-immobiliere-notaire-rennes-mobile.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// PROMOTION
-
-// sitemap
-#sitemap-banner {
-  background: image-url('immobilier.jpg');
+#sitemap-landing-picture {
+  background: image-url('notaires-rennes-plan-site.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-immobilier.jpg')
+    background: image-url('notaires-rennes-plan-site-mobile.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
 }
-// sitemap
+#legal-landing-picture {
+  background: image-url('notaires-rennes-mentions-legales.jpg');
+  @media (max-width: $small-screen) {
+    background: image-url('notaires-rennes-mentions-legales-mobile.jpg')
+  }
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#faq-landing-picture {
+  background: image-url('notaires-rennes-questions-frequentes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('notaires-rennes-questions-frequentes-mobile.jpg')
+  }
+}
+#contact-landing-picture {
+  background: image-url('notaires-rennes-contact.jpg');
+  background-position: center;
+  @media (max-width: $small-screen) {
+    background: image-url('notaires-rennes-contact-mobile.jpg');
+  }
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#search-landing-picture {
+  background: image-url('notaires-rennes-recherche.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('notaires-rennes-recherche-mobile.jpg');
+  }
+}

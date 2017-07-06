@@ -1,5 +1,5 @@
 // Bannière de présentation : photo + titre de page
-#office-banner {
+#office-landing-picture {
   background: image-url('office-notarial-rennes.jpg');
   @media (max-width: $small-screen) {
     background: image-url('small-office-notarial-rennes.jpg')
@@ -223,11 +223,11 @@
   }
   i {
     font-size: 2rem;
-    color: $primary-color;
+    color: white;
   }
 }
 
-#whole-team-banner {
+#whole-team-landing-picture {
   background: image-url('office-notarial-rennes-equipe.jpg');
   background-repeat:no-repeat;
   background-size: cover;

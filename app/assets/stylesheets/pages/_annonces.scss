@@ -1,6 +1,6 @@
 // PAGE ANNONCES IMMOBILIERES - INDEX
 // Bannière
-#annonces-banner {
+#annonces-landing-picture {
   background: image-url('immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
@@ -45,49 +45,9 @@
 }
 // PAGE ANNONCES IMMOBILIERES - INDEX
 
-
-// PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
-// Bannière
-#vente-banner {
-  background: image-url('immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-// particularité de ce header qui doit être fixé par la gauche pour que le rotate ne décale pas toute la phrase
-#vente-banner-header {
-  @media (max-width: $medium-screen) {
-    left: 4rem;
-  }
-  @media (max-width: $small-screen) {
-    left: 0;
-  }
-  left: 50rem;
-}
-
-// Partie contact
-.vente-contact-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-#vente-contact-picture {
-  @media (max-width: $medium-screen) {
-    display: none;
-  }
-  flex: 0 0 50%;
-  background: image-url('banner-promotion.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-// PAGE ANNONCES IMMOBILIERES - VENTE IMMOBILIERE
-
-
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
-#annonce-banner {
-  background: image-url('banner-immobilier.jpg');
+#annonce-landing-picture {
+  background: image-url('landing-picture-immobilier.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }

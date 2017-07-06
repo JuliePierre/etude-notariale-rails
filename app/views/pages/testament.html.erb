@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Testament - Notaires Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Testament. Le testament est bien souvent le meilleur moyen de se protéger. Il permet de léguer un bien ou une somme d'argent à la personne de son choix. Notre office notariale est à votre écoute et vous accompagnera dans cette démarche." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="testament-banner">
-  <div class="page-banner-header right header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="testament-landing-picture">
+  <div class="page-landing-picture-header right header-red">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>Le Testament</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -26,16 +21,12 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
 <%= render 'shared/questions-collapsible', expertise: @expertise %>
 
 <%= render 'shared/lexique', expertise: @expertise %>
-
-
-<!-- Fiches pratiques -->
 
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
@@ -79,9 +70,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

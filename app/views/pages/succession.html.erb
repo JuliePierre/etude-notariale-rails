@@ -1,18 +1,13 @@
-<!-- Les meta tags -->
 <% content_for :meta_title, "Succession - Notaires Rennes | Perraut Pirioux Mével" %>
 <% content_for :meta_description, "Succession. Le décès d'un proche est une épreuve difficile. Dans les semaines qui suivent le décès, la famille est très sollicitée et préoccupée. Trois notaires et une vingtaine de collaborateurs vous accompagnent dans vos démarches." %>
-<!-- Les meta tags -->
 
-<!-- Bannière -->
-<div class="page-banner" id="succession-banner">
-  <div class="page-banner-header right header-red">
-    <span class="page-banner-subtitle">Expertise</span>
+<div class="page-landing-picture" id="succession-landing-picture">
+  <div class="page-landing-picture-header right header-red">
+    <span class="page-landing-picture-subtitle">Expertise</span>
     <h1>La Succession</h1>
   </div>
 </div>
-<!-- Bannière -->
 
-<!-- Navigation -->
 <div class="sub-nav">
   <div class="sub-nav-container">
     <div class="sub-nav-menu">
@@ -26,16 +21,13 @@
     </div>
   </div>
 </div>
-<!-- Navigation -->
 
 <%= render 'shared/show-expertise-intro', expertise: @expertise %>
 
 <%= render 'shared/questions-collapsible', expertise: @expertise %>
 
-<!-- Lexique -->
 <%= render 'shared/lexique',expertise: @expertise %>
 
-<!-- Fiches pratiques -->
 <div class="page-section">
   <div class="page-expertise-section" id="fiches">
     <h2 class="section-white-header">FICHES PRATIQUES</h2>
@@ -90,9 +82,7 @@
   </div>
 </div>
 
-<!-- Bouton Contact -->
 <%= render 'shared/contact-link' %>
-<!-- Bouton Contact -->
 
 <%= content_for(:after_js) do %>
   <script>

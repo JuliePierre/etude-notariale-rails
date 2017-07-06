@@ -7,8 +7,6 @@ Rails.application.routes.draw do
   get 'office', to: 'pages#office', as: 'office'
   get 'foire-aux-questions', to: 'pages#faq', as: 'faq'
   get 'contact', to: 'pages#contact', as: 'contact'
-  get 'negociation-immobiliere', to: 'pages#negociation', as: 'negociation'
-  get 'vente-immobilier', to: 'pages#vente', as: 'vente'
   get 'plan-du-site', to: 'pages#plan_du_site', as: 'plan_du_site'
   get 'mentions-légales', to: 'pages#legal', as: 'legal'
   get 'credits', to: 'pages#credits', as: 'credits'
