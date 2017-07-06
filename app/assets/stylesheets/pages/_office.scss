@@ -223,7 +223,10 @@
   }
   i {
     font-size: 2rem;
-    color: white;
+    color: primary-color;
+  }
+  .card-btn i {
+    color: white !important;
   }
 }
 
