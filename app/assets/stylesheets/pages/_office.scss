@@ -1,11 +1,12 @@
 // Bannière de présentation : photo + titre de page
 #office-banner {
-  background: image-url('banner-office.jpg');
+  background: image-url('office-notarial-rennes.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-banner-office.jpg')
+    background: image-url('small-office-notarial-rennes.jpg')
   }
   background-repeat:no-repeat;
   background-size: cover;
+  background-position: top;
 }
 
 // 1ère section
@@ -227,12 +228,12 @@
 }
 
 #whole-team-banner {
-  background: image-url('whole-team.jpg');
+  background: image-url('office-notarial-rennes-equipe.jpg');
   background-repeat:no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 65vh;
   width: auto;
-  background-position: center;
+  background-position: top;
 }
 
 // team members
