@@ -91,9 +91,9 @@
   background-position: center;
 }
 #acheter-landing-picture {
-  background: image-url('immobilier.jpg');
+  background: image-url('annonces-immobilieres-rennes.jpg');
   @media (max-width: $small-screen) {
-    background: image-url('small-landing-picture-immobilier.jpg');
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
     background-repeat:no-repeat;
     background-size: cover;
   }
@@ -101,9 +101,9 @@
   background-size: cover;
 }
 #vendre-landing-picture {
-  background: image-url('immobilier.jpg');
+  background: image-url('annonces-immobilieres-rennes');
   @media (max-width: $small-screen) {
-    background: image-url('small-landing-picture-immobilier.jpg');
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
     background-repeat:no-repeat;
     background-size: cover;
   }
@@ -207,6 +207,58 @@
   background-size: cover;
   @media (max-width: $small-screen) {
     background: image-url('notaires-rennes-recherche-mobile.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+#annonces-landing-picture {
+  background: image-url('annonces-immobilieres-rennes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+#annonce-landing-picture {
+  background: image-url('annonces-immobilieres-rennes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+
+// ADMIN
+#admin-new-landing-picture {
+  background: image-url('annonces-immobilieres-rennes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+#admin-show-landing-picture {
+  background: image-url('annonces-immobilieres-rennes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+#admin-index-landing-picture {
+  background: image-url('annonces-immobilieres-rennes.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  @media (max-width: $small-screen) {
+    background: image-url('annonces-immobilieres-rennes-mobile.jpg');
     background-repeat:no-repeat;
     background-size: cover;
   }

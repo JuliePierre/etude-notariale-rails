@@ -1,12 +1,3 @@
-// Admin Index
-// landing-picture
-#admin-index-landing-picture {
-  background: image-url('immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-
-// ajouter aux favoris
 .icone-favori {
   position: absolute;
   top: 1rem;
@@ -25,28 +16,6 @@
   opacity: 1;
   color: $primary-color;
 }
-
-
-
-// Admin Index
-
-// Admin NEW annonce
-#admin-new-landing-picture {
-  background: image-url('immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-// Admin NEW annonce
-
-// Admin NEW annonce
-#admin-show-landing-picture {
-  background: image-url('immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-// Admin NEW annonce
-
-
 .admin-wrapper {
   background-color: $brand-grey;
 }

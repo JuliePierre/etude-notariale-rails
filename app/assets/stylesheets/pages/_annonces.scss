@@ -1,13 +1,3 @@
-// PAGE ANNONCES IMMOBILIERES - INDEX
-// Bannière
-#annonces-landing-picture {
-  background: image-url('immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
-// Bannière
-
-// LES ANNONCES
 .annonces-container {
   .col {
     padding: 0 0.75rem 1.25rem 0.75rem !important;
@@ -46,11 +36,6 @@
 // PAGE ANNONCES IMMOBILIERES - INDEX
 
 // PAGE ANNONCES IMMOBILIERES - PAGE SHOW
-#annonce-landing-picture {
-  background: image-url('landing-picture-immobilier.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
-}
 #annonce-show-section {
   padding-top: 0;
 }
