@@ -29,6 +29,9 @@ gem 'searchkick'
 
 gem 'friendly_id', '~> 5.1.0'
 
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
