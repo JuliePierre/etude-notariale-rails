@@ -25,15 +25,26 @@ Rails.application.routes.draw do
   get 'expertises/adoption', to: 'pages#adoption', as: 'adoption'
 
   # Droit des affaires
+  # get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
+
+  # get 'expertises/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
+  # get 'expertises/societe-transmission', to: 'pages#societe_transmission', as: 'societe_transmission'
+  # get 'expertises/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
+
+  # get 'expertises/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'
+  # get 'expertises/bail-commercial', to: 'pages#bail_commercial', as: 'bail_commercial'
+  # get 'expertises/location-gerance', to: 'pages#location_gerance', as: 'location_gerance'
+
+  # Droit des affaires - EN ATTENDANT D AVOIR LE CONTENU DES PAGES
   get 'expertises/droit-des-affaires', to: 'pages#affaires', as: 'affaires'
 
-  get 'expertises/societe-creation', to: 'pages#societe_creation', as: 'societe_creation'
-  get 'expertises/societe-transmission', to: 'pages#societe_transmission', as: 'societe_transmission'
-  get 'expertises/societe-secretariat', to: 'pages#societe_secretariat', as: 'societe_secretariat'
+  get 'expertises/societe-creation', to: redirect('/')
+  get 'expertises/societe-transmission', to: redirect('/')
+  get 'expertises/societe-secretariat', to: redirect('/')
 
-  get 'expertises/fonds-commerce', to: 'pages#fonds_commerce', as: 'fonds_commerce'
-  get 'expertises/bail-commercial', to: 'pages#bail_commercial', as: 'bail_commercial'
-  get 'expertises/location-gerance', to: 'pages#location_gerance', as: 'location_gerance'
+  get 'expertises/fonds-commerce', to: redirect('/')
+  get 'expertises/bail-commercial', to: redirect('/')
+  get 'expertises/location-gerance', to: redirect('/')
 
   # Droit immobilier
   get 'expertises/droit-immobilier', to: 'pages#immobilier', as: 'immobilier'
@@ -63,8 +74,6 @@ Rails.application.routes.draw do
   get 'expertises/droit-de-la-famille/testament', to: redirect('expertises/testament')
   get 'expertises/droit-des-affaires/fonds_commerce', to: redirect('expertises/fonds_commerce')
   get 'expertises/droit-des-affaires/bail_commercial', to: redirect('expertises/bail_commercial')
-
-
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
 
