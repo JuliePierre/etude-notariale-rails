@@ -72,8 +72,12 @@ Rails.application.routes.draw do
   get 'expertises/droit-de-la-famille/succession', to: redirect('expertises/succession')
   get 'expertises/droit-de-la-famille/donation', to: redirect('expertises/donation')
   get 'expertises/droit-de-la-famille/testament', to: redirect('expertises/testament')
-  get 'expertises/droit-des-affaires/fonds_commerce', to: redirect('expertises/fonds_commerce')
-  get 'expertises/droit-des-affaires/bail_commercial', to: redirect('expertises/bail_commercial')
+  get 'expertises/droit-des-affaires/fonds-commerce', to: redirect('expertises/fonds-commerce')
+  get 'expertises/droit-des-affaires/bail-commercial', to: redirect('expertises/bail-commercial')
+  get 'expertises/droit-des-affaires/societe-creation', to: redirect('expertises/societe-creation')
+  get 'expertises/droit-des-affaires/societe-transmission', to: redirect('expertises/societe-transmission')
+  get 'expertises/droit-des-affaires/societe-secretariat', to: redirect('expertises/societe-secretariat')
+  get 'expertises/droit-des-affaires/location-gerance', to: redirect('expertises/location-gerance')
 
   get "/sitemap.xml" => "sitemap#index", :format => "xml", :as => :sitemap
 
